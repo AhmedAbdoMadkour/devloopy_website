@@ -48,7 +48,11 @@ class CardTestimonialsSectionMobile extends StatelessWidget {
                         ),
                         const SizedBox(height: 27.0),
                         const Text(
-                            "Working with DigitX was a pleasure. Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive."),
+                          "Working with DigitX was a pleasure. Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.",
+                          style: TextStyle(
+                            color: ColorsApp.absoluteColorWhite,
+                          ),
+                        ),
                       ],
                     ),
                   ),

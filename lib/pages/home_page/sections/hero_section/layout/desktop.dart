@@ -43,7 +43,9 @@ class HerosectionDeskTop extends StatelessWidget {
               ),
             ),
           ),
-          const HeroSectionImage(),
+          const Expanded(
+            child: HeroSectionImage(),
+          ),
         ],
       ),
     );

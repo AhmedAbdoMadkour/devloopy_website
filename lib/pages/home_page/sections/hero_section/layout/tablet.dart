@@ -43,7 +43,9 @@ class HerosectionTabLet extends StatelessWidget {
               ),
             ),
           ),
-          const HeroSectionImage(),
+          const Expanded(
+            child: HeroSectionImage(),
+          ),
         ],
       ),
     );
