@@ -1,6 +1,6 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/button_cta_section.dart';
-import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/title_description_cta_section.dart';
+import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/layout/mobile.dart';
+import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
 class CTASectionMobile extends StatelessWidget {
@@ -41,9 +41,9 @@ class CTASectionMobile extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            const TitleDescriptionCTASection(),
+            const TitleDescriptionCTASectionMobile(),
             const SizedBox(height: 40.0),
-            const ButtonCTASection(),
+            const ButtonCTASectionMobile(),
             const SizedBox(height: 30.0),
             Image.asset(
               "assets/images/image_cta_mobile.png",

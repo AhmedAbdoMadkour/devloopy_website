@@ -1,4 +1,5 @@
 import 'package:devloopy_website/pages/home_page/home_page.dart';
+import 'package:devloopy_website/pages/services_page/services_page.dart';
 import 'package:devloopy_website/theme/dark_theme.dart';
 import 'package:devloopy_website/theme/light_theme.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class DevLoopy extends StatelessWidget {
       theme: LightTheme.theme,
       darkTheme: DarkTheme.theme,
       themeMode: ThemeMode.system,
-      home: const HomePage(),
+      home: const ServicesPage(),
     );
     // MultiBlocProvider(
     //   providers: [

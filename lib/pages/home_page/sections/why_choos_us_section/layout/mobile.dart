@@ -1,5 +1,5 @@
-import 'package:devloopy_website/pages/home_page/sections/why_choos_us_section/widgets/card_choose_section/card_choose_section.dart';
-import 'package:devloopy_website/pages/home_page/widgets/custom_title/layout/mobile.dart';
+import 'package:devloopy_website/pages/home_page/sections/why_choos_us_section/widgets/card_choose_section/layout/mobile.dart';
+import 'package:devloopy_website/widgets/custom_title/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
 class WhychoosussectionMobile extends StatelessWidget {
@@ -18,7 +18,7 @@ class WhychoosussectionMobile extends StatelessWidget {
               spanTitle: "Your Digital Journey",
             ),
             SizedBox(height: 50.0),
-            CardChooseSection(),
+            CardChooseSectionMobile(),
           ],
         ),
       ),

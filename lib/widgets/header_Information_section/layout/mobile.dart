@@ -1,4 +1,4 @@
-import 'package:devloopy_website/pages/home_page/widgets/custom_title/layout/mobile.dart';
+import 'package:devloopy_website/widgets/custom_title/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
 import 'package:flutter/material.dart';
 

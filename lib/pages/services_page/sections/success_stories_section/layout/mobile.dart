@@ -1,7 +1,7 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/services_page/sections/success_stories_section/widgets/card_success_stories_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
-import 'package:devloopy_website/widgets/custom_title_section/custom_titel_section.dart';
+import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
 class SuccessStoriesSectionMobile extends StatelessWidget {
@@ -17,7 +17,7 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const CustomTitelSection(
+          const CustomTitelSectionMobile(
             nameTitleSection: " Stories ",
             spantitlesection: " Success",
           ),

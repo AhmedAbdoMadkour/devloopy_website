@@ -75,6 +75,7 @@ class CardTestimonialsSectionMobile extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 18.0,
                         fontWeight: FontWeight.w400,
+                        color: ColorsApp.absoluteColorWhite,
                       ),
                     ),
                     const Text(

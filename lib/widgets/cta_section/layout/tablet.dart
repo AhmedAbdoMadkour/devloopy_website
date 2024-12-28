@@ -1,6 +1,6 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/button_cta_section.dart';
-import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/title_description_cta_section.dart';
+import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/layout/tablet.dart';
+import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class CTASectionTablet extends StatelessWidget {
@@ -40,9 +40,9 @@ class CTASectionTablet extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const TitleDescriptionCTASection(),
+          const TitleDescriptionCTASectionTablet(),
           const SizedBox(height: 50.0),
-          const ButtonCTASection(),
+          const ButtonCTASectionTablet(),
           const SizedBox(height: 50.0),
           Image.asset("assets/images/CTA.png"),
         ],

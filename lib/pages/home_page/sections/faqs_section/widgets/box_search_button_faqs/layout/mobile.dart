@@ -11,13 +11,14 @@ class BoxSearchButtonFaqsMobile extends StatelessWidget {
       height: 52.0,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
-          color: ColorsApp.greyShadesColor_10,
-          border: Border.all(
-            color: ColorsApp.greyShadesColor_15,
-            width: 1,
-            style: BorderStyle.solid,
-          ),
-          borderRadius: BorderRadius.circular(48.0)),
+        color: ColorsApp.greyShadesColor_10,
+        border: Border.all(
+          color: ColorsApp.greyShadesColor_15,
+          width: 1,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(48.0),
+      ),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,6 +26,7 @@ class BoxSearchButtonFaqsMobile extends StatelessWidget {
           Icon(
             Icons.search_sharp,
             size: 22.0,
+            color: ColorsApp.absoluteColorWhite,
           ),
           SizedBox(
             width: 230,

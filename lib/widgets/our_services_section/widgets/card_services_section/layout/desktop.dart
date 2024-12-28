@@ -111,9 +111,9 @@ class CardServicesSectionDeskTop extends StatelessWidget {
             Text(
               "Learn More",
               style: TextStyle(
-                fontFamily: FontsApp.fontFamilySora,
                 fontSize: 16.0,
                 fontWeight: FontWeight.w400,
+                color: ColorsApp.absoluteColorWhite,
               ),
             ),
             Icon(

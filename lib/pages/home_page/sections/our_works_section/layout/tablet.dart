@@ -1,6 +1,6 @@
-import 'package:devloopy_website/pages/home_page/sections/our_works_section/widgets/card_our_wotks_section/card_our_works_section.dart';
+import 'package:devloopy_website/pages/home_page/sections/our_works_section/widgets/card_our_wotks_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_title_section/custom_titel_section.dart';
+import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,7 @@ class OurWorksSectionTablet extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: const Column(
         children: [
-          CustomTitelSection(
+          CustomTitelSectionTablet(
             spantitlesection: "Our",
             nameTitleSection: " Works",
           ),
@@ -24,7 +24,7 @@ class OurWorksSectionTablet extends StatelessWidget {
                 "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself.",
           ),
           SizedBox(height: 50.0),
-          CardOurWorksSection(),
+          CardOurWorksSectionTablet(),
         ],
       ),
     );

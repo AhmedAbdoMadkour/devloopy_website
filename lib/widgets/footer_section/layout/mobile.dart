@@ -12,7 +12,7 @@ class FooterSectionMobile extends StatelessWidget {
         top: 16,
       ),
       padding: const EdgeInsets.symmetric(
-        horizontal: 16,
+        horizontal: 5,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

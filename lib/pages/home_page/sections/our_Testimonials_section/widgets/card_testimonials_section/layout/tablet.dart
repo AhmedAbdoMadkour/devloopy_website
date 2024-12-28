@@ -69,6 +69,7 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 20.0,
                             fontWeight: FontWeight.w400,
+                            color: ColorsApp.absoluteColorWhite,
                           ),
                         ),
                         Text(

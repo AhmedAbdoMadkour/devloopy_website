@@ -1,6 +1,6 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/button_cta_section.dart';
-import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/title_description_cta_section.dart';
+import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/layout/desktop.dart';
+import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class CTASectionDeskTop extends StatelessWidget {
@@ -40,9 +40,9 @@ class CTASectionDeskTop extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const TitleDescriptionCTASection(),
+          const TitleDescriptionCTASectionDeskTop(),
           const SizedBox(height: 50.0),
-          const ButtonCTASection(),
+          const ButtonCTASectionDeskTop(),
           const SizedBox(height: 50.0),
           Image.asset("assets/images/CTA.png"),
         ],

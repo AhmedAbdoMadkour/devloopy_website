@@ -22,6 +22,7 @@ class BoxSearchButtonFaqsTablet extends StatelessWidget {
         children: [
           Icon(
             Icons.search_sharp,
+            color: ColorsApp.absoluteColorWhite,
             size: 24.0,
           ),
           SizedBox(width: 8),

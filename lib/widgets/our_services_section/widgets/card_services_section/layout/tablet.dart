@@ -67,9 +67,9 @@ class CardServicesSectionTablet extends StatelessWidget {
   }
 
   Widget titleCardChooseSection() {
-    return Column(
+    return const Column(
       children: [
-        const Text(
+        Text(
           "Web Development",
           style: TextStyle(
             color: ColorsApp.absoluteColorWhite,
@@ -77,11 +77,11 @@ class CardServicesSectionTablet extends StatelessWidget {
             fontSize: 24.0,
           ),
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10),
         Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const Expanded(
+            Expanded(
               child: Text(
                 overflow: TextOverflow.ellipsis,
                 maxLines: 3,
@@ -90,18 +90,6 @@ class CardServicesSectionTablet extends StatelessWidget {
                   color: ColorsApp.whiteShadesColor_55,
                   fontFamily: FontsApp.fontFamilySora,
                   fontSize: 14.0,
-                ),
-              ),
-            ),
-            GestureDetector(
-              child: const Text(
-                textAlign: TextAlign.end,
-                "ReedMore",
-                style: TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
-                  fontFamily: FontsApp.fontFamilySora,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -132,7 +120,7 @@ class CardServicesSectionTablet extends StatelessWidget {
             Text(
               "Learn More",
               style: TextStyle(
-                fontFamily: FontsApp.fontFamilySora,
+                color: ColorsApp.absoluteColorWhite,
                 fontSize: 16.0,
                 fontWeight: FontWeight.w400,
               ),
