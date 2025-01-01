@@ -8,14 +8,13 @@ class CardOurResponseMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 24),
-      height: 850,
+      height: 650,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 400,
-          crossAxisSpacing: 24,
-          mainAxisSpacing: 24,
+          mainAxisExtent: 300,
+          mainAxisSpacing: 20,
         ),
         itemCount: 2,
         itemBuilder: (BuildContext context, int index) {
@@ -34,13 +33,17 @@ class CardOurResponseMobile extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset("assets/images/image_our_response.png"),
-                    const SizedBox(width: 6),
+                    Image.asset(
+                      width: 52,
+                      height: 52,
+                      "assets/images/image_our_response.png",
+                    ),
+                    const SizedBox(width: 10),
                     const Text(
                       "Our Response",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 24,
+                        fontSize: 18,
                         fontWeight: FontWeight.w400,
                       ),
                     )
@@ -48,10 +51,12 @@ class CardOurResponseMobile extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 const Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 9,
                   "We understand the importance of timely responses, and our team is committed to addressing your inquiries promptly. Whether you have a specific project in mind, need advice on digital strategies, or want to explore partnership opportunities, we are here to assist you at every step.",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_55,
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),
                 )

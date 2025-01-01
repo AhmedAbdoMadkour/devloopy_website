@@ -9,60 +9,61 @@ class CardTitleContactMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.all(24),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
-            width: 1,
-            style: BorderStyle.solid,
-          ),
-          image: const DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage("assets/images/Abstract_Design.png"),
-          ),
-          gradient: const LinearGradient(
-            begin: Alignment.topCenter,
-            colors: [
-              ColorsApp.absoluteColorBlack,
-              ColorsApp.greyShadesColor_06,
-            ],
-          ),
+      margin: const EdgeInsets.only(top: 40),
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: ColorsApp.greyShadesColor_12,
+          width: 1,
+          style: BorderStyle.solid,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const CustomTitelSectionMobile(
-                spantitlesection: "Get in",
-                nameTitleSection: "Touch with Us Today!"),
-            const CustomSecondDescriptionMobile(
-              description:
-                  "At DigitX, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, we encourage you to reach out to our dedicated team. Connect with us through any of the channels below, and we'll be delighted to assist you on your digital journey.",
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-              height: 67,
-              decoration: BoxDecoration(
-                color: ColorsApp.greyShadesColor_06,
-                borderRadius: BorderRadius.circular(100),
-                border: Border.all(
-                  color: ColorsApp.greyShadesColor_12,
-                  width: 1,
-                  style: BorderStyle.solid,
-                ),
-              ),
-              child: const Text(
-                overflow: TextOverflow.visible,
-                textAlign: TextAlign.center,
-                "Feel free to contact us through any of the following channels",
-                style: TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-            ),
+        image: const DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage("assets/images/Abstract_Design.png"),
+        ),
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          colors: [
+            ColorsApp.absoluteColorBlack,
+            ColorsApp.greyShadesColor_06,
           ],
-        ));
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const CustomTitelSectionMobile(
+              spantitlesection: "Get in",
+              nameTitleSection: "Touch with Us Today!"),
+          const CustomSecondDescriptionMobile(
+            description:
+                "At DigitX, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, we encourage you to reach out to our dedicated team. Connect with us through any of the channels below, and we'll be delighted to assist you on your digital journey.",
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            height: 67,
+            decoration: BoxDecoration(
+              color: ColorsApp.greyShadesColor_06,
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: ColorsApp.greyShadesColor_12,
+                width: 1,
+                style: BorderStyle.solid,
+              ),
+            ),
+            child: const Text(
+              textAlign: TextAlign.center,
+              "Feel free to contact us through any of the following channels",
+              style: TextStyle(
+                color: ColorsApp.absoluteColorWhite,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

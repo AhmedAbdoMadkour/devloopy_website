@@ -7,20 +7,20 @@ class CardContactEmailTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
+      margin: const EdgeInsets.only(top: 30),
       child: Column(
         children: [
           const Text(
             "Contact Us Via Email",
             style: TextStyle(
-              height: 5,
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 24,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.only(top: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -39,15 +39,18 @@ class CardContactEmailTablet extends StatelessWidget {
                       "For General Inquiries",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.only(
+                        top: 5,
+                        right: 5,
+                        bottom: 5,
+                        left: 10,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -64,22 +67,24 @@ class CardContactEmailTablet extends StatelessWidget {
                             Icon(
                               Icons.email_outlined,
                               color: ColorsApp.absoluteColorWhite,
-                              size: 24,
-                              weight: 24,
+                              size: 20,
+                              weight: 20,
                             ),
                             Text(
                               "info@digitx.com",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
                           ]),
                           GestureDetector(
                             child: Container(
-                              width: 68,
-                              height: 48,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -92,7 +97,7 @@ class CardContactEmailTablet extends StatelessWidget {
                               child: const Icon(
                                 Icons.arrow_right_alt,
                                 color: ColorsApp.absoluteColorWhite,
-                                weight: 28,
+                                weight: 13.6,
                               ),
                             ),
                           )
@@ -108,15 +113,18 @@ class CardContactEmailTablet extends StatelessWidget {
                       "For Business Collaborations",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.only(
+                        top: 5,
+                        right: 5,
+                        bottom: 5,
+                        left: 10,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -129,27 +137,30 @@ class CardContactEmailTablet extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(children: [
-                            Icon(
-                              Icons.email_outlined,
-                              color: ColorsApp.absoluteColorWhite,
-                              size: 24,
-                              weight: 24,
-                            ),
-                            Text(
-                              "partnerships@digitx.com",
-                              style: TextStyle(
+                          const Row(
+                            children: [
+                              Icon(
+                                Icons.email_outlined,
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
+                                size: 20,
+                                weight: 20,
                               ),
-                            ),
-                          ]),
+                              Text(
+                                "partnerships@digitx.com",
+                                style: TextStyle(
+                                  color: ColorsApp.absoluteColorWhite,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
                           GestureDetector(
                             child: Container(
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -162,7 +173,7 @@ class CardContactEmailTablet extends StatelessWidget {
                               child: const Icon(
                                 Icons.arrow_right_alt,
                                 color: ColorsApp.absoluteColorWhite,
-                                weight: 28,
+                                weight: 13.6,
                               ),
                             ),
                           )
@@ -178,15 +189,18 @@ class CardContactEmailTablet extends StatelessWidget {
                       "For Job Opportunities",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.only(
+                        top: 5,
+                        right: 5,
+                        bottom: 5,
+                        left: 10,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -203,22 +217,24 @@ class CardContactEmailTablet extends StatelessWidget {
                             Icon(
                               Icons.email_outlined,
                               color: ColorsApp.absoluteColorWhite,
-                              size: 24,
-                              weight: 24,
+                              size: 20,
+                              weight: 20,
                             ),
                             Text(
                               "careers@digitx.com",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
                           ]),
                           GestureDetector(
                             child: Container(
-                              width: 68,
-                              height: 48,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -231,7 +247,7 @@ class CardContactEmailTablet extends StatelessWidget {
                               child: const Icon(
                                 Icons.arrow_right_alt,
                                 color: ColorsApp.absoluteColorWhite,
-                                weight: 28,
+                                weight: 13.6,
                               ),
                             ),
                           )
