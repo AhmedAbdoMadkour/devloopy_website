@@ -1,5 +1,5 @@
-import 'package:devloopy_website/widgets/custom_title/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
+import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
 class HeaderInformationSectionMobile extends StatelessWidget {
@@ -25,15 +25,17 @@ class HeaderInformationSectionMobile extends StatelessWidget {
           child: const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomTitleMobile(
-                nameTitle: "Our Comprehensive ",
-                spanTitle: "Digital Solutions",
+              SizedBox(height: 14),
+              CustomTitelSectionMobile(
+                nameTitleSection: " in the Digital Age",
+                spantitlesection: "Elevating Brands",
               ),
               SizedBox(height: 10),
               CustomSecondDescriptionMobile(
                 description:
-                    "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                    "Welcome to DigitX, your trusted partner in the dynamic world of digital solutions. We are a passionate team of creative minds, tech enthusiasts, and digital strategists, dedicated to empowering businesses and individuals in the digital realm. Our mission is to deliver exceptional results that drive success, create meaningful connections, and bring your digital vision to life. With a customer-centric approach and a focus on innovation, we are committed to being at the forefront of the ever-evolving digital landscape.",
               ),
+              SizedBox(height: 14),
             ],
           ),
         ),
@@ -45,52 +47,3 @@ class HeaderInformationSectionMobile extends StatelessWidget {
     );
   }
 }
-
-
-
-//  SizedBox(
-//       child: Stack(
-//         alignment: Alignment.center,
-//         children: [
-//           Positioned(
-//             left: 0,
-//             top: 0,
-//             child: Image.asset(
-//               'assets/images/image_header_mobile_up.png',
-//               fit: BoxFit.cover,
-//             ),
-//           ),
-//           Positioned(
-//             child: Image.asset(
-//               'assets/images/Abstract_Design.png',
-//               fit: BoxFit.cover,
-//             ),
-//           ),
-//           Positioned(
-//             left: 0,
-//             bottom: 0,
-//             child: Image.asset(
-//               'assets/images/image_header_mobile_down.png',
-//               fit: BoxFit.cover,
-//             ),
-//           ),
-//           Container(
-//               //  padding: const EdgeInsets.all(100),
-//               //  margin: const EdgeInsets.only(right: 405, left: 100),
-//               child: const Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               CustomTitleMobile(
-//                 nameTitle: "Our Comprehensive ",
-//                 spanTitle: "Digital Solutions",
-//               ),
-//               SizedBox(height: 10),
-//               CustomSecondDescriptionMobile(
-//                 description:
-//                     "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
-//               ),
-//             ],
-//           )),
-//         ],
-//       ),
-//     )

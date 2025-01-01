@@ -1,5 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/project_card.dart';
+import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class CardProjectsShowcaseTablet extends StatelessWidget {
@@ -8,69 +8,75 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(50),
+      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: ColorsApp.greyShadesColor_12)),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: ColorsApp.greyShadesColor_12),
+      ),
       child: Column(
         children: [
           Image.asset(imageShowcase),
+          const SizedBox(height: 20),
           Column(
             children: [
               Container(
-                padding: const EdgeInsets.all(50),
-                child: Row(
+                padding: const EdgeInsets.all(18),
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      "E-Commerce Revolution",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 28,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
                           "Show Less",
                           style: TextStyle(
                             color: ColorsApp.greyShadesColor_40,
-                            fontSize: 18,
+                            fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
                         const SizedBox(width: 10),
                         Container(
-                          padding: const EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(6),
                           decoration: BoxDecoration(
-                              gradient: const LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  colors: [
-                                    Color(0xff1A1A1A),
-                                    Color(0xff262626),
-                                  ]),
-                              border: Border.all(
-                                color: ColorsApp.greyShadesColor_10,
-                                width: 1,
-                                style: BorderStyle.solid,
-                              ),
-                              borderRadius: BorderRadius.circular(100)),
+                            gradient: const LinearGradient(
+                                begin: Alignment.topCenter,
+                                colors: [
+                                  Color(0xff1A1A1A),
+                                  Color(0xff262626),
+                                ]),
+                            border: Border.all(
+                              color: ColorsApp.greyShadesColor_10,
+                              width: 1,
+                              style: BorderStyle.solid,
+                            ),
+                            borderRadius: BorderRadius.circular(100),
+                          ),
                           child: const Icon(Icons.keyboard_arrow_up_sharp),
                         ),
                       ],
-                    )
+                    ),
+                    const SizedBox(height: 10),
+                    const Text(
+                      textAlign: TextAlign.start,
+                      "E-Commerce Revolution",
+                      style: TextStyle(
+                        color: ColorsApp.absoluteColorWhite,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                   ],
                 ),
               ),
-              Row(
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    padding: const EdgeInsets.only(
-                      top: 8,
-                      right: 30,
-                      bottom: 8,
-                      left: 10,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 12,
+                      horizontal: 16,
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
@@ -80,20 +86,26 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
                       ),
                     ),
                     child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Image.asset("assets/icons/icon_e_commerce_success.png"),
+                        Image.asset("assets/icons/icon_e_commerce.png"),
                         const SizedBox(width: 10),
-                        const Text("E-commerce"),
+                        const Text(
+                          "E-commerce",
+                          style: TextStyle(
+                            color: ColorsApp.whiteShadesColor_65,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(height: 10),
                   Container(
-                    padding: const EdgeInsets.only(
-                      top: 8,
-                      right: 30,
-                      bottom: 8,
-                      left: 10,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 12,
+                      horizontal: 16,
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
@@ -103,20 +115,26 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
                       ),
                     ),
                     child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Image.asset("assets/icons/Icon_web_design_success.png"),
+                        Image.asset("assets/icons/icon_web_2.png"),
                         const SizedBox(width: 10),
-                        const Text("Web Design & Development"),
+                        const Text(
+                          "Mobile App Development",
+                          style: TextStyle(
+                            color: ColorsApp.whiteShadesColor_65,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(height: 10),
                   Container(
-                    padding: const EdgeInsets.only(
-                      top: 8,
-                      right: 30,
-                      bottom: 8,
-                      left: 10,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 12,
+                      horizontal: 16,
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
@@ -126,10 +144,18 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
                       ),
                     ),
                     child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Image.asset("assets/icons/Icon_web_design_success.png"),
+                        Image.asset("assets/icons/icon_web.png"),
                         const SizedBox(width: 10),
-                        const Text("Mobile App Development"),
+                        const Text(
+                          "Web Design & Development",
+                          style: TextStyle(
+                            color: ColorsApp.whiteShadesColor_65,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -137,8 +163,8 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
               )
             ],
           ),
-          const SizedBox(height: 50),
-          const ProjectCard(),
+          const SizedBox(height: 18),
+          const ProjectCardTablet(),
         ],
       ),
     );

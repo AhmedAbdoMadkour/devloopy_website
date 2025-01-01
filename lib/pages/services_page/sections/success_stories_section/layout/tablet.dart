@@ -9,8 +9,12 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 80, right: 150, left: 150),
+    return Container(
+      margin: const EdgeInsets.only(
+        top: 60,
+        right: 24,
+        left: 24,
+      ),
       child: Column(
         children: [
           const CustomTitelSectionTablet(
@@ -22,22 +26,20 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
               description:
                   "At DigitX, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
           const SizedBox(height: 30),
-          const Row(
-            children: [
-              CardSuccessStoriesSectionTablet(),
-              SizedBox(width: 40),
-              CardSuccessStoriesSectionTablet(),
-            ],
-          ),
-          const SizedBox(height: 40),
+          const CardSuccessStoriesSectionTablet(),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                width: 256.0,
-                height: 68.0,
+                width: 207.0,
+                height: 56.0,
                 padding: const EdgeInsets.only(
-                    top: 10, right: 10, bottom: 10, left: 24),
+                  top: 10,
+                  right: 10,
+                  bottom: 10,
+                  left: 20,
+                ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
                   border: Border.all(
@@ -55,16 +57,15 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
                         fontFamily: FontsApp.fontFamilySora,
-                        fontSize: 16.0,
+                        fontSize: 14.0,
                       ),
                     ),
                     GestureDetector(
                       child: Container(
-                        width: 52.0,
-                        height: 30.0,
-                        margin: const EdgeInsets.symmetric(horizontal: 3.0),
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 6.0, vertical: 2.0),
+                          horizontal: 14.0,
+                          vertical: 6.0,
+                        ),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
                             color: ColorsApp.greyShadesColor_10),

@@ -10,8 +10,9 @@ class OurTeamMembers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-        mobile: OurtTeamMemberMobile(),
-        tablet: OurTeamMemebersTablet(),
-        desktop: OurTeamMembersDesktop());
+      mobile: OurTeamMembersMobile(),
+      tablet: OurTeamMemebersTablet(),
+      desktop: OurTeamMembersDesktop(),
+    );
   }
 }

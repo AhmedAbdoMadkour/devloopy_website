@@ -3,16 +3,16 @@ import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
-class OurtTeamMemberMobile extends StatelessWidget {
-  const OurtTeamMemberMobile({super.key});
+class OurTeamMembersMobile extends StatelessWidget {
+  const OurTeamMembersMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.only(
-        top: 100,
-        left: 24,
-        right: 24,
+        top: 50,
+        left: 16,
+        right: 16,
       ),
       child: Column(
         children: [
@@ -24,7 +24,7 @@ class OurtTeamMemberMobile extends StatelessWidget {
             description:
                 "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           CardOurTeamMemberMobile(),
         ],
       ),

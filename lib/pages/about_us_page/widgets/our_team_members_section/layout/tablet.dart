@@ -10,9 +10,9 @@ class OurTeamMemebersTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.only(
-        top: 100,
-        left: 100,
-        right: 100,
+        top: 60,
+        left: 16,
+        right: 16,
       ),
       child: Column(
         children: [
@@ -24,7 +24,7 @@ class OurTeamMemebersTablet extends StatelessWidget {
             description:
                 "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 30),
           CardOurTeamMemberTablet(),
         ],
       ),

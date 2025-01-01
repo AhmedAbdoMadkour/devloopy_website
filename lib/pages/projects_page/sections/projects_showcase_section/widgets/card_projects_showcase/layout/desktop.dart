@@ -1,5 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/project_card.dart';
+import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class CardProjectsShowcaseDeskTop extends StatelessWidget {
@@ -138,7 +138,7 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 50),
-          const ProjectCard(),
+          const ProjectCardDeskTop(),
         ],
       ),
     );

@@ -1,8 +1,8 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/description_project.dart';
-import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/methods_uesd/methods_uesd.dart';
-import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/team_members/team_members.dart';
-import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/technologies_used/technologies_used.dart';
+import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/methods_uesd/layout/tablet.dart';
+import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/team_members/layout/tablet.dart';
+import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/technologies_used/layout/tablet.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/title_project.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/total_statistics/layout/tablet.dart';
 import 'package:flutter/material.dart';
@@ -25,12 +25,16 @@ class ProjectCardTablet extends StatelessWidget {
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TitleProject(),
-          DescriptionProject(),
+          TitleProject(
+            fontSize: 18,
+          ),
+          DescriptionProject(
+            fontSize: 14,
+          ),
           TotalStatisticsTablet(),
-          TechnologiesUsed(),
-          TeamMeembers(),
-          MethodsUesd(),
+          TechnologiesUsedTablet(),
+          TeamMeembersTablet(),
+          MethodsUesdTablet(),
         ],
       ),
     );

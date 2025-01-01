@@ -11,24 +11,29 @@ class TypeCategorieServiceMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 60.0),
+      margin: const EdgeInsets.only(top: 40.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: 500,
             height: 75,
             child: ListView.builder(
               itemCount: 4,
+              itemExtent: 250,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return const ButtonTypeServices(
-                  iconTypeService: "assets/icons/Icon_web_design.png",
-                  nameTypeService: "Web Design",
+                return Container(
+                  margin: const EdgeInsets.only(right: 10),
+                  child: const ButtonTypeServices(
+                    iconTypeService: "assets/icons/Icon_web_design.png",
+                    nameTypeService: "Web Design",
+                    sizeFont: 14,
+                  ),
                 );
               },
             ),
           ),
+          const SizedBox(height: 30),
           const DescriptionTypeService(),
           const CardTypeServices(
             nameTitleCardTypeSerice: "Key Features",
@@ -38,7 +43,6 @@ class TypeCategorieServiceMobile extends StatelessWidget {
             descriptionItemService:
                 "We craft bespoke designs tailored to match your brand personality and industry.",
           ),
-          const SizedBox(height: 50),
           const CardTypeServices(
             nameTitleCardTypeSerice: "Design Process",
             descriptionCardTypeService:

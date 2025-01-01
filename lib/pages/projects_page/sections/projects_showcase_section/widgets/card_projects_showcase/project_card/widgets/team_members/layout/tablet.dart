@@ -7,14 +7,19 @@ class TeamMeembersTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
-      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
-          width: 1,
-          style: BorderStyle.solid,
+      padding: const EdgeInsets.symmetric(horizontal: 18),
+      decoration: const BoxDecoration(
+        border: Border(
+          right: BorderSide(
+            color: ColorsApp.greyShadesColor_12,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
+          left: BorderSide(
+            color: ColorsApp.greyShadesColor_12,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
         ),
       ),
       child: Column(
@@ -24,23 +29,21 @@ class TeamMeembersTablet extends StatelessWidget {
             "Team Members",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 20,
+              fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
           ),
-          const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+          Column(
             children: [
               Container(
-                margin: const EdgeInsets.only(right: 20),
-                padding: const EdgeInsets.all(30),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
-                    width: 1,
-                    style: BorderStyle.solid,
+                padding: const EdgeInsets.symmetric(vertical: 20),
+                decoration: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: ColorsApp.greyShadesColor_12,
+                      width: 1,
+                      style: BorderStyle.solid,
+                    ),
                   ),
                 ),
                 child: Column(
@@ -49,38 +52,42 @@ class TeamMeembersTablet extends StatelessWidget {
                     const Text(
                       "Web Developer",
                       style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w400,
-                          height: 2),
+                        color: ColorsApp.whiteShadesColor_65,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        height: 3,
+                      ),
                     ),
                     Row(
-                      mainAxisSize: MainAxisSize.max,
                       children: [
                         SizedBox(
-                          width: 100,
+                          width: 60,
                           child: Stack(
                             children: [
                               Positioned(
                                 child: Image.asset(
+                                    width: 40,
+                                    height: 40,
                                     "assets/icons/icon_face_one.png"),
                               ),
                               Positioned(
-                                right: 12,
+                                left: 15,
                                 child: Image.asset(
+                                    width: 40,
+                                    height: 40,
                                     "assets/icons/icon_face_two.png"),
                               ),
                             ],
                           ),
                         ),
                         const Column(
-                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
                               "John Smith ,",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -88,7 +95,7 @@ class TeamMeembersTablet extends StatelessWidget {
                               "Emily Johnson",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -100,14 +107,14 @@ class TeamMeembersTablet extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(right: 20),
-                padding: const EdgeInsets.all(30),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
-                    width: 1,
-                    style: BorderStyle.solid,
+                padding: const EdgeInsets.symmetric(vertical: 18),
+                decoration: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: ColorsApp.greyShadesColor_12,
+                      width: 1,
+                      style: BorderStyle.solid,
+                    ),
                   ),
                 ),
                 child: Column(
@@ -116,21 +123,24 @@ class TeamMeembersTablet extends StatelessWidget {
                     const Text(
                       "UI UX Designer",
                       style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w400,
-                          height: 2),
+                        color: ColorsApp.whiteShadesColor_65,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        height: 2,
+                      ),
                     ),
                     Row(
-                      mainAxisSize: MainAxisSize.max,
                       children: [
                         SizedBox(
-                          width: 70,
+                          width: 50,
                           child: Stack(
                             children: [
                               Positioned(
                                 child: Image.asset(
-                                    "assets/icons/icon_face_three.png"),
+                                  width: 40,
+                                  height: 40,
+                                  "assets/icons/icon_face_three.png",
+                                ),
                               ),
                             ],
                           ),
@@ -142,7 +152,7 @@ class TeamMeembersTablet extends StatelessWidget {
                               "Jessica Lee",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -154,54 +164,40 @@ class TeamMeembersTablet extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(right: 20),
-                padding: const EdgeInsets.all(30),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
-                    width: 1,
-                    style: BorderStyle.solid,
-                  ),
-                ),
+                padding: const EdgeInsets.symmetric(vertical: 18),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
                       "Project manager",
                       style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
-                          fontSize: 20,
+                          color: ColorsApp.whiteShadesColor_65,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                           height: 2),
                     ),
                     Row(
-                      mainAxisSize: MainAxisSize.max,
                       children: [
                         SizedBox(
-                          width: 70,
                           child: Stack(
                             children: [
                               Positioned(
                                 child: Image.asset(
+                                    width: 40,
+                                    height: 40,
                                     "assets/icons/icon_face_four.png"),
                               ),
                             ],
                           ),
                         ),
-                        const Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              "Michael Williams",
-                              style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ],
-                        )
+                        const Text(
+                          "Michael Williams",
+                          style: TextStyle(
+                            color: ColorsApp.absoluteColorWhite,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ],
                     )
                   ],

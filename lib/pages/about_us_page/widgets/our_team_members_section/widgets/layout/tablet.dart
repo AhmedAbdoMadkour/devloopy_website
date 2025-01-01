@@ -7,18 +7,19 @@ class CardOurTeamMemberTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1050,
+      height: 1550,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 4,
-          mainAxisExtent: 500,
-          crossAxisSpacing: 30,
+          crossAxisCount: 2,
+          mainAxisExtent: 358,
           mainAxisSpacing: 30,
+          crossAxisSpacing: 30,
         ),
         itemCount: 8,
         itemBuilder: (BuildContext context, int index) {
           return Container(
+            padding: const EdgeInsets.all(30),
             decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   begin: Alignment.topCenter,
@@ -28,8 +29,9 @@ class CardOurTeamMemberTablet extends StatelessWidget {
                   ],
                 ),
                 image: const DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage("assets/images/Abstract_Design.png")),
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/Abstract_Design.png"),
+                ),
                 borderRadius: BorderRadius.circular(24),
                 border: Border.all(
                   color: ColorsApp.greyShadesColor_06,
@@ -41,19 +43,23 @@ class CardOurTeamMemberTablet extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Image.asset("assets/images/team_member_one.png"),
+                      Image.asset(
+                        width: 108,
+                        height: 108,
+                        "assets/images/team_member_one.png",
+                      ),
                       const Text(
                         "John Smith",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
-                          fontSize: 22,
+                          fontSize: 18,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                       Container(
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 31,
-                          vertical: 14,
+                          horizontal: 20,
+                          vertical: 10,
                         ),
                         decoration: BoxDecoration(
                           gradient: const LinearGradient(
@@ -72,7 +78,7 @@ class CardOurTeamMemberTablet extends StatelessWidget {
                           "Co-Founder & CEO",
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -90,13 +96,23 @@ class CardOurTeamMemberTablet extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       GestureDetector(
-                        child: Image.asset("assets/icons/Button_insegram.png"),
+                        child: Image.asset(
+                          width: 52,
+                          height: 52,
+                          "assets/icons/Button_insegram.png",
+                        ),
                       ),
                       GestureDetector(
-                        child: Image.asset("assets/icons/Button_twitter.png"),
+                        child: Image.asset(
+                            width: 52,
+                            height: 52,
+                            "assets/icons/Button_twitter.png"),
                       ),
                       GestureDetector(
-                        child: Image.asset("assets/icons/Button_linkdin.png"),
+                        child: Image.asset(
+                            width: 52,
+                            height: 52,
+                            "assets/icons/Button_linkdin.png"),
                       ),
                     ],
                   ),

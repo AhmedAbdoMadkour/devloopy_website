@@ -19,17 +19,14 @@ class HeaderInformationSectionTablet extends StatelessWidget {
             child: Image.asset(
               'assets/images/backgroundservices1.png',
               height: 500,
-              width: 510,
-              //   width: 510,
+              width: 200,
               fit: BoxFit.cover,
             ),
           ),
-
           Positioned(
             child: Image.asset(
               'assets/images/Abstract_Design.png',
               height: 500,
-              width: 900,
               fit: BoxFit.cover,
             ),
           ),
@@ -42,18 +39,17 @@ class HeaderInformationSectionTablet extends StatelessWidget {
             child: Image.asset(
               'assets/images/backgroundservices.png',
               height: 500,
-              width: 510,
-              // width: 510,
+              width: 200,
               fit: BoxFit.cover,
             ),
           ),
 
           // Add other widgets on top if needed
           Container(
-            padding: const EdgeInsets.all(100),
-            margin: const EdgeInsets.only(right: 405, left: 100),
+            margin: const EdgeInsets.only(right: 100, left: 100),
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomTitelSectionTablet(
                   nameTitleSection: "Our Comprehensive ",

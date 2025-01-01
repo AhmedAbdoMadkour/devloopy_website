@@ -1,10 +1,10 @@
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_contact_phone/card_contact_phone.dart';
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_inquiry_form/card_inquiry_form.dart';
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_join_socialmedia/card_join_socialmedia.dart';
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_office_location/card_office_location.dart';
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_our_response/card_our_response.dart';
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_title_contact/card_title_contact.dart';
-import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_contact_email/card_contact_email.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_contact_email/layout/desktop.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_contact_phone/layout/desktop.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_inquiry_form/layout/desktop.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_join_socialmedia/layout/desktop.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_office_location/layout/desktop.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_our_response/layout/desktop.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_title_contact/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class TouchTodayScetionDeskTop extends StatelessWidget {
@@ -16,13 +16,13 @@ class TouchTodayScetionDeskTop extends StatelessWidget {
       padding: EdgeInsets.only(top: 30.0, left: 150, right: 150),
       child: Column(
         children: [
-          CardTitleContact(),
-          CardContactEmail(),
-          CardContactPhone(),
-          CardOfficeLocation(),
-          CardInquiryForm(),
-          CardOurResponse(),
-          CardJoinSocialmedia(),
+          CardTitleContactDeskTop(),
+          CardContactEmailDeskTop(),
+          CardContactPhoneDeskTop(),
+          CardOfficeLocationDeskTop(),
+          CardInquiryFormDeskTop(),
+          CardOurResponseDeskTop(),
+          CardJoinSocialmediaDeskTop(),
         ],
       ),
     );

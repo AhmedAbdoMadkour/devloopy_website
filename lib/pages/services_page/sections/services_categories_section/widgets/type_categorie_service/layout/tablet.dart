@@ -22,22 +22,26 @@ class TypeCategorieServiceTablet extends StatelessWidget {
                   ButtonTypeServices(
                     iconTypeService: "assets/icons/Icon_web_design.png",
                     nameTypeService: "Web Design",
+                    sizeFont: 16,
                   ),
                   SizedBox(height: 10),
                   ButtonTypeServices(
                     iconTypeService: "assets/icons/Icon_web_developer.png",
                     nameTypeService: "Web Development",
+                    sizeFont: 16,
                   ),
                   SizedBox(height: 10),
                   ButtonTypeServices(
                     iconTypeService:
                         "assets/icons/Icon_mobile_app_developer.png",
                     nameTypeService: "Mobile App Development",
+                    sizeFont: 16,
                   ),
                   SizedBox(height: 10),
                   ButtonTypeServices(
                     iconTypeService: "assets/icons/Icon_digital_marketing.png",
                     nameTypeService: "Digital Marketing",
+                    sizeFont: 16,
                   ),
                 ],
               )),

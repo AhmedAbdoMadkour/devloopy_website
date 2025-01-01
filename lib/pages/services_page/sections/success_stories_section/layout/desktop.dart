@@ -10,7 +10,11 @@ class SuccessStoriesSectionDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 80, right: 150, left: 150),
+      padding: const EdgeInsets.only(
+        top: 80,
+        right: 150,
+        left: 150,
+      ),
       child: Column(
         children: [
           const CustomTitelSectionDeskTop(
@@ -22,13 +26,7 @@ class SuccessStoriesSectionDeskTop extends StatelessWidget {
               description:
                   "At DigitX, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
           const SizedBox(height: 30),
-          const Row(
-            children: [
-              CardSuccessStoriesSectionDeskTop(),
-              SizedBox(width: 40),
-              CardSuccessStoriesSectionDeskTop(),
-            ],
-          ),
+          const CardSuccessStoriesSectionDeskTop(),
           const SizedBox(height: 40),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

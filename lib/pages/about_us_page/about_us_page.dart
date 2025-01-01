@@ -1,7 +1,4 @@
-import 'package:devloopy_website/pages/about_us_page/layout/desktop.dart';
-import 'package:devloopy_website/pages/about_us_page/layout/mobile.dart';
-import 'package:devloopy_website/pages/about_us_page/layout/tablet.dart';
-import 'package:devloopy_website/theme/responsive_layout.dart';
+import 'package:devloopy_website/pages/about_us_page/widgets/our_awards_section/our_awaeds_section.dart';
 import 'package:flutter/material.dart';
 
 class AboutUsPage extends StatelessWidget {
@@ -9,10 +6,20 @@ class AboutUsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ResponsiveLayout(
-      mobile: AboutUsPageMobile(),
-      tablet: AboutUsPageTablet(),
-      desktop: AboutUsPageDeskTop(),
+    return const Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            //  Navbar(),
+            //   HeaderInformationSection(),
+            //    OurTeamMembers(),
+            //   OurAchievementsSection(),
+            OurAwaedsSection(),
+            //  CTASection(),
+            // FooterSection(),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
-import 'package:devloopy_website/widgets/our_services_section/widgets/card_services_section/layout/tablet.dart';
+import 'package:devloopy_website/widgets/our_services_section/widgets/card_book_services/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class OurServicesSectionTablet extends StatelessWidget {
@@ -9,21 +9,23 @@ class OurServicesSectionTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 80.0),
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      margin: const EdgeInsets.only(
+        top: 50.0,
+        left: 13,
+        right: 13,
+      ),
       child: const Column(
         children: [
           CustomTitelSectionTablet(
             spantitlesection: "Our",
             nameTitleSection: " Services",
           ),
-          SizedBox(height: 20.0),
           CustomSecondDescriptionTablet(
             description:
-                "Our comprehensive range of services includes web design, mobile app development, SEO, social media marketing, and more. Whether you're a startup or an established enterprise, our experts will craft solutions that drive results.",
+                "At DigitX, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing",
           ),
-          SizedBox(height: 50.0),
-          CardServicesSectionTablet(),
+          SizedBox(height: 30.0),
+          CardBookServicesTablet(),
         ],
       ),
     );

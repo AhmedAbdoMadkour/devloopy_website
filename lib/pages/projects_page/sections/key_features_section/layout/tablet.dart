@@ -1,4 +1,4 @@
-import 'package:devloopy_website/pages/projects_page/sections/key_features_section/widgets/card_features_setion/card_features_section.dart';
+import 'package:devloopy_website/pages/projects_page/sections/key_features_section/widgets/card_features_setion/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
@@ -8,9 +8,9 @@ class KeyFeaturesSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 100.0, left: 150, right: 150),
-      child: Column(
+    return Container(
+      margin: const EdgeInsets.only(top: 60, left: 24, right: 24),
+      child: const Column(
         children: [
           CustomTitelSectionTablet(
             spantitlesection: "Key Features",
@@ -20,7 +20,7 @@ class KeyFeaturesSectionTablet extends StatelessWidget {
             description:
                 "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
           ),
-          CardFeaturesSection(),
+          CardFeaturesSectionTablet(),
         ],
       ),
     );

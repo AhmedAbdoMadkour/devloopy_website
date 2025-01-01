@@ -7,38 +7,57 @@ class TechnologiesUsedTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
-      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
-          width: 1,
-          style: BorderStyle.solid,
+      padding: const EdgeInsets.all(20),
+      decoration: const BoxDecoration(
+        border: Border(
+          right: BorderSide(
+            color: ColorsApp.greyShadesColor_12,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
+          left: BorderSide(
+            color: ColorsApp.greyShadesColor_12,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
         ),
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+      child: Column(
         children: [
           const Text(
             "Technologies Used",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 20,
+              fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
           ),
-          const SizedBox(width: 50),
+          const SizedBox(height: 10),
           Row(
-            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.asset("assets/icons/Icon_figma.png"),
-              const SizedBox(width: 50),
-              Image.asset("assets/icons/Icon_css.png"),
-              const SizedBox(width: 50),
-              Image.asset("assets/icons/Icon_html.png"),
-              const SizedBox(width: 50),
-              Image.asset("assets/icons/Icon_js.png"),
+              Image.asset(
+                width: 40,
+                height: 40,
+                "assets/icons/Icon_figma.png",
+              ),
+              const SizedBox(width: 6),
+              Image.asset(
+                width: 40,
+                height: 40,
+                "assets/icons/Icon_css.png",
+              ),
+              const SizedBox(width: 6),
+              Image.asset(
+                width: 40,
+                height: 40,
+                "assets/icons/Icon_html.png",
+              ),
+              const SizedBox(width: 6),
+              Image.asset(
+                width: 40,
+                height: 40,
+                "assets/icons/Icon_js.png",
+              ),
             ],
           )
         ],

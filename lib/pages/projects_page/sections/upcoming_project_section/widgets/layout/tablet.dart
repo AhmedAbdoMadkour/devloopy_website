@@ -7,18 +7,19 @@ class CardUpcomingProjectTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1597,
+      height: 1250,
       child: GridView.builder(
+        physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 750,
-          crossAxisSpacing: 40,
-          mainAxisSpacing: 40,
+          mainAxisExtent: 600,
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 20,
         ),
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
@@ -39,21 +40,27 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Image.asset("assets/icons/Icon_fitness_success.png"),
+                    Image.asset(
+                      width: 52,
+                      height: 52,
+                      "assets/icons/Icon_fitness_success.png",
+                    ),
                     const Text(
                       "Educational Learning App",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 28,
+                        fontSize: 18,
                         fontWeight: FontWeight.w600,
                       ),
                     )
                   ],
                 ),
                 Container(
-                  margin: const EdgeInsets.symmetric(vertical: 50),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  margin: const EdgeInsets.all(14),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 20,
+                  ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
@@ -62,17 +69,12 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: Row(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: const EdgeInsets.only(right: 50),
-                        decoration: const BoxDecoration(
-                            border: Border(
-                                right: BorderSide(
-                                    color: ColorsApp.greyShadesColor_10,
-                                    width: 1,
-                                    style: BorderStyle.solid))),
+                        decoration: const BoxDecoration(),
                         child: const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -80,7 +82,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                               "Category",
                               style: TextStyle(
                                   color: ColorsApp.whiteShadesColor_55,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
                             ),
@@ -88,12 +90,15 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                               "E-commerce",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 20,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
                           ],
                         ),
+                      ),
+                      const Divider(
+                        color: ColorsApp.greyShadesColor_10,
                       ),
                       const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,7 +107,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                             "Expected Completion",
                             style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
                           ),
@@ -110,7 +115,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                             "Q4 2024",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -120,7 +125,8 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(40),
+                  padding: const EdgeInsets.all(20),
+                  margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
                       begin: Alignment.topLeft,
@@ -143,17 +149,20 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                       Text(
                         "Project Description",
                         style: TextStyle(
-                            color: ColorsApp.absoluteColorWhite,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w400,
-                            height: 2),
+                          color: ColorsApp.absoluteColorWhite,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          height: 2,
+                        ),
                       ),
                       Text(
-                        "We are collaborating with an eco-conscious startup to create an innovative e-commerce platform that promotes sustainable products and environmentally friendly practices. The platform will empower consumers to make eco-conscious choices while supporting sustainable businesses. This project aligns with our commitment to creating digital solutions that contribute to a greener future.",
+                        maxLines: 12,
+                        "Our team is collaborating with a leading healthcare provider to enhance their existing platform. The project aims to streamline user experiences, optimize database performance, and implement advanced security measures to safeguard patient data. This ambitious undertaking will elevate the platform's capabilities and revolutionize healthcare accessibility for users.",
                         style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_55,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400),
+                          color: ColorsApp.whiteShadesColor_55,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                     ],
                   ),

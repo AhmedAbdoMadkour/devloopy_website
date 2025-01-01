@@ -7,14 +7,33 @@ class MethodsUesdMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // margin: const EdgeInsets.all(30),
-      // padding: const EdgeInsets.all(50),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(
+      padding: const EdgeInsets.only(
+        right: 18,
+        left: 18,
+        bottom: 18,
+      ),
+      decoration: const BoxDecoration(
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(12),
+          bottomRight: Radius.circular(12),
+        ),
+        border: Border(
+          right: BorderSide(
             color: ColorsApp.greyShadesColor_12,
             width: 1,
-            style: BorderStyle.solid),
+            style: BorderStyle.solid,
+          ),
+          bottom: BorderSide(
+            color: ColorsApp.greyShadesColor_12,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
+          left: BorderSide(
+            color: ColorsApp.greyShadesColor_12,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,72 +42,45 @@ class MethodsUesdMobile extends StatelessWidget {
             "Methods Used",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 22,
+              fontSize: 18,
               fontWeight: FontWeight.w400,
+              height: 2,
             ),
           ),
-          const SizedBox(height: 20),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                  color: ColorsApp.greyShadesColor_12,
-                  width: 1,
-                  style: BorderStyle.solid),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  decoration: const BoxDecoration(
-                    border: Border(
-                      right: BorderSide(
-                          color: ColorsApp.greyShadesColor_12,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                  ),
-                  child: Container(
-                    width: 242,
-                    height: 63,
-                    margin: const EdgeInsets.symmetric(horizontal: 15),
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 18,
-                      horizontal: 24,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                    child: const Text(
-                      "Agile Development",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 5),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 8,
+                  horizontal: 5,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  border: Border.all(
+                      color: ColorsApp.greyShadesColor_12,
+                      width: 1,
+                      style: BorderStyle.solid),
+                ),
+                child: const Text(
+                  "Agile Development",
+                  style: TextStyle(
+                    color: ColorsApp.whiteShadesColor_65,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
-                Container(
-                  width: 242,
-                  height: 63,
-                  decoration: const BoxDecoration(
-                    border: Border(
-                      right: BorderSide(
-                          color: ColorsApp.greyShadesColor_12,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                  ),
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
                     padding: const EdgeInsets.symmetric(
-                        vertical: 18, horizontal: 24),
+                      vertical: 8,
+                      horizontal: 8,
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
@@ -99,20 +91,18 @@ class MethodsUesdMobile extends StatelessWidget {
                     child: const Text(
                       "User Testing",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        color: ColorsApp.whiteShadesColor_65,
+                        fontSize: 12,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  width: 242,
-                  height: 63,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
+                  Container(
+                    margin: const EdgeInsets.all(5),
                     padding: const EdgeInsets.symmetric(
-                        vertical: 18, horizontal: 24),
+                      vertical: 8,
+                      horizontal: 8,
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
@@ -123,16 +113,16 @@ class MethodsUesdMobile extends StatelessWidget {
                     child: const Text(
                       "A/B Testing",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        color: ColorsApp.whiteShadesColor_65,
+                        fontSize: 12,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
-          )
+                ],
+              ),
+            ],
+          ),
         ],
       ),
     );

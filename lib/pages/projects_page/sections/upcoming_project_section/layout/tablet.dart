@@ -8,9 +8,9 @@ class UpcomingProjectSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 80, left: 150, right: 150),
-      child: Column(
+    return Container(
+      margin: const EdgeInsets.only(top: 50, left: 24, right: 24),
+      child: const Column(
         children: [
           CustomTitelSectionTablet(
             spantitlesection: "Upcoming",
@@ -19,7 +19,7 @@ class UpcomingProjectSectionTablet extends StatelessWidget {
           CustomSecondDescriptionTablet(
               description:
                   "descriptiAt DigitX, we are continually working on exciting new projects to push the boundaries of digital innovation and deliver exceptional solutions to our valued clients. While we are thrilled to share our upcoming projects with you, we understand the importance of confidentiality and safeguarding sensitive information. Therefore, we will provide a brief overview of the upcoming projects while keeping specific details concealed.onSection"),
-          SizedBox(height: 50),
+          SizedBox(height: 30),
           CardUpcomingProjectTablet(),
         ],
       ),

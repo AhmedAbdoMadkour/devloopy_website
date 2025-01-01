@@ -1,4 +1,4 @@
-import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/type_categorie_service.dart';
+import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,7 @@ class ServicesCategoriesSectionTablet extends StatelessWidget {
             descriptionSection:
                 "At DigitX, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing.",
           ),
-          TypeCategorieService(),
+          TypeCategorieServiceTablet(),
         ],
       ),
     );
