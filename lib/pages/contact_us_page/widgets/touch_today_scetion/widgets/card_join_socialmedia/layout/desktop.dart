@@ -7,7 +7,7 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 40),
+      margin: const EdgeInsets.symmetric(vertical: 50),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -54,14 +54,14 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
                             "assets/images/image_Button_linkedin.png"),
                       ),
                     ),
-                    const SizedBox(width: 6),
+                    const SizedBox(width: 10),
                     GestureDetector(
                       child: const Image(
                         image: AssetImage(
                             "assets/images/image_Button_instagram.png"),
                       ),
                     ),
-                    const SizedBox(width: 6),
+                    const SizedBox(width: 10),
                     GestureDetector(
                       child: const Image(
                         image: AssetImage("assets/images/image_Button_x.png"),
@@ -80,6 +80,7 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 const Text(
+                  textAlign: TextAlign.center,
                   "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_50,

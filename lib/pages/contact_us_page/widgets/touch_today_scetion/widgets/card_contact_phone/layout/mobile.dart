@@ -7,20 +7,20 @@ class CardContactPhoneMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
+      margin: const EdgeInsets.only(top: 30),
       child: Column(
         children: [
           const Text(
             "Contact Us By Phone",
             style: TextStyle(
-              height: 5,
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 14,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.only(top: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -39,14 +39,18 @@ class CardContactPhoneMobile extends StatelessWidget {
                       "General Enquiries",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
+                      padding: const EdgeInsets.only(
+                        top: 8,
+                        right: 8,
+                        bottom: 8,
+                        left: 20,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -59,31 +63,28 @@ class CardContactPhoneMobile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(
-                            children: [
-                              SizedBox(width: 15),
-                              Icon(
-                                Icons.phone,
+                          const Row(children: [
+                            Icon(
+                              Icons.phone_outlined,
+                              color: ColorsApp.absoluteColorWhite,
+                              size: 20,
+                              weight: 20,
+                            ),
+                            Text(
+                              "+1-XXX-XXX-XXXX",
+                              style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                size: 24,
-                                weight: 24,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
                               ),
-                              Text(
-                                "+1-XXX-XXX-XXXX",
-                                style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ]),
                           GestureDetector(
                             child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -96,10 +97,10 @@ class CardContactPhoneMobile extends StatelessWidget {
                               child: const Icon(
                                 Icons.arrow_right_alt,
                                 color: ColorsApp.absoluteColorWhite,
-                                weight: 28,
+                                weight: 13.6,
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     )
@@ -112,14 +113,18 @@ class CardContactPhoneMobile extends StatelessWidget {
                       "Business Collaborations",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
+                      padding: const EdgeInsets.only(
+                        top: 8,
+                        right: 8,
+                        bottom: 8,
+                        left: 20,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -134,18 +139,17 @@ class CardContactPhoneMobile extends StatelessWidget {
                         children: [
                           const Row(
                             children: [
-                              SizedBox(width: 15),
                               Icon(
-                                Icons.phone,
+                                Icons.phone_outlined,
                                 color: ColorsApp.absoluteColorWhite,
-                                size: 24,
-                                weight: 24,
+                                size: 20,
+                                weight: 20,
                               ),
                               Text(
                                 "+1-XXX-XXX-XXXX",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -153,10 +157,10 @@ class CardContactPhoneMobile extends StatelessWidget {
                           ),
                           GestureDetector(
                             child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -169,10 +173,10 @@ class CardContactPhoneMobile extends StatelessWidget {
                               child: const Icon(
                                 Icons.arrow_right_alt,
                                 color: ColorsApp.absoluteColorWhite,
-                                weight: 28,
+                                weight: 13.6,
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     )
@@ -185,14 +189,18 @@ class CardContactPhoneMobile extends StatelessWidget {
                       "Free Consultation",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
+                      padding: const EdgeInsets.only(
+                        top: 8,
+                        right: 8,
+                        bottom: 8,
+                        left: 20,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -205,31 +213,28 @@ class CardContactPhoneMobile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(
-                            children: [
-                              SizedBox(width: 15),
-                              Icon(
-                                Icons.phone,
+                          const Row(children: [
+                            Icon(
+                              Icons.phone_outlined,
+                              color: ColorsApp.absoluteColorWhite,
+                              size: 20,
+                              weight: 20,
+                            ),
+                            Text(
+                              "+1-XXX-XXX-XXXX",
+                              style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                size: 24,
-                                weight: 24,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
                               ),
-                              Text(
-                                "+1-XXX-XXX-XXXX",
-                                style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ]),
                           GestureDetector(
                             child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -242,10 +247,10 @@ class CardContactPhoneMobile extends StatelessWidget {
                               child: const Icon(
                                 Icons.arrow_right_alt,
                                 color: ColorsApp.absoluteColorWhite,
-                                weight: 28,
+                                weight: 13.6,
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     )

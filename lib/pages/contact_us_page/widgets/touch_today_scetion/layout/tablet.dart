@@ -12,9 +12,13 @@ class TouchTodayScetionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 30.0, left: 150, right: 150),
-      child: Column(
+    return Container(
+      padding: const EdgeInsets.only(
+        left: 24,
+        right: 24,
+      ),
+      margin: const EdgeInsets.only(top: 60),
+      child: const Column(
         children: [
           CardTitleContactTablet(),
           CardContactEmailTablet(),

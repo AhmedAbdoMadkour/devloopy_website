@@ -1,3 +1,9 @@
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_contact_email/layout/mobile.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_contact_phone/layout/mobile.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_inquiry_form/layout/mobile.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_join_socialmedia/layout/mobile.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_office_location/layout/mobile.dart';
+import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_our_response/layout/mobile.dart';
 import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/widgets/card_title_contact/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
@@ -9,18 +15,18 @@ class TouchTodayScetionMobile extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.only(
         top: 30.0,
-        left: 24,
-        right: 24,
+        left: 10,
+        right: 10,
       ),
       child: Column(
         children: [
           CardTitleContactMobile(),
-          //  CardContactEmailMobile(),
-          //    CardContactPhoneMobile(),
-          //   CardOfficeLocationMobile(),
-          //   CardInquiryFormMobile(),
-          //   CardOurResponseMobile(),
-          //  CardJoinSocialmediaMobile(),
+          CardContactEmailMobile(),
+          CardContactPhoneMobile(),
+          CardOfficeLocationMobile(),
+          CardInquiryFormMobile(),
+          CardOurResponseMobile(),
+          CardJoinSocialmediaMobile(),
         ],
       ),
     );

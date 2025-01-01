@@ -30,7 +30,7 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
           const SizedBox(height: 50),
           Container(
             padding: const EdgeInsets.all(50),
-            height: 800,
+            height: 650,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -42,7 +42,6 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisExtent: 700,
                 crossAxisSpacing: 50,
                 mainAxisSpacing: 50,
               ),
@@ -77,19 +76,12 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                       Column(
                         children: [
                           Image.asset(
-                              "assets/images/iamge_office_location.png"),
-                          Container(
-                            width: 194,
-                            height: 55,
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 18,
-                              vertical: 14,
-                            ),
-                          )
+                            "assets/images/iamge_office_location.png",
+                          ),
                         ],
                       ),
                       Container(
-                        margin: const EdgeInsets.symmetric(vertical: 20),
+                        margin: const EdgeInsets.symmetric(vertical: 10),
                         child: Column(
                           children: [
                             const Text(
@@ -110,13 +102,17 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                            const SizedBox(height: 34),
+                            const SizedBox(height: 24),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  width: 200.0,
-                                  height: 51.0,
+                                  padding: const EdgeInsets.only(
+                                    top: 10,
+                                    right: 10,
+                                    bottom: 10,
+                                    left: 24,
+                                  ),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(50.0),
                                     border: Border.all(

@@ -15,7 +15,7 @@ class CardInquiryFormTablet extends StatelessWidget {
             style: TextStyle(
               height: 3,
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 24,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -23,13 +23,12 @@ class CardInquiryFormTablet extends StatelessWidget {
             "Please fill in the following details, and we'll get back to you within 24 hours.",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
-              fontSize: 18,
+              fontSize: 16,
               fontWeight: FontWeight.w600,
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(80),
-            margin: const EdgeInsets.only(top: 50),
+            margin: const EdgeInsets.only(top: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -40,7 +39,7 @@ class CardInquiryFormTablet extends StatelessWidget {
             ),
             child: Form(
               child: Container(
-                margin: const EdgeInsets.all(50),
+                margin: const EdgeInsets.all(20),
                 child: Column(
                   children: [
                     Row(
@@ -55,7 +54,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Name",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -74,7 +73,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Enter your Name",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -96,7 +95,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Email",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -115,7 +114,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Enter your Email",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -137,7 +136,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Phone Number",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -156,7 +155,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Enter your Phone Number",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -183,7 +182,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Select Service",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -202,7 +201,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Select Your Service",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -224,7 +223,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Company / organization Name",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -243,7 +242,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Enter Name",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -265,7 +264,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Subject",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -284,7 +283,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Select Your Subject",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -310,7 +309,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 "Message",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
                                 ),
@@ -334,7 +333,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                     hintText: "Entar Your Message",
                                     hintStyle: TextStyle(
                                       color: ColorsApp.greyShadesColor_40,
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     border: OutlineInputBorder(
@@ -369,7 +368,7 @@ class CardInquiryFormTablet extends StatelessWidget {
                                           "Send Your Inquiry",
                                           style: TextStyle(
                                             fontFamily: FontsApp.fontFamilySora,
-                                            fontSize: 16.0,
+                                            fontSize: 14.0,
                                             fontWeight: FontWeight.w400,
                                           ),
                                         ),

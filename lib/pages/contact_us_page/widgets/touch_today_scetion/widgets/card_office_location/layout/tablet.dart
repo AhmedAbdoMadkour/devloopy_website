@@ -7,30 +7,33 @@ class CardOfficeLocationTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
+      margin: const EdgeInsets.only(top: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           const Text(
             "Office Locations",
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 24,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
           const Text(
+            textAlign: TextAlign.center,
             "Visit our offices to have a face-to-face discussion with our team. We have locations in",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
-              fontSize: 18,
+              fontSize: 14,
               fontWeight: FontWeight.w400,
             ),
           ),
           const SizedBox(height: 50),
           Container(
-            padding: const EdgeInsets.all(50),
-            height: 800,
+            padding: const EdgeInsets.all(24),
+            height: 560,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -42,16 +45,16 @@ class CardOfficeLocationTablet extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisExtent: 700,
-                crossAxisSpacing: 50,
-                mainAxisSpacing: 50,
+                mainAxisExtent: 440,
+                crossAxisSpacing: 30,
+                mainAxisSpacing: 30,
               ),
               itemCount: 2,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 50,
-                    vertical: 80,
+                    horizontal: 24,
+                    vertical: 50,
                   ),
                   decoration: BoxDecoration(
                     image: const DecorationImage(
@@ -77,15 +80,8 @@ class CardOfficeLocationTablet extends StatelessWidget {
                       Column(
                         children: [
                           Image.asset(
+                              width: 114,
                               "assets/images/iamge_office_location.png"),
-                          Container(
-                            width: 194,
-                            height: 55,
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 18,
-                              vertical: 14,
-                            ),
-                          )
                         ],
                       ),
                       Container(
@@ -93,20 +89,22 @@ class CardOfficeLocationTablet extends StatelessWidget {
                         child: Column(
                           children: [
                             const Text(
+                              textAlign: TextAlign.center,
                               "New York City",
                               style: TextStyle(
                                 height: 2,
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 24,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
                             const Text(
+                              textAlign: TextAlign.center,
                               "123 Main Street, Suite 456, New York, NY 10001",
                               style: TextStyle(
                                 height: 2,
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -115,8 +113,12 @@ class CardOfficeLocationTablet extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  width: 200.0,
-                                  height: 51.0,
+                                  padding: const EdgeInsets.only(
+                                    top: 10,
+                                    right: 10,
+                                    bottom: 10,
+                                    left: 16,
+                                  ),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(50.0),
                                     border: Border.all(
