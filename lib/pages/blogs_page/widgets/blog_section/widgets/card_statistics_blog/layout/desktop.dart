@@ -7,7 +7,7 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 50),
+      margin: const EdgeInsets.symmetric(vertical: 30),
       child: Row(
         children: [
           Image.asset("assets/images/image_blog_statistics.png"),
@@ -26,7 +26,9 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                   ),
                 ),
                 const Text(
-                  " Stay ahead of the design curve with insights into the latest web design trends. From immersive user experiences to bold color choices, explore the design elements that will dominate the digital landscape in 2023 and beyond Read More...",
+                  maxLines: 12,
+                  overflow: TextOverflow.ellipsis,
+                  " Stay ahead of the design curve with insights into the latest web design trends. From immersive user experiences to bold color choices, explore the design elements that will dominate the digital landscape in 2023 and beyond",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_55,
                     fontSize: 18,

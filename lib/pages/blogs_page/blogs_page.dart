@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/blog_section.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
 import 'package:devloopy_website/widgets/footer_section/footer_section.dart';
@@ -12,6 +13,7 @@ class BlogsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: ColorsApp.absoluteColorBlack,
       body: SingleChildScrollView(
         child: Column(
           children: [

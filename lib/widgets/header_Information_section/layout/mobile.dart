@@ -12,6 +12,8 @@ class HeaderInformationSectionMobile extends StatelessWidget {
         Image.asset(
           'assets/images/image_header_mobile_up.png',
           fit: BoxFit.cover,
+          width: double.infinity,
+          height: 100,
         ),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -28,8 +30,8 @@ class HeaderInformationSectionMobile extends StatelessWidget {
             children: [
               SizedBox(height: 14),
               CustomTitelSectionMobile(
-                nameTitleSection: " in the Digital World",
-                spantitlesection: "Unlock Your Potential ",
+                nameTitleSection: " Digital Journey",
+                spantitlesection: "Empowering Your ",
               ),
               SizedBox(height: 10),
               CustomSecondDescriptionMobile(
@@ -43,6 +45,8 @@ class HeaderInformationSectionMobile extends StatelessWidget {
         Image.asset(
           'assets/images/image_header_mobile_down.png',
           fit: BoxFit.cover,
+          width: double.infinity,
+          height: 100,
         ),
       ],
     );

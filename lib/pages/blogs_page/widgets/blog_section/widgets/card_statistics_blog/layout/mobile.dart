@@ -7,11 +7,11 @@ class CardStatisticsBlogMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 50),
+      margin: const EdgeInsets.symmetric(vertical: 30),
       child: Column(
         children: [
           Image.asset("assets/images/image_blog_statistics.png"),
-          const SizedBox(width: 50),
+          const SizedBox(width: 40),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -19,22 +19,44 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                 "Web Design Trends Shaping 2023",
                 style: TextStyle(
                   color: ColorsApp.absoluteColorWhite,
-                  fontSize: 24,
+                  fontSize: 18,
                   fontWeight: FontWeight.w600,
                   height: 3,
                 ),
               ),
-              const Text(
-                " Stay ahead of the design curve with insights into the latest web design trends. From immersive user experiences to bold color choices, explore the design elements that will dominate the digital landscape in 2023 and beyond Read More...",
-                style: TextStyle(
-                  color: ColorsApp.whiteShadesColor_55,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w400,
+              RichText(
+                maxLines: 5,
+                overflow: TextOverflow.ellipsis,
+                text: const TextSpan(
+                  children: [
+                    TextSpan(
+                      text:
+                          " Stay ahead of the design curve with insights into the latest web design trends. From immersive user experiences to bold color choices, explore the design elements that will dominate the digital landscape in 2023 and beyond",
+                      style: TextStyle(
+                        color: ColorsApp.whiteShadesColor_55,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "ReedMore",
+                      style: TextStyle(
+                        color: ColorsApp.absoluteColorWhite,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )
+                  ],
                 ),
               ),
+              const SizedBox(
+                height: 26,
+              ),
               Container(
+                width: double.infinity,
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                    const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                margin: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
@@ -46,7 +68,8 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
-                      padding: const EdgeInsets.only(right: 50),
+                      width: double.infinity,
+                      padding: const EdgeInsets.only(bottom: 10),
                       decoration: const BoxDecoration(
                         border: Border(
                           bottom: BorderSide(
@@ -62,7 +85,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "Read Time",
                             style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
                           ),
@@ -70,7 +93,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "6 minutes",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -78,13 +101,16 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.only(right: 50),
+                      width: double.infinity,
+                      padding: const EdgeInsets.only(bottom: 10),
                       decoration: const BoxDecoration(
-                          border: Border(
-                              bottom: BorderSide(
-                                  color: ColorsApp.greyShadesColor_10,
-                                  width: 1,
-                                  style: BorderStyle.solid))),
+                        border: Border(
+                          bottom: BorderSide(
+                              color: ColorsApp.greyShadesColor_10,
+                              width: 1,
+                              style: BorderStyle.solid),
+                        ),
+                      ),
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -92,7 +118,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "Author",
                             style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
                           ),
@@ -100,7 +126,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "Laura Turner",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -108,13 +134,16 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.only(right: 50),
+                      width: double.infinity,
+                      padding: const EdgeInsets.only(bottom: 10),
                       decoration: const BoxDecoration(
-                          border: Border(
-                              bottom: BorderSide(
-                                  color: ColorsApp.greyShadesColor_10,
-                                  width: 1,
-                                  style: BorderStyle.solid))),
+                        border: Border(
+                          bottom: BorderSide(
+                              color: ColorsApp.greyShadesColor_10,
+                              width: 1,
+                              style: BorderStyle.solid),
+                        ),
+                      ),
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -122,7 +151,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "Published Date",
                             style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
                           ),
@@ -130,7 +159,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "15 / 01 / 2023",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -138,7 +167,8 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.only(right: 50),
+                      width: double.infinity,
+                      padding: const EdgeInsets.only(bottom: 10),
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -146,7 +176,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "Category",
                             style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
                           ),
@@ -154,7 +184,7 @@ class CardStatisticsBlogMobile extends StatelessWidget {
                             "Design",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),
                           ),

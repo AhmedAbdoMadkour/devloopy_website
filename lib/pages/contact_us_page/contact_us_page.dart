@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/contact_us_page/widgets/header_information_contactus/header_information_contactus.dart';
 import 'package:devloopy_website/pages/contact_us_page/widgets/touch_today_scetion/touch_today_scetion.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
@@ -12,6 +13,7 @@ class ContactUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: ColorsApp.absoluteColorBlack,
       body: SingleChildScrollView(
         child: Column(
           children: [
