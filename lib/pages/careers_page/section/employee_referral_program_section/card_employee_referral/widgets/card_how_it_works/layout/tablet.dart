@@ -1,19 +1,20 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class CardHowItWorks extends StatelessWidget {
-  const CardHowItWorks({super.key});
+class CardHowItWorksTablet extends StatelessWidget {
+  const CardHowItWorksTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          height: 100,
+          height: 75,
           width: double.infinity,
           alignment: Alignment.center,
           decoration: const BoxDecoration(
             image: DecorationImage(
+              fit: BoxFit.cover,
               image: AssetImage("assets/images/Abstract_Design.png"),
             ),
             border: Border(
@@ -28,21 +29,21 @@ class CardHowItWorks extends StatelessWidget {
             "How it Works",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 24,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
         ),
         Container(
-          padding: const EdgeInsets.all(24),
-          height: 800,
+          padding: const EdgeInsets.all(16),
+          height: 950,
           child: GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 1,
-              mainAxisExtent: 600,
-              crossAxisSpacing: 30,
-              mainAxisSpacing: 30,
+              crossAxisCount: 2,
+              mainAxisExtent: 288,
+              mainAxisSpacing: 24,
+              crossAxisSpacing: 24,
             ),
             itemCount: 5,
             itemBuilder: (BuildContext context, int index) {
@@ -66,11 +67,12 @@ class CardHowItWorks extends StatelessWidget {
                   children: [
                     Container(
                       width: double.infinity,
-                      height: 100,
+                      height: 75,
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20)),
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage(
@@ -83,14 +85,14 @@ class CardHowItWorks extends StatelessWidget {
                           "Step 01",
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
-                            fontSize: 24,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.all(40),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -99,15 +101,17 @@ class CardHowItWorks extends StatelessWidget {
                             style: TextStyle(
                               height: 3,
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                           Text(
+                            maxLines: 6,
+                            overflow: TextOverflow.ellipsis,
                             "If you know someone who would be a great fit for one of our open positions, refer them to us! Share the job listing with your contacts, friends, or former colleagues who have the relevant skills and experience.",
                             style: TextStyle(
                               color: ColorsApp.whiteShadesColor_55,
-                              fontSize: 18,
+                              fontSize: 14,
                               fontWeight: FontWeight.w400,
                             ),
                           ),

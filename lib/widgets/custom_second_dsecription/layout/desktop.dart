@@ -8,11 +8,12 @@ class CustomSecondDescriptionDeskTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       description,
-      textAlign: TextAlign.center,
+      textAlign: TextAlign.start,
       style: const TextStyle(
-          color: ColorsApp.whiteShadesColor_50,
-          fontSize: 18.0,
-          fontWeight: FontWeight.w400),
+        color: ColorsApp.whiteShadesColor_50,
+        fontSize: 18.0,
+        fontWeight: FontWeight.w400,
+      ),
     );
   }
 }

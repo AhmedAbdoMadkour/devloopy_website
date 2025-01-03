@@ -1,24 +1,50 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class CardStepsApplyDeskTop extends StatelessWidget {
-  const CardStepsApplyDeskTop({super.key});
+class CardHowItWorksMobile extends StatelessWidget {
+  const CardHowItWorksMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: 930,
+        Container(
+          height: 75,
+          width: double.infinity,
+          alignment: Alignment.center,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage("assets/images/Abstract_Design.png"),
+            ),
+            border: Border(
+              bottom: BorderSide(
+                color: ColorsApp.greyShadesColor_12,
+                width: 1,
+                style: BorderStyle.solid,
+              ),
+            ),
+          ),
+          child: const Text(
+            "How it Works",
+            style: TextStyle(
+              color: ColorsApp.absoluteColorWhite,
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.all(16),
+          height: 1600,
           child: GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              mainAxisExtent: 430,
-              crossAxisSpacing: 30,
+              crossAxisCount: 1,
+              mainAxisExtent: 288,
               mainAxisSpacing: 30,
             ),
-            itemCount: 6,
+            itemCount: 5,
             itemBuilder: (BuildContext context, int index) {
               return Container(
                 decoration: BoxDecoration(
@@ -40,7 +66,7 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                   children: [
                     Container(
                       width: double.infinity,
-                      height: 100,
+                      height: 75,
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
@@ -58,31 +84,33 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                           "Step 01",
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
-                            fontSize: 24,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.all(30),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Explore Job Listings",
+                            "Refer Qualified Candidates",
                             style: TextStyle(
                               height: 3,
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                           Text(
-                            "Visit our website's \"Careers\" page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
+                            maxLines: 7,
+                            overflow: TextOverflow.ellipsis,
+                            "If you know someone who would be a great fit for one of our open positions, refer them to us! Share the job listing with your contacts, friends, or former colleagues who have the relevant skills and experience.",
                             style: TextStyle(
                               color: ColorsApp.whiteShadesColor_55,
-                              fontSize: 18,
+                              fontSize: 14,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -95,44 +123,6 @@ class CardStepsApplyDeskTop extends StatelessWidget {
             },
           ),
         ),
-        Container(
-          padding: const EdgeInsets.all(50),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(
-              color: ColorsApp.greyShadesColor_12,
-              width: 1,
-              style: BorderStyle.solid,
-            ),
-          ),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Image.asset("assets/images/icon_toapply.png"),
-                  const SizedBox(width: 10),
-                  const Text(
-                    "We value your interest in DigitX",
-                    style: TextStyle(
-                      color: ColorsApp.absoluteColorWhite,
-                      fontSize: 24,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )
-                ],
-              ),
-              const SizedBox(height: 6),
-              const Text(
-                "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
-                style: TextStyle(
-                  color: ColorsApp.whiteShadesColor_50,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w400,
-                ),
-              )
-            ],
-          ),
-        )
       ],
     );
   }

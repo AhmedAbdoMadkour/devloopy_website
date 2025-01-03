@@ -7,22 +7,18 @@ class CardStepsApplyMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(
-        top: 80,
-        right: 24,
-        left: 24,
-      ),
+      margin: const EdgeInsets.only(top: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
           SizedBox(
-            height: 3300,
+            height: 1830,
             child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 1,
-                mainAxisExtent: 500,
-                crossAxisSpacing: 30,
-                mainAxisSpacing: 30,
+                mainAxisExtent: 280,
+                mainAxisSpacing: 24,
               ),
               itemCount: 6,
               itemBuilder: (BuildContext context, int index) {
@@ -63,14 +59,14 @@ class CardStepsApplyMobile extends StatelessWidget {
                             "Step 01",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.all(40),
+                        padding: EdgeInsets.symmetric(horizontal: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -79,15 +75,17 @@ class CardStepsApplyMobile extends StatelessWidget {
                               style: TextStyle(
                                 height: 3,
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 20,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
                             Text(
+                              maxLines: 6,
+                              overflow: TextOverflow.ellipsis,
                               "Visit our website's \"Careers\" page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -101,7 +99,10 @@ class CardStepsApplyMobile extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24,
+              vertical: 30,
+            ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -114,7 +115,11 @@ class CardStepsApplyMobile extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset("assets/images/icon_toapply.png"),
+                    Image.asset(
+                      width: 56,
+                      height: 56,
+                      "assets/images/icon_toapply.png",
+                    ),
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Text(
@@ -130,10 +135,12 @@ class CardStepsApplyMobile extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
                 const Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 8,
                   "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_50,
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),
                 )

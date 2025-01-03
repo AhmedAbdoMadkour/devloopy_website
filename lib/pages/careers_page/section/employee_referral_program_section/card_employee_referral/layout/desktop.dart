@@ -1,6 +1,6 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/pages/careers_page/section/employee_referral_program_section/card_employee_referral/widgets/card_how_it_works.dart';
-import 'package:devloopy_website/pages/careers_page/section/employee_referral_program_section/card_employee_referral/widgets/card_rewards_employee.dart';
+import 'package:devloopy_website/pages/careers_page/section/employee_referral_program_section/card_employee_referral/widgets/card_how_it_works/layout/desktop.dart';
+import 'package:devloopy_website/pages/careers_page/section/employee_referral_program_section/card_employee_referral/widgets/card_rewards_employee/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class CardEmployeeReferralDeskTop extends StatelessWidget {
@@ -19,8 +19,8 @@ class CardEmployeeReferralDeskTop extends StatelessWidget {
       ),
       child: const Column(
         children: [
-          CardHowItWorks(),
-          CardRewardsEmployee(),
+          CardHowItWorksDeskTop(),
+          CardRewardsEmployeeDeskTop(),
         ],
       ),
     );

@@ -1,7 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 

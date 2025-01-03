@@ -14,6 +14,7 @@ class HeaderInformationSectionMobile extends StatelessWidget {
           fit: BoxFit.cover,
         ),
         Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           decoration: const BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
@@ -27,13 +28,13 @@ class HeaderInformationSectionMobile extends StatelessWidget {
             children: [
               SizedBox(height: 14),
               CustomTitelSectionMobile(
-                nameTitleSection: " in the Digital Age",
-                spantitlesection: "Elevating Brands",
+                nameTitleSection: " in the Digital World",
+                spantitlesection: "Unlock Your Potential ",
               ),
               SizedBox(height: 10),
               CustomSecondDescriptionMobile(
                 description:
-                    "Welcome to DigitX, your trusted partner in the dynamic world of digital solutions. We are a passionate team of creative minds, tech enthusiasts, and digital strategists, dedicated to empowering businesses and individuals in the digital realm. Our mission is to deliver exceptional results that drive success, create meaningful connections, and bring your digital vision to life. With a customer-centric approach and a focus on innovation, we are committed to being at the forefront of the ever-evolving digital landscape.",
+                    "At DigitX, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
               ),
               SizedBox(height: 14),
             ],
