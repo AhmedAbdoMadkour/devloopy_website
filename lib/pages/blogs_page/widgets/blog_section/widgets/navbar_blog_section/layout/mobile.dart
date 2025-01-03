@@ -7,9 +7,9 @@ class NavbarBlogSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 700,
-      height: 80,
-      padding: const EdgeInsets.all(14),
+      width: 465,
+      height: 65,
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: const Color(0xff1a1a1a),
         borderRadius: BorderRadius.circular(100),
@@ -24,11 +24,14 @@ class NavbarBlogSectionMobile extends StatelessWidget {
         itemCount: 4,
         itemBuilder: (context, index) {
           return Container(
-            width: 100,
-            padding: const EdgeInsets.symmetric(
-              horizontal: 24,
-              vertical: 12,
+            height: 45,
+            padding: const EdgeInsets.only(
+              top: 12,
+              right: 24,
+              bottom: 12,
+              left: 24,
             ),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
             decoration: BoxDecoration(
               color: const Color(0xff1a1a1a),
               borderRadius: BorderRadius.circular(100),
@@ -42,89 +45,12 @@ class NavbarBlogSectionMobile extends StatelessWidget {
               "All",
               style: TextStyle(
                 color: ColorsApp.whiteShadesColor_50,
-                fontSize: 18,
+                fontSize: 14,
                 fontWeight: FontWeight.w400,
               ),
             ),
           );
         },
-        //  Row(
-        //   children: [
-
-        //     const SizedBox(width: 10),
-        //     Container(
-        //       padding: const EdgeInsets.symmetric(
-        //         horizontal: 34,
-        //         vertical: 16,
-        //       ),
-        //       decoration: BoxDecoration(
-        //         color: const Color(0xff1a1a1a),
-        //         borderRadius: BorderRadius.circular(100),
-        //         border: Border.all(
-        //           color: ColorsApp.greyShadesColor_15,
-        //           width: 1,
-        //           style: BorderStyle.solid,
-        //         ),
-        //       ),
-        //       child: const Text(
-        //         "Business",
-        //         style: TextStyle(
-        //           color: ColorsApp.whiteShadesColor_50,
-        //           fontSize: 18,
-        //           fontWeight: FontWeight.w400,
-        //         ),
-        //       ),
-        //     ),
-        //     const SizedBox(width: 10),
-        //     Container(
-        //       padding: const EdgeInsets.symmetric(
-        //         horizontal: 34,
-        //         vertical: 16,
-        //       ),
-        //       decoration: BoxDecoration(
-        //         color: ColorsApp.absoluteColorBlack,
-        //         borderRadius: BorderRadius.circular(100),
-        //         border: Border.all(
-        //           color: ColorsApp.greyShadesColor_15,
-        //           width: 1,
-        //           style: BorderStyle.solid,
-        //         ),
-        //       ),
-        //       child: const Text(
-        //         "Design",
-        //         style: TextStyle(
-        //           color: ColorsApp.whiteShadesColor_50,
-        //           fontSize: 18,
-        //           fontWeight: FontWeight.w400,
-        //         ),
-        //       ),
-        //     ),
-        //     const SizedBox(width: 10),
-        //     Container(
-        //       padding: const EdgeInsets.symmetric(
-        //         horizontal: 34,
-        //         vertical: 16,
-        //       ),
-        //       decoration: BoxDecoration(
-        //         color: const Color(0xff1a1a1a),
-        //         borderRadius: BorderRadius.circular(100),
-        //         border: Border.all(
-        //           color: ColorsApp.greyShadesColor_15,
-        //           width: 1,
-        //           style: BorderStyle.solid,
-        //         ),
-        //       ),
-        //       child: const Text(
-        //         "Development",
-        //         style: TextStyle(
-        //           color: ColorsApp.whiteShadesColor_50,
-        //           fontSize: 18,
-        //           fontWeight: FontWeight.w400,
-        //         ),
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }

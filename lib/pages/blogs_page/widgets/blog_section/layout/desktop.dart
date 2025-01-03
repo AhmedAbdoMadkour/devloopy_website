@@ -1,6 +1,6 @@
-import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/widgets/card_blog/card_blog.dart';
-import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/widgets/card_statistics_blog/card_statistics_blog.dart';
-import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/widgets/navbar_blog_section/navbar_blog_section.dart';
+import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/widgets/card_blog/layout/desktop.dart';
+import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/widgets/card_statistics_blog/layout/desktop.dart';
+import 'package:devloopy_website/pages/blogs_page/widgets/blog_section/widgets/navbar_blog_section/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class BlogSectionDeskTop extends StatelessWidget {
@@ -16,9 +16,9 @@ class BlogSectionDeskTop extends StatelessWidget {
       ),
       child: Column(
         children: [
-          NavbarBlogSection(),
-          CardStatisticsBlog(),
-          CardBlog(),
+          NavbarBlogSectionDeskTop(),
+          CardStatisticsBlogDeskTop(),
+          CardBlogDeskTop(),
         ],
       ),
     );

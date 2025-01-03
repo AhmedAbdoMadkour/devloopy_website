@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/careers_page/section/benefits_perks_section/benefits_perks_section.dart';
 import 'package:devloopy_website/pages/careers_page/section/employee_referral_program_section/employee_referral_program_section.dart';
 import 'package:devloopy_website/pages/careers_page/section/how_to_apply_scetion/how_to_apply_section.dart';
@@ -15,6 +16,7 @@ class CareersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: ColorsApp.absoluteColorBlack,
       body: SingleChildScrollView(
         child: Column(
           children: [
