@@ -53,16 +53,16 @@ class HeaderInformationSectionDeskTop extends StatelessWidget {
             padding: const EdgeInsets.all(100),
             margin: const EdgeInsets.only(right: 405, left: 100),
             child: const Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 CustomTitelSectionDeskTop(
-                  nameTitleSection: "Our Comprehensive ",
-                  spantitlesection: "Digital Solutions",
+                  nameTitleSection: " in the Digital World ",
+                  spantitlesection: "Unlock Your Potential",
                 ),
                 SizedBox(height: 10),
                 CustomSecondDescriptionDeskTop(
                   description:
-                      "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                      "At DigitX, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
                 ),
               ],
             ),

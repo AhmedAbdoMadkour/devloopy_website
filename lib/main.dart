@@ -1,5 +1,4 @@
-import 'package:devloopy_website/pages/contact_us_page/contact_us_page.dart';
-import 'package:devloopy_website/pages/home_page/home_page.dart';
+import 'package:devloopy_website/pages/careers_page/careers.dart';
 import 'package:devloopy_website/theme/dark_theme.dart';
 import 'package:devloopy_website/theme/light_theme.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +17,7 @@ class DevLoopy extends StatelessWidget {
       theme: LightTheme.theme,
       darkTheme: DarkTheme.theme,
       themeMode: ThemeMode.system,
-      home: const ContactUsPage(),
+      home: const CareersPage(),
     );
     // MultiBlocProvider(
     //   providers: [

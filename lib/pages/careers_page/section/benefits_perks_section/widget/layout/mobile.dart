@@ -33,20 +33,25 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
         children: [
           Row(
             children: [
-              Image.asset("assets/icons/Icon_healthy.png"),
-              const SizedBox(width: 6),
+              Image.asset(
+                width: 56,
+                height: 56,
+                "assets/icons/Icon_healthy.png",
+              ),
+              const SizedBox(width: 10),
               const Expanded(
                 child: Text(
                   "Health and Wellness",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
-                    fontSize: 24,
+                    fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
               )
             ],
           ),
+          const SizedBox(height: 10),
           Container(
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
@@ -58,6 +63,7 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
               ),
             ),
             child: const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,15 +72,17 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
                       "\u2022 Health Insurance: ",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                     Text(
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
                       "Comprehensive health insurance plans to cover medical, dental, and vision needs.",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -87,15 +95,17 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
                       "\u2022 Mental Health Support:",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                     Text(
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
                       "Employee Assistance Program (EAP) providing counseling and support services.",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -108,15 +118,17 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
                       "\u2022 Wellness Programs:  ",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                     Text(
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
                       "Initiatives to promote physical and mental well-being, such as fitness classes and workshops. ",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),

@@ -7,7 +7,7 @@ class CardJobListingMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
@@ -147,7 +147,7 @@ class CardJobListingMobile extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -163,19 +163,22 @@ class CardJobListingMobile extends StatelessWidget {
                   "Job Description",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.w400,
                     height: 3,
                   ),
                 ),
                 const Text(
+                  maxLines: 12,
+                  overflow: TextOverflow.ellipsis,
                   "As a Web Designer at DigitX, you will be responsible for creating visually stunning and user-friendly website designs. Working closely with our development and marketing teams, you will turn creative concepts into functional web interfaces that deliver exceptional user experiences. This role offers an opportunity to showcase your design expertise and contribute to a wide range of exciting projects for diverse clients.",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_50,
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
+                const SizedBox(height: 14),
                 Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
@@ -188,7 +191,11 @@ class CardJobListingMobile extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Image.asset("assets/icons/icon_job_description.png"),
+                      Image.asset(
+                        width: 15,
+                        height: 15,
+                        "assets/icons/icon_job_description.png",
+                      ),
                       const SizedBox(width: 6),
                       const Expanded(
                         child: Text(
@@ -197,7 +204,7 @@ class CardJobListingMobile extends StatelessWidget {
                           " Application Deadline: 30th September 2025",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_55,
-                            fontSize: 18,
+                            fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -209,7 +216,9 @@ class CardJobListingMobile extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.symmetric(vertical: 20),
+            width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -220,12 +229,13 @@ class CardJobListingMobile extends StatelessWidget {
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
               children: [
                 const Text(
                   "Responsibilities",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.w400,
                     height: 3,
                   ),
@@ -349,20 +359,20 @@ class CardJobListingMobile extends StatelessWidget {
             ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 "Show Less",
                 style: TextStyle(
                   color: ColorsApp.greyShadesColor_40,
-                  fontSize: 18,
+                  fontSize: 14,
                   fontWeight: FontWeight.w400,
                 ),
               ),
               const SizedBox(width: 10),
               GestureDetector(
                 child: Container(
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                       gradient: const LinearGradient(
                           begin: Alignment.topCenter,

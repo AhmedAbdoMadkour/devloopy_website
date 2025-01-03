@@ -7,22 +7,19 @@ class CardStepsApplyTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(
-        top: 80,
-        right: 150,
-        left: 150,
-      ),
+      margin: const EdgeInsets.only(top: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
           SizedBox(
-            height: 930,
+            height: 880,
             child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                mainAxisExtent: 430,
-                crossAxisSpacing: 30,
-                mainAxisSpacing: 30,
+                crossAxisCount: 2,
+                mainAxisExtent: 267,
+                mainAxisSpacing: 24,
+                crossAxisSpacing: 24,
               ),
               itemCount: 6,
               itemBuilder: (BuildContext context, int index) {
@@ -63,14 +60,14 @@ class CardStepsApplyTablet extends StatelessWidget {
                             "Step 01",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.all(40),
+                        padding: EdgeInsets.symmetric(horizontal: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -79,15 +76,17 @@ class CardStepsApplyTablet extends StatelessWidget {
                               style: TextStyle(
                                 height: 3,
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 20,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
                             Text(
+                              maxLines: 5,
+                              overflow: TextOverflow.ellipsis,
                               "Visit our website's \"Careers\" page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -101,7 +100,10 @@ class CardStepsApplyTablet extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24,
+              vertical: 30,
+            ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -114,24 +116,32 @@ class CardStepsApplyTablet extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset("assets/images/icon_toapply.png"),
+                    Image.asset(
+                      width: 56,
+                      height: 56,
+                      "assets/images/icon_toapply.png",
+                    ),
                     const SizedBox(width: 10),
-                    const Text(
-                      "We value your interest in DigitX",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 24,
-                        fontWeight: FontWeight.w600,
+                    const Expanded(
+                      child: Text(
+                        "We value your interest in DigitX",
+                        style: TextStyle(
+                          color: ColorsApp.absoluteColorWhite,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     )
                   ],
                 ),
                 const SizedBox(height: 6),
                 const Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 8,
                   "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_50,
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),
                 )
