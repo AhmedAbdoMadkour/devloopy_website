@@ -17,8 +17,8 @@ class ButtonTypeServices extends StatelessWidget {
       onTap: () {},
       child: Container(
         width: 340,
-        height: 76,
-        padding: const EdgeInsets.all(24.0),
+        height: 60,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
         decoration: BoxDecoration(
           border: Border.all(
             color: ColorsApp.greyShadesColor_12,
@@ -35,8 +35,8 @@ class ButtonTypeServices extends StatelessWidget {
             const SizedBox(width: 10),
             Text(
               nameTypeService,
-              style: const TextStyle(
-                fontSize: 18.0,
+              style: TextStyle(
+                fontSize: sizeFont,
                 fontWeight: FontWeight.w600,
                 color: ColorsApp.absoluteColorWhite,
               ),

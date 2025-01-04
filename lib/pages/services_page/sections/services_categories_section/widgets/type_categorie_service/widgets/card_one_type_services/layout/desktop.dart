@@ -1,15 +1,13 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class CardTypeServicesTablet extends StatelessWidget {
-  const CardTypeServicesTablet(
+class CardOneTypeServicesDeskTop extends StatelessWidget {
+  const CardOneTypeServicesDeskTop(
       {super.key,
       required this.nameTitleCardTypeSerice,
-      required this.descriptionCardTypeService,
       required this.nameTitleItemService,
       required this.descriptionItemService});
   final String nameTitleCardTypeSerice;
-  final String descriptionCardTypeService;
   final String nameTitleItemService;
   final String descriptionItemService;
   @override
@@ -36,17 +34,6 @@ class CardTypeServicesTablet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, bottom: 20),
-            child: Text(
-              descriptionCardTypeService,
-              style: const TextStyle(
-                color: ColorsApp.whiteShadesColor_55,
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
           SizedBox(
             height: 450,
             child: GridView.builder(

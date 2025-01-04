@@ -8,7 +8,7 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 470,
-      padding: const EdgeInsets.all(50.0),
+      padding: const EdgeInsets.all(24.0),
       width: double.infinity,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),

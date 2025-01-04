@@ -15,7 +15,11 @@ class FooterSectionTablet extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset("assets/images/Logo_laptop.png"),
+              Image.asset(
+                width: 75,
+                height: 54,
+                "assets/images/Logo_laptop.png",
+              ),
               Column(
                 children: [
                   const Text(
@@ -30,16 +34,23 @@ class FooterSectionTablet extends StatelessWidget {
                     children: [
                       GestureDetector(
                         child: Image.asset(
+                            width: 64,
+                            height: 65,
                             "assets/images/image_Button_linkedin.png"),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
                         child: Image.asset(
+                            width: 64,
+                            height: 64,
                             "assets/images/image_Button_linkedin.png"),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
-                        child: Image.asset("assets/images/image_Button_x.png"),
+                        child: Image.asset(
+                            width: 64,
+                            height: 64,
+                            "assets/images/image_Button_x.png"),
                       ),
                     ],
                   ),
