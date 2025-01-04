@@ -8,12 +8,12 @@ class CardOurAwadesSectionDeskTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 50),
-      height: 1700,
+      height: 1600,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 805,
+          mainAxisExtent: 740,
           crossAxisSpacing: 50,
           mainAxisSpacing: 50,
         ),
@@ -21,8 +21,8 @@ class CardOurAwadesSectionDeskTop extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.symmetric(
-              horizontal: 50,
-              vertical: 80,
+              horizontal: 40,
+              vertical: 60,
             ),
             decoration: BoxDecoration(
               image: const DecorationImage(
@@ -47,7 +47,10 @@ class CardOurAwadesSectionDeskTop extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Image.asset("assets/icons/Icon_our_awards.png"),
+                    Image.asset(
+                        width: 138,
+                        height: 138,
+                        "assets/icons/Icon_our_awards.png"),
                     Container(
                       width: 194,
                       height: 55,
@@ -63,8 +66,18 @@ class CardOurAwadesSectionDeskTop extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Image.asset("assets/icons/Icon_clandier.png"),
-                          const Text("October 2017"),
+                          Image.asset(
+                            width: 20,
+                            height: 20,
+                            "assets/icons/Icon_clandier.png",
+                          ),
+                          const Text(
+                            "October 2017",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 18,
+                            ),
+                          ),
                         ],
                       ),
                     )
@@ -84,9 +97,11 @@ class CardOurAwadesSectionDeskTop extends StatelessWidget {
                         ),
                       ),
                       Text(
+                        maxLines: 5,
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.center,
                         "Recognition for outstanding contributions to the digital industry, celebrating our ability to deliver exceptional web design and development solutions that push the boundaries of creativity and functionality.",
                         style: TextStyle(
-                          height: 2,
                           color: ColorsApp.whiteShadesColor_55,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
@@ -118,6 +133,9 @@ class CardOurAwadesSectionDeskTop extends StatelessWidget {
                         ),
                       ),
                       Text(
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.center,
                         "Innovative web design and development solutions.",
                         style: TextStyle(
                           height: 2,

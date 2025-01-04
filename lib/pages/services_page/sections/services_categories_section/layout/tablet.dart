@@ -10,9 +10,9 @@ class ServicesCategoriesSectionTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.only(
-        top: 80.0,
-        right: 150.0,
-        left: 150.0,
+        top: 60.0,
+        right: 24.0,
+        left: 24.0,
       ),
       child: Column(
         children: [
@@ -20,6 +20,7 @@ class ServicesCategoriesSectionTablet extends StatelessWidget {
             spantitlesection: "Categories of",
             nameTitleSection: " Services",
           ),
+          SizedBox(height: 15),
           CustomDescriptionSectionTablet(
             descriptionSection:
                 "At DigitX, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing.",
