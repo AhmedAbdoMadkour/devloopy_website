@@ -24,7 +24,10 @@ class NavbarDeskTop extends StatelessWidget {
                 const SizedBox(
                   width: 85,
                 ),
-                Image.asset("assets/images/Logo_desk_top.png", width: 150, height: 75,),
+                Image.asset(
+                  width: 215,
+                  "assets/images/Logo_desk_top.png",
+                ),
               ],
             ),
           ),
@@ -33,43 +36,43 @@ class NavbarDeskTop extends StatelessWidget {
           child: Row(
             children: [
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "Home",
                 colornamePageLink: ColorsApp.absoluteColorWhite,
               ),
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "Services",
                 colornamePageLink: ColorsApp.absoluteColorWhite,
               ),
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "Projects",
                 colornamePageLink: ColorsApp.absoluteColorWhite,
               ),
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "About Us",
                 colornamePageLink: ColorsApp.absoluteColorWhite,
               ),
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "Contact Us",
                 colornamePageLink: ColorsApp.absoluteColorWhite,
               ),
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "Careers",
                 colornamePageLink: ColorsApp.absoluteColorWhite,
               ),
               CustomButtonLinkPage(
-                fontSize: 14,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 namePageLink: "Blogs",
                 colornamePageLink: ColorsApp.absoluteColorWhite,

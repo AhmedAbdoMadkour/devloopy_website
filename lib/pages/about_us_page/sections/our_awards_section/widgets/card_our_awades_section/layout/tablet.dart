@@ -7,22 +7,22 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
-      height: 1700,
+      margin: const EdgeInsets.symmetric(vertical: 20),
+      height: 1300,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 805,
-          crossAxisSpacing: 50,
-          mainAxisSpacing: 50,
+          mainAxisExtent: 556,
+          mainAxisSpacing: 24,
+          crossAxisSpacing: 24,
         ),
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.symmetric(
-              horizontal: 50,
-              vertical: 80,
+              horizontal: 24,
+              vertical: 50,
             ),
             decoration: BoxDecoration(
               image: const DecorationImage(
@@ -47,12 +47,16 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Image.asset("assets/icons/Icon_our_awards.png"),
+                    Image.asset(
+                      width: 114,
+                      height: 114,
+                      "assets/icons/Icon_our_awards.png",
+                    ),
                     Container(
-                      width: 194,
-                      height: 55,
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 18, vertical: 14),
+                        horizontal: 10,
+                        vertical: 8,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -62,9 +66,21 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                         ),
                       ),
                       child: Row(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          Image.asset("assets/icons/Icon_clandier.png"),
-                          const Text("October 2017"),
+                          Image.asset(
+                            width: 20,
+                            height: 20,
+                            "assets/icons/Icon_clandier.png",
+                          ),
+                          const SizedBox(width: 6),
+                          const Text(
+                            "October 2017",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                            ),
+                          ),
                         ],
                       ),
                     )
@@ -79,16 +95,17 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                         style: TextStyle(
                           height: 2,
                           color: ColorsApp.absoluteColorWhite,
-                          fontSize: 24,
+                          fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
                       Text(
+                        maxLines: 5,
+                        overflow: TextOverflow.ellipsis,
                         "Recognition for outstanding contributions to the digital industry, celebrating our ability to deliver exceptional web design and development solutions that push the boundaries of creativity and functionality.",
                         style: TextStyle(
-                          height: 2,
                           color: ColorsApp.whiteShadesColor_55,
-                          fontSize: 18,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
@@ -96,8 +113,11 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: const EdgeInsets.symmetric(vertical: 14),
-                  padding: const EdgeInsets.all(20),
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 20,
+                  ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
@@ -111,18 +131,19 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                       Text(
                         "Why",
                         style: TextStyle(
-                          height: 2,
                           color: ColorsApp.absoluteColorWhite,
-                          fontSize: 24,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
                       Text(
+                        maxLines: 3,
+                        textAlign: TextAlign.center,
+                        overflow: TextOverflow.ellipsis,
                         "Innovative web design and development solutions.",
                         style: TextStyle(
-                          height: 2,
                           color: ColorsApp.whiteShadesColor_55,
-                          fontSize: 18,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
                       ),

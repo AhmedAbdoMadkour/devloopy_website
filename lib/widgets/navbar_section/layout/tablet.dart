@@ -23,7 +23,10 @@ class NavbarTablet extends StatelessWidget {
                 const SizedBox(
                   width: 50,
                 ),
-                Image.asset("assets/images/Logo_desk_top.png"),
+                Image.asset(
+                  width: 100,
+                  "assets/images/Logo_desk_top.png",
+                ),
               ],
             ),
           ),

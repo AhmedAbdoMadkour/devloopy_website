@@ -34,7 +34,7 @@ class HerosectionDeskTop extends StatelessWidget {
                     SizedBox(height: 20),
                     CustomSecondDescriptionDeskTop(
                       description:
-                          "At DevLoopy, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                          "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
                     ),
                     SizedBox(height: 60),
                     HeroSectionButtonsDeskTop(),
