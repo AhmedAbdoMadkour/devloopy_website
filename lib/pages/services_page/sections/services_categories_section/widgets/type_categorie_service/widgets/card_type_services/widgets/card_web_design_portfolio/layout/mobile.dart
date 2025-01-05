@@ -7,8 +7,8 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 310,
-      padding: const EdgeInsets.all(24),
+      height: 319,
+      padding: const EdgeInsets.all(24.0),
       width: double.infinity,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
@@ -19,14 +19,14 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
           )),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
             "Web Design Portfolio",
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 20,
               fontWeight: FontWeight.w600,
               height: 2,
-              color: ColorsApp.absoluteColorWhite,
             ),
           ),
           const Text(
@@ -39,16 +39,15 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                width: 125,
+                width: 144,
                 height: 87,
                 "assets/images/Image_web_design_portfolio_red.png",
               ),
               const SizedBox(width: 10),
               Image.asset(
-                width: 125,
+                width: 144,
                 height: 87,
                 "assets/images/Image_web_design_portfolio_green.png",
               ),
@@ -59,31 +58,20 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
             child: GestureDetector(
               child: Container(
                 width: 233,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                height: 44,
                 decoration: BoxDecoration(
-                  border: Border.all(
-                    color: ColorsApp.greyShadesColor_15,
-                    width: 1,
-                    style: BorderStyle.solid,
-                  ),
-                  borderRadius: BorderRadius.circular(74),
-                ),
+                    border: Border.all(
+                      color: ColorsApp.greyShadesColor_15,
+                      width: 1,
+                      style: BorderStyle.solid,
+                    ),
+                    borderRadius: BorderRadius.circular(74)),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text(
-                      "View All projects",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                    Icon(
-                      Icons.arrow_right_alt,
-                    ),
+                    Text("View All projects"),
+                    Icon(Icons.arrow_right_alt),
                   ],
                 ),
               ),

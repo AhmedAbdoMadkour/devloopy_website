@@ -1,13 +1,13 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class CardWebDesignComptedTablet extends StatelessWidget {
-  const CardWebDesignComptedTablet({super.key});
+class CardWebDesignComptedDeskTop extends StatelessWidget {
+  const CardWebDesignComptedDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(50),
         width: double.infinity,
         decoration: BoxDecoration(
           border: Border.all(
@@ -23,18 +23,15 @@ class CardWebDesignComptedTablet extends StatelessWidget {
             const Text(
               "Our Web Design Competed Projects",
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 28,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
               ),
             ),
             const SizedBox(height: 15),
             const Text(
-              maxLines: 3,
-              overflow: TextOverflow.ellipsis,
               "At DigitX, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w400,
                 color: ColorsApp.whiteShadesColor_50,
               ),
@@ -73,7 +70,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                             "Project Name",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 18,
+                              fontSize: 20,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -97,7 +94,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                             "Industry",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 18,
+                              fontSize: 20,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -113,7 +110,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                             "Website URL",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
-                              fontSize: 18,
+                              fontSize: 20,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -142,7 +139,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "TechGuru Inc.",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -158,7 +155,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "Technology",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -174,7 +171,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "www.techguruinc.com",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                                 decoration: TextDecoration.underline,
                               ),
@@ -195,7 +192,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "GreenEarth Eco Store",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -211,7 +208,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "Design Agency",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -227,7 +224,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "www.greenearthecostore.com",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w400,
                                 decoration: TextDecoration.underline,
                               ),
@@ -248,7 +245,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "GlobalTech Solutions",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -264,7 +261,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "E-commerce",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -280,7 +277,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                               "www.globaltechsolutions.com",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                                 decoration: TextDecoration.underline,
                               ),

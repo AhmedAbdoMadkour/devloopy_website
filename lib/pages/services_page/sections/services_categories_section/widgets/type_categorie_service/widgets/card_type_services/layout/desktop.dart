@@ -1,20 +1,21 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class CardOneTypeServicesMobile extends StatelessWidget {
-  const CardOneTypeServicesMobile(
+class CardTypeServicesDeskTop extends StatelessWidget {
+  const CardTypeServicesDeskTop(
       {super.key,
       required this.nameTitleCardTypeSerice,
+      required this.descriptionCardTypeService,
       required this.nameTitleItemService,
       required this.descriptionItemService});
   final String nameTitleCardTypeSerice;
-
+  final String descriptionCardTypeService;
   final String nameTitleItemService;
   final String descriptionItemService;
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
           border: Border.all(
@@ -29,28 +30,45 @@ class CardOneTypeServicesMobile extends StatelessWidget {
             child: Text(
               nameTitleCardTypeSerice,
               style: const TextStyle(
-                fontSize: 20,
+                fontSize: 28,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
               ),
             ),
           ),
           const SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, bottom: 20),
+            child: Text(
+              descriptionCardTypeService,
+              style: const TextStyle(
+                color: ColorsApp.whiteShadesColor_55,
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
           SizedBox(
-            height: 630,
+            height: 450,
             child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 1,
-                mainAxisExtent: 160.0,
+                crossAxisCount: 2,
+                mainAxisExtent: 215.0,
               ),
               itemCount: 4,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
-                  padding: const EdgeInsets.all(8.0),
+                  height: 200,
+                  padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border(
-                      bottom: (index == 0 || index == 1 || index == 2)
+                      bottom: (index == 0 || index == 1)
+                          ? const BorderSide(
+                              color: ColorsApp.greyShadesColor_12,
+                              width: 1,
+                              style: BorderStyle.solid)
+                          : BorderSide.none,
+                      right: (index == 0 || index == 2)
                           ? const BorderSide(
                               color: ColorsApp.greyShadesColor_12,
                               width: 1,
@@ -65,19 +83,17 @@ class CardOneTypeServicesMobile extends StatelessWidget {
                       Text(
                         nameTitleItemService,
                         style: const TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
-                          fontSize: 16.0,
+                          color: ColorsApp.whiteShadesColor_80,
+                          fontSize: 20.0,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                       const SizedBox(height: 14),
                       Text(
-                        maxLines: 5,
-                        overflow: TextOverflow.ellipsis,
                         descriptionItemService,
                         style: const TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
-                          fontSize: 14.0,
+                          fontSize: 18.0,
                           fontWeight: FontWeight.w400,
                         ),
                       ),

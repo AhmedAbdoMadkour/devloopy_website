@@ -20,11 +20,7 @@ class FooterSectionMobile extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                width: 61,
-                height: 44,
-                "assets/images/Logo_laptop.png",
-              ),
+              Image.asset("assets/images/Logo_laptop.png"),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -41,24 +37,16 @@ class FooterSectionMobile extends StatelessWidget {
                     children: [
                       GestureDetector(
                         child: Image.asset(
-                            width: 56,
-                            height: 56,
                             "assets/images/image_Button_linkedin.png"),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
                         child: Image.asset(
-                            width: 56,
-                            height: 56,
                             "assets/images/image_Button_linkedin.png"),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
-                        child: Image.asset(
-                          width: 56,
-                          height: 56,
-                          "assets/images/image_Button_x.png",
-                        ),
+                        child: Image.asset("assets/images/image_Button_x.png"),
                       ),
                     ],
                   )
