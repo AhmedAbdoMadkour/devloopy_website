@@ -1,8 +1,8 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class DescriptionTypeServiceTablet extends StatelessWidget {
-  const DescriptionTypeServiceTablet({super.key});
+class DescriptionTypeService extends StatelessWidget {
+  const DescriptionTypeService({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,23 +12,19 @@ class DescriptionTypeServiceTablet extends StatelessWidget {
         Text(
           "Web Design",
           style: TextStyle(
-            fontSize: 26,
+            fontSize: 28,
             fontWeight: FontWeight.w600,
-            color: ColorsApp.absoluteColorWhite,
           ),
         ),
         SizedBox(height: 27),
         Text(
-          maxLines: 8,
-          overflow: TextOverflow.ellipsis,
           "Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
           style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w400,
-            color: ColorsApp.whiteShadesColor_55,
-          ),
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
+              color: ColorsApp.whiteShadesColor_55),
         ),
-        SizedBox(height: 35.0),
+        SizedBox(height: 44.0),
       ],
     );
   }

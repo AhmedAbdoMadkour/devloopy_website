@@ -17,7 +17,7 @@ class CustomTitelSectionTablet extends StatelessWidget {
             text: spantitlesection,
             style: const TextStyle(
               color: ColorsApp.greyShadesColor_40,
-              fontSize: 43.0,
+              fontSize: 48.0,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -25,7 +25,7 @@ class CustomTitelSectionTablet extends StatelessWidget {
             text: nameTitleSection,
             style: const TextStyle(
               color: ColorsApp.absoluteColorWhite,
-              fontSize: 43.0,
+              fontSize: 48.0,
               fontWeight: FontWeight.w600,
             ),
           )

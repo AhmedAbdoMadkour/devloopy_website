@@ -10,13 +10,13 @@ class CustomDescriptionSectionTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0),
+      padding: const EdgeInsets.symmetric(horizontal: 200.0),
       child: Text(
         textAlign: TextAlign.center,
         descriptionSection,
         style: const TextStyle(
           color: ColorsApp.whiteShadesColor_50,
-          fontSize: 16,
+          fontSize: 18,
         ),
       ),
     );

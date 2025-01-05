@@ -24,15 +24,16 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
             physics: const NeverScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              mainAxisExtent: 800,
+              mainAxisExtent: 778,
               crossAxisSpacing: 50,
+              mainAxisSpacing: 50,
             ),
             itemCount: 2,
             itemBuilder: (BuildContext context, int index) {
               return Container(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 60,
+                  horizontal: 50,
+                  vertical: 80,
                 ),
                 decoration: BoxDecoration(
                   image: const DecorationImage(
@@ -57,17 +58,13 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Image.asset(
-                          width: 172,
-                          height: 172,
-                          "assets/icons/icon_see.png",
-                        ),
+                        Image.asset("assets/icons/icon_see.png"),
                         Container(
-                          padding: const EdgeInsets.only(
-                            top: 10,
-                            right: 10,
-                            bottom: 10,
-                            left: 24,
+                          width: 194,
+                          height: 55,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 18,
+                            vertical: 14,
                           ),
                         )
                       ],
