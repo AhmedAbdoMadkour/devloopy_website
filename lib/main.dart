@@ -1,5 +1,5 @@
-import 'package:devloopy_website/pages/blogs_page/blogs_page.dart';
 import 'package:devloopy_website/pages/home_page/home_page.dart';
+import 'package:devloopy_website/pages/blogs_page/blogs_page.dart';
 import 'package:devloopy_website/pages/projects_page/projects_page.dart';
 import 'package:devloopy_website/pages/services_page/services_page.dart';
 import 'package:devloopy_website/theme/dark_theme.dart';
