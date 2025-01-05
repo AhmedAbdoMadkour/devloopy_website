@@ -1,8 +1,8 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
-class CardTwoTypeServicesTablet extends StatelessWidget {
-  const CardTwoTypeServicesTablet(
+class CardTypeServicesMobile extends StatelessWidget {
+  const CardTypeServicesMobile(
       {super.key,
       required this.nameTitleCardTypeSerice,
       required this.descriptionCardTypeService,
@@ -15,7 +15,7 @@ class CardTwoTypeServicesTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
           border: Border.all(
@@ -30,9 +30,8 @@ class CardTwoTypeServicesTablet extends StatelessWidget {
             child: Text(
               nameTitleCardTypeSerice,
               style: const TextStyle(
-                fontSize: 26,
+                fontSize: 28,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
               ),
             ),
           ),
@@ -43,32 +42,27 @@ class CardTwoTypeServicesTablet extends StatelessWidget {
               descriptionCardTypeService,
               style: const TextStyle(
                 color: ColorsApp.whiteShadesColor_55,
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w600,
               ),
             ),
           ),
           SizedBox(
-            height: 600,
+            height: 850,
             child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                mainAxisExtent: 300.0,
+                crossAxisCount: 1,
+                mainAxisExtent: 215.0,
               ),
               itemCount: 4,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
-                  padding: const EdgeInsets.all(15.0),
+                  height: 200,
+                  padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border(
-                      bottom: (index == 0 || index == 1)
-                          ? const BorderSide(
-                              color: ColorsApp.greyShadesColor_12,
-                              width: 1,
-                              style: BorderStyle.solid)
-                          : BorderSide.none,
-                      right: (index == 0 || index == 2)
+                      bottom: (index == 0 || index == 1 || index == 2)
                           ? const BorderSide(
                               color: ColorsApp.greyShadesColor_12,
                               width: 1,
@@ -84,18 +78,17 @@ class CardTwoTypeServicesTablet extends StatelessWidget {
                         nameTitleItemService,
                         style: const TextStyle(
                           color: ColorsApp.whiteShadesColor_80,
-                          fontSize: 18.0,
+                          fontSize: 20.0,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                       const SizedBox(height: 14),
                       Text(
                         descriptionItemService,
-                        maxLines: 9,
-                        overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
+                          overflow: TextOverflow.ellipsis,
                           color: ColorsApp.whiteShadesColor_55,
-                          fontSize: 16.0,
+                          fontSize: 18.0,
                           fontWeight: FontWeight.w400,
                         ),
                       ),

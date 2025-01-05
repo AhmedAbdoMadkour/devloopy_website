@@ -25,7 +25,6 @@ class CardWebDesignComptedTablet extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
               ),
             ),
             const SizedBox(height: 15),
