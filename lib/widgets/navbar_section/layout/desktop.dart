@@ -7,80 +7,84 @@ class NavbarDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        Expanded(
-          child: Container(
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage(
-                "assets/images/backgroundherosection.png",
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 24),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Expanded(
+            child: Container(
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(
+                  "assets/images/backgroundherosection.png",
+                ),
+              )),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 85,
+                  ),
+                  Image.asset(
+                    width: 222,
+                    height: 50,
+                    "assets/images/Logo_desk_top.png",
+                  ),
+                ],
               ),
-            )),
+            ),
+          ),
+          const Expanded(
             child: Row(
               children: [
-                const SizedBox(
-                  width: 85,
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "Home",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
                 ),
-                Image.asset(
-                  width: 215,
-                  "assets/images/Logo_desk_top.png",
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "Services",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                ),
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "Projects",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                ),
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "About Us",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                ),
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "Contact Us",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                ),
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "Careers",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                ),
+                CustomButtonLinkPage(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  namePageLink: "Blogs",
+                  colornamePageLink: ColorsApp.absoluteColorWhite,
                 ),
               ],
             ),
-          ),
-        ),
-        const Expanded(
-          child: Row(
-            children: [
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "Home",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "Services",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "Projects",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "About Us",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "Contact Us",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "Careers",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-              CustomButtonLinkPage(
-                fontSize: 18,
-                fontWeight: FontWeight.w400,
-                namePageLink: "Blogs",
-                colornamePageLink: ColorsApp.absoluteColorWhite,
-              ),
-            ],
-          ),
-        )
-      ],
+          )
+        ],
+      ),
     );
   }
 }

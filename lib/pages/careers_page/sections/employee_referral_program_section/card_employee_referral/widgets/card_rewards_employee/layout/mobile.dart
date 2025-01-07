@@ -8,12 +8,12 @@ class CardRewardsEmployeeMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16),
-      height: 970,
+      height: 650,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 450,
+          mainAxisExtent: 300,
           mainAxisSpacing: 24,
         ),
         itemCount: 2,
@@ -47,6 +47,8 @@ class CardRewardsEmployeeMobile extends StatelessWidget {
                   ),
                   child: const Text(
                     "Rewards and Recognition",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: ColorsApp.absoluteColorWhite,
                       fontSize: 16,
@@ -72,52 +74,80 @@ class CardRewardsEmployeeMobile extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: const Column(
+                  child: Column(
                     children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Text(
-                              "\u2022 For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards.",
-                              style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                              ),
+                      RichText(
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                        text: const TextSpan(children: [
+                          TextSpan(
+                            text: "\u2022 ",
+                            style: TextStyle(
+                              color: ColorsApp.whiteShadesColor_55,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
-                        ],
+                          TextSpan(
+                            text:
+                                "For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards. ",
+                            style: TextStyle(
+                              color: ColorsApp.whiteShadesColor_55,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ]),
                       ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Text(
-                              "\u2022 For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards.",
+                      RichText(
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                        text: const TextSpan(
+                          children: [
+                            TextSpan(
+                              text: "\u2022 ",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                          ),
-                        ],
+                            TextSpan(
+                              text:
+                                  "For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards. ",
+                              style: TextStyle(
+                                color: ColorsApp.whiteShadesColor_55,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Text(
-                              "\u2022 For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards.",
+                      RichText(
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                        text: const TextSpan(
+                          children: [
+                            TextSpan(
+                              text: "\u2022 ",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                          ),
-                        ],
+                            TextSpan(
+                              text:
+                                  "For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards. ",
+                              style: TextStyle(
+                                color: ColorsApp.whiteShadesColor_55,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),

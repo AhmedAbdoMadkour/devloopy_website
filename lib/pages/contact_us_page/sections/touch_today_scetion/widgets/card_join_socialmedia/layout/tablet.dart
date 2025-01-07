@@ -11,6 +11,8 @@ class CardJoinSocialmediaTablet extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
             "Join Us on Social Media",
             style: TextStyle(
@@ -21,6 +23,8 @@ class CardJoinSocialmediaTablet extends StatelessWidget {
             ),
           ),
           const Text(
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
             "Stay updated with our latest projects, industry insights, and company news by following us on social media",
             style: TextStyle(
@@ -75,6 +79,8 @@ class CardJoinSocialmediaTablet extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 const Text(
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   "Thank You!",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
@@ -84,6 +90,8 @@ class CardJoinSocialmediaTablet extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 const Text(
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                   "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(

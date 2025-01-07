@@ -40,6 +40,8 @@ class CardOurResponseTablet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10),
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "Our Response",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
@@ -51,6 +53,8 @@ class CardOurResponseTablet extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 const Text(
+                  maxLines: 7,
+                  overflow: TextOverflow.ellipsis,
                   "We understand the importance of timely responses, and our team is committed to addressing your inquiries promptly. Whether you have a specific project in mind, need advice on digital strategies, or want to explore partnership opportunities, we are here to assist you at every step.",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_55,

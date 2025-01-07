@@ -32,6 +32,7 @@ class CardTwoTypeServicesDeskTop extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w600,
+                color: ColorsApp.absoluteColorWhite,
               ),
             ),
           ),
@@ -40,6 +41,8 @@ class CardTwoTypeServicesDeskTop extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20, bottom: 20),
             child: Text(
               descriptionCardTypeService,
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
               style: const TextStyle(
                 color: ColorsApp.whiteShadesColor_55,
                 fontSize: 18,
@@ -53,12 +56,12 @@ class CardTwoTypeServicesDeskTop extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                mainAxisExtent: 215.0,
+                mainAxisExtent: 250.0,
               ),
               itemCount: 4,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
-                  height: 200,
+                  height: 300,
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border(

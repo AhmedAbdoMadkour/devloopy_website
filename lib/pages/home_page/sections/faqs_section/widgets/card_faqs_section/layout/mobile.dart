@@ -25,13 +25,17 @@ class CardFaqsSectionMobile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 34),
       //margin: const EdgeInsets.all(26),
       decoration: const BoxDecoration(
-          border: Border(
-              bottom: BorderSide(
-                  color: ColorsApp.greyShadesColor_12,
-                  width: 1,
-                  style: BorderStyle.solid))),
+        border: Border(
+          bottom: BorderSide(
+              color: ColorsApp.greyShadesColor_12,
+              width: 1,
+              style: BorderStyle.solid),
+        ),
+      ),
       child: ListTile(
         title: const Text(
+          maxLines: 4,
+          overflow: TextOverflow.ellipsis,
           "Do you offer maintenance services for websites and apps developed by other companies?",
           style: TextStyle(
             color: ColorsApp.absoluteColorWhite,

@@ -7,14 +7,14 @@ class CardChooseSectionTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1500, // Set a fixed height to avoid overflow
+      height: 1300, // Set a fixed height to avoid overflow
       child: GridView.builder(
         itemCount: 6,
         physics:
             const NeverScrollableScrollPhysics(), // Disable gridview scrolling
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 475,
+          mainAxisExtent: 430,
         ),
         itemBuilder: (context, index) {
           return Container(
@@ -66,7 +66,11 @@ class CardChooseSectionTablet extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      width: 66,
+      height: 66,
+      "assets/icons/whychooseExpertise.png",
+    );
   }
 
   Widget titleCardChooseSection() {

@@ -95,6 +95,8 @@ class CardOurPartnersSectionMobile extends StatelessWidget {
         SizedBox(height: 10),
         Text(
           textAlign: TextAlign.center,
+          maxLines: 4,
+          overflow: TextOverflow.ellipsis,
           "A leading technology firm that trusted DigitX to develop their responsive website, showcasing their cutting-edge products and services.",
           style: TextStyle(
             color: ColorsApp.whiteShadesColor_55,

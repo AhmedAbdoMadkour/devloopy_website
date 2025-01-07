@@ -7,7 +7,6 @@ class TotalStatisticsMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //  margin: const EdgeInsets.symmetric(vertical: 15),
       padding: const EdgeInsets.symmetric(horizontal: 8),
       height: 170,
       decoration: const BoxDecoration(

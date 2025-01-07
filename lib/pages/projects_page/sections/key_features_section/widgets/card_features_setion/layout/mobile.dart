@@ -48,6 +48,8 @@ class CardFeaturesSectionMobile extends StatelessWidget {
                   ),
                 ),
                 const Text(
+                  maxLines: 5,
+                  overflow: TextOverflow.ellipsis,
                   "Every project begins with thorough research and strategic planning to ensure a holistic understanding of our clients' objectives and target audience.",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_55,

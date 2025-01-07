@@ -41,6 +41,8 @@ class CardTwoTypeServicesTablet extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20, bottom: 20),
             child: Text(
               descriptionCardTypeService,
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
               style: const TextStyle(
                 color: ColorsApp.whiteShadesColor_55,
                 fontSize: 16,

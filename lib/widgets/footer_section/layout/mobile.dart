@@ -71,203 +71,155 @@ class FooterSectionMobile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomButtonLinkPage(
-                        namePageLink: "Home",
-                        colornamePageLink: ColorsApp.absoluteColorWhite,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Benefits",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Our Testimonials",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Partners",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ],
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomButtonLinkPage(
-                        namePageLink: "Services",
-                        colornamePageLink: ColorsApp.absoluteColorWhite,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Web Design",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Website Development",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "App Development",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Digital Marketing",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ],
-                  ),
-                ],
+              CustomButtonLinkPage(
+                namePageLink: "Home",
+                colornamePageLink: ColorsApp.absoluteColorWhite,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomButtonLinkPage(
-                        namePageLink: "Projects",
-                        colornamePageLink: ColorsApp.absoluteColorWhite,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "ABC Tech Solutions",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "GreenEarth Eco Store",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "HealthTech Innovations",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "GlobalTech Solutions",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "TechGuru Inc",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ],
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomButtonLinkPage(
-                        namePageLink: "About Us",
-                        colornamePageLink: ColorsApp.absoluteColorWhite,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Our Team",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Achievements",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Awards",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ],
-                  ),
-                ],
+              CustomButtonLinkPage(
+                namePageLink: "Benefits",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomButtonLinkPage(
-                        namePageLink: "Careers",
-                        colornamePageLink: ColorsApp.absoluteColorWhite,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Job Openings",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Benefits & Perks",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Employee Refral",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ],
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomButtonLinkPage(
-                        namePageLink: "Blogs",
-                        colornamePageLink: ColorsApp.absoluteColorWhite,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      CustomButtonLinkPage(
-                        namePageLink: "Our Blogs",
-                        colornamePageLink: ColorsApp.whiteShadesColor_50,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ],
-                  ),
-                ],
+              CustomButtonLinkPage(
+                namePageLink: "Our Testimonials",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Partners",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Services",
+                colornamePageLink: ColorsApp.absoluteColorWhite,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Web Design",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Website Development",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "App Development",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Digital Marketing",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Projects",
+                colornamePageLink: ColorsApp.absoluteColorWhite,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "ABC Tech Solutions",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "GreenEarth Eco Store",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "HealthTech Innovations",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "GlobalTech Solutions",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "TechGuru Inc",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "About Us",
+                colornamePageLink: ColorsApp.absoluteColorWhite,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Our Team",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Achievements",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Awards",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Careers",
+                colornamePageLink: ColorsApp.absoluteColorWhite,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Job Openings",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Benefits & Perks",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Employee Refral",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Blogs",
+                colornamePageLink: ColorsApp.absoluteColorWhite,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              CustomButtonLinkPage(
+                namePageLink: "Our Blogs",
+                colornamePageLink: ColorsApp.whiteShadesColor_50,
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
               ),
             ],
           ),

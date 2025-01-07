@@ -11,6 +11,7 @@ class CardInquiryFormMobile extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
             "Online Inquiry Form",
             style: TextStyle(
               height: 3,
@@ -20,6 +21,9 @@ class CardInquiryFormMobile extends StatelessWidget {
             ),
           ),
           const Text(
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
             "Please fill in the following details, and we'll get back to you within 24 hours.",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
@@ -46,6 +50,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Name",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -84,6 +89,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Email",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -122,6 +128,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Phone Number",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -160,6 +167,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Select Service",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -198,6 +206,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Company / organization Name",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -236,6 +245,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Subject",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -274,6 +284,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       const Text(
+                        maxLines: 1,
                         "Message",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -332,6 +343,7 @@ class CardInquiryFormMobile extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
+                                  maxLines: 1,
                                   "Send Your Inquiry",
                                   style: TextStyle(
                                     fontFamily: FontsApp.fontFamilySora,

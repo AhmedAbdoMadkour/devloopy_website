@@ -7,14 +7,14 @@ class CardChooseSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1350, // Set a fixed height to avoid overflow
+      height: 1000, // Set a fixed height to avoid overflow
       child: GridView.builder(
         itemCount: 3,
         physics:
             const NeverScrollableScrollPhysics(), // Disable gridview scrolling
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 450,
+          mainAxisExtent: 330,
         ),
         itemBuilder: (context, index) {
           return Container(
@@ -56,7 +56,11 @@ class CardChooseSectionMobile extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      width: 56,
+      height: 56,
+      "assets/icons/whychooseExpertise.png",
+    );
   }
 
   Widget titleCardChooseSection() {
@@ -74,6 +78,8 @@ class CardChooseSectionMobile extends StatelessWidget {
         SizedBox(height: 14.0),
         Text(
           textAlign: TextAlign.center,
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
           "Our team of seasoned professionals  brings years of  experience and expertise to the table.",
           style: TextStyle(
             color: ColorsApp.whiteShadesColor_55,

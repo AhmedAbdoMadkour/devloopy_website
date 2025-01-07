@@ -10,13 +10,19 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 30),
       child: Row(
         children: [
-          Image.asset("assets/images/image_blog_statistics.png"),
+          Image.asset(
+            width: 686,
+            height: 515,
+            "assets/images/image_blog_statistics.png",
+          ),
           const SizedBox(width: 50),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   "Web Design Trends Shaping 2023",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
@@ -61,6 +67,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Read Time",
                               style: TextStyle(
                                   color: ColorsApp.whiteShadesColor_55,
@@ -69,6 +77,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                                   height: 2),
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "6 minutes",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
@@ -91,6 +101,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Author",
                               style: TextStyle(
                                   color: ColorsApp.whiteShadesColor_55,
@@ -99,6 +111,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                                   height: 2),
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Laura Turner",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
@@ -121,6 +135,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Published Date",
                               style: TextStyle(
                                   color: ColorsApp.whiteShadesColor_55,
@@ -129,6 +145,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                                   height: 2),
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "15 / 01 / 2023",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
@@ -145,6 +163,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Category",
                               style: TextStyle(
                                   color: ColorsApp.whiteShadesColor_55,
@@ -153,6 +173,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                                   height: 2),
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Design",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,

@@ -7,7 +7,7 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 750,
+      height: 450,
       padding: const EdgeInsets.all(24.0),
       width: double.infinity,
       decoration: BoxDecoration(
@@ -31,6 +31,8 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           const Text(
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             "Check out some of our most recent Web Design projects in the table below",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
@@ -39,13 +41,21 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-          Image.asset(
-            width: 400,
-            "assets/images/Image_web_design_portfolio_red.png",
+          Row(
+            children: [
+              Expanded(
+                child: Image.asset(
+                  "assets/images/Image_web_design_portfolio_red.png",
+                ),
+              ),
+              const SizedBox(width: 20),
+              Expanded(
+                child: Image.asset(
+                  "assets/images/Image_web_design_portfolio_green.png",
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: 20),
-          Image.asset(
-              width: 400, "assets/images/Image_web_design_portfolio_green.png"),
           const SizedBox(height: 20),
           GestureDetector(
             child: Container(

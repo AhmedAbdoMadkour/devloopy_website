@@ -53,6 +53,7 @@ class CardTitleContactMobile extends StatelessWidget {
               ),
             ),
             child: const Text(
+              maxLines: 1,
               textAlign: TextAlign.center,
               "Feel free to contact us through any of the following channels",
               style: TextStyle(

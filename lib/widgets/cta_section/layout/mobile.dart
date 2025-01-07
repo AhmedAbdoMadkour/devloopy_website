@@ -47,6 +47,7 @@ class CTASectionMobile extends StatelessWidget {
             const SizedBox(height: 30.0),
             Image.asset(
               "assets/images/image_cta_mobile.png",
+              width: 358,
             ),
           ],
         ),

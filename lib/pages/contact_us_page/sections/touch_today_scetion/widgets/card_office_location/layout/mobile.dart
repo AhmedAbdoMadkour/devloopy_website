@@ -13,6 +13,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           const Text(
+            maxLines: 1,
             "Office Locations",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -22,6 +23,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
             ),
           ),
           const Text(
+            maxLines: 2,
             textAlign: TextAlign.center,
             "Visit our offices to have a face-to-face discussion with our team. We have locations in",
             style: TextStyle(
@@ -88,6 +90,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
                         child: Column(
                           children: [
                             const Text(
+                              maxLines: 1,
                               textAlign: TextAlign.center,
                               "New York City",
                               style: TextStyle(
@@ -98,6 +101,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
                               ),
                             ),
                             const Text(
+                              maxLines: 2,
                               textAlign: TextAlign.center,
                               "123 Main Street, Suite 456, New York, NY 10001",
                               style: TextStyle(
@@ -131,6 +135,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       const Text(
+                                        maxLines: 1,
                                         "Get Direction",
                                         style: TextStyle(
                                           color: ColorsApp.absoluteColorWhite,

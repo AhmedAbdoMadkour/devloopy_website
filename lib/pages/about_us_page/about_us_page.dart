@@ -21,7 +21,7 @@ class AboutUsPage extends StatelessWidget {
             Navbar(),
             HeaderInformationSection(),
             OurTeamMembers(),
-            OurAchievementsSection(),
+            //    OurAchievementsSection(), Solve this is section
             OurAwaedsSection(),
             CTASection(),
             FooterSection(),

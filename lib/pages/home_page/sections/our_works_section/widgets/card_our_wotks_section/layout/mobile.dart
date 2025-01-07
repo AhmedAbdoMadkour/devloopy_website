@@ -7,13 +7,13 @@ class CardOurWorksSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 2160,
+      height: 2350,
       child: GridView.builder(
         itemCount: 4,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 520.0,
+          mainAxisExtent: 570.0,
           crossAxisSpacing: 20.0,
           mainAxisSpacing: 20.0,
         ),
@@ -39,7 +39,7 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 20.0),
                   width: 673.0,
-                  height: 300.0,
+                  height: 280.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     border: Border.all(
@@ -56,10 +56,10 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                     ],
                   ),
                 ),
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Modern Corporate Website",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
@@ -67,8 +67,8 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    const Row(
+                    SizedBox(height: 10),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Category: Web Design.",
@@ -85,31 +85,18 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                             ))
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        const Expanded(
+                        Expanded(
                           child: Text(
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 3,
+                            maxLines: 6,
                             "Witness our groundbreaking e-commerce platform that seamlessly connects buyers and sellers worldwide. With an intuitive user interface and secure payment gateways, this project revolutionizes online shopping.",
                             style: TextStyle(
                               color: ColorsApp.whiteShadesColor_55,
                               fontFamily: FontsApp.fontFamilySora,
                               fontSize: 14.0,
-                            ),
-                          ),
-                        ),
-                        GestureDetector(
-                          child: const Text(
-                            textAlign: TextAlign.end,
-                            "ReedMore",
-                            style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
-                              fontFamily: FontsApp.fontFamilySora,
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
@@ -164,7 +151,11 @@ class CardOurWorksSectionMobile extends StatelessWidget {
     );
   }
 
-  Image iconCardOurWorks() => Image.asset("assets/images/shape-14.png");
+  Image iconCardOurWorks() => Image.asset(
+        width: 100,
+        height: 100,
+        "assets/images/shape-14.png",
+      );
 
   DecorationImage backgroundOurWorksImage() {
     return const DecorationImage(

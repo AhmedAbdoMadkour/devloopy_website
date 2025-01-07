@@ -28,10 +28,10 @@ class HeroSectionButtonsMobile extends StatelessWidget {
                   horizontal: 20,
                   vertical: 14,
                 ),
-                width: 127.0,
-                height: 49.0,
                 decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(100)),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(100),
+                    ),
                     color: ColorsApp.absoluteColorWhite),
                 child: const Center(
                   child: Text(
@@ -52,8 +52,6 @@ class HeroSectionButtonsMobile extends StatelessWidget {
                   horizontal: 20,
                   vertical: 14,
                 ),
-                width: 167.0,
-                height: 49.0,
                 decoration: BoxDecoration(
                   border: Border.all(
                       style: BorderStyle.solid,

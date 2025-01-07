@@ -50,7 +50,8 @@ class CardStepsApplyMobile extends StatelessWidget {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage(
-                                "assets/images/background_howtoapply.png"), // After that change image
+                              "assets/images/background_howtoapply.png",
+                            ), // After that change image
                           ),
                         ),
                         child: const Padding(
@@ -71,6 +72,8 @@ class CardStepsApplyMobile extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "Explore Job Listings",
                               style: TextStyle(
                                 height: 3,
@@ -123,6 +126,8 @@ class CardStepsApplyMobile extends StatelessWidget {
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Text(
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         "We value your interest in DigitX",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,

@@ -30,6 +30,7 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w600,
+                color: ColorsApp.absoluteColorWhite,
               ),
             ),
           ),

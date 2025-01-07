@@ -7,13 +7,13 @@ class CardOurWorksSectionTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1500,
+      height: 1360,
       child: GridView.builder(
         itemCount: 4,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 700.0,
+          mainAxisExtent: 660.0,
           crossAxisSpacing: 24.0,
           mainAxisSpacing: 24,
         ),
@@ -39,7 +39,7 @@ class CardOurWorksSectionTablet extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 20.0),
                   width: 673.0,
-                  height: 437.0,
+                  height: 350.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     border: Border.all(
@@ -56,10 +56,10 @@ class CardOurWorksSectionTablet extends StatelessWidget {
                     ],
                   ),
                 ),
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Modern Corporate Website",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
@@ -67,8 +67,8 @@ class CardOurWorksSectionTablet extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    const Row(
+                    SizedBox(height: 10),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Category: Web Design.",
@@ -85,14 +85,14 @@ class CardOurWorksSectionTablet extends StatelessWidget {
                             ))
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        const Expanded(
+                        Expanded(
                           child: Text(
                             overflow: TextOverflow.ellipsis,
-                            maxLines: 3,
+                            maxLines: 6,
                             "Witness our groundbreaking e-commerce platform that seamlessly connects buyers and sellers worldwide. With an intuitive user interface and secure payment gateways, this project revolutionizes online shopping.",
                             style: TextStyle(
                               color: ColorsApp.whiteShadesColor_55,
@@ -101,21 +101,9 @@ class CardOurWorksSectionTablet extends StatelessWidget {
                             ),
                           ),
                         ),
-                        GestureDetector(
-                          child: const Text(
-                            textAlign: TextAlign.end,
-                            "ReedMore",
-                            style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
-                              fontFamily: FontsApp.fontFamilySora,
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                   ],
                 ),
               ],
@@ -165,7 +153,11 @@ class CardOurWorksSectionTablet extends StatelessWidget {
     );
   }
 
-  Image iconCardOurWorks() => Image.asset("assets/images/shape-14.png");
+  Image iconCardOurWorks() => Image.asset(
+        width: 150,
+        height: 150,
+        "assets/images/shape-14.png",
+      );
 
   DecorationImage backgroundOurWorksImage() {
     return const DecorationImage(

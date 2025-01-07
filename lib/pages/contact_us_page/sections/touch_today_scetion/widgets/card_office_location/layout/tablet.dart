@@ -13,6 +13,8 @@ class CardOfficeLocationTablet extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Office Locations",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -23,6 +25,8 @@ class CardOfficeLocationTablet extends StatelessWidget {
           ),
           const Text(
             textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             "Visit our offices to have a face-to-face discussion with our team. We have locations in",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
@@ -90,6 +94,8 @@ class CardOfficeLocationTablet extends StatelessWidget {
                           children: [
                             const Text(
                               textAlign: TextAlign.center,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "New York City",
                               style: TextStyle(
                                 height: 2,
@@ -101,6 +107,8 @@ class CardOfficeLocationTablet extends StatelessWidget {
                             const Text(
                               textAlign: TextAlign.center,
                               "123 Main Street, Suite 456, New York, NY 10001",
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
                               style: TextStyle(
                                 height: 2,
                                 color: ColorsApp.whiteShadesColor_55,
@@ -133,6 +141,8 @@ class CardOfficeLocationTablet extends StatelessWidget {
                                     children: [
                                       const Text(
                                         "Get Direction",
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
                                         style: TextStyle(
                                           color: ColorsApp.absoluteColorWhite,
                                           fontFamily: FontsApp.fontFamilySora,

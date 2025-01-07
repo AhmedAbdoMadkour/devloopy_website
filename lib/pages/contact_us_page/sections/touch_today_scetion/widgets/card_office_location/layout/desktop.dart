@@ -12,6 +12,8 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Office Locations",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
@@ -20,7 +22,10 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
             ),
           ),
           const Text(
-            "Visit our offices to have a face-to-face discussion with our team. We have locations in",
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
+            "Visit our offices to have a face-to-face discussion with  face-to-face discussion with face-to-face discussion with our team. We have locations in",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
               fontSize: 18,
@@ -76,6 +81,8 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                       Column(
                         children: [
                           Image.asset(
+                            width: 172,
+                            height: 172,
                             "assets/images/iamge_office_location.png",
                           ),
                         ],
@@ -85,6 +92,8 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                         child: Column(
                           children: [
                             const Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "New York City",
                               style: TextStyle(
                                 height: 2,
@@ -94,6 +103,8 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                               ),
                             ),
                             const Text(
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
                               "123 Main Street, Suite 456, New York, NY 10001",
                               style: TextStyle(
                                 height: 2,
@@ -126,6 +137,8 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       const Text(
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
                                         "Get Direction",
                                         style: TextStyle(
                                           color: ColorsApp.absoluteColorWhite,

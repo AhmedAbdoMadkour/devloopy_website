@@ -142,6 +142,8 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                       ),
                       const SizedBox(height: 14),
                       const Text(
+                        maxLines: 6,
+                        overflow: TextOverflow.ellipsis,
                         "ABC Enterprises approached us with a desire to revamp their outdated website and create a more user-friendly and visually appealing platform. They sought to improve user engagement and increase online sales.",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
@@ -165,6 +167,8 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                       ),
                       const SizedBox(height: 14),
                       const Text(
+                        maxLines: 6,
+                        overflow: TextOverflow.ellipsis,
                         "Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,

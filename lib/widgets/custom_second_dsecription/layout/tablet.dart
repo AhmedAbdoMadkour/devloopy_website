@@ -13,6 +13,8 @@ class CustomSecondDescriptionTablet extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 20.0),
       child: Text(
         description,
+        maxLines: 13,
+        overflow: TextOverflow.ellipsis,
         textAlign: TextAlign.start,
         style: const TextStyle(
             color: ColorsApp.whiteShadesColor_50,

@@ -58,7 +58,9 @@ class HeroSectionButtonsDeskTop extends StatelessWidget {
                       style: BorderStyle.solid,
                       width: 1.0,
                       color: ColorsApp.greyShadesColor_15),
-                  borderRadius: const BorderRadius.all(Radius.circular(100)),
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(100),
+                  ),
                   color: ColorsApp.greyShadesColor_10,
                 ),
                 child: const Center(

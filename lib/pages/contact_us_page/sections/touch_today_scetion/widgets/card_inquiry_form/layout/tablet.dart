@@ -11,6 +11,8 @@ class CardInquiryFormTablet extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Online Inquiry Form",
             style: TextStyle(
               height: 3,
@@ -20,6 +22,8 @@ class CardInquiryFormTablet extends StatelessWidget {
             ),
           ),
           const Text(
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             "Please fill in the following details, and we'll get back to you within 24 hours.",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
@@ -51,6 +55,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Name",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -92,6 +98,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Email",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -133,6 +141,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Phone Number",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -179,6 +189,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Select Service",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -220,6 +232,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Company / organization Name",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -261,6 +275,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Subject",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -306,6 +322,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               const Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "Message",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -365,6 +383,8 @@ class CardInquiryFormTablet extends StatelessWidget {
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
                                         Text(
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
                                           "Send Your Inquiry",
                                           style: TextStyle(
                                             fontFamily: FontsApp.fontFamilySora,

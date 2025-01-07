@@ -6,7 +6,8 @@ class HeroSectionImageDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      fit: BoxFit.cover,
+      width: 800,
+      height: 700,
       "assets/images/backgroundloding.png",
     );
   }

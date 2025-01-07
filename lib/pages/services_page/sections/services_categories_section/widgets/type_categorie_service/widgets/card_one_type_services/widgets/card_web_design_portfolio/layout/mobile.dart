@@ -30,6 +30,8 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
             ),
           ),
           const Text(
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             "Check out some of our most recent Web Design projects in the table below",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
@@ -41,16 +43,20 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                width: 125,
-                height: 87,
-                "assets/images/Image_web_design_portfolio_red.png",
+              Expanded(
+                child: Image.asset(
+                  width: 125,
+                  height: 87,
+                  "assets/images/Image_web_design_portfolio_red.png",
+                ),
               ),
               const SizedBox(width: 10),
-              Image.asset(
-                width: 125,
-                height: 87,
-                "assets/images/Image_web_design_portfolio_green.png",
+              Expanded(
+                child: Image.asset(
+                  width: 125,
+                  height: 87,
+                  "assets/images/Image_web_design_portfolio_green.png",
+                ),
               ),
             ],
           ),

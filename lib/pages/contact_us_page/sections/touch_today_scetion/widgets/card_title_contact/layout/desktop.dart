@@ -56,7 +56,8 @@ class CardTitleContactDeskTop extends StatelessWidget {
               ),
             ),
             child: const Text(
-              overflow: TextOverflow.visible,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.center,
               "Feel free to contact us through any of the following channels",
               style: TextStyle(

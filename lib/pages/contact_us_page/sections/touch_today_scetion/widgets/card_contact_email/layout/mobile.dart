@@ -11,6 +11,7 @@ class CardContactEmailMobile extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
             "Contact Us Via Email",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
@@ -36,6 +37,7 @@ class CardContactEmailMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
                       "For General Inquiries",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -110,6 +112,7 @@ class CardContactEmailMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
                       "For Business Collaborations",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -186,6 +189,7 @@ class CardContactEmailMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
                       "For Job Opportunities",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,

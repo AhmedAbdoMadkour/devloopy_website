@@ -6,8 +6,9 @@ class HeroSectionImageTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      fit: BoxFit.cover,
-      "assets/images/image_hero_mobile.png",
+      width: 820,
+      height: 650,
+      "assets/images/backgroundloding.png",
     );
   }
 }
