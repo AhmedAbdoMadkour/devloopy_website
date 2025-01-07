@@ -41,7 +41,11 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Image.asset("assets/images/team_member_one.png"),
+                      Image.asset(
+                        width: 140,
+                        height: 140,
+                        "assets/images/team_member_one.png",
+                      ),
                       const Text(
                         "John Smith",
                         style: TextStyle(
@@ -90,17 +94,29 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       GestureDetector(
-                        child: Image.asset("assets/icons/Button_insegram.png"),
+                        child: Image.asset(
+                          width: 64,
+                          height: 64,
+                          "assets/icons/Button_insegram.png",
+                        ),
                       ),
                       GestureDetector(
-                        child: Image.asset("assets/icons/Button_twitter.png"),
+                        child: Image.asset(
+                          width: 64,
+                          height: 64,
+                          "assets/icons/Button_twitter.png",
+                        ),
                       ),
                       GestureDetector(
-                        child: Image.asset("assets/icons/Button_linkdin.png"),
+                        child: Image.asset(
+                          width: 64,
+                          height: 64,
+                          "assets/icons/Button_linkdin.png",
+                        ),
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
           );

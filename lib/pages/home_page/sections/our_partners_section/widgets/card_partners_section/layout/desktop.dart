@@ -59,9 +59,17 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Image.asset("assets/images/image_partners_.png"),
+        Image.asset(
+          "assets/images/image_partners_.png",
+          width: 138,
+          height: 138,
+        ),
         const Icon(Icons.add),
-        Image.asset("assets/images/image_partners_1.png"),
+        Image.asset(
+          "assets/images/image_partners_1.png",
+          width: 138,
+          height: 138,
+        ),
       ],
     );
   }

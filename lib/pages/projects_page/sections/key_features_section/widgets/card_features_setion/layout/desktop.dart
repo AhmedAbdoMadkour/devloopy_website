@@ -40,7 +40,11 @@ class CardFeaturesSectionDeskTop extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Image.asset("assets/icons/chooseMarketing.png"),
+                Image.asset(
+                  width: 92,
+                  height: 92,
+                  "assets/icons/chooseMarketing.png",
+                ),
                 const Text(
                   "Strategic Planning",
                   style: TextStyle(
@@ -50,6 +54,8 @@ class CardFeaturesSectionDeskTop extends StatelessWidget {
                   ),
                 ),
                 const Text(
+                  maxLines: 4,
+                  overflow: TextOverflow.ellipsis,
                   "Every project begins with thorough research and strategic planning to ensure a holistic understanding of our clients' objectives and target audience.",
                   style: TextStyle(
                     color: ColorsApp.whiteShadesColor_55,

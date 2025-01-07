@@ -19,8 +19,14 @@ class CardJobListingMobile extends StatelessWidget {
         children: [
           Column(
             children: [
-              Image.asset("assets/images/image_job_list_web.png"),
+              Image.asset(
+                width: 84,
+                height: 84,
+                "assets/images/image_job_list_web.png",
+              ),
               const Text(
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.start,
                 "Web Designer",
                 style: TextStyle(
@@ -30,6 +36,8 @@ class CardJobListingMobile extends StatelessWidget {
                 ),
               ),
               const Text(
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 "Mumbai, India",
                 style: TextStyle(
                   color: ColorsApp.whiteShadesColor_50,
@@ -87,7 +95,8 @@ class CardJobListingMobile extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset("assets/icons/Icon_salary.png"),
+                    Image.asset(
+                        width: 20, height: 20, "assets/icons/Icon_salary.png"),
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Text(
@@ -107,7 +116,10 @@ class CardJobListingMobile extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset("assets/icons/Icon_experience.png"),
+                    Image.asset(
+                        width: 20,
+                        height: 20,
+                        "assets/icons/Icon_experience.png"),
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Text(
@@ -127,7 +139,8 @@ class CardJobListingMobile extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset("assets/icons/icon_skills.png"),
+                    Image.asset(
+                        width: 20, height: 20, "assets/icons/icon_skills.png"),
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Text(
@@ -161,6 +174,8 @@ class CardJobListingMobile extends StatelessWidget {
               children: [
                 const Text(
                   "Job Description",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
                     fontSize: 18,
@@ -232,6 +247,8 @@ class CardJobListingMobile extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               children: [
                 const Text(
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   "Responsibilities",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
@@ -241,6 +258,8 @@ class CardJobListingMobile extends StatelessWidget {
                   ),
                 ),
                 RichText(
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
                   text: const TextSpan(
                     children: [
                       TextSpan(
@@ -264,6 +283,8 @@ class CardJobListingMobile extends StatelessWidget {
                   ),
                 ),
                 RichText(
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
                   text: const TextSpan(
                     children: [
                       TextSpan(
@@ -287,6 +308,8 @@ class CardJobListingMobile extends StatelessWidget {
                   ),
                 ),
                 RichText(
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
                   text: const TextSpan(
                     children: [
                       TextSpan(
@@ -310,6 +333,8 @@ class CardJobListingMobile extends StatelessWidget {
                   ),
                 ),
                 RichText(
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
                   text: const TextSpan(
                     children: [
                       TextSpan(
@@ -333,6 +358,8 @@ class CardJobListingMobile extends StatelessWidget {
                   ),
                 ),
                 RichText(
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
                   text: const TextSpan(
                     children: [
                       TextSpan(

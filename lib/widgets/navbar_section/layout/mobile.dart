@@ -25,10 +25,18 @@ class NavbarMobile extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset("assets/images/Logo_mobile.png"),
+          Image.asset(
+            width: 120,
+            height: 40,
+            "assets/images/Logo_desk_top.png",
+          ),
           GestureDetector(
             onTap: () {},
-            child: Image.asset("assets/icons/Icon_navbar_mobile.png"),
+            child: Image.asset(
+              width: 52,
+              height: 52,
+              "assets/icons/Icon_navbar_mobile.png",
+            ),
           ),
         ],
       ),

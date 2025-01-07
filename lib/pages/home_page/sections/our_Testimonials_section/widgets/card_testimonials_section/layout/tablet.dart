@@ -47,6 +47,8 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                     ),
                     const SizedBox(height: 27.0),
                     const Text(
+                      maxLines: 4,
+                      overflow: TextOverflow.ellipsis,
                       "Working with DigitX was a pleasure. Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
@@ -59,7 +61,11 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 40.0),
                 child: Row(
                   children: [
-                    Image.asset("assets/images/Image_our_testimonials.png"),
+                    Image.asset(
+                      width: 70,
+                      height: 70,
+                      "assets/images/Image_our_testimonials.png",
+                    ),
                     const SizedBox(width: 14.0),
                     const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

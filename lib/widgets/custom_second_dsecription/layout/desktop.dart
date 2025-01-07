@@ -9,6 +9,7 @@ class CustomSecondDescriptionDeskTop extends StatelessWidget {
     return Text(
       description,
       textAlign: TextAlign.start,
+      maxLines: 7,
       style: const TextStyle(
         color: ColorsApp.whiteShadesColor_50,
         fontSize: 18.0,

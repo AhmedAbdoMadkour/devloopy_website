@@ -43,11 +43,14 @@ class CardTestimonialsSectionMobile extends StatelessWidget {
                         const SizedBox(height: 27.0),
                         Image.asset(
                           "assets/images/icon_twitter.png",
-                          height: 50.0,
-                          width: 50.0,
+                          height: 44.0,
+                          width: 44.0,
                         ),
                         const SizedBox(height: 27.0),
                         const Text(
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          maxLines: 6,
                           "Working with DigitX was a pleasure. Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.",
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
@@ -69,7 +72,11 @@ class CardTestimonialsSectionMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Image.asset("assets/images/Image_our_testimonials.png"),
+                    Image.asset(
+                      width: 60,
+                      height: 60,
+                      "assets/images/Image_our_testimonials.png",
+                    ),
                     const Text(
                       "Mark Roberts",
                       style: TextStyle(

@@ -6,30 +6,20 @@ class CardFaqsSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Column(
-            children: [
-              getquestionssection(),
-              getquestionssection(),
-              getquestionssection(),
-              getquestionssection(),
-            ],
-          ),
+    return SizedBox(
+      height: 700,
+      child: GridView.builder(
+        itemCount: 7,
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisExtent: 150,
+          crossAxisSpacing: 50,
         ),
-        const SizedBox(width: 50),
-        Expanded(
-          child: Column(
-            children: [
-              getquestionssection(),
-              getquestionssection(),
-              getquestionssection(),
-            ],
-          ),
-        ),
-      ],
+        itemBuilder: (context, index) {
+          return getquestionssection();
+        },
+      ),
     );
   }
 
@@ -47,6 +37,8 @@ class CardFaqsSectionDeskTop extends StatelessWidget {
       ),
       child: ListTile(
         title: const Text(
+          overflow: TextOverflow.ellipsis,
+          maxLines: 3,
           "Do you offer maintenance services for websites and apps developed by other companies?",
           style: TextStyle(
             color: ColorsApp.absoluteColorWhite,

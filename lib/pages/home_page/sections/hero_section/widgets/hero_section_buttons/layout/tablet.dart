@@ -31,7 +31,9 @@ class HeroSectionButtonsTablet extends StatelessWidget {
                 width: 129.0,
                 height: 49.0,
                 decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(100)),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(100),
+                    ),
                     color: ColorsApp.absoluteColorWhite),
                 child: const Center(
                   child: Text(
@@ -58,7 +60,9 @@ class HeroSectionButtonsTablet extends StatelessWidget {
                       style: BorderStyle.solid,
                       width: 1.0,
                       color: ColorsApp.greyShadesColor_15),
-                  borderRadius: const BorderRadius.all(Radius.circular(100)),
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(100),
+                  ),
                   color: ColorsApp.greyShadesColor_10,
                 ),
                 child: const Center(

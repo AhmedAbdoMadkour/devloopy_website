@@ -55,6 +55,8 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                       child: const Padding(
                         padding: EdgeInsets.only(top: 34.0, left: 11),
                         child: Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "Step 01",
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
@@ -70,6 +72,8 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                             "Explore Job Listings",
                             style: TextStyle(
                               height: 3,
@@ -79,6 +83,8 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                             ),
                           ),
                           Text(
+                            maxLines: 6,
+                            overflow: TextOverflow.ellipsis,
                             "Visit our website's \"Careers\" page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
                             style: TextStyle(
                               color: ColorsApp.whiteShadesColor_55,
@@ -109,9 +115,15 @@ class CardStepsApplyDeskTop extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.asset("assets/images/icon_toapply.png"),
+                  Image.asset(
+                    width: 74,
+                    height: 74,
+                    "assets/images/icon_toapply.png",
+                  ),
                   const SizedBox(width: 10),
                   const Text(
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     "We value your interest in DigitX",
                     style: TextStyle(
                       color: ColorsApp.absoluteColorWhite,
@@ -123,6 +135,8 @@ class CardStepsApplyDeskTop extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               const Text(
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
                 "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
                 style: TextStyle(
                   color: ColorsApp.whiteShadesColor_50,

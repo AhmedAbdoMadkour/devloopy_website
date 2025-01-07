@@ -14,10 +14,13 @@ class DescriptionTypeServiceDeskTop extends StatelessWidget {
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.w600,
+            color: ColorsApp.absoluteColorWhite,
           ),
         ),
         SizedBox(height: 27),
         Text(
+          maxLines: 5,
+          overflow: TextOverflow.ellipsis,
           "Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
           style: TextStyle(
               fontSize: 18,

@@ -25,13 +25,19 @@ class CardJobListingDeskTop extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset("assets/images/image_job_list_web.png"),
+                    Image.asset(
+                      width: 96,
+                      height: 96,
+                      "assets/images/image_job_list_web.png",
+                    ),
                     const SizedBox(
                       width: 10,
                     ),
                     const Column(
                       children: [
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.start,
                           "Web Designer",
                           style: TextStyle(
@@ -41,6 +47,8 @@ class CardJobListingDeskTop extends StatelessWidget {
                           ),
                         ),
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "Mumbai, India",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_50,
@@ -101,9 +109,15 @@ class CardJobListingDeskTop extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Image.asset("assets/icons/Icon_salary.png"),
+                      Image.asset(
+                        width: 28,
+                        height: 28,
+                        "assets/icons/Icon_salary.png",
+                      ),
                       const SizedBox(width: 10),
                       const Text(
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         "Salary - \$45,000 -\$60,000 per year (based on experience)",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -116,14 +130,22 @@ class CardJobListingDeskTop extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: [
-                      Image.asset("assets/icons/Icon_experience.png"),
+                      Image.asset(
+                        width: 28,
+                        height: 28,
+                        "assets/icons/Icon_experience.png",
+                      ),
                       const SizedBox(width: 10),
-                      const Text(
-                        "Experience - Minimum 1 year of professional web design experience.",
-                        style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w400,
+                      Flexible(
+                        child: const Text(
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          "Experience - Minimum 1 year of professional web design experience.",
+                          style: TextStyle(
+                            color: ColorsApp.absoluteColorWhite,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
                     ],
@@ -131,14 +153,23 @@ class CardJobListingDeskTop extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: [
-                      Image.asset("assets/icons/icon_skills.png"),
+                      Image.asset(
+                        width: 28,
+                        height: 28,
+                        "assets/icons/icon_skills.png",
+                      ),
                       const SizedBox(width: 10),
-                      const Text(
-                        "Skills - Proficiency in Adobe Creative Suite (Photoshop, Illustrator, etc.), ",
-                        style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w400,
+                      const Flexible(
+                        child: Text(
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          softWrap: true,
+                          "Skills - Proficiency in Adobe Creative Suite (Photoshop, Illustrator, etc.), ",
+                          style: TextStyle(
+                            color: ColorsApp.absoluteColorWhite,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
                     ],
@@ -161,6 +192,8 @@ class CardJobListingDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     "Job Description",
                     style: TextStyle(
                       color: ColorsApp.absoluteColorWhite,
@@ -170,6 +203,8 @@ class CardJobListingDeskTop extends StatelessWidget {
                     ),
                   ),
                   const Text(
+                    maxLines: 7,
+                    overflow: TextOverflow.ellipsis,
                     "As a Web Designer at DigitX, you will be responsible for creating visually stunning and user-friendly website designs. Working closely with our development and marketing teams, you will turn creative concepts into functional web interfaces that deliver exceptional user experiences. This role offers an opportunity to showcase your design expertise and contribute to a wide range of exciting projects for diverse clients.",
                     style: TextStyle(
                       color: ColorsApp.whiteShadesColor_50,
@@ -191,7 +226,11 @@ class CardJobListingDeskTop extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Image.asset("assets/icons/icon_job_description.png"),
+                        Image.asset(
+                          width: 28,
+                          height: 28,
+                          "assets/icons/icon_job_description.png",
+                        ),
                         const SizedBox(width: 6),
                         const Text(
                           " Application Deadline: 30th September 2025",
@@ -218,11 +257,13 @@ class CardJobListingDeskTop extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              child: const Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Responsibilities",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: ColorsApp.absoluteColorWhite,
                       fontSize: 22,
@@ -230,75 +271,120 @@ class CardJobListingDeskTop extends StatelessWidget {
                       height: 3,
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text("\u2022"),
-                      SizedBox(width: 6),
-                      Text(
-                        "Design and create visually appealing website layouts.",
+                  RichText(
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    text: const TextSpan(children: [
+                      TextSpan(
+                        text: "\u2022 ",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                    ],
+                      TextSpan(
+                        text:
+                            "Design and create visually appealing website layouts.",
+                        style: TextStyle(
+                          color: ColorsApp.whiteShadesColor_55,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      )
+                    ]),
                   ),
-                  Row(
-                    children: [
-                      Text("\u2022"),
-                      SizedBox(width: 6),
-                      Text(
-                        "Collaborate with UI/UX designers and front-end developers to ",
+                  RichText(
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    text: const TextSpan(children: [
+                      TextSpan(
+                        text: "\u2022 ",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                    ],
+                      TextSpan(
+                        text:
+                            "Collaborate with UI/UX designers and front-end developers to ",
+                        style: TextStyle(
+                          color: ColorsApp.whiteShadesColor_55,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      )
+                    ]),
                   ),
-                  Row(
-                    children: [
-                      Text("\u2022"),
-                      SizedBox(width: 6),
-                      Text(
-                        "Conduct user research to understand user behaviors and prefrences.",
+                  RichText(
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    text: const TextSpan(children: [
+                      TextSpan(
+                        text: "\u2022 ",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                    ],
+                      TextSpan(
+                        text:
+                            "Conduct user research to understand user behaviors and prefrences.",
+                        style: TextStyle(
+                          color: ColorsApp.whiteShadesColor_55,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      )
+                    ]),
                   ),
-                  Row(
-                    children: [
-                      Text("\u2022"),
-                      SizedBox(width: 6),
-                      Text(
-                        "Stay updated with industry trends and emerging design tools and .",
+                  RichText(
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    text: const TextSpan(children: [
+                      TextSpan(
+                        text: "\u2022 ",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                    ],
+                      TextSpan(
+                        text:
+                            "Stay updated with industry trends and emerging design tools and .",
+                        style: TextStyle(
+                          color: ColorsApp.whiteShadesColor_55,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      )
+                    ]),
                   ),
-                  Row(
-                    children: [
-                      Text("\u2022"),
-                      SizedBox(width: 6),
-                      Text(
-                        "Present design concepts and prototypes to internal teams and .",
+                  RichText(
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    text: const TextSpan(children: [
+                      TextSpan(
+                        text: "\u2022 ",
                         style: TextStyle(
                           color: ColorsApp.whiteShadesColor_55,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                    ],
+                      TextSpan(
+                        text:
+                            "Present design concepts and prototypes to internal teams and .",
+                        style: TextStyle(
+                          color: ColorsApp.whiteShadesColor_55,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      )
+                    ]),
                   ),
                 ],
               ),

@@ -14,7 +14,11 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
           border: Border.all(color: ColorsApp.greyShadesColor_12)),
       child: Column(
         children: [
-          Image.asset(imageShowcase),
+          Image.asset(
+            width: 1226,
+            height: 696,
+            imageShowcase,
+          ),
           Column(
             children: [
               Container(
@@ -81,7 +85,11 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Image.asset("assets/icons/icon_e_commerce_success.png"),
+                        Image.asset(
+                          width: 24,
+                          height: 24,
+                          "assets/icons/icon_e_commerce_success.png",
+                        ),
                         const SizedBox(width: 10),
                         const Text("E-commerce"),
                       ],
@@ -104,7 +112,11 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Image.asset("assets/icons/Icon_web_design_success.png"),
+                        Image.asset(
+                          width: 24,
+                          height: 24,
+                          "assets/icons/Icon_web_design_success.png",
+                        ),
                         const SizedBox(width: 10),
                         const Text("Web Design & Development"),
                       ],
@@ -127,7 +139,11 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Image.asset("assets/icons/Icon_web_design_success.png"),
+                        Image.asset(
+                          width: 24,
+                          height: 24,
+                          "assets/icons/Icon_web_design_success.png",
+                        ),
                         const SizedBox(width: 10),
                         const Text("Mobile App Development"),
                       ],

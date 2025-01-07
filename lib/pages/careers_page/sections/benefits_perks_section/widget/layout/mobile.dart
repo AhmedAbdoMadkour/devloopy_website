@@ -41,6 +41,8 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
               const SizedBox(width: 10),
               const Expanded(
                 child: Text(
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   "Health and Wellness",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
@@ -62,21 +64,35 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "\u2022 Health Insurance: ",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
+                    RichText(
+                      text: const TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "\u2022",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          TextSpan(
+                            text: " Health Insurance:",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Text(
+                    const Text(
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       "Comprehensive health insurance plans to cover medical, dental, and vision needs.",
@@ -91,15 +107,29 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "\u2022 Mental Health Support:",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
+                    RichText(
+                      text: const TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "\u2022",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          TextSpan(
+                            text: " Mental Health Support:",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Text(
+                    const Text(
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       "Employee Assistance Program (EAP) providing counseling and support services.",
@@ -114,15 +144,29 @@ class CardBenefitsAndPerksMobile extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "\u2022 Wellness Programs:  ",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
+                    RichText(
+                      text: const TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "\u2022",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          TextSpan(
+                            text: " Wellness Programs:",
+                            style: TextStyle(
+                              color: ColorsApp.absoluteColorWhite,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Text(
+                    const Text(
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       "Initiatives to promote physical and mental well-being, such as fitness classes and workshops. ",

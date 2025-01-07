@@ -15,7 +15,11 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Image.asset(imageShowcase),
+          Image.asset(
+            width: 318,
+            height: 212,
+            imageShowcase,
+          ),
           const SizedBox(height: 20),
           Column(
             children: [
@@ -72,6 +76,7 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
@@ -87,8 +92,13 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset("assets/icons/icon_e_commerce.png"),
+                        Image.asset(
+                          width: 20,
+                          height: 20,
+                          "assets/icons/icon_e_commerce.png",
+                        ),
                         const SizedBox(width: 10),
                         const Text(
                           "E-commerce",
@@ -117,7 +127,11 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Image.asset("assets/icons/icon_web_2.png"),
+                        Image.asset(
+                          width: 20,
+                          height: 20,
+                          "assets/icons/icon_web_2.png",
+                        ),
                         const SizedBox(width: 10),
                         const Text(
                           "Mobile App Development",
@@ -146,7 +160,11 @@ class CardProjectsShowcaseTablet extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Image.asset("assets/icons/icon_web.png"),
+                        Image.asset(
+                          width: 20,
+                          height: 20,
+                          "assets/icons/icon_web.png",
+                        ),
                         const SizedBox(width: 10),
                         const Text(
                           "Web Design & Development",

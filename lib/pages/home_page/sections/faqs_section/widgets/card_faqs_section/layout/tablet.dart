@@ -6,45 +6,38 @@ class CardFaqsSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Column(
-            children: [
-              getquestionssection(),
-              getquestionssection(),
-              getquestionssection(),
-              getquestionssection(),
-            ],
-          ),
+    return SizedBox(
+      height: 700,
+      child: GridView.builder(
+        itemCount: 7,
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisExtent: 150,
+          crossAxisSpacing: 50,
         ),
-        const SizedBox(width: 50),
-        Expanded(
-          child: Column(
-            children: [
-              getquestionssection(),
-              getquestionssection(),
-              getquestionssection(),
-            ],
-          ),
-        ),
-      ],
+        itemBuilder: (context, index) {
+          return getquestionssection();
+        },
+      ),
     );
   }
 
   Container getquestionssection() {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 34),
-      //margin: const EdgeInsets.all(26),
       decoration: const BoxDecoration(
-          border: Border(
-              bottom: BorderSide(
-                  color: ColorsApp.greyShadesColor_12,
-                  width: 1,
-                  style: BorderStyle.solid))),
+        border: Border(
+          bottom: BorderSide(
+              color: ColorsApp.greyShadesColor_12,
+              width: 1,
+              style: BorderStyle.solid),
+        ),
+      ),
       child: ListTile(
         title: const Text(
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
           "Do you offer maintenance services for websites and apps developed by other companies?",
           style: TextStyle(
             color: ColorsApp.absoluteColorWhite,

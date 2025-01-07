@@ -14,7 +14,7 @@ class CardChooseSectionDeskTop extends StatelessWidget {
             const NeverScrollableScrollPhysics(), // Disable gridview scrolling
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
-          mainAxisExtent: 456,
+          mainAxisExtent: 470,
         ),
         itemBuilder: (context, index) {
           return Container(
@@ -67,7 +67,11 @@ class CardChooseSectionDeskTop extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      width: 92,
+      height: 92,
+      "assets/icons/whychooseExpertise.png",
+    );
   }
 
   Widget titleCardChooseSection() {
@@ -84,6 +88,8 @@ class CardChooseSectionDeskTop extends StatelessWidget {
         SizedBox(height: 20.0),
         Text(
           textAlign: TextAlign.center,
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
           "Our team of seasoned professionals  brings years of  experience and expertise to the table.",
           style: TextStyle(
             color: ColorsApp.whiteShadesColor_55,

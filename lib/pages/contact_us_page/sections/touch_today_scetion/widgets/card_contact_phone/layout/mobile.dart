@@ -11,6 +11,7 @@ class CardContactPhoneMobile extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
             "Contact Us By Phone",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
@@ -36,6 +37,7 @@ class CardContactPhoneMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
                       "General Enquiries",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -71,6 +73,7 @@ class CardContactPhoneMobile extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
+                              maxLines: 1,
                               "+1-XXX-XXX-XXXX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
@@ -110,6 +113,7 @@ class CardContactPhoneMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
                       "Business Collaborations",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -146,6 +150,7 @@ class CardContactPhoneMobile extends StatelessWidget {
                                 weight: 20,
                               ),
                               Text(
+                                maxLines: 1,
                                 "+1-XXX-XXX-XXXX",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -186,6 +191,7 @@ class CardContactPhoneMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
                       "Free Consultation",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -221,6 +227,7 @@ class CardContactPhoneMobile extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
+                              maxLines: 1,
                               "+1-XXX-XXX-XXXX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,

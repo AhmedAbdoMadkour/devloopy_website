@@ -20,6 +20,8 @@ class TitleDescriptionCTASectionMobile extends StatelessWidget {
         SizedBox(height: 20.0),
         Text(
           textAlign: TextAlign.center,
+          overflow: TextOverflow.ellipsis,
+          maxLines: 3,
           "Take the first step towards digital success with DigitX by your side.",
           style: TextStyle(
             color: ColorsApp.whiteShadesColor_50,

@@ -9,45 +9,42 @@ class HerosectionTabLet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(),
-      child: Row(
-        children: [
-          Expanded(
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage("assets/images/backgroundherosection.png"),
-                ),
+    return Row(
+      children: [
+        Expanded(
+          child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/backgroundherosection.png"),
               ),
-              child: const Padding(
-                padding: EdgeInsets.all(50),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CustomTitleTablet(
-                      nameTitle: "Digital Solutions",
-                      subnameTitle: "That",
-                      spanTitle: "Drive Success",
-                    ),
-                    SizedBox(height: 10),
-                    CustomSecondDescriptionTablet(
-                      description:
-                          "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
-                    ),
-                    SizedBox(height: 20),
-                    HeroSectionButtonsTablet(),
-                  ],
-                ),
+            ),
+            child: const Padding(
+              padding: EdgeInsets.all(50),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomTitleTablet(
+                    nameTitle: "Digital Solutions",
+                    subnameTitle: "That",
+                    spanTitle: "Drive Success",
+                  ),
+                  SizedBox(height: 10),
+                  CustomSecondDescriptionTablet(
+                    description:
+                        "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                  ),
+                  SizedBox(height: 20),
+                  HeroSectionButtonsTablet(),
+                ],
               ),
             ),
           ),
-          const Expanded(
-            child: HeroSectionImageTablet(),
-          ),
-        ],
-      ),
+        ),
+        const Expanded(
+          child: HeroSectionImageTablet(),
+        ),
+      ],
     );
   }
 }

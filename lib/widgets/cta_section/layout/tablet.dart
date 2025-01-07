@@ -44,7 +44,10 @@ class CTASectionTablet extends StatelessWidget {
           const SizedBox(height: 50.0),
           const ButtonCTASectionTablet(),
           const SizedBox(height: 50.0),
-          Image.asset("assets/images/CTA.png"),
+          Image.asset(
+            "assets/images/CTA.png",
+            width: 1280,
+          ),
         ],
       ),
     );

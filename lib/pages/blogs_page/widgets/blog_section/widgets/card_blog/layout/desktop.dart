@@ -7,12 +7,12 @@ class CardBlogDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1500,
+      height: 1700,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 700,
+          mainAxisExtent: 825,
           crossAxisSpacing: 50,
           mainAxisSpacing: 50,
         ),
@@ -51,8 +51,15 @@ class CardBlogDeskTop extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Image.asset("assets/images/Image_person_blog.png"),
+                      Image.asset(
+                        width: 60,
+                        height: 60,
+                        "assets/images/Image_person_blog.png",
+                      ),
+                      const SizedBox(width: 10),
                       const Text(
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         "Daniel Lee",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -83,6 +90,8 @@ class CardBlogDeskTop extends StatelessWidget {
                               color: ColorsApp.whiteShadesColor_55,
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "6 min read",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
@@ -112,6 +121,8 @@ class CardBlogDeskTop extends StatelessWidget {
                               color: ColorsApp.whiteShadesColor_55,
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "March 2019",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
@@ -131,6 +142,8 @@ class CardBlogDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     "The Psychology of Visual Design in Branding",
                     style: TextStyle(
                         height: 3,
@@ -139,7 +152,9 @@ class CardBlogDeskTop extends StatelessWidget {
                         fontWeight: FontWeight.w600),
                   ),
                   Text(
-                    "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions....",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions",
                     style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
                         fontSize: 18,

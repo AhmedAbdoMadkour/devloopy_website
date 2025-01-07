@@ -59,7 +59,11 @@ class CardTestimonialsSectionDeskTop extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 40.0),
                 child: Row(
                   children: [
-                    Image.asset("assets/images/Image_our_testimonials.png"),
+                    Image.asset(
+                      width: 70,
+                      height: 70,
+                      "assets/images/Image_our_testimonials.png",
+                    ),
                     const SizedBox(width: 14.0),
                     const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

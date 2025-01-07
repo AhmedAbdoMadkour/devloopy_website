@@ -62,7 +62,11 @@ class CardServicesSectionMobile extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      width: 114,
+      height: 114,
+      "assets/icons/whychooseExpertise.png",
+    );
   }
 
   Widget titleCardChooseSection() {

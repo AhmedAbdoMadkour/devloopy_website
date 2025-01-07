@@ -26,6 +26,8 @@ class CardHowItWorksDeskTop extends StatelessWidget {
             ),
           ),
           child: const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "How it Works",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
@@ -82,6 +84,8 @@ class CardHowItWorksDeskTop extends StatelessWidget {
                       child: const Padding(
                         padding: EdgeInsets.only(top: 34.0, left: 11),
                         child: Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "Step 01",
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
@@ -97,6 +101,8 @@ class CardHowItWorksDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                             "Refer Qualified Candidates",
                             style: TextStyle(
                               height: 3,

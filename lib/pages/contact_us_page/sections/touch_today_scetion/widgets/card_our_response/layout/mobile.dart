@@ -40,6 +40,7 @@ class CardOurResponseMobile extends StatelessWidget {
                     ),
                     const SizedBox(width: 10),
                     const Text(
+                      maxLines: 1,
                       "Our Response",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,

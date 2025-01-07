@@ -6,15 +6,20 @@ class CardServicesSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 1630.0,
+    return Container(
+      height: 1660.0,
+      padding: const EdgeInsets.only(
+        top: 120,
+        right: 80,
+        bottom: 80,
+        left: 80,
+      ),
       child: GridView.builder(
         itemCount: 4,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 50.0,
-          mainAxisExtent: 790.0,
           crossAxisSpacing: 50.0,
         ),
         itemBuilder: (context, index) {
@@ -63,7 +68,11 @@ class CardServicesSectionDeskTop extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      width: 172,
+      height: 172,
+      "assets/icons/whychooseExpertise.png",
+    );
   }
 
   Widget titleCardChooseSection() {
@@ -79,6 +88,8 @@ class CardServicesSectionDeskTop extends StatelessWidget {
         ),
         SizedBox(height: 10),
         Text(
+          maxLines: 8,
+          overflow: TextOverflow.ellipsis,
           "Unlock Your Online Potential In today's digital age, a powerful web presence is essential for any business. At DigitX, our web development services empower you to stand out in the crowded online landscape. We create responsive and dynamic websites tailored to your unique needs, ensuring seamless user experiences across all devices. From e-commerce platforms to interactive web applications, our expert developers bring your vision to life, making your online journey a resounding success.",
           style: TextStyle(
             color: ColorsApp.whiteShadesColor_55,

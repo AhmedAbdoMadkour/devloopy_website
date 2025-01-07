@@ -70,7 +70,11 @@ class CardBookServicesMobile extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      width: 114,
+      height: 114,
+      "assets/icons/whychooseExpertise.png",
+    );
   }
 
   Widget titleCardChooseSection() {
@@ -134,8 +138,10 @@ class CardBookServicesMobile extends StatelessWidget {
   Widget bottonCardBookSevices() {
     return GestureDetector(
       child: Container(
-        width: 165.0,
-        height: 44.0,
+        // width: 165.0,
+        // height: 44.0,
+        padding:
+            const EdgeInsets.only(top: 10, right: 10, bottom: 10, left: 16),
         decoration: BoxDecoration(
           color: ColorsApp.greyShadesColor_10,
           borderRadius: BorderRadius.circular(50.0),

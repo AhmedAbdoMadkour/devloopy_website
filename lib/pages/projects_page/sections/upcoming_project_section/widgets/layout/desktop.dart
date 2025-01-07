@@ -39,7 +39,11 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Image.asset("assets/icons/Icon_fitness_success.png"),
+                    Image.asset(
+                      width: 66,
+                      height: 66,
+                      "assets/icons/Icon_fitness_success.png",
+                    ),
                     const Text(
                       "Educational Learning App",
                       style: TextStyle(
@@ -149,6 +153,8 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                             height: 2),
                       ),
                       Text(
+                        maxLines: 10,
+                        overflow: TextOverflow.ellipsis,
                         "We are collaborating with an eco-conscious startup to create an innovative e-commerce platform that promotes sustainable products and environmentally friendly practices. The platform will empower consumers to make eco-conscious choices while supporting sustainable businesses. This project aligns with our commitment to creating digital solutions that contribute to a greener future.",
                         style: TextStyle(
                             color: ColorsApp.whiteShadesColor_55,

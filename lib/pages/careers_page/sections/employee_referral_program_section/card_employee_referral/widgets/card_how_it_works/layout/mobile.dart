@@ -27,6 +27,8 @@ class CardHowItWorksMobile extends StatelessWidget {
           ),
           child: const Text(
             "How it Works",
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
               fontSize: 18,
@@ -82,6 +84,8 @@ class CardHowItWorksMobile extends StatelessWidget {
                         padding: EdgeInsets.only(top: 34.0, left: 11),
                         child: Text(
                           "Step 01",
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             color: ColorsApp.absoluteColorWhite,
                             fontSize: 20,
@@ -97,6 +101,8 @@ class CardHowItWorksMobile extends StatelessWidget {
                         children: [
                           Text(
                             "Refer Qualified Candidates",
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                               height: 3,
                               color: ColorsApp.absoluteColorWhite,

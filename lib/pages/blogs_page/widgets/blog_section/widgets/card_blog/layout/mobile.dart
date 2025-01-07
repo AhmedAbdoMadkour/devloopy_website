@@ -58,6 +58,8 @@ class CardBlogMobile extends StatelessWidget {
                       ),
                       const SizedBox(width: 10),
                       const Text(
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         "Daniel Lee",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,
@@ -92,6 +94,8 @@ class CardBlogMobile extends StatelessWidget {
                               color: ColorsApp.whiteShadesColor_55,
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "6 min read",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
@@ -125,6 +129,8 @@ class CardBlogMobile extends StatelessWidget {
                               color: ColorsApp.whiteShadesColor_55,
                             ),
                             Text(
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               "March 2019",
                               style: TextStyle(
                                 color: ColorsApp.whiteShadesColor_55,
@@ -144,6 +150,8 @@ class CardBlogMobile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     "The Psychology of Visual Design in Branding",
                     style: TextStyle(
                       color: ColorsApp.absoluteColorWhite,

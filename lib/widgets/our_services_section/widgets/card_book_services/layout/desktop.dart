@@ -92,7 +92,11 @@ class CardBookServicesDeskTop extends StatelessWidget {
   }
 
   Widget iconCardChooseSection() {
-    return Image.asset("assets/icons/whychooseExpertise.png");
+    return Image.asset(
+      "assets/icons/whychooseExpertise.png",
+      width: 172,
+      height: 172,
+    );
   }
 
   Widget titleCardChooseSection() {

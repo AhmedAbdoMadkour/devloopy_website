@@ -30,7 +30,7 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  margin: const EdgeInsets.symmetric(vertical: 50.0),
+                  margin: const EdgeInsets.symmetric(vertical: 40.0),
                   width: 673.0,
                   height: 437.0,
                   decoration: BoxDecoration(
@@ -137,7 +137,11 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Image iconCardOurWorks() => Image.asset("assets/images/shape-14.png");
+  Image iconCardOurWorks() => Image.asset(
+        width: 200,
+        height: 200,
+        "assets/images/shape-14.png",
+      );
 
   DecorationImage backgroundOurWorksImage() {
     return const DecorationImage(

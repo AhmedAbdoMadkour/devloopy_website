@@ -13,6 +13,8 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Join Us on Social Media",
             style: TextStyle(
               color: ColorsApp.absoluteColorWhite,
@@ -21,6 +23,8 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
             ),
           ),
           const Text(
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
             "Stay updated with our latest projects, industry insights, and company news by following us on social media",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,
@@ -49,28 +53,31 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     GestureDetector(
-                      child: const Image(
-                        image: AssetImage(
-                            "assets/images/image_Button_linkedin.png"),
-                      ),
+                      child: Image.asset(
+                          width: 74,
+                          height: 74,
+                          "assets/images/image_Button_linkedin.png"),
                     ),
                     const SizedBox(width: 10),
                     GestureDetector(
-                      child: const Image(
-                        image: AssetImage(
-                            "assets/images/image_Button_instagram.png"),
-                      ),
+                      child: Image.asset(
+                          width: 74,
+                          height: 74,
+                          "assets/images/image_Button_instagram.png"),
                     ),
                     const SizedBox(width: 10),
                     GestureDetector(
-                      child: const Image(
-                        image: AssetImage("assets/images/image_Button_x.png"),
-                      ),
+                      child: Image.asset(
+                          width: 74,
+                          height: 74,
+                          "assets/images/image_Button_x.png"),
                     ),
                   ],
                 ),
                 const SizedBox(height: 16),
                 const Text(
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   "Thank You!",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
@@ -80,6 +87,8 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 const Text(
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                   "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(

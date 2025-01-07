@@ -10,10 +10,12 @@ class CustomSecondDescriptionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.all(16.0),
       child: Text(
         description,
         textAlign: TextAlign.center,
+        maxLines: 10,
+        overflow: TextOverflow.ellipsis,
         style: const TextStyle(
           color: ColorsApp.whiteShadesColor_50,
           fontSize: 14.0,

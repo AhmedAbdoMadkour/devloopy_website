@@ -53,6 +53,7 @@ class CardTitleContactTablet extends StatelessWidget {
             ),
             child: const Center(
               child: Text(
+                maxLines: 1,
                 "Feel free to contact us through any of the following channels",
                 style: TextStyle(
                   color: ColorsApp.absoluteColorWhite,

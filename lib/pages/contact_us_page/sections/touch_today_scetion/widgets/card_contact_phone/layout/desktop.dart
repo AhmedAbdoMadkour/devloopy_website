@@ -11,6 +11,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Contact Us Via Email",
             style: TextStyle(
               height: 5,
@@ -36,6 +38,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "General Enquiries",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -69,6 +73,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                                 weight: 24,
                               ),
                               Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "+1-XXX-XXX-XXXX",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -109,6 +115,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "Business Collaborations",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -142,6 +150,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                                 weight: 24,
                               ),
                               Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "+1-XXX-XXX-XXXX",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
@@ -182,6 +192,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "Free Consultation",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -215,6 +227,8 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                                 weight: 24,
                               ),
                               Text(
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 "+1-XXX-XXX-XXXX",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,

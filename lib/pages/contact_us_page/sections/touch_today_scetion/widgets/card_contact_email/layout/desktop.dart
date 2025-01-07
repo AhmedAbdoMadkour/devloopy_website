@@ -11,6 +11,8 @@ class CardContactEmailDeskTop extends StatelessWidget {
       child: Column(
         children: [
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Contact Us Via Email",
             style: TextStyle(
               height: 5,
@@ -36,6 +38,8 @@ class CardContactEmailDeskTop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "For General Inquiries",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -105,6 +109,8 @@ class CardContactEmailDeskTop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "For Business Collaborations",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
@@ -175,6 +181,8 @@ class CardContactEmailDeskTop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       "For Job Opportunities",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,

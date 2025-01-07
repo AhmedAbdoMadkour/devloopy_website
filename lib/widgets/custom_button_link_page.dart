@@ -18,7 +18,7 @@ class CustomButtonLinkPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 6),
+      margin: const EdgeInsets.symmetric(vertical: 4),
       child: TextButton(
         onPressed: () {
           Navigator.pushNamed(

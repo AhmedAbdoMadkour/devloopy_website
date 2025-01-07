@@ -35,6 +35,8 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               ),
             ),
             child: const Text(
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               "All",
               style: TextStyle(
                 color: ColorsApp.whiteShadesColor_50,
@@ -59,6 +61,8 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               ),
             ),
             child: const Text(
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               "Business",
               style: TextStyle(
                 color: ColorsApp.whiteShadesColor_50,
@@ -83,6 +87,8 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               ),
             ),
             child: const Text(
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               "Design",
               style: TextStyle(
                 color: ColorsApp.whiteShadesColor_50,
@@ -107,6 +113,8 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               ),
             ),
             child: const Text(
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               "Development",
               style: TextStyle(
                 color: ColorsApp.whiteShadesColor_50,

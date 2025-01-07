@@ -58,6 +58,8 @@ class CardStepsApplyTablet extends StatelessWidget {
                           padding: EdgeInsets.only(top: 34.0, left: 11),
                           child: Text(
                             "Step 01",
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
                               fontSize: 20,
@@ -73,6 +75,8 @@ class CardStepsApplyTablet extends StatelessWidget {
                           children: [
                             Text(
                               "Explore Job Listings",
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               style: TextStyle(
                                 height: 3,
                                 color: ColorsApp.absoluteColorWhite,
@@ -124,6 +128,8 @@ class CardStepsApplyTablet extends StatelessWidget {
                     const SizedBox(width: 10),
                     const Expanded(
                       child: Text(
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         "We value your interest in DigitX",
                         style: TextStyle(
                           color: ColorsApp.absoluteColorWhite,

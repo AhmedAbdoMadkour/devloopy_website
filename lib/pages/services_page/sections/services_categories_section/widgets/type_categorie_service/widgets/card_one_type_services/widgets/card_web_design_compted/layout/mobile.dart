@@ -30,6 +30,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             const Text(
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
               "At DigitX, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
               style: TextStyle(
                 fontSize: 14,
@@ -59,6 +61,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                       children: [
                         Text(
                           "Project Name",
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_80,
                             fontSize: 16,
@@ -66,6 +70,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           ),
                         ),
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "GlobalTech Solutions",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_55,
@@ -89,6 +95,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "Industry",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_80,
@@ -97,6 +105,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           ),
                         ),
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "E-commerce",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_55,
@@ -120,6 +130,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "Website URL",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_80,
@@ -128,6 +140,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           ),
                         ),
                         Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           "www.globaltechsolutions.com",
                           style: TextStyle(
                             color: ColorsApp.whiteShadesColor_55,
