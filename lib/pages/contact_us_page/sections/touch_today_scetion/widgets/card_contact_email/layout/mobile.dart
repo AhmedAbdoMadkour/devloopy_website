@@ -51,7 +51,7 @@ class CardContactEmailMobile extends StatelessWidget {
                         top: 8,
                         right: 8,
                         bottom: 8,
-                        left: 20,
+                        left: 10,
                       ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
@@ -76,7 +76,7 @@ class CardContactEmailMobile extends StatelessWidget {
                               "info@digitx.com",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 14,
+                                fontSize: 12,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -84,8 +84,8 @@ class CardContactEmailMobile extends StatelessWidget {
                           GestureDetector(
                             child: Container(
                               padding: const EdgeInsets.symmetric(
-                                horizontal: 16,
-                                vertical: 8,
+                                horizontal: 10,
+                                vertical: 5,
                               ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
@@ -126,7 +126,7 @@ class CardContactEmailMobile extends StatelessWidget {
                         top: 8,
                         right: 8,
                         bottom: 8,
-                        left: 20,
+                        left: 10,
                       ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
@@ -152,7 +152,7 @@ class CardContactEmailMobile extends StatelessWidget {
                                 "partnerships@digitx.com",
                                 style: TextStyle(
                                   color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 14,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -161,8 +161,8 @@ class CardContactEmailMobile extends StatelessWidget {
                           GestureDetector(
                             child: Container(
                               padding: const EdgeInsets.symmetric(
-                                horizontal: 16,
-                                vertical: 8,
+                                horizontal: 10,
+                                vertical: 5,
                               ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
@@ -193,7 +193,7 @@ class CardContactEmailMobile extends StatelessWidget {
                       "For Job Opportunities",
                       style: TextStyle(
                         color: ColorsApp.whiteShadesColor_55,
-                        fontSize: 14,
+                        fontSize: 12,
                         fontWeight: FontWeight.w400,
                         height: 3,
                       ),
@@ -203,7 +203,7 @@ class CardContactEmailMobile extends StatelessWidget {
                         top: 8,
                         right: 8,
                         bottom: 8,
-                        left: 20,
+                        left: 10,
                       ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
@@ -236,8 +236,8 @@ class CardContactEmailMobile extends StatelessWidget {
                           GestureDetector(
                             child: Container(
                               padding: const EdgeInsets.symmetric(
-                                horizontal: 16,
-                                vertical: 8,
+                                horizontal: 10,
+                                vertical: 5,
                               ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,

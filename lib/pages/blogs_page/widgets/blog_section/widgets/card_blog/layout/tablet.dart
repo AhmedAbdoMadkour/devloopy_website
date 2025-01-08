@@ -7,12 +7,12 @@ class CardBlogTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1240,
+      height: 1300,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 600,
+          mainAxisExtent: 650,
           crossAxisSpacing: 24,
           mainAxisSpacing: 24,
         ),

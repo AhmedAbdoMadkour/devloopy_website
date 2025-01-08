@@ -32,10 +32,10 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 40),
           Container(
             padding: const EdgeInsets.all(50),
-            height: 650,
+            height: 660,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -48,6 +48,7 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 50,
+                mainAxisExtent: 550,
                 mainAxisSpacing: 50,
               ),
               itemCount: 2,
@@ -55,7 +56,7 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                 return Container(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 50,
-                    vertical: 80,
+                    vertical: 50,
                   ),
                   decoration: BoxDecoration(
                     image: const DecorationImage(
@@ -81,8 +82,8 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                       Column(
                         children: [
                           Image.asset(
-                            width: 172,
-                            height: 172,
+                            width: 160,
+                            height: 160,
                             "assets/images/iamge_office_location.png",
                           ),
                         ],

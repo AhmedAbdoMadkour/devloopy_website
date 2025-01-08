@@ -13,7 +13,7 @@ class ProjectCardDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(50),
+      padding: const EdgeInsets.all(40),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(

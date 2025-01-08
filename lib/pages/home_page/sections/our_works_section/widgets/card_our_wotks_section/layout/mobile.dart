@@ -7,19 +7,18 @@ class CardOurWorksSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 2350,
+      height: 2070,
       child: GridView.builder(
         itemCount: 4,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 570.0,
-          crossAxisSpacing: 20.0,
+          mainAxisExtent: 500.0,
           mainAxisSpacing: 20.0,
         ),
         itemBuilder: (context, index) {
           return Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
@@ -37,9 +36,8 @@ class CardOurWorksSectionMobile extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  margin: const EdgeInsets.symmetric(vertical: 20.0),
-                  width: 673.0,
-                  height: 280.0,
+                  margin: const EdgeInsets.symmetric(vertical: 16.0),
+                  height: 200.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     border: Border.all(
@@ -63,7 +61,7 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                       "Modern Corporate Website",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -71,12 +69,14 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Category: Web Design.",
-                            style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400,
-                            )),
+                        Flexible(
+                          child: Text("Category: Web Design.",
+                              style: TextStyle(
+                                color: ColorsApp.absoluteColorWhite,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                              )),
+                        ),
                         Text("April 2022",
                             style: TextStyle(
                               color: ColorsApp.absoluteColorWhite,
@@ -117,8 +117,10 @@ class CardOurWorksSectionMobile extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          width: 228.0,
-          height: 44.0,
+          padding: const EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 14,
+          ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50.0),
             border: Border.all(
@@ -136,7 +138,7 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
                     fontFamily: FontsApp.fontFamilySora,
-                    fontSize: 16.0,
+                    fontSize: 14.0,
                   ),
                 ),
                 Icon(

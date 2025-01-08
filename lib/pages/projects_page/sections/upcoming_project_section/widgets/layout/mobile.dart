@@ -40,15 +40,15 @@ class CardUpcomingProjectMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Image.asset(
-                      width: 52,
-                      height: 52,
+                      width: 48,
+                      height: 48,
                       "assets/icons/Icon_fitness_success.png",
                     ),
                     const Text(
                       "Educational Learning App",
                       style: TextStyle(
                         color: ColorsApp.absoluteColorWhite,
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     )

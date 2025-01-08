@@ -13,7 +13,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
           const Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            "Contact Us Via Email",
+            "Contact Us By Phone",
             style: TextStyle(
               height: 5,
               color: ColorsApp.absoluteColorWhite,
@@ -22,7 +22,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -49,8 +49,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -63,33 +62,28 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(
-                            children: [
-                              SizedBox(width: 15),
-                              Icon(
-                                Icons.phone,
+                          const Row(children: [
+                            Icon(
+                              Icons.phone,
+                              color: ColorsApp.absoluteColorWhite,
+                              size: 20,
+                              weight: 20,
+                            ),
+                            Text(
+                              "+1-XXX-XXX-XXXX",
+                              style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                size: 24,
-                                weight: 24,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
                               ),
-                              Text(
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                "+1-XXX-XXX-XXXX",
-                                style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ]),
                           GestureDetector(
                             child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -105,7 +99,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                                 weight: 28,
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     )
@@ -126,8 +120,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -140,33 +133,28 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(
-                            children: [
-                              SizedBox(width: 15),
-                              Icon(
-                                Icons.phone,
+                          const Row(children: [
+                            Icon(
+                              Icons.phone,
+                              color: ColorsApp.absoluteColorWhite,
+                              size: 20,
+                              weight: 20,
+                            ),
+                            Text(
+                              "+1-XXX-XXX-XXXX",
+                              style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                size: 24,
-                                weight: 24,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w400,
                               ),
-                              Text(
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                "+1-XXX-XXX-XXXX",
-                                style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ]),
                           GestureDetector(
                             child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -182,7 +170,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                                 weight: 28,
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     )
@@ -203,8 +191,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -217,33 +204,28 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(
-                            children: [
-                              SizedBox(width: 15),
-                              Icon(
-                                Icons.phone,
+                          const Row(children: [
+                            Icon(
+                              Icons.phone,
+                              color: ColorsApp.absoluteColorWhite,
+                              size: 20,
+                              weight: 20,
+                            ),
+                            Text(
+                              "+1-XXX-XXX-XXXX",
+                              style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                size: 24,
-                                weight: 24,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w400,
                               ),
-                              Text(
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                "+1-XXX-XXX-XXXX",
-                                style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ]),
                           GestureDetector(
                             child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -259,7 +241,7 @@ class CardContactPhoneDeskTop extends StatelessWidget {
                                 weight: 28,
                               ),
                             ),
-                          ),
+                          )
                         ],
                       ),
                     )

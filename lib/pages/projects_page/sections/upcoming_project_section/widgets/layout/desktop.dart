@@ -18,7 +18,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(40),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
@@ -40,8 +40,8 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Image.asset(
-                      width: 66,
-                      height: 66,
+                      width: 60,
+                      height: 60,
                       "assets/icons/Icon_fitness_success.png",
                     ),
                     const Text(
@@ -70,7 +70,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-                        padding: const EdgeInsets.only(right: 50),
+                        padding: const EdgeInsets.only(right: 40),
                         decoration: const BoxDecoration(
                             border: Border(
                                 right: BorderSide(

@@ -8,7 +8,7 @@ class TeamMeembersDeskTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 50),
-      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
@@ -101,7 +101,7 @@ class TeamMeembersDeskTop extends StatelessWidget {
               ),
               Container(
                 margin: const EdgeInsets.only(right: 20),
-                padding: const EdgeInsets.all(30),
+                padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(

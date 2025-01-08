@@ -136,8 +136,8 @@ class CardJobListingDeskTop extends StatelessWidget {
                         "assets/icons/Icon_experience.png",
                       ),
                       const SizedBox(width: 10),
-                      Flexible(
-                        child: const Text(
+                      const Flexible(
+                        child: Text(
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           "Experience - Minimum 1 year of professional web design experience.",

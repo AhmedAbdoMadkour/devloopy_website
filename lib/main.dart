@@ -23,7 +23,7 @@ class DevLoopy extends StatelessWidget {
       theme: LightTheme.theme,
       darkTheme: DarkTheme.theme,
       themeMode: ThemeMode.system,
-      home: const CareersPage(),
+      home: const BlogsPage(),
     );
     // MultiBlocProvider(
     //   providers: [

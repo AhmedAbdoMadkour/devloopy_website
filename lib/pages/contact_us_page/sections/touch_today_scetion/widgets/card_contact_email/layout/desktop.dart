@@ -22,7 +22,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -49,9 +49,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -68,22 +66,24 @@ class CardContactEmailDeskTop extends StatelessWidget {
                             Icon(
                               Icons.email_outlined,
                               color: ColorsApp.absoluteColorWhite,
-                              size: 24,
-                              weight: 24,
+                              size: 20,
+                              weight: 20,
                             ),
                             Text(
                               "info@digitx.com",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
                           ]),
                           GestureDetector(
                             child: Container(
-                              width: 68,
-                              height: 48,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -120,9 +120,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -139,8 +137,8 @@ class CardContactEmailDeskTop extends StatelessWidget {
                             Icon(
                               Icons.email_outlined,
                               color: ColorsApp.absoluteColorWhite,
-                              size: 24,
-                              weight: 24,
+                              size: 20,
+                              weight: 20,
                             ),
                             Text(
                               "partnerships@digitx.com",
@@ -153,9 +151,10 @@ class CardContactEmailDeskTop extends StatelessWidget {
                           ]),
                           GestureDetector(
                             child: Container(
-                              width: 68,
-                              height: 48,
-                              padding: const EdgeInsets.symmetric(),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),
@@ -192,9 +191,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 370,
-                      height: 68,
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
@@ -211,8 +208,8 @@ class CardContactEmailDeskTop extends StatelessWidget {
                             Icon(
                               Icons.email_outlined,
                               color: ColorsApp.absoluteColorWhite,
-                              size: 24,
-                              weight: 24,
+                              size: 20,
+                              weight: 20,
                             ),
                             Text(
                               "careers@digitx.com",
@@ -225,8 +222,10 @@ class CardContactEmailDeskTop extends StatelessWidget {
                           ]),
                           GestureDetector(
                             child: Container(
-                              width: 68,
-                              height: 48,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: ColorsApp.greyShadesColor_10,
                                 borderRadius: BorderRadius.circular(100),

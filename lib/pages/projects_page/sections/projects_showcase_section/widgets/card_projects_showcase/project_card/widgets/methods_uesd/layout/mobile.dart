@@ -8,9 +8,9 @@ class MethodsUesdMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-        right: 18,
-        left: 18,
-        bottom: 18,
+        right: 10,
+        left: 10,
+        bottom: 10,
       ),
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -79,7 +79,7 @@ class MethodsUesdMobile extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(vertical: 5),
                     padding: const EdgeInsets.symmetric(
                       vertical: 8,
-                      horizontal: 8,
+                      horizontal: 5,
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
@@ -101,7 +101,7 @@ class MethodsUesdMobile extends StatelessWidget {
                     margin: const EdgeInsets.all(5),
                     padding: const EdgeInsets.symmetric(
                       vertical: 8,
-                      horizontal: 8,
+                      horizontal: 5,
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
