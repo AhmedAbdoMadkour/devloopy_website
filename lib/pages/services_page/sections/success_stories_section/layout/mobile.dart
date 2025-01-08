@@ -12,8 +12,8 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(
         top: 50,
-        right: 17,
-        left: 17,
+        right: 16,
+        left: 16,
       ),
       child: Column(
         children: [

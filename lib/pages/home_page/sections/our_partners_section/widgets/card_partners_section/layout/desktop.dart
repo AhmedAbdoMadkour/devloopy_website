@@ -19,7 +19,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
         ),
         itemBuilder: (context, index) {
           return Container(
-            padding: const EdgeInsets.all(30.0),
+            padding: const EdgeInsets.all(20.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: bordercardsevicesection(),
@@ -61,14 +61,14 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
       children: [
         Image.asset(
           "assets/images/image_partners_.png",
-          width: 138,
-          height: 138,
+          width: 120,
+          height: 120,
         ),
         const Icon(Icons.add),
         Image.asset(
           "assets/images/image_partners_1.png",
-          width: 138,
-          height: 138,
+          width: 120,
+          height: 120,
         ),
       ],
     );

@@ -7,7 +7,7 @@ class TotalStatisticsMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 5),
       height: 170,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -74,7 +74,7 @@ class TotalStatisticsMobile extends StatelessWidget {
                   "E-commerce",
                   style: TextStyle(
                     color: ColorsApp.absoluteColorWhite,
-                    fontSize: 14,
+                    fontSize: 12,
                     fontWeight: FontWeight.w400,
                   ),
                 ),

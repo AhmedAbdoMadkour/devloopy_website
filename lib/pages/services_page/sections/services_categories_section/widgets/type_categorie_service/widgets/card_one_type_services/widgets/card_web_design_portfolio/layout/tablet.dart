@@ -7,7 +7,6 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 450,
       padding: const EdgeInsets.all(24.0),
       width: double.infinity,
       decoration: BoxDecoration(
@@ -29,7 +28,7 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
               color: ColorsApp.absoluteColorWhite,
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           const Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,

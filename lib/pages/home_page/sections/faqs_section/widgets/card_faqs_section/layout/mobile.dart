@@ -22,8 +22,7 @@ class CardFaqsSectionMobile extends StatelessWidget {
 
   Container getquestionssection() {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 34),
-      //margin: const EdgeInsets.all(26),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(

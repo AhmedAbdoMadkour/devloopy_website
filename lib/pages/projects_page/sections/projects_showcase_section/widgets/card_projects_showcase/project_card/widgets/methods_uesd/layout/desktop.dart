@@ -7,8 +7,8 @@ class MethodsUesdDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(30),
-      padding: const EdgeInsets.all(50),
+      margin: const EdgeInsets.symmetric(vertical: 50),
+      padding: const EdgeInsets.all(40),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
@@ -29,7 +29,7 @@ class MethodsUesdDeskTop extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
@@ -50,9 +50,9 @@ class MethodsUesdDeskTop extends StatelessWidget {
                     ),
                   ),
                   child: Container(
-                    width: 242,
+                    width: 240,
                     height: 63,
-                    margin: const EdgeInsets.symmetric(horizontal: 15),
+                    margin: const EdgeInsets.symmetric(horizontal: 10),
                     padding: const EdgeInsets.symmetric(
                       vertical: 18,
                       horizontal: 24,
@@ -75,7 +75,7 @@ class MethodsUesdDeskTop extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 242,
+                  width: 240,
                   height: 63,
                   decoration: const BoxDecoration(
                     border: Border(
@@ -107,7 +107,7 @@ class MethodsUesdDeskTop extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: 242,
+                  width: 240,
                   height: 63,
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 10),

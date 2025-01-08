@@ -12,8 +12,8 @@ class FAQSSectionMobile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(
         top: 50.0,
-        left: 24,
-        right: 24,
+        left: 16,
+        right: 16,
       ),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.center,

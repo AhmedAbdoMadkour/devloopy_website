@@ -18,7 +18,7 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            padding: const EdgeInsets.all(13),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -31,8 +31,8 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                 Row(
                   children: [
                     Image.asset(
-                      width: 52,
-                      height: 52,
+                      width: 48,
+                      height: 48,
                       "assets/icons/icon_abc_success.png",
                     ),
                     const SizedBox(width: 5),
@@ -53,7 +53,7 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.only(
                         top: 8,
-                        right: 14,
+                        right: 10,
                         bottom: 8,
                         left: 8,
                       ),
@@ -68,10 +68,10 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Image.asset(
-                              width: 40,
-                              height: 40,
+                              width: 30,
+                              height: 30,
                               "assets/icons/icon_e_commerce_success.png"),
-                          const SizedBox(width: 10),
+                          const SizedBox(width: 5),
                           const Text(
                             "E-commerce",
                             style: TextStyle(
@@ -83,11 +83,11 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 5),
                     Container(
                       padding: const EdgeInsets.only(
                         top: 8,
-                        right: 14,
+                        right: 10,
                         bottom: 8,
                         left: 8,
                       ),
@@ -101,11 +101,11 @@ class CardSuccessStoriesSectionMobile extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset(
-                            width: 40,
-                            height: 40,
+                            width: 30,
+                            height: 30,
                             "assets/icons/Icon_web_design_success.png",
                           ),
-                          const SizedBox(width: 10),
+                          const SizedBox(width: 5),
                           const Text(
                             "Web Design & Development",
                             style: TextStyle(

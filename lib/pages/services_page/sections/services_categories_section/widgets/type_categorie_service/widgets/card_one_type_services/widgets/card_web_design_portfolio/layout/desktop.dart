@@ -29,6 +29,8 @@ class CardWebDesignPortfolioDeskTop extends StatelessWidget {
           ),
           const SizedBox(height: 15),
           const Text(
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             "Check out some of our most recent Web Design projects in the table below",
             style: TextStyle(
               color: ColorsApp.whiteShadesColor_50,

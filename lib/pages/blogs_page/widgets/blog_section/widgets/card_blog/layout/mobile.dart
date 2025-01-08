@@ -7,12 +7,12 @@ class CardBlogMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 2770,
+      height: 2900,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 670,
+          mainAxisExtent: 700,
           mainAxisSpacing: 24,
         ),
         itemCount: 4,
@@ -52,11 +52,11 @@ class CardBlogMobile extends StatelessWidget {
                   Row(
                     children: [
                       Image.asset(
-                        width: 50,
-                        height: 50,
+                        width: 46,
+                        height: 46,
                         "assets/images/Image_person_blog.png",
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 5),
                       const Text(
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
@@ -72,8 +72,6 @@ class CardBlogMobile extends StatelessWidget {
                   Row(
                     children: [
                       Container(
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 8),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 10,
                           vertical: 8,

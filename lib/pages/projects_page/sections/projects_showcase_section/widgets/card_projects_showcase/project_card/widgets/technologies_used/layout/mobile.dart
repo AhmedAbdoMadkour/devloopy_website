@@ -7,7 +7,7 @@ class TechnologiesUsedMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(12),
       decoration: const BoxDecoration(
         border: Border(
           right: BorderSide(

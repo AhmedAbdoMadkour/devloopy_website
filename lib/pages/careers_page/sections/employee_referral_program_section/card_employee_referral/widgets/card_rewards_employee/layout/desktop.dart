@@ -13,7 +13,7 @@ class CardRewardsEmployeeDeskTop extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 350,
+          mainAxisExtent: 400,
           crossAxisSpacing: 50,
           mainAxisSpacing: 50,
         ),

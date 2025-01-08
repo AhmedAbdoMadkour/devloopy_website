@@ -29,7 +29,7 @@ class BoxSearchButtonFaqsMobile extends StatelessWidget {
             color: ColorsApp.absoluteColorWhite,
           ),
           SizedBox(
-            width: 230,
+            width: 200,
             height: 23,
             child: TextField(
               decoration: InputDecoration(

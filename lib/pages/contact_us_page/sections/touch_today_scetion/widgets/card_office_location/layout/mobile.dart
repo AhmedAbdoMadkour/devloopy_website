@@ -34,7 +34,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           Container(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(16),
             height: 970,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -54,7 +54,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
+                    horizontal: 16,
                     vertical: 50,
                   ),
                   decoration: BoxDecoration(
@@ -140,7 +140,7 @@ class CardOfficeLocationMobile extends StatelessWidget {
                                         style: TextStyle(
                                           color: ColorsApp.absoluteColorWhite,
                                           fontFamily: FontsApp.fontFamilySora,
-                                          fontSize: 16.0,
+                                          fontSize: 12.0,
                                         ),
                                       ),
                                       GestureDetector(
