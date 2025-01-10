@@ -17,8 +17,7 @@ class ServicesCategoriesSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "Categories of",
-            nameTitleSection: " Services",
+            nameTitleSection: "Categories of Services",
           ),
           CustomDescriptionSectionDesktop(
             descriptionSection:

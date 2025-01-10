@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardOurPartnersSectionMobile extends StatelessWidget {
@@ -24,20 +23,19 @@ class CardOurPartnersSectionMobile extends StatelessWidget {
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [
-                  ColorsApp.greyShadesColor_06,
-                  ColorsApp.absoluteColorBlack,
+                  Color(0xffFFFFFF),
+                  Color(0xffEEEBE5),
                 ],
               ),
               borderRadius: BorderRadius.circular(20),
-              border: bordercardsevicesection(),
-              image: backgroundcardchoosesection(),
+              border: bordercardsevicesection(context),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconCardChooseSection(),
-                titleCardChooseSection(),
+                iconCardChooseSection(context),
+                titleCardChooseSection(context),
               ],
             ),
           );
@@ -46,61 +44,80 @@ class CardOurPartnersSectionMobile extends StatelessWidget {
     );
   }
 
-  Border bordercardsevicesection() {
+  Border bordercardsevicesection(context) {
     return Border.all(
       style: BorderStyle.solid,
       width: 1.0,
-      color: ColorsApp.greyShadesColor_06,
+      color: Theme.of(context).colorScheme.outline,
     );
   }
 
-  DecorationImage backgroundcardchoosesection() {
-    return const DecorationImage(
-      fit: BoxFit.cover,
-      image: AssetImage("assets/images/Abstract_Design.png"),
-    );
-  }
-
-  Widget iconCardChooseSection() {
+  Widget iconCardChooseSection(context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Image.asset(
-          "assets/images/image_partners_.png",
-          width: 110,
-          height: 110,
+        Container(
+          width: 80,
+          height: 80,
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primaryContainer,
+            border: Border.all(
+              color: Theme.of(context).colorScheme.primary,
+              width: 4,
+              style: BorderStyle.solid,
+            ),
+            borderRadius: BorderRadius.circular(100),
+          ),
+          child: Image.asset(
+            width: 40,
+            height: 40,
+            "assets/icons/icon_logo_partners.png",
+          ),
         ),
         const Icon(Icons.add),
-        Image.asset(
-          "assets/images/image_partners_1.png",
-          width: 110,
-          height: 110,
+        Container(
+          width: 80,
+          height: 80,
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primaryContainer,
+            border: Border.all(
+              color: Theme.of(context).colorScheme.primary,
+              width: 4,
+              style: BorderStyle.solid,
+            ),
+            borderRadius: BorderRadius.circular(100),
+          ),
+          child: Icon(
+            Icons.ads_click,
+            color: Theme.of(context).colorScheme.onPrimary,
+            size: 30,
+          ),
         ),
       ],
     );
   }
 
-  Widget titleCardChooseSection() {
-    return const Column(
+  Widget titleCardChooseSection(context) {
+    return Column(
       children: [
         Text(
           "ABC Tech Solutions",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
-            fontFamily: FontsApp.fontFamilySora,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 24.0,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           textAlign: TextAlign.center,
           maxLines: 4,
           overflow: TextOverflow.ellipsis,
           "A leading technology firm that trusted DigitX to develop their responsive website, showcasing their cutting-edge products and services.",
           style: TextStyle(
-            color: ColorsApp.whiteShadesColor_55,
-            fontFamily: FontsApp.fontFamilySora,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 14.0,
           ),
         ),

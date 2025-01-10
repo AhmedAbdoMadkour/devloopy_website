@@ -17,8 +17,7 @@ class KeyFeaturesSectionMobile extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Key Features",
-            nameTitleSection: " of Our Projects",
+            nameTitleSection: " Key Features of Our Projects",
           ),
           CustomSecondDescriptionMobile(
             description:

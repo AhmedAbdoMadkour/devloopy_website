@@ -17,8 +17,7 @@ class ProjectsShowcaseSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Projects",
-            nameTitleSection: "Showcase",
+            nameTitleSection: "Projects Showcase",
           ),
           CustomSecondDescriptionMobile(
               description:

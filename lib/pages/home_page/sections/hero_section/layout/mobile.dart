@@ -26,6 +26,7 @@ class HerosectionMobile extends StatelessWidget {
               CustomTitleMobile(
                 nameTitle: "Digital Solutions",
                 spanTitle: "That Drive Success",
+                crossAxisAlignment: CrossAxisAlignment.center,
               ),
               CustomSecondDescriptionMobile(
                 description:

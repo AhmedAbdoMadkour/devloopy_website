@@ -25,20 +25,20 @@ class CardChooseSectionTablet extends StatelessWidget {
               decoration: BoxDecoration(
                 border: Border(
                     right: (index == 0 || index == 2 || index == 4)
-                        ? const BorderSide(
+                        ? BorderSide(
                             style: BorderStyle.solid,
                             width: 1.0,
-                            color: ColorsApp.greyShadesColor_12,
+                            color: Theme.of(context).colorScheme.outline,
                           )
                         : BorderSide.none),
               ),
               child: Column(
                 children: [
-                  iconCardChooseSection(),
+                  iconCardChooseSection(context),
                   const SizedBox(height: 20.0),
-                  titleCardChooseSection(),
+                  titleCardChooseSection(context),
                   const SizedBox(height: 20.0),
-                  bottonCardChooseSection(),
+                  bottonCardChooseSection(context),
                 ],
               ),
             ),
@@ -65,28 +65,40 @@ class CardChooseSectionTablet extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection() {
-    return Image.asset(
-      width: 66,
-      height: 66,
-      "assets/icons/whychooseExpertise.png",
+  Widget iconCardChooseSection(context) {
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
+        border: Border.all(
+          color: Theme.of(context).colorScheme.primary,
+          width: 6,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: Icon(
+        Icons.tips_and_updates,
+        color: Theme.of(context).colorScheme.onPrimary,
+        size: 30,
+      ),
     );
   }
 
-  Widget titleCardChooseSection() {
-    return const Expanded(
+  Widget titleCardChooseSection(context) {
+    return Expanded(
       child: Column(
         children: [
           Text(
             textAlign: TextAlign.center,
             "Expertise That Drives Results",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 20.0,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
           Expanded(
             child: Text(
               textAlign: TextAlign.center,
@@ -94,7 +106,7 @@ class CardChooseSectionTablet extends StatelessWidget {
               maxLines: 3,
               "Our team of seasoned professionals  brings years of  experience and expertise to the table. ",
               style: TextStyle(
-                color: ColorsApp.whiteShadesColor_55,
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 16.0,
                 fontWeight: FontWeight.w400,
               ),
@@ -105,7 +117,7 @@ class CardChooseSectionTablet extends StatelessWidget {
     );
   }
 
-  Widget bottonCardChooseSection() {
+  Widget bottonCardChooseSection(context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -117,38 +129,40 @@ class CardChooseSectionTablet extends StatelessWidget {
             border: Border.all(
               style: BorderStyle.solid,
               width: 1.0,
-              color: ColorsApp.greyShadesColor_12,
+              color: Theme.of(context).colorScheme.outline,
             ),
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              const Text(
-                "Learn More",
-                style: TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
-                  fontFamily: FontsApp.fontFamilySora,
-                  fontSize: 16.0,
+          child: GestureDetector(
+            onTap: () {},
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  "Learn More",
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
+                    fontFamily: FontsApp.fontFamilySora,
+                    fontSize: 16.0,
+                  ),
                 ),
-              ),
-              GestureDetector(
-                child: Container(
+                Container(
                   width: 52.0,
                   height: 30.0,
                   margin: const EdgeInsets.symmetric(horizontal: 3.0),
                   padding: const EdgeInsets.symmetric(
                       horizontal: 6.0, vertical: 2.0),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: ColorsApp.greyShadesColor_10),
-                  child: const Icon(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  child: Icon(
                     Icons.arrow_right_alt,
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onPrimary,
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],

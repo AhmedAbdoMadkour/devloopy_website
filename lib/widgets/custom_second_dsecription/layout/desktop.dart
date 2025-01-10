@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomSecondDescriptionDeskTop extends StatelessWidget {
@@ -10,8 +9,8 @@ class CustomSecondDescriptionDeskTop extends StatelessWidget {
       description,
       textAlign: TextAlign.start,
       maxLines: 7,
-      style: const TextStyle(
-        color: ColorsApp.whiteShadesColor_50,
+      style: TextStyle(
+        color: Theme.of(context).colorScheme.onSurface,
         fontSize: 18.0,
         fontWeight: FontWeight.w400,
       ),

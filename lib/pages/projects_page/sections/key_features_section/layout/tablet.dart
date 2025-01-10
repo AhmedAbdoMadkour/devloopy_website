@@ -13,7 +13,6 @@ class KeyFeaturesSectionTablet extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionTablet(
-            spantitlesection: "Key Features",
             nameTitleSection: " of Our Projects",
           ),
           CustomSecondDescriptionTablet(

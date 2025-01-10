@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardFaqsSectionTablet extends StatelessWidget {
@@ -17,37 +16,45 @@ class CardFaqsSectionTablet extends StatelessWidget {
           crossAxisSpacing: 50,
         ),
         itemBuilder: (context, index) {
-          return getquestionssection();
+          return getquestionssection(context);
         },
       ),
     );
   }
 
-  Container getquestionssection() {
+  Container getquestionssection(context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 34),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(
-              color: ColorsApp.greyShadesColor_12,
+              color: Theme.of(context).colorScheme.outline,
               width: 1,
               style: BorderStyle.solid),
         ),
       ),
       child: ListTile(
-        title: const Text(
+        title: Text(
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
           "Do you offer maintenance services for websites and apps developed by other companies?",
-          style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
-          ),
+          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
         ),
-        trailing: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.add,
-            color: ColorsApp.absoluteColorWhite,
+        trailing: Container(
+          decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.primary,
+              borderRadius: BorderRadius.circular(100),
+              border: Border.all(
+                color: Theme.of(context).colorScheme.outline,
+                width: 1,
+                style: BorderStyle.solid,
+              )),
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.add,
+              color: Theme.of(context).colorScheme.onPrimary,
+            ),
           ),
         ),
       ),

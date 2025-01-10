@@ -13,7 +13,6 @@ class UpcomingProjectSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "Upcoming",
             nameTitleSection: "projects",
           ),
           CustomSecondDescriptionDeskTop(

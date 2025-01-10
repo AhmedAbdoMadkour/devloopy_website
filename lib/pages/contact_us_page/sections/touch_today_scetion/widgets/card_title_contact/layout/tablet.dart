@@ -1,5 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -33,10 +33,9 @@ class CardTitleContactTablet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const CustomTitelSectionTablet(
-              spantitlesection: "Get in",
-              nameTitleSection: "Touch with Us Today!"),
-          const CustomSecondDescriptionTablet(
-            description:
+              nameTitleSection: "Get in Touch with Us Today!"),
+          const CustomDescriptionSectionTablet(
+            descriptionSection:
                 "At DigitX, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, we encourage you to reach out to our dedicated team. Connect with us through any of the channels below, and we'll be delighted to assist you on your digital journey.",
           ),
           Container(

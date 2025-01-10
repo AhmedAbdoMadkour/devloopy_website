@@ -1,6 +1,6 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/services_page/sections/success_stories_section/widgets/card_success_stories_section/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -19,11 +19,10 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
         children: [
           const CustomTitelSectionTablet(
             nameTitleSection: " Stories ",
-            spantitlesection: " Success",
           ),
           const SizedBox(height: 27),
-          const CustomSecondDescriptionTablet(
-              description:
+          const CustomDescriptionSectionTablet(
+              descriptionSection:
                   "At DigitX, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
           const SizedBox(height: 30),
           const CardSuccessStoriesSectionTablet(),

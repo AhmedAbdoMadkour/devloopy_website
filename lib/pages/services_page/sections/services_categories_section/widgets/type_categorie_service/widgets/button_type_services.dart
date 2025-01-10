@@ -13,35 +13,38 @@ class ButtonTypeServices extends StatelessWidget {
   final double sizeFont;
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Container(
-        width: 340,
-        height: 60,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
-            width: 1,
-            style: BorderStyle.solid,
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {},
+        child: Container(
+          width: 340,
+          height: 60,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Theme.of(context).colorScheme.onSurface,
+              width: 1,
+              style: BorderStyle.solid,
+            ),
+            borderRadius: BorderRadius.circular(10),
           ),
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset(iconTypeService),
-            const SizedBox(width: 10),
-            Text(
-              nameTypeService,
-              style: TextStyle(
-                fontSize: sizeFont,
-                fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
-              ),
-            )
-          ],
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset(iconTypeService),
+              const SizedBox(width: 10),
+              Text(
+                nameTypeService,
+                style: TextStyle(
+                  fontSize: sizeFont,
+                  fontWeight: FontWeight.w400,
+                  color: Theme.of(context).colorScheme.onSurface,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

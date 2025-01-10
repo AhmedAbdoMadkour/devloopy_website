@@ -17,8 +17,7 @@ class UpcomingProjectSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Upcoming",
-            nameTitleSection: "projects",
+            nameTitleSection: "Upcoming projects",
           ),
           CustomSecondDescriptionMobile(
               description:

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomDescriptionSectionTablet extends StatelessWidget {
@@ -14,8 +13,8 @@ class CustomDescriptionSectionTablet extends StatelessWidget {
       child: Text(
         textAlign: TextAlign.center,
         descriptionSection,
-        style: const TextStyle(
-          color: ColorsApp.whiteShadesColor_50,
+        style: TextStyle(
+          color: Theme.of(context).colorScheme.onSurface,
           fontSize: 16,
         ),
       ),

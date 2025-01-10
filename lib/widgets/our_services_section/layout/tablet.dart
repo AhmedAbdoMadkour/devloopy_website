@@ -1,6 +1,6 @@
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
-import 'package:devloopy_website/widgets/our_services_section/widgets/card_book_services/layout/tablet.dart';
+import 'package:devloopy_website/widgets/our_services_section/widgets/card_services_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class OurServicesSectionTablet extends StatelessWidget {
@@ -17,15 +17,15 @@ class OurServicesSectionTablet extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionTablet(
-            spantitlesection: "Our",
-            nameTitleSection: " Services",
+            nameTitleSection: "Our Services",
           ),
-          CustomSecondDescriptionTablet(
-            description:
+          SizedBox(height: 10.0),
+          CustomDescriptionSectionTablet(
+            descriptionSection:
                 "At DigitX, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing",
           ),
           SizedBox(height: 30.0),
-          CardBookServicesTablet(),
+          CardServicesSectionTablet(),
         ],
       ),
     );

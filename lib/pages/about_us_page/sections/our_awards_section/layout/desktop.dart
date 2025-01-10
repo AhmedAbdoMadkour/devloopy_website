@@ -18,8 +18,7 @@ class OurAwaedsSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "our",
-            nameTitleSection: "Awards & Recognitions",
+            nameTitleSection: "Our Awards & Recognitions",
           ),
           CustomSecondDescriptionDeskTop(
             description:

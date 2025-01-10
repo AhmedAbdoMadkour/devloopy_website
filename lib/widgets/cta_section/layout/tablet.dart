@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +9,7 @@ class CTASectionTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(
-        top: 60.0,
+        top: 40.0,
         right: 50,
         left: 50,
       ),
@@ -20,34 +19,20 @@ class CTASectionTablet extends StatelessWidget {
         right: 60,
       ),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          begin: Alignment.topRight,
-          colors: [
-            Color(0xff1a1a1a),
-            Color(0xff0f0f0f),
-          ],
-        ),
-        image: const DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage("assets/images/background_cta_section.png"),
-        ),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(
-          color: ColorsApp.greyShadesColor_06,
-          width: 1,
-          style: BorderStyle.solid,
-        ),
+        color: Theme.of(context).colorScheme.primary,
       ),
       child: Column(
         children: [
           const TitleDescriptionCTASectionTablet(),
-          const SizedBox(height: 50.0),
+          const SizedBox(height: 25.0),
           const ButtonCTASectionTablet(),
-          const SizedBox(height: 50.0),
+          const SizedBox(height: 25.0),
           Image.asset(
-            "assets/images/CTA.png",
+            "assets/images/dev_loopy_cta_tablet.png",
             width: 1280,
           ),
+          const SizedBox(height: 25.0),
         ],
       ),
     );

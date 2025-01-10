@@ -26,20 +26,20 @@ class CardChooseSectionDeskTop extends StatelessWidget {
                 border: Border(
                     right:
                         (index == 0 || index == 1 || index == 3 || index == 4)
-                            ? const BorderSide(
+                            ? BorderSide(
                                 style: BorderStyle.solid,
                                 width: 1.0,
-                                color: ColorsApp.greyShadesColor_12,
+                                color: Theme.of(context).colorScheme.outline,
                               )
                             : BorderSide.none),
               ),
               child: Column(
                 children: [
-                  iconCardChooseSection(),
+                  iconCardChooseSection(context),
                   const SizedBox(height: 30.0),
-                  titleCardChooseSection(),
+                  titleCardChooseSection(context),
                   const SizedBox(height: 30.0),
-                  bottonCardChooseSection(),
+                  bottonCardChooseSection(context),
                 ],
               ),
             ),
@@ -66,33 +66,45 @@ class CardChooseSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection() {
-    return Image.asset(
-      width: 92,
-      height: 92,
-      "assets/icons/whychooseExpertise.png",
+  Widget iconCardChooseSection(context) {
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
+        border: Border.all(
+          color: Theme.of(context).colorScheme.primary,
+          width: 10,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: Icon(
+        Icons.tips_and_updates,
+        color: Theme.of(context).colorScheme.onPrimary,
+        size: 34,
+      ),
     );
   }
 
-  Widget titleCardChooseSection() {
-    return const Column(
+  Widget titleCardChooseSection(context) {
+    return Column(
       children: [
         Text(
           "Expertise That Drives Results",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 24.0,
             fontWeight: FontWeight.w600,
           ),
         ),
-        SizedBox(height: 20.0),
+        const SizedBox(height: 20.0),
         Text(
           textAlign: TextAlign.center,
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
           "Our team of seasoned professionals  brings years of  experience and expertise to the table.",
           style: TextStyle(
-            color: ColorsApp.whiteShadesColor_55,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 18.0,
             fontWeight: FontWeight.w400,
           ),
@@ -101,7 +113,7 @@ class CardChooseSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Widget bottonCardChooseSection() {
+  Widget bottonCardChooseSection(context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -113,38 +125,43 @@ class CardChooseSectionDeskTop extends StatelessWidget {
             border: Border.all(
               style: BorderStyle.solid,
               width: 1.0,
-              color: ColorsApp.greyShadesColor_12,
+              color: Theme.of(context).colorScheme.outline,
             ),
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              const Text(
-                "Learn More",
-                style: TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
-                  fontFamily: FontsApp.fontFamilySora,
-                  fontSize: 16.0,
-                ),
-              ),
-              GestureDetector(
-                child: Container(
-                  width: 52.0,
-                  height: 30.0,
-                  margin: const EdgeInsets.symmetric(horizontal: 3.0),
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 6.0, vertical: 2.0),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: ColorsApp.greyShadesColor_10),
-                  child: const Icon(
-                    Icons.arrow_right_alt,
-                    color: ColorsApp.absoluteColorWhite,
+          child: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () {},
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    "Learn More",
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurface,
+                      fontFamily: FontsApp.fontFamilySora,
+                      fontSize: 16.0,
+                    ),
                   ),
-                ),
+                  Container(
+                    width: 52.0,
+                    height: 30.0,
+                    margin: const EdgeInsets.symmetric(horizontal: 3.0),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 6.0, vertical: 2.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20.0),
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                    child: Icon(
+                      Icons.arrow_right_alt,
+                      color: Theme.of(context).colorScheme.onPrimary,
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ],

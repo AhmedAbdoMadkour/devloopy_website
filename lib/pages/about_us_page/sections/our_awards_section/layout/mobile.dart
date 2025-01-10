@@ -18,8 +18,7 @@ class OurAwaedsSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "our",
-            nameTitleSection: "Awards & Recognitions",
+            nameTitleSection: "our Awards & Recognitions",
           ),
           CustomSecondDescriptionMobile(
             description:

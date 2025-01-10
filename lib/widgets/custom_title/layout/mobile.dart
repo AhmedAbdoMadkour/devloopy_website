@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomTitleMobile extends StatelessWidget {
@@ -6,19 +5,21 @@ class CustomTitleMobile extends StatelessWidget {
     super.key,
     required this.nameTitle,
     required this.spanTitle,
+    required this.crossAxisAlignment,
   });
   final String nameTitle;
   final String spanTitle;
+  final CrossAxisAlignment crossAxisAlignment;
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: crossAxisAlignment,
       children: [
         Text(
           nameTitle,
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 34.0,
             fontWeight: FontWeight.w600,
           ),
@@ -26,8 +27,8 @@ class CustomTitleMobile extends StatelessWidget {
         Text(
           spanTitle,
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: ColorsApp.greyShadesColor_40,
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.primary,
             fontSize: 34.0,
             fontWeight: FontWeight.w600,
           ),

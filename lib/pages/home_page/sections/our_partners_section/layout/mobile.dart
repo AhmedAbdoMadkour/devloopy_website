@@ -17,8 +17,7 @@ class OurPartnersSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Our",
-            nameTitleSection: " Partners and Clients",
+            nameTitleSection: "Our Partners and Clients",
           ),
           SizedBox(height: 5),
           CustomSecondDescriptionMobile(

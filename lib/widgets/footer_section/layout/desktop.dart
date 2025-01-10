@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/widgets/custom_button_link_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,50 +14,64 @@ class FooterSectionDeskTop extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Image.asset(
-                width: 75,
-                height: 64,
-                "assets/images/Logo_laptop.png",
+                width: 241,
+                height: 54,
+                "assets/images/logo_desktop.png",
               ),
               Row(
                 children: [
-                  const Text(
+                  Text(
                     "Follow Us On Social Media",
                     style: TextStyle(
                       fontSize: 18,
-                      color: ColorsApp.absoluteColorWhite,
+                      color: Theme.of(context).colorScheme.onSurface,
                       height: 3,
                     ),
                   ),
                   const SizedBox(width: 10),
-                  GestureDetector(
-                    child: Image.asset(
-                        width: 64,
-                        height: 64,
-                        "assets/images/image_Button_linkedin.png"),
-                  ),
-                  const SizedBox(width: 10),
-                  GestureDetector(
-                    child: Image.asset(
-                      width: 64,
-                      height: 64,
-                      "assets/images/image_Button_linkedin.png",
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      child: Image.asset(
+                          width: 64,
+                          height: 64,
+                          "assets/images/image_Button_linkedin.png"),
                     ),
                   ),
                   const SizedBox(width: 10),
-                  GestureDetector(
-                    child: Image.asset(
-                      width: 64,
-                      height: 64,
-                      "assets/images/image_Button_x.png",
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      child: Image.asset(
+                        width: 64,
+                        height: 64,
+                        "assets/images/image_Button_instgram.png",
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      child: Image.asset(
+                        width: 64,
+                        height: 64,
+                        "assets/images/image_Button_twitter.png",
+                      ),
                     ),
                   ),
                 ],
               )
             ],
           ),
-          const Divider(),
+          Divider(
+            color: Theme.of(context).colorScheme.outline,
+            thickness: 1,
+            endIndent: 15,
+            indent: 15,
+          ),
           const SizedBox(height: 60),
-          const Row(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -67,25 +80,25 @@ class FooterSectionDeskTop extends StatelessWidget {
                 children: [
                   CustomButtonLinkPage(
                     namePageLink: "Home",
-                    colornamePageLink: ColorsApp.absoluteColorWhite,
+                    colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Benefits",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Our Testimonials",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Partners",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -96,31 +109,31 @@ class FooterSectionDeskTop extends StatelessWidget {
                 children: [
                   CustomButtonLinkPage(
                     namePageLink: "Services",
-                    colornamePageLink: ColorsApp.absoluteColorWhite,
+                    colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Web Design",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Website Development",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "App Development",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Digital Marketing",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -131,37 +144,37 @@ class FooterSectionDeskTop extends StatelessWidget {
                 children: [
                   CustomButtonLinkPage(
                     namePageLink: "Projects",
-                    colornamePageLink: ColorsApp.absoluteColorWhite,
+                    colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "ABC Tech Solutions",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "GreenEarth Eco Store",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "HealthTech Innovations",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "GlobalTech Solutions",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "TechGuru Inc",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -172,25 +185,25 @@ class FooterSectionDeskTop extends StatelessWidget {
                 children: [
                   CustomButtonLinkPage(
                     namePageLink: "About Us",
-                    colornamePageLink: ColorsApp.absoluteColorWhite,
+                    colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Our Team",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Achievements",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Awards",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -201,25 +214,25 @@ class FooterSectionDeskTop extends StatelessWidget {
                 children: [
                   CustomButtonLinkPage(
                     namePageLink: "Careers",
-                    colornamePageLink: ColorsApp.absoluteColorWhite,
+                    colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Job Openings",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Benefits & Perks",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Employee Refral",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -230,13 +243,13 @@ class FooterSectionDeskTop extends StatelessWidget {
                 children: [
                   CustomButtonLinkPage(
                     namePageLink: "Blogs",
-                    colornamePageLink: ColorsApp.absoluteColorWhite,
+                    colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
                     namePageLink: "Our Blogs",
-                    colornamePageLink: ColorsApp.whiteShadesColor_50,
+                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -245,22 +258,27 @@ class FooterSectionDeskTop extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 60),
-          const Divider(),
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 30),
+          Divider(
+            color: Theme.of(context).colorScheme.outline,
+            thickness: 1,
+            endIndent: 15,
+            indent: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomButtonLinkPage(
                   namePageLink: "@2023 Digitax. All Rights Reserved.",
-                  colornamePageLink: ColorsApp.greyShadesColor_40,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                 ),
                 Text(
                   "Version 1.0",
                   style: TextStyle(
-                    color: ColorsApp.greyShadesColor_40,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -269,19 +287,22 @@ class FooterSectionDeskTop extends StatelessWidget {
                   children: [
                     CustomButtonLinkPage(
                       namePageLink: "Privacy Policy",
-                      colornamePageLink: ColorsApp.greyShadesColor_40,
+                      colornamePageLink:
+                          Theme.of(context).colorScheme.onSurface,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
                     CustomButtonLinkPage(
                       namePageLink: "Terms & Conditions",
-                      colornamePageLink: ColorsApp.greyShadesColor_40,
+                      colornamePageLink:
+                          Theme.of(context).colorScheme.onSurface,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
                     CustomButtonLinkPage(
                       namePageLink: "Cookie Policy",
-                      colornamePageLink: ColorsApp.whiteShadesColor_50,
+                      colornamePageLink:
+                          Theme.of(context).colorScheme.onSurface,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),

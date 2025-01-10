@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class BoxSearchButtonFaqsMobile extends StatelessWidget {
@@ -11,34 +10,34 @@ class BoxSearchButtonFaqsMobile extends StatelessWidget {
       height: 52.0,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
-        color: ColorsApp.greyShadesColor_10,
+        color: Theme.of(context).colorScheme.primary,
         border: Border.all(
-          color: ColorsApp.greyShadesColor_15,
+          color: Theme.of(context).colorScheme.outline,
           width: 1,
           style: BorderStyle.solid,
         ),
         borderRadius: BorderRadius.circular(48.0),
       ),
-      child: const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(
             Icons.search_sharp,
             size: 22.0,
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onPrimary,
           ),
           SizedBox(
             width: 200,
             height: 23,
             child: TextField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(
+                border: const OutlineInputBorder(
                   borderSide: BorderSide.none,
                 ),
                 hintText: "Search",
                 hintStyle: TextStyle(
-                  color: ColorsApp.greyShadesColor_40,
+                  color: Theme.of(context).colorScheme.onPrimary,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                 ),

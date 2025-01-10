@@ -6,20 +6,17 @@ class CardServicesSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 1660.0,
-      padding: const EdgeInsets.only(
-        top: 120,
-        right: 80,
-        bottom: 80,
-        left: 80,
-      ),
+    return SizedBox(
+      //height: 1630.0,
+      height: 1250.0,
       child: GridView.builder(
         itemCount: 4,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 50.0,
+          //mainAxisExtent: 790.0,
+          mainAxisExtent: 600.0,
           crossAxisSpacing: 50.0,
         ),
         itemBuilder: (context, index) {
@@ -29,21 +26,20 @@ class CardServicesSectionDeskTop extends StatelessWidget {
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [
-                  ColorsApp.absoluteColorBlack,
-                  ColorsApp.greyShadesColor_06,
+                  Color(0xffFFFFFF),
+                  Color(0xffEEEBE5),
                 ],
               ),
               borderRadius: BorderRadius.circular(20),
               border: bordercardsevicesection(),
-              image: backgroundcardchoosesection(),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconCardChooseSection(),
-                titleCardChooseSection(),
-                bottonCardChooseSection(),
+                iconCardChooseSection(context),
+                titleCardChooseSection(context),
+                bottonCardBookSevices(context),
               ],
             ),
           );
@@ -67,32 +63,42 @@ class CardServicesSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection() {
-    return Image.asset(
-      width: 172,
-      height: 172,
-      "assets/icons/whychooseExpertise.png",
+  Widget iconCardChooseSection(context) {
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
+        border: Border.all(
+          color: Theme.of(context).colorScheme.primary,
+          width: 10,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: Icon(
+        Icons.ads_click,
+        color: Theme.of(context).colorScheme.onPrimary,
+        size: 34,
+      ),
     );
   }
 
-  Widget titleCardChooseSection() {
-    return const Column(
+  Widget titleCardChooseSection(context) {
+    return Column(
       children: [
         Text(
           "Web Development",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
             fontSize: 24.0,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
-          maxLines: 8,
-          overflow: TextOverflow.ellipsis,
-          "Unlock Your Online Potential In today's digital age, a powerful web presence is essential for any business. At DigitX, our web development services empower you to stand out in the crowded online landscape. We create responsive and dynamic websites tailored to your unique needs, ensuring seamless user experiences across all devices. From e-commerce platforms to interactive web applications, our expert developers bring your vision to life, making your online journey a resounding success.",
+          "Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build dynamic and scalable websites that cater to your business objectives.",
           style: TextStyle(
-            color: ColorsApp.whiteShadesColor_55,
+            color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
             fontSize: 14.0,
           ),
@@ -101,37 +107,36 @@ class CardServicesSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Widget bottonCardChooseSection() {
-    return GestureDetector(
-      child: Container(
-        width: 184.0,
-        height: 44.0,
-        decoration: BoxDecoration(
-          color: ColorsApp.greyShadesColor_10,
-          borderRadius: BorderRadius.circular(50.0),
-          border: Border.all(
-            style: BorderStyle.solid,
-            width: 1.0,
-            color: ColorsApp.greyShadesColor_15,
+  Widget bottonCardBookSevices(context) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {},
+        child: Container(
+          width: 184.0,
+          height: 44.0,
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primary,
+            borderRadius: BorderRadius.circular(50.0),
           ),
-        ),
-        child: const Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text(
-              "Learn More",
-              style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.w400,
+          child: const Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text(
+                "Learn More",
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsApp.absoluteColorWhite,
+                ),
+              ),
+              Icon(
+                Icons.arrow_right_alt,
                 color: ColorsApp.absoluteColorWhite,
               ),
-            ),
-            Icon(
-              Icons.arrow_right_alt,
-              color: ColorsApp.absoluteColorWhite,
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

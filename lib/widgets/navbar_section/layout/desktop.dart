@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/widgets/custom_button_link_page.dart';
 import 'package:flutter/material.dart';
 
@@ -29,56 +28,56 @@ class NavbarDeskTop extends StatelessWidget {
                   Image.asset(
                     width: 222,
                     height: 50,
-                    "assets/images/Logo_desk_top.png",
+                    "assets/images/logo_desktop.png",
                   ),
                 ],
               ),
             ),
           ),
-          const Expanded(
+          Expanded(
             child: Row(
               children: [
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Home",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Services",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Projects",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "About Us",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Contact Us",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Careers",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Blogs",
-                  colornamePageLink: ColorsApp.absoluteColorWhite,
+                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
               ],
             ),

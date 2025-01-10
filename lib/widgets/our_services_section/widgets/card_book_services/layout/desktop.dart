@@ -24,55 +24,25 @@ class CardBookServicesDeskTop extends StatelessWidget {
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [
-                  ColorsApp.absoluteColorBlack,
-                  ColorsApp.greyShadesColor_06,
+                  Color(0xffFFFFFF),
+                  Color(0xffEEEBE5),
                 ],
               ),
               borderRadius: BorderRadius.circular(20),
               border: bordercardsevicesection(),
-              image: backgroundcardchoosesection(),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconCardChooseSection(),
-                titleCardChooseSection(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    prciceServices(),
-                    bottonCardBookSevices(),
-                  ],
-                )
+                iconCardChooseSection(context),
+                titleCardChooseSection(context),
+                bottonCardBookSevices(context),
               ],
             ),
           );
         },
       ),
-    );
-  }
-
-  Row prciceServices() {
-    return const Row(
-      children: [
-        Text(
-          "Starts at price:",
-          style: TextStyle(
-            color: ColorsApp.greyShadesColor_40,
-            fontSize: 20,
-            fontWeight: FontWeight.w400,
-          ),
-        ),
-        Text(
-          "\$1,500",
-          style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
-            fontSize: 20,
-            fontWeight: FontWeight.w400,
-          ),
-        ),
-      ],
     );
   }
 
@@ -91,30 +61,42 @@ class CardBookServicesDeskTop extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection() {
-    return Image.asset(
-      "assets/icons/whychooseExpertise.png",
-      width: 172,
-      height: 172,
+  Widget iconCardChooseSection(context) {
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
+        border: Border.all(
+          color: Theme.of(context).colorScheme.primary,
+          width: 10,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: Icon(
+        Icons.ads_click,
+        color: Theme.of(context).colorScheme.onPrimary,
+        size: 34,
+      ),
     );
   }
 
-  Widget titleCardChooseSection() {
-    return const Column(
+  Widget titleCardChooseSection(context) {
+    return Column(
       children: [
         Text(
           "Web Development",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
             fontSize: 24.0,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           "Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build dynamic and scalable websites that cater to your business objectives.",
           style: TextStyle(
-            color: ColorsApp.whiteShadesColor_55,
+            color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
             fontSize: 14.0,
           ),
@@ -123,19 +105,14 @@ class CardBookServicesDeskTop extends StatelessWidget {
     );
   }
 
-  Widget bottonCardBookSevices() {
+  Widget bottonCardBookSevices(context) {
     return GestureDetector(
       child: Container(
         width: 184.0,
         height: 44.0,
         decoration: BoxDecoration(
-          color: ColorsApp.greyShadesColor_10,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(50.0),
-          border: Border.all(
-            style: BorderStyle.solid,
-            width: 1.0,
-            color: ColorsApp.greyShadesColor_15,
-          ),
         ),
         child: const Row(
           mainAxisSize: MainAxisSize.min,

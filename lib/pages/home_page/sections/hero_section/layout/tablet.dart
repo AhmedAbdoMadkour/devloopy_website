@@ -26,8 +26,8 @@ class HerosectionTabLet extends StatelessWidget {
                 children: [
                   CustomTitleTablet(
                     nameTitle: "Digital Solutions",
-                    subnameTitle: "That",
-                    spanTitle: "Drive Success",
+                    spanTitle: "That Drive Success",
+                    crossAxisAlignment: CrossAxisAlignment.center,
                   ),
                   SizedBox(height: 10),
                   CustomSecondDescriptionTablet(

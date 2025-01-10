@@ -17,8 +17,7 @@ class OurTeamMembersMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Our",
-            nameTitleSection: "Team Members",
+            nameTitleSection: "Our Team Members",
           ),
           CustomSecondDescriptionMobile(
             description:

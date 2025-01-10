@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomDescriptionSectionMobile extends StatelessWidget {
@@ -10,13 +9,13 @@ class CustomDescriptionSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 200.0),
+      padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: Text(
         textAlign: TextAlign.center,
         descriptionSection,
-        style: const TextStyle(
-          color: ColorsApp.whiteShadesColor_50,
-          fontSize: 18,
+        style: TextStyle(
+          color: Theme.of(context).colorScheme.onSurface,
+          fontSize: 14,
         ),
       ),
     );
