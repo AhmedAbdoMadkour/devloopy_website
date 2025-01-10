@@ -1,5 +1,5 @@
 import 'package:devloopy_website/pages/home_page/sections/our_Testimonials_section/widgets/card_testimonials_section/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -17,12 +17,11 @@ class OurTestimonialsSectionTablet extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionTablet(
-            spantitlesection: "Our",
-            nameTitleSection: " Testimonials",
+            nameTitleSection: "Our Testimonials",
           ),
           SizedBox(height: 27),
-          CustomSecondDescriptionTablet(
-            description:
+          CustomDescriptionSectionTablet(
+            descriptionSection:
                 "Don't just take our word for it; hear what our satisfied clients have to say about their experience with DigitX. We take pride in building lasting relationships and delivering exceptional results.",
           ),
           CardTestimonialsSectionTablet(),

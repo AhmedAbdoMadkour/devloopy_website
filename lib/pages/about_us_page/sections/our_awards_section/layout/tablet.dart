@@ -1,6 +1,6 @@
 import 'package:devloopy_website/pages/about_us_page/sections/our_awards_section/widgets/card_our_awades_section/layout/tablet.dart';
 import 'package:devloopy_website/pages/about_us_page/sections/our_awards_section/widgets/card_see_this_page/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -18,11 +18,10 @@ class OurAwaedsSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            spantitlesection: "our",
-            nameTitleSection: "Awards & Recognitions",
+            nameTitleSection: "our Awards & Recognitions",
           ),
-          CustomSecondDescriptionTablet(
-            description:
+          CustomDescriptionSectionTablet(
+            descriptionSection:
                 "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself.",
           ),
           CardOurAwadesSectionTablet(),

@@ -17,8 +17,7 @@ class BenefitsPerksSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Benefits &",
-            nameTitleSection: " Perks",
+            nameTitleSection: "Benefits & Perks",
           ),
           CustomSecondDescriptionMobile(
             description:

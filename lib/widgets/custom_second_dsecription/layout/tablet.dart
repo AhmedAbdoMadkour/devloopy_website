@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomSecondDescriptionTablet extends StatelessWidget {
@@ -16,8 +15,8 @@ class CustomSecondDescriptionTablet extends StatelessWidget {
         maxLines: 13,
         overflow: TextOverflow.ellipsis,
         textAlign: TextAlign.start,
-        style: const TextStyle(
-            color: ColorsApp.whiteShadesColor_50,
+        style: TextStyle(
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 14.0,
             fontWeight: FontWeight.w400),
       ),

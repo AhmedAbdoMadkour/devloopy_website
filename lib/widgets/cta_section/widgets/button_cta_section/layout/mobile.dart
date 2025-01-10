@@ -22,23 +22,25 @@ class ButtonCTASectionMobile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: GestureDetector(
-                onTap: () {},
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(18.0),
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(20.0),
                       ),
-                      color: ColorsApp.absoluteColorWhite),
-                  child: const Center(
-                    child: Text(
-                      "Get Started",
-                      style: TextStyle(
-                        color: ColorsApp.greyShadesColor_10,
-                        fontSize: 10.0,
-                        fontWeight: FontWeight.w400,
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSecondary,
+                        ),
                       ),
                     ),
                   ),
@@ -47,27 +49,30 @@ class ButtonCTASectionMobile extends StatelessWidget {
             ),
             const SizedBox(width: 10.0),
             Expanded(
-              child: GestureDetector(
-                onTap: () {},
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-                  decoration: BoxDecoration(
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                    decoration: BoxDecoration(
                       border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: ColorsApp.greyShadesColor_15),
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(18.0),
+                        style: BorderStyle.solid,
+                        width: 1.0,
+                        color: Theme.of(context).colorScheme.outline,
                       ),
-                      color: ColorsApp.greyShadesColor_10),
-                  child: const Center(
-                    child: Text(
-                      "Free Consultation",
-                      style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 10.0,
-                        fontWeight: FontWeight.w400,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(20.0),
+                      ),
+                      color: const Color(0xff0B43DB),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Free Consultation",
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onPrimary,
+                        ),
                       ),
                     ),
                   ),

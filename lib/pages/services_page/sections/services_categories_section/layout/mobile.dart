@@ -17,8 +17,7 @@ class ServicesCategoriesSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Categories of",
-            nameTitleSection: " Services",
+            nameTitleSection: "Categories of Services",
           ),
           CustomSecondDescriptionMobile(
             description:

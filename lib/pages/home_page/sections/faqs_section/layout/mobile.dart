@@ -1,6 +1,6 @@
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/box_search_button_faqs/layout/mobile.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/card_faqs_section/layout/mobile.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
@@ -19,12 +19,11 @@ class FAQSSectionMobile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "Frequently",
-            nameTitleSection: " Asked Questions",
+            nameTitleSection: "Frequently Asked Questions",
           ),
           SizedBox(height: 6),
-          CustomSecondDescriptionMobile(
-            description:
+          CustomDescriptionSectionMobile(
+            descriptionSection:
                 "Got questions? We've got answers. Check out our frequently asked questions section to find valuable insights into our processes, pricing, and more. Transparency is at the core of our client interactions.",
           ),
           SizedBox(height: 20),

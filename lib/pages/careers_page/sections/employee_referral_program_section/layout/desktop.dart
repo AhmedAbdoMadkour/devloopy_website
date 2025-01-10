@@ -17,7 +17,6 @@ class EmployeeReferralProgramSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "Employee",
             nameTitleSection: "Referral Program",
           ),
           SizedBox(height: 20),

@@ -37,7 +37,6 @@ class CardTitleContactDeskTop extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           const CustomTitelSectionDeskTop(
-              spantitlesection: "Get in",
               nameTitleSection: "Touch with Us Today!"),
           const CustomSecondDescriptionDeskTop(
             description:

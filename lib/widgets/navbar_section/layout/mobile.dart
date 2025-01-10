@@ -28,14 +28,14 @@ class NavbarMobile extends StatelessWidget {
           Image.asset(
             width: 120,
             height: 40,
-            "assets/images/Logo_desk_top.png",
+            "assets/images/Logo_mobile.png",
           ),
           GestureDetector(
             onTap: () {},
             child: Image.asset(
               width: 52,
               height: 52,
-              "assets/icons/Icon_navbar_mobile.png",
+              "assets/icons/icon_list_mobile.png",
             ),
           ),
         ],

@@ -18,8 +18,7 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           const CustomTitelSectionMobile(
-            nameTitleSection: " Stories ",
-            spantitlesection: " Success",
+            nameTitleSection: "Success Stories ",
           ),
           const CustomSecondDescriptionMobile(
               description:

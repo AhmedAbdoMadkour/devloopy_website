@@ -17,8 +17,7 @@ class OurTeamMembersDesktop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "Our",
-            nameTitleSection: "Team Members",
+            nameTitleSection: "Our Team Members",
           ),
           CustomSecondDescriptionDeskTop(
             description:

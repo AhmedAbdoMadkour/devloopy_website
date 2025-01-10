@@ -13,7 +13,6 @@ class KeyFeaturesSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "Key Features",
             nameTitleSection: " of Our Projects",
           ),
           CustomSecondDescriptionDeskTop(

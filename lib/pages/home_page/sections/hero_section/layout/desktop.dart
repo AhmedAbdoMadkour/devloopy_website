@@ -28,8 +28,8 @@ class HerosectionDeskTop extends StatelessWidget {
                   children: [
                     CustomTitleDeskTop(
                       nameTitle: "Digital Solutions ",
-                      subnameTitle: "That",
-                      spanTitle: "Drive Success",
+                      spanTitle: "That Drive Success",
+                      crossAxisAlignment: CrossAxisAlignment.start,
                     ),
                     SizedBox(height: 20),
                     CustomSecondDescriptionDeskTop(

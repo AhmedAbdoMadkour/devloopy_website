@@ -6,9 +6,9 @@ class HeroSectionImageMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      width: 390,
+      width: 350,
       height: 252,
-      "assets/images/backgroundloding.png",
+      "assets/images/image_hero_section.png",
     );
   }
 }

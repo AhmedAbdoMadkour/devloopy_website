@@ -16,8 +16,7 @@ class ProjectsShowcaseSectionDeskTop extends StatelessWidget {
       ),
       child: Column(
         children: [
-          CustomTitelSectionDeskTop(
-              spantitlesection: "Projects", nameTitleSection: "Showcase"),
+          CustomTitelSectionDeskTop(nameTitleSection: "Showcase"),
           CustomSecondDescriptionDeskTop(
               description:
                   "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself."),

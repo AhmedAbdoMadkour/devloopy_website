@@ -22,9 +22,16 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20.0),
+              gradient: const LinearGradient(
+                begin: Alignment.topCenter,
+                colors: [
+                  Color(0xffEEEBE5),
+                  Color(0xffFFFFFF),
+                ],
+              ),
               border: Border.all(
                   style: BorderStyle.solid,
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.outline,
                   width: 1),
             ),
             child: Column(
@@ -35,59 +42,49 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
                   height: 437.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
-                    border: Border.all(
-                        style: BorderStyle.solid,
-                        color: ColorsApp.greyShadesColor_12,
-                        width: 1),
                     image: backgroundOurWorksImage(),
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      iconCardOurWorks(),
-                      buttonCradOurWorks(),
-                    ],
-                  ),
+                  child: buttonCradOurWorks(context),
                 ),
-                const Column(
+                Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Modern Corporate Website",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 24,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    SizedBox(height: 27),
+                    const SizedBox(height: 27),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Category: Web Design.",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             )),
                         Text("April 2022",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             ))
                       ],
                     ),
-                    SizedBox(height: 27),
+                    const SizedBox(height: 27),
                     Text(
                       "Witness our groundbreaking e-commerce platform that seamlessly connects buyers and sellers worldwide. With an intuitive user interface and secure payment gateways, this project revolutionizes online shopping.",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    SizedBox(height: 27),
+                    const SizedBox(height: 27),
                   ],
                 ),
               ],
@@ -98,7 +95,7 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Row buttonCradOurWorks() {
+  Row buttonCradOurWorks(context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -107,29 +104,34 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
           height: 44.0,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50.0),
+            color: Theme.of(context).colorScheme.primary,
             border: Border.all(
               style: BorderStyle.solid,
               width: 1.0,
-              color: ColorsApp.greyShadesColor_12,
+              color: Theme.of(context).colorScheme.outline,
             ),
           ),
-          child: GestureDetector(
-            child: const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(
-                  "View project Details",
-                  style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
-                    fontFamily: FontsApp.fontFamilySora,
-                    fontSize: 16.0,
+          child: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () {},
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    "View project Details",
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onPrimary,
+                      fontFamily: FontsApp.fontFamilySora,
+                      fontSize: 16.0,
+                    ),
                   ),
-                ),
-                Icon(
-                  Icons.arrow_right_alt,
-                  color: ColorsApp.absoluteColorWhite,
-                ),
-              ],
+                  Icon(
+                    Icons.arrow_right_alt,
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -137,16 +139,12 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Image iconCardOurWorks() => Image.asset(
-        width: 200,
-        height: 200,
-        "assets/images/shape-14.png",
-      );
-
   DecorationImage backgroundOurWorksImage() {
     return const DecorationImage(
       fit: BoxFit.cover,
-      image: AssetImage("assets/images/Abstract_Design.png"),
+      image: AssetImage(
+        "assets/images/image_fram_ourwork_one.png",
+      ),
     );
   }
 }

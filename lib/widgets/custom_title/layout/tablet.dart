@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomTitleTablet extends StatelessWidget {
@@ -6,43 +5,35 @@ class CustomTitleTablet extends StatelessWidget {
     super.key,
     required this.nameTitle,
     required this.spanTitle,
-    required this.subnameTitle,
+    required this.crossAxisAlignment,
   });
   final String nameTitle;
-  final String subnameTitle;
   final String spanTitle;
+  final CrossAxisAlignment crossAxisAlignment;
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: crossAxisAlignment,
       children: [
         RichText(
           text: TextSpan(
             children: [
               TextSpan(
                 text: nameTitle,
-                style: const TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.onSurface,
                   fontSize: 40.0,
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              TextSpan(
-                text: subnameTitle,
-                style: const TextStyle(
-                  color: ColorsApp.greyShadesColor_40,
-                  fontSize: 40.0,
-                  fontWeight: FontWeight.w600,
-                ),
-              )
             ],
           ),
         ),
         Text(
           spanTitle,
-          style: const TextStyle(
-            color: ColorsApp.greyShadesColor_40,
-            fontSize: 43.0,
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.primary,
+            fontSize: 40.0,
             fontWeight: FontWeight.w600,
           ),
         )

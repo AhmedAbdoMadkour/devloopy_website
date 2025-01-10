@@ -13,8 +13,7 @@ class HowToApplySectionMobile extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionMobile(
-            spantitlesection: "How to",
-            nameTitleSection: "Apply",
+            nameTitleSection: "How to Apply",
           ),
           CustomSecondDescriptionMobile(
               description:

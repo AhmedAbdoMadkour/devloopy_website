@@ -1,4 +1,5 @@
 import 'package:devloopy_website/pages/home_page/sections/why_choos_us_section/widgets/card_choose_section/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,15 @@ class WhychoosussectionTablet extends StatelessWidget {
         children: [
           CustomTitleTablet(
             nameTitle: "Reasons to Choose ",
-            subnameTitle: "DigitX for ",
-            spanTitle: "Your Digital Journey",
+            spanTitle: "DigitX for Your Digital Journey",
+            crossAxisAlignment: CrossAxisAlignment.center,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          CustomDescriptionSectionTablet(
+            descriptionSection:
+                "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
           ),
           SizedBox(height: 50.0),
           CardChooseSectionTablet(),

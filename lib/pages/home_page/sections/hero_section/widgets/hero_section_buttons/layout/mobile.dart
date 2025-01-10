@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class HeroSectionButtonsMobile extends StatelessWidget {
@@ -8,12 +7,11 @@ class HeroSectionButtonsMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text(
+        Text(
           "Unlock Your Digital Potential Today",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 14.0,
-            fontFamily: FontsApp.fontFamilySora,
             fontWeight: FontWeight.w400,
           ),
         ),
@@ -28,16 +26,17 @@ class HeroSectionButtonsMobile extends StatelessWidget {
                   horizontal: 20,
                   vertical: 14,
                 ),
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(100),
-                    ),
-                    color: ColorsApp.absoluteColorWhite),
-                child: const Center(
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(100),
+                  ),
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
+                child: Center(
                   child: Text(
                     "Get Started",
                     style: TextStyle(
-                      color: ColorsApp.absoluteColorBlack,
+                      color: Theme.of(context).colorScheme.onSecondary,
                       fontSize: 14,
                     ),
                   ),
@@ -53,22 +52,19 @@ class HeroSectionButtonsMobile extends StatelessWidget {
                   vertical: 14,
                 ),
                 decoration: BoxDecoration(
-                  border: Border.all(
-                      style: BorderStyle.solid,
-                      width: 1.0,
-                      color: ColorsApp.greyShadesColor_15),
                   borderRadius: const BorderRadius.all(
                     Radius.circular(100),
                   ),
-                  color: ColorsApp.greyShadesColor_10,
+                  color: Theme.of(context).colorScheme.primary,
                 ),
-                child: const Center(
+                child: Center(
                   child: Text(
                     "FreeConsultation",
                     style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400),
+                      color: Theme.of(context).colorScheme.onPrimary,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
               ),

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class BoxSearchButtonFaqsDeskTop extends StatelessWidget {
@@ -11,36 +10,36 @@ class BoxSearchButtonFaqsDeskTop extends StatelessWidget {
       height: 60.0,
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
       decoration: BoxDecoration(
-          color: ColorsApp.greyShadesColor_10,
-          border: Border.all(
-            color: ColorsApp.greyShadesColor_15,
-            width: 1,
-            style: BorderStyle.solid,
-          ),
-          borderRadius: BorderRadius.circular(48.0)),
-      child: const Row(
+        color: Theme.of(context).colorScheme.primary,
+        border: Border.all(
+          color: Theme.of(context).colorScheme.outline,
+          width: 1,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(48.0),
+      ),
+      child: Row(
         children: [
           Icon(
             Icons.search_sharp,
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onPrimary,
             size: 24.0,
           ),
-          SizedBox(width: 8),
+          const SizedBox(width: 8),
           SizedBox(
             width: 352,
             height: 23,
             child: TextField(
               decoration: InputDecoration(
-                border: OutlineInputBorder(
+                border: const OutlineInputBorder(
                   borderSide: BorderSide.none,
                 ),
                 hintText: "Search",
                 hintStyle: TextStyle(
-                  color: ColorsApp.greyShadesColor_40,
+                  color: Theme.of(context).colorScheme.onPrimary,
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                 ),
-                disabledBorder: OutlineInputBorder(),
               ),
             ),
           ),

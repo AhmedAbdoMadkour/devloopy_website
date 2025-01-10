@@ -9,16 +9,15 @@ import 'package:devloopy_website/widgets/footer_section/footer_section.dart';
 import 'package:devloopy_website/widgets/navbar_section/navbar_section.dart';
 import 'package:devloopy_website/widgets/our_services_section/our_services_section.dart';
 import 'package:flutter/material.dart';
-import 'package:devloopy_website/constants/style_constants.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: ColorsApp.absoluteColorBlack,
-      body: SingleChildScrollView(
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surface,
+      body: const SingleChildScrollView(
         child: Column(
           children: [
             Navbar(),

@@ -23,21 +23,20 @@ class CardServicesSectionMobile extends StatelessWidget {
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [
-                  ColorsApp.absoluteColorBlack,
-                  ColorsApp.greyShadesColor_06,
+                  Color(0xffFFFFFF),
+                  Color(0xffEEEBE5),
                 ],
               ),
               borderRadius: BorderRadius.circular(20),
-              border: bordercardsevicesection(),
-              image: backgroundcardchoosesection(),
+              border: bordercardsevicesection(context),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconCardChooseSection(),
-                titleCardChooseSection(),
-                bottonCardChooseSection(),
+                iconCardChooseSection(context),
+                titleCardChooseSection(context),
+                bottonCardChooseSection(context),
               ],
             ),
           );
@@ -46,41 +45,46 @@ class CardServicesSectionMobile extends StatelessWidget {
     );
   }
 
-  Border bordercardsevicesection() {
+  Border bordercardsevicesection(context) {
     return Border.all(
       style: BorderStyle.solid,
       width: 1.0,
-      color: ColorsApp.greyShadesColor_06,
+      color: Theme.of(context).colorScheme.outline,
     );
   }
 
-  DecorationImage backgroundcardchoosesection() {
-    return const DecorationImage(
-      fit: BoxFit.cover,
-      image: AssetImage("assets/images/Abstract_Design.png"),
+  Widget iconCardChooseSection(context) {
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
+        border: Border.all(
+          color: Theme.of(context).colorScheme.primary,
+          width: 4,
+          style: BorderStyle.solid,
+        ),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: Icon(
+        Icons.ads_click,
+        color: Theme.of(context).colorScheme.onPrimary,
+        size: 34,
+      ),
     );
   }
 
-  Widget iconCardChooseSection() {
-    return Image.asset(
-      width: 114,
-      height: 114,
-      "assets/icons/whychooseExpertise.png",
-    );
-  }
-
-  Widget titleCardChooseSection() {
-    return const Column(
+  Widget titleCardChooseSection(context) {
+    return Column(
       children: [
         Text(
           "Web Development",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
             fontSize: 24.0,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
@@ -90,7 +94,7 @@ class CardServicesSectionMobile extends StatelessWidget {
                 maxLines: 3,
                 "Unlock Your Online Potential In today's digital age, a powerful web presence is essential for any business. At DigitX, our web development services empower you to stand out in the crowded online landscape. We create responsive and dynamic websites tailored to your unique needs, ensuring seamless user experiences across all devices. From e-commerce platforms to interactive web applications, our expert developers bring your vision to life, making your online journey a resounding success.",
                 style: TextStyle(
-                  color: ColorsApp.whiteShadesColor_55,
+                  color: Theme.of(context).colorScheme.onSurface,
                   fontFamily: FontsApp.fontFamilySora,
                   fontSize: 14.0,
                 ),
@@ -102,21 +106,16 @@ class CardServicesSectionMobile extends StatelessWidget {
     );
   }
 
-  Widget bottonCardChooseSection() {
+  Widget bottonCardChooseSection(context) {
     return GestureDetector(
       child: Container(
         width: 184.0,
         height: 44.0,
         decoration: BoxDecoration(
-          color: ColorsApp.greyShadesColor_10,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(50.0),
-          border: Border.all(
-            style: BorderStyle.solid,
-            width: 1.0,
-            color: ColorsApp.greyShadesColor_15,
-          ),
         ),
-        child: const Row(
+        child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -125,12 +124,12 @@ class CardServicesSectionMobile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w400,
-                color: ColorsApp.absoluteColorWhite,
+                color: Theme.of(context).colorScheme.onPrimary,
               ),
             ),
             Icon(
               Icons.arrow_right_alt,
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
             ),
           ],
         ),

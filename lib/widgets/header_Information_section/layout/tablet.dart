@@ -1,4 +1,5 @@
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_title/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class HeaderInformationSectionTablet extends StatelessWidget {
             left: 0,
             top: 0,
             child: Image.asset(
-              'assets/images/backgroundservices1.png',
+              'assets/images/background_left_hero_section.png',
               height: 500,
               width: 200,
               fit: BoxFit.cover,
@@ -37,7 +38,7 @@ class HeaderInformationSectionTablet extends StatelessWidget {
             right: 0,
             top: 0,
             child: Image.asset(
-              'assets/images/backgroundservices.png',
+              'assets/images/background_right_hero_section.png',
               height: 500,
               width: 200,
               fit: BoxFit.cover,
@@ -51,9 +52,10 @@ class HeaderInformationSectionTablet extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomTitelSectionTablet(
-                  nameTitleSection: " in the Digital World",
-                  spantitlesection: "Unlock Your Potential",
+                CustomTitleTablet(
+                  spanTitle: "Our Comprehensive ",
+                  nameTitle: "Digital Solutions",
+                  crossAxisAlignment: CrossAxisAlignment.start,
                 ),
                 SizedBox(height: 10),
                 CustomSecondDescriptionTablet(

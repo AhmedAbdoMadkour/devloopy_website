@@ -9,10 +9,10 @@ class ButtonCTASectionDeskTop extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text(
+        Text(
           "Unlock Your Digital Potential Today",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onPrimary,
             fontSize: 14.0,
             fontFamily: FontsApp.fontFamilySora,
           ),
@@ -21,46 +21,55 @@ class ButtonCTASectionDeskTop extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GestureDetector(
-              onTap: () {},
-              child: Container(
-                width: 120.0,
-                height: 35.0,
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(
+            MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {},
+                child: Container(
+                  width: 120.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.all(
                       Radius.circular(18.0),
                     ),
-                    color: ColorsApp.absoluteColorWhite),
-                child: const Center(
-                  child: Text(
-                    "Get Started",
-                    style: TextStyle(
-                      color: ColorsApp.greyShadesColor_10,
+                    color: Theme.of(context).colorScheme.secondary,
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Get Started",
+                      style: TextStyle(
+                        color: Theme.of(context).colorScheme.onSecondary,
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
             const SizedBox(width: 10.0),
-            GestureDetector(
-              onTap: () {},
-              child: Container(
-                width: 155.0,
-                height: 35.0,
-                decoration: BoxDecoration(
+            MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {},
+                child: Container(
+                  width: 155.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
                     border: Border.all(
-                        style: BorderStyle.solid,
-                        width: 1.0,
-                        color: ColorsApp.greyShadesColor_15),
+                      style: BorderStyle.solid,
+                      width: 1.0,
+                      color: Theme.of(context).colorScheme.outline,
+                    ),
                     borderRadius: const BorderRadius.all(Radius.circular(18.0)),
-                    color: ColorsApp.greyShadesColor_10),
-                child: const Center(
-                    child: Text(
-                  "Free Consultation",
-                  style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: const Color(0xff0B43DB),
                   ),
-                )),
+                  child: Center(
+                      child: Text(
+                    "Free Consultation",
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onPrimary,
+                    ),
+                  )),
+                ),
               ),
             ),
           ],

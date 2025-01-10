@@ -8,7 +8,7 @@ class HeroSectionImageDeskTop extends StatelessWidget {
     return Image.asset(
       width: 800,
       height: 700,
-      "assets/images/backgroundloding.png",
+      "assets/images/image_hero_section.png",
     );
   }
 }

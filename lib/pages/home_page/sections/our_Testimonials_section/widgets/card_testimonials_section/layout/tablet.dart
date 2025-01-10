@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardTestimonialsSectionTablet extends StatelessWidget {
@@ -20,15 +19,9 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                 margin: const EdgeInsets.all(30),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
-                  gradient: const LinearGradient(
-                    begin: AlignmentDirectional.topCenter,
-                    colors: [
-                      ColorsApp.absoluteColorBlack,
-                      ColorsApp.greyShadesColor_06,
-                    ],
-                  ),
+                  color: Theme.of(context).colorScheme.primary,
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_15,
+                    color: Theme.of(context).colorScheme.outline,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
@@ -37,21 +30,21 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                 height: 303,
                 padding: const EdgeInsets.symmetric(horizontal: 40.0),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(height: 27.0),
                     Image.asset(
-                      "assets/images/icon_twitter.png",
+                      "assets/icons/icon_twitter.png",
                       height: 58.0,
                       width: 58.0,
                     ),
                     const SizedBox(height: 27.0),
-                    const Text(
+                    Text(
                       maxLines: 4,
                       overflow: TextOverflow.ellipsis,
                       "Working with DigitX was a pleasure. Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
                   ],
@@ -67,7 +60,7 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                       "assets/images/Image_our_testimonials.png",
                     ),
                     const SizedBox(width: 14.0),
-                    const Column(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -75,13 +68,13 @@ class CardTestimonialsSectionTablet extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 20.0,
                             fontWeight: FontWeight.w400,
-                            color: ColorsApp.absoluteColorWhite,
+                            color: Theme.of(context).colorScheme.onSurface,
                           ),
                         ),
                         Text(
                           "Founder of GreenEarth Eco Store",
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_50,
+                            color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 18.0,
                             fontWeight: FontWeight.w300,
                           ),

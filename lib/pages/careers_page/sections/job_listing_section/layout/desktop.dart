@@ -17,7 +17,6 @@ class JobListingSectionDeskTop extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionDeskTop(
-            spantitlesection: "Job Listings",
             nameTitleSection: "at DigitX",
           ),
           CustomSecondDescriptionDeskTop(

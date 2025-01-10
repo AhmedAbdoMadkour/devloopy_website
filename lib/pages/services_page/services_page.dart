@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/services_categories_section.dart';
 import 'package:devloopy_website/pages/services_page/sections/success_stories_section/success_stories_section.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
@@ -14,7 +13,6 @@ class ServicesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: ColorsApp.absoluteColorBlack,
       body: SingleChildScrollView(
         child: Column(
           children: [

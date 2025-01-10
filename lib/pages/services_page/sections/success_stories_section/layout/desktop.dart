@@ -19,7 +19,6 @@ class SuccessStoriesSectionDeskTop extends StatelessWidget {
         children: [
           const CustomTitelSectionDeskTop(
             nameTitleSection: " Stories ",
-            spantitlesection: " Success",
           ),
           const SizedBox(height: 27),
           const CustomSecondDescriptionDeskTop(
