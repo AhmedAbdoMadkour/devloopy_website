@@ -1,6 +1,5 @@
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title/layout/desktop.dart';
-import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class HeaderInformationSectionDeskTop extends StatelessWidget {

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class ButtonTypeServices extends StatelessWidget {
@@ -8,7 +7,7 @@ class ButtonTypeServices extends StatelessWidget {
     required this.nameTypeService,
     required this.sizeFont,
   });
-  final String iconTypeService;
+  final Icon iconTypeService;
   final String nameTypeService;
   final double sizeFont;
   @override
@@ -33,7 +32,7 @@ class ButtonTypeServices extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(iconTypeService),
+              iconTypeService,
               const SizedBox(width: 10),
               Text(
                 nameTypeService,
