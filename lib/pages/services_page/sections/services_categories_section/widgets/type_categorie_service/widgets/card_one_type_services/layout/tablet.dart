@@ -16,11 +16,19 @@ class CardOneTypeServicesTablet extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20.0),
-          border: Border.all(
-              color: ColorsApp.greyShadesColor_12,
-              width: 1,
-              style: BorderStyle.solid)),
+        gradient: const LinearGradient(
+          begin: Alignment.topRight,
+          colors: [
+            Color(0xffffffff),
+            Color(0xffEEEBE5),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(20.0),
+        border: Border.all(
+            color: Theme.of(context).colorScheme.outline,
+            width: 1,
+            style: BorderStyle.solid),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -28,10 +36,10 @@ class CardOneTypeServicesTablet extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20),
             child: Text(
               nameTitleCardTypeSerice,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
           ),
@@ -51,14 +59,14 @@ class CardOneTypeServicesTablet extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border(
                       bottom: (index == 0 || index == 1)
-                          ? const BorderSide(
-                              color: ColorsApp.greyShadesColor_12,
+                          ? BorderSide(
+                              color: Theme.of(context).colorScheme.outline,
                               width: 1,
                               style: BorderStyle.solid)
                           : BorderSide.none,
                       right: (index == 0 || index == 2)
-                          ? const BorderSide(
-                              color: ColorsApp.greyShadesColor_12,
+                          ? BorderSide(
+                              color: Theme.of(context).colorScheme.outline,
                               width: 1,
                               style: BorderStyle.solid)
                           : BorderSide.none,
@@ -70,8 +78,8 @@ class CardOneTypeServicesTablet extends StatelessWidget {
                     children: [
                       Text(
                         nameTitleItemService,
-                        style: const TextStyle(
-                          color: ColorsApp.whiteShadesColor_80,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 18.0,
                           fontWeight: FontWeight.w600,
                         ),
@@ -81,8 +89,8 @@ class CardOneTypeServicesTablet extends StatelessWidget {
                         descriptionItemService,
                         maxLines: 5,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 16.0,
                           fontWeight: FontWeight.w400,
                         ),

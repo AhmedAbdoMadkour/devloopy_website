@@ -18,7 +18,7 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           const CustomTitelSectionTablet(
-            nameTitleSection: " Stories ",
+            nameTitleSection: "Our Stories ",
           ),
           const SizedBox(height: 27),
           const CustomDescriptionSectionTablet(
@@ -41,20 +41,21 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
+                  color: Theme.of(context).colorScheme.primary,
                   border: Border.all(
                     style: BorderStyle.solid,
                     width: 1.0,
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.outline,
                   ),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    const Text(
+                    Text(
                       "View All Stories",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontFamily: FontsApp.fontFamilySora,
                         fontSize: 14.0,
                       ),
@@ -66,11 +67,12 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
                           vertical: 6.0,
                         ),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                            color: ColorsApp.greyShadesColor_10),
-                        child: const Icon(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                        child: Icon(
                           Icons.arrow_right_alt,
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                         ),
                       ),
                     ),

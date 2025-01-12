@@ -1,5 +1,6 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/services_page/sections/success_stories_section/widgets/card_success_stories_section/layout/desktop.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
 import 'package:flutter/material.dart';
@@ -18,11 +19,11 @@ class SuccessStoriesSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           const CustomTitelSectionDeskTop(
-            nameTitleSection: " Stories ",
+            nameTitleSection: "Our Stories ",
           ),
           const SizedBox(height: 27),
-          const CustomSecondDescriptionDeskTop(
-              description:
+          const CustomDescriptionSectionDesktop(
+              descriptionSection:
                   "At DigitX, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
           const SizedBox(height: 30),
           const CardSuccessStoriesSectionDeskTop(),
@@ -40,17 +41,17 @@ class SuccessStoriesSectionDeskTop extends StatelessWidget {
                   border: Border.all(
                     style: BorderStyle.solid,
                     width: 1.0,
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.outline,
                   ),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    const Text(
+                    Text(
                       "View All Stories",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontFamily: FontsApp.fontFamilySora,
                         fontSize: 16.0,
                       ),
@@ -63,11 +64,12 @@ class SuccessStoriesSectionDeskTop extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 6.0, vertical: 2.0),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                            color: ColorsApp.greyShadesColor_10),
-                        child: const Icon(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: Icon(
                           Icons.arrow_right_alt,
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                         ),
                       ),
                     ),

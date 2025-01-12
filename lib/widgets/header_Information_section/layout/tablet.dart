@@ -1,6 +1,5 @@
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class HeaderInformationSectionTablet extends StatelessWidget {

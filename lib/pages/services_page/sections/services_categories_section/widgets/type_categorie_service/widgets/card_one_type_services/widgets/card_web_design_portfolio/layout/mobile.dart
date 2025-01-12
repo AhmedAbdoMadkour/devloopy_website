@@ -11,30 +11,37 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
       padding: const EdgeInsets.all(24),
       width: double.infinity,
       decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            begin: Alignment.topRight,
+            colors: [
+              Color(0xffffffff),
+              Color(0xffEEEBE5),
+            ],
+          ),
           borderRadius: BorderRadius.circular(20.0),
           border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.outline,
             width: 1,
             style: BorderStyle.solid,
           )),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Web Design Portfolio",
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600,
               height: 2,
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
             ),
           ),
-          const Text(
+          Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Check out some of our most recent Web Design projects in the table below",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontWeight: FontWeight.w400,
               fontSize: 14,
             ),
@@ -47,7 +54,7 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
                 child: Image.asset(
                   width: 125,
                   height: 87,
-                  "assets/images/Image_web_design_portfolio_red.png",
+                  "assets/images/image_ecommerce_website_examples.png",
                 ),
               ),
               const SizedBox(width: 10),
@@ -55,7 +62,7 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
                 child: Image.asset(
                   width: 125,
                   height: 87,
-                  "assets/images/Image_web_design_portfolio_green.png",
+                  "assets/images/image_ecommerce_revolution.png",
                 ),
               ),
             ],
@@ -68,27 +75,29 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
                 decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.primary,
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_15,
+                    color: Theme.of(context).colorScheme.outline,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
                   borderRadius: BorderRadius.circular(74),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       "View All projects",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                     Icon(
                       Icons.arrow_right_alt,
+                      color: Theme.of(context).colorScheme.onPrimary,
                     ),
                   ],
                 ),

@@ -17,7 +17,7 @@ class ServicesCategoriesSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: " Services",
+            nameTitleSection: "Our Services",
           ),
           SizedBox(height: 15),
           CustomDescriptionSectionTablet(

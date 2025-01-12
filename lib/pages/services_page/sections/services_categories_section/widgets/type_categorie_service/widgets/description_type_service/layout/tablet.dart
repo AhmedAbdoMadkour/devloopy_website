@@ -6,7 +6,7 @@ class DescriptionTypeServiceTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -14,10 +14,10 @@ class DescriptionTypeServiceTablet extends StatelessWidget {
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w600,
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
         ),
-        SizedBox(height: 27),
+        const SizedBox(height: 27),
         Text(
           maxLines: 8,
           overflow: TextOverflow.ellipsis,
@@ -25,10 +25,10 @@ class DescriptionTypeServiceTablet extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w400,
-            color: ColorsApp.whiteShadesColor_55,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
         ),
-        SizedBox(height: 35.0),
+        const SizedBox(height: 35.0),
       ],
     );
   }

@@ -17,9 +17,16 @@ class CardTwoTypeServicesMobile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            begin: Alignment.topRight,
+            colors: [
+              Color(0xffffffff),
+              Color(0xffEEEBE5),
+            ],
+          ),
           borderRadius: BorderRadius.circular(20.0),
           border: Border.all(
-              color: ColorsApp.greyShadesColor_12,
+              color: Theme.of(context).colorScheme.outline,
               width: 1,
               style: BorderStyle.solid)),
       child: Column(
@@ -29,10 +36,10 @@ class CardTwoTypeServicesMobile extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20),
             child: Text(
               nameTitleCardTypeSerice,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
           ),
@@ -52,8 +59,8 @@ class CardTwoTypeServicesMobile extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border(
                       bottom: (index == 0 || index == 1 || index == 2)
-                          ? const BorderSide(
-                              color: ColorsApp.greyShadesColor_12,
+                          ? BorderSide(
+                              color: Theme.of(context).colorScheme.outline,
                               width: 1,
                               style: BorderStyle.solid)
                           : BorderSide.none,
@@ -65,8 +72,8 @@ class CardTwoTypeServicesMobile extends StatelessWidget {
                     children: [
                       Text(
                         nameTitleItemService,
-                        style: const TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 16.0,
                           fontWeight: FontWeight.w600,
                         ),
@@ -76,8 +83,8 @@ class CardTwoTypeServicesMobile extends StatelessWidget {
                         maxLines: 5,
                         overflow: TextOverflow.ellipsis,
                         descriptionItemService,
-                        style: const TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14.0,
                           fontWeight: FontWeight.w400,
                         ),

@@ -10,8 +10,15 @@ class CardWebDesignComptedMobile extends StatelessWidget {
         padding: const EdgeInsets.all(24),
         width: double.infinity,
         decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            begin: Alignment.topRight,
+            colors: [
+              Color(0xffffffff),
+              Color(0xffEEEBE5),
+            ],
+          ),
           border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.outline,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -20,23 +27,23 @@ class CardWebDesignComptedMobile extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
+            Text(
               "Our Web Design Competed Projects",
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: 15),
-            const Text(
+            Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               "At DigitX, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
-                color: ColorsApp.whiteShadesColor_50,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: 20),
@@ -46,7 +53,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                 border: Border.all(
                   width: 1,
                   style: BorderStyle.solid,
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.outline,
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -56,7 +63,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(10),
                     padding: const EdgeInsets.all(10),
-                    child: const Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -64,7 +71,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_80,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -74,7 +81,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           "GlobalTech Solutions",
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_55,
+                            color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                           ),
@@ -82,8 +89,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Divider(
-                    color: ColorsApp.greyShadesColor_12,
+                  Divider(
+                    color: Theme.of(context).colorScheme.outline,
                     thickness: .9,
                     indent: 15,
                     endIndent: 15,
@@ -91,7 +98,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(10),
                     padding: const EdgeInsets.all(10),
-                    child: const Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -99,7 +106,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           "Industry",
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_80,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -109,7 +116,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           "E-commerce",
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_55,
+                            color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                           ),
@@ -117,8 +124,8 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Divider(
-                    color: ColorsApp.greyShadesColor_12,
+                  Divider(
+                    color: Theme.of(context).colorScheme.outline,
                     thickness: .9,
                     indent: 15,
                     endIndent: 15,
@@ -126,7 +133,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(10),
                     padding: const EdgeInsets.all(10),
-                    child: const Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -134,7 +141,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           "Website URL",
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_80,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -144,7 +151,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           "www.globaltechsolutions.com",
                           style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_55,
+                            color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                           ),

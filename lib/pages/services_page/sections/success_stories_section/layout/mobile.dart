@@ -1,5 +1,7 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/services_page/sections/success_stories_section/widgets/card_success_stories_section/layout/mobile.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
@@ -20,8 +22,8 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
           const CustomTitelSectionMobile(
             nameTitleSection: "Success Stories ",
           ),
-          const CustomSecondDescriptionMobile(
-              description:
+          const CustomDescriptionSectionMobile(
+              descriptionSection:
                   "At DigitX, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
           const SizedBox(height: 16),
           const CardSuccessStoriesSectionMobile(),
@@ -40,20 +42,21 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
+                  color: Theme.of(context).colorScheme.primary,
                   border: Border.all(
                     style: BorderStyle.solid,
                     width: 1.0,
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.outline,
                   ),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    const Text(
+                    Text(
                       "View All Stories",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontFamily: FontsApp.fontFamilySora,
                         fontSize: 14.0,
                       ),
@@ -65,11 +68,12 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
                           vertical: 6.0,
                         ),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                            color: ColorsApp.greyShadesColor_10),
-                        child: const Icon(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                        child: Icon(
                           Icons.arrow_right_alt,
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                         ),
                       ),
                     ),
