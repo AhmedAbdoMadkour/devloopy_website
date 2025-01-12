@@ -25,11 +25,14 @@ class TypeCategorieServiceMobile extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Container(
                   margin: const EdgeInsets.only(right: 10),
+
                   child: ButtonTypeServices(
                     iconTypeService: Icon(
                       Icons.terminal,
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
+
+
                     nameTypeService: "Web Design",
                     sizeFont: 14,
                   ),

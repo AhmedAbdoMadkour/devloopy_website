@@ -21,37 +21,45 @@ class TypeCategorieServiceTablet extends StatelessWidget {
             child: Column(
               children: [
                 ButtonTypeServices(
+
                   iconTypeService: Icon(
                     Icons.terminal,
                     color: Theme.of(context).colorScheme.onSurface,
                   ),
+
                   nameTypeService: "Web Design",
                   sizeFont: 14,
                 ),
                 const SizedBox(height: 10),
                 ButtonTypeServices(
+
                   iconTypeService: Icon(
                     Icons.mobile_friendly,
                     color: Theme.of(context).colorScheme.onSurface,
                   ),
+
                   nameTypeService: "Web Development",
                   sizeFont: 14,
                 ),
                 const SizedBox(height: 10),
                 ButtonTypeServices(
+
                   iconTypeService: Icon(
                     Icons.deblur,
                     color: Theme.of(context).colorScheme.onSurface,
                   ),
+
                   nameTypeService: "Mobile App Development",
                   sizeFont: 14,
                 ),
                 const SizedBox(height: 10),
                 ButtonTypeServices(
+
                   iconTypeService: Icon(
                     Icons.web,
                     color: Theme.of(context).colorScheme.onSurface,
                   ),
+
                   nameTypeService: "Digital Marketing",
                   sizeFont: 14,
                 ),

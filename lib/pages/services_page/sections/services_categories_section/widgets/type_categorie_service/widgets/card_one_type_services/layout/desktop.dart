@@ -15,6 +15,7 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
       padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
+
         gradient: const LinearGradient(
           begin: Alignment.topRight,
           colors: [
@@ -22,6 +23,7 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
             Color(0xffEEEBE5),
           ],
         ),
+
         border: Border.all(
             color: Theme.of(context).colorScheme.outline,
             width: 1,
