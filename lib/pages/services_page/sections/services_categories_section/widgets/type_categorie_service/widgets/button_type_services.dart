@@ -7,7 +7,7 @@ class ButtonTypeServices extends StatelessWidget {
     required this.nameTypeService,
     required this.sizeFont,
   });
-  final String iconTypeService;
+  final Icon iconTypeService;
   final String nameTypeService;
   final double sizeFont;
   @override
@@ -32,7 +32,7 @@ class ButtonTypeServices extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(iconTypeService),
+              iconTypeService,
               const SizedBox(width: 10),
               Text(
                 nameTypeService,

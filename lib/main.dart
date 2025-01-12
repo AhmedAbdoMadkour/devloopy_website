@@ -1,7 +1,3 @@
-import 'package:devloopy_website/cubit/blog_cubit/blog_cubit.dart';
-import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
-import 'package:devloopy_website/cubit/testimonials_cubit/testimonals_cubit.dart';
-import 'package:devloopy_website/pages/home_page/home_page.dart';
 import 'package:devloopy_website/theme/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

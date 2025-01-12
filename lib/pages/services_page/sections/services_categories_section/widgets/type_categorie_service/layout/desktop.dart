@@ -13,7 +13,7 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 60.0),
-      child: const Row(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
@@ -21,32 +21,43 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
               child: Column(
                 children: [
                   ButtonTypeServices(
-                    iconTypeService: "assets/icons/Icon_web_design.png",
+                    iconTypeService: Icon(
+                      Icons.ads_click,
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
                     nameTypeService: "Web Design",
                     sizeFont: 14,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ButtonTypeServices(
-                    iconTypeService: "assets/icons/Icon_web_developer.png",
+                    iconTypeService: Icon(
+                      Icons.terminal,
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
                     nameTypeService: "Web Development",
                     sizeFont: 14,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ButtonTypeServices(
-                    iconTypeService:
-                        "assets/icons/Icon_mobile_app_developer.png",
+                    iconTypeService: Icon(
+                      Icons.mobile_friendly,
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
                     nameTypeService: "Mobile App Development",
                     sizeFont: 14,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ButtonTypeServices(
-                    iconTypeService: "assets/icons/Icon_digital_marketing.png",
+                    iconTypeService: Icon(
+                      Icons.bolt,
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
                     nameTypeService: "Digital Marketing",
                     sizeFont: 14,
                   ),
                 ],
               )),
-          Expanded(
+          const Expanded(
             flex: 4,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

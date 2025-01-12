@@ -15,11 +15,12 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20.0),
-          border: Border.all(
-              color: ColorsApp.greyShadesColor_12,
-              width: 1,
-              style: BorderStyle.solid)),
+        borderRadius: BorderRadius.circular(20.0),
+        border: Border.all(
+            color: Theme.of(context).colorScheme.outline,
+            width: 1,
+            style: BorderStyle.solid),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -27,10 +28,10 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20),
             child: Text(
               nameTitleCardTypeSerice,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
           ),

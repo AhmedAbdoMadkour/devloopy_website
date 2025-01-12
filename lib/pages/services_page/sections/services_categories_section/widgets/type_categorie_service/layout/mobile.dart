@@ -26,7 +26,7 @@ class TypeCategorieServiceMobile extends StatelessWidget {
                 return Container(
                   margin: const EdgeInsets.only(right: 10),
                   child: const ButtonTypeServices(
-                    iconTypeService: "assets/icons/Icon_web_design.png",
+                    iconTypeService: Icon(Icons.terminal),
                     nameTypeService: "Web Design",
                     sizeFont: 14,
                   ),
