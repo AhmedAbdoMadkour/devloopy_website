@@ -23,7 +23,7 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
               ),
             ),
@@ -31,18 +31,29 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset(
-                      width: 52,
-                      height: 52,
-                      "assets/icons/icon_abc_success.png",
+                    Container(
+                      width: 66,
+                      height: 66,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100),
+                        border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 6,
+                        ),
+                        color: const Color(0xff0B43DB),
+                      ),
+                      child: Icon(
+                        Icons.blur_circular_rounded,
+                        color: Theme.of(context).colorScheme.onPrimary,
+                      ),
                     ),
                     const SizedBox(width: 5),
-                    const Text(
+                    Text(
                       "ABC Tech Solutions",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                     )
                   ],
@@ -61,7 +72,7 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                         ),
                       ),
@@ -73,10 +84,10 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
                               height: 40,
                               "assets/icons/icon_e_commerce_success.png"),
                           const SizedBox(width: 10),
-                          const Text(
+                          Text(
                             "E-commerce",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
                             ),
@@ -95,7 +106,7 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onSurface,
                           width: 1,
                         ),
                       ),
@@ -107,10 +118,10 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
                             "assets/icons/Icon_web_design_success.png",
                           ),
                           const SizedBox(width: 10),
-                          const Text(
+                          Text(
                             "Web Design & Development",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
                             ),
@@ -124,66 +135,73 @@ class CardSuccessStoriesSectionTablet extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topRight,
+                      colors: [
+                        Color(0xffffffff),
+                        Color(0xffEEEBE5),
+                      ],
+                    ),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                     ),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         "Challenge",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
                       const SizedBox(height: 14),
-                      const Text(
+                      Text(
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                         "ABC Enterprises approached us with a desire to revamp their outdated website and create a more user-friendly and visually appealing platform. They sought to improve user engagement and increase online sales.",
                         style: TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
                       const SizedBox(height: 14),
-                      const Divider(
-                        color: ColorsApp.greyShadesColor_12,
+                      Divider(
+                        color: Theme.of(context).colorScheme.outline,
                         height: 1,
                       ),
                       const SizedBox(height: 14),
-                      const Text(
+                      Text(
                         "Solution",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
                       const SizedBox(height: 14),
-                      const Text(
+                      Text(
                         maxLines: 4,
                         overflow: TextOverflow.ellipsis,
                         "Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.",
                         style: TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
                       const SizedBox(height: 14),
                       GestureDetector(
-                        child: const Text(
+                        child: Text(
                           "Read Full Story",
                           style: TextStyle(
                             decoration: TextDecoration.underline,
-                            color: ColorsApp.absoluteColorWhite,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),

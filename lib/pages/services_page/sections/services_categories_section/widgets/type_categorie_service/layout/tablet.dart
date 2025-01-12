@@ -13,7 +13,7 @@ class TypeCategorieServiceTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 30.0),
-      child: const Row(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
@@ -21,33 +21,53 @@ class TypeCategorieServiceTablet extends StatelessWidget {
             child: Column(
               children: [
                 ButtonTypeServices(
-                  iconTypeService: Icon(Icons.terminal),
+
+                  iconTypeService: Icon(
+                    Icons.terminal,
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+
                   nameTypeService: "Web Design",
                   sizeFont: 14,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ButtonTypeServices(
-                  iconTypeService: Icon(Icons.terminal),
+
+                  iconTypeService: Icon(
+                    Icons.mobile_friendly,
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+
                   nameTypeService: "Web Development",
                   sizeFont: 14,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ButtonTypeServices(
-                  iconTypeService: Icon(Icons.terminal),
+
+                  iconTypeService: Icon(
+                    Icons.deblur,
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+
                   nameTypeService: "Mobile App Development",
                   sizeFont: 14,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ButtonTypeServices(
-                  iconTypeService: Icon(Icons.terminal),
+
+                  iconTypeService: Icon(
+                    Icons.web,
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+
                   nameTypeService: "Digital Marketing",
                   sizeFont: 14,
                 ),
               ],
             ),
           ),
-          SizedBox(width: 20),
-          Expanded(
+          const SizedBox(width: 20),
+          const Expanded(
             flex: 4,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

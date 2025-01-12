@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardOneTypeServicesDeskTop extends StatelessWidget {
@@ -16,6 +15,15 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
       padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
+
+        gradient: const LinearGradient(
+          begin: Alignment.topRight,
+          colors: [
+            Color(0xffffffff),
+            Color(0xffEEEBE5),
+          ],
+        ),
+
         border: Border.all(
             color: Theme.of(context).colorScheme.outline,
             width: 1,
@@ -52,14 +60,14 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border(
                       bottom: (index == 0 || index == 1)
-                          ? const BorderSide(
-                              color: ColorsApp.greyShadesColor_12,
+                          ? BorderSide(
+                              color: Theme.of(context).colorScheme.outline,
                               width: 1,
                               style: BorderStyle.solid)
                           : BorderSide.none,
                       right: (index == 0 || index == 2)
-                          ? const BorderSide(
-                              color: ColorsApp.greyShadesColor_12,
+                          ? BorderSide(
+                              color: Theme.of(context).colorScheme.outline,
                               width: 1,
                               style: BorderStyle.solid)
                           : BorderSide.none,
@@ -71,8 +79,8 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
                     children: [
                       Text(
                         nameTitleItemService,
-                        style: const TextStyle(
-                          color: ColorsApp.whiteShadesColor_80,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 20.0,
                           fontWeight: FontWeight.w600,
                         ),
@@ -80,8 +88,8 @@ class CardOneTypeServicesDeskTop extends StatelessWidget {
                       const SizedBox(height: 14),
                       Text(
                         descriptionItemService,
-                        style: const TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 18.0,
                           fontWeight: FontWeight.w400,
                         ),

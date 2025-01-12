@@ -22,7 +22,9 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
                 children: [
                   ButtonTypeServices(
                     iconTypeService: Icon(
-                      Icons.ads_click,
+
+                      Icons.terminal,
+
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
                     nameTypeService: "Web Design",
@@ -31,7 +33,9 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
                   const SizedBox(height: 10),
                   ButtonTypeServices(
                     iconTypeService: Icon(
-                      Icons.terminal,
+
+                      Icons.mobile_friendly_sharp,
+
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
                     nameTypeService: "Web Development",
@@ -40,7 +44,9 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
                   const SizedBox(height: 10),
                   ButtonTypeServices(
                     iconTypeService: Icon(
-                      Icons.mobile_friendly,
+
+                      Icons.terminal,
+
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
                     nameTypeService: "Mobile App Development",
@@ -49,7 +55,9 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
                   const SizedBox(height: 10),
                   ButtonTypeServices(
                     iconTypeService: Icon(
-                      Icons.bolt,
+
+                      Icons.web_sharp,
+
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
                     nameTypeService: "Digital Marketing",

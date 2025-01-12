@@ -10,31 +10,38 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
       padding: const EdgeInsets.all(24.0),
       width: double.infinity,
       decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topRight,
+          colors: [
+            Color(0xffffffff),
+            Color(0xffEEEBE5),
+          ],
+        ),
         borderRadius: BorderRadius.circular(20.0),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
+          color: Theme.of(context).colorScheme.outline,
           width: 1,
           style: BorderStyle.solid,
         ),
       ),
       child: Column(
         children: [
-          const Text(
+          Text(
             textAlign: TextAlign.start,
             "Web Design Portfolio",
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.w600,
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
             ),
           ),
           const SizedBox(height: 10),
-          const Text(
+          Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Check out some of our most recent Web Design projects in the table below",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontWeight: FontWeight.w400,
               fontSize: 14,
             ),
@@ -44,13 +51,13 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
             children: [
               Expanded(
                 child: Image.asset(
-                  "assets/images/Image_web_design_portfolio_red.png",
+                  "assets/images/image_ecommerce_website_examples.png",
                 ),
               ),
               const SizedBox(width: 20),
               Expanded(
                 child: Image.asset(
-                  "assets/images/Image_web_design_portfolio_green.png",
+                  "assets/images/image_ecommerce_revolution.png",
                 ),
               ),
             ],
@@ -61,19 +68,28 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
               width: 233,
               height: 44,
               decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
                 border: Border.all(
-                  color: ColorsApp.greyShadesColor_15,
+                  color: Theme.of(context).colorScheme.outline,
                   width: 1,
                   style: BorderStyle.solid,
                 ),
                 borderRadius: BorderRadius.circular(74),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("View All projects"),
-                  Icon(Icons.arrow_right_alt),
+                  Text(
+                    "View All projects",
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onPrimary,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_right_alt,
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
                 ],
               ),
             ),

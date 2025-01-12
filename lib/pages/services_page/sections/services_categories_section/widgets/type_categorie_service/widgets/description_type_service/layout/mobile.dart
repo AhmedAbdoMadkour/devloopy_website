@@ -6,7 +6,7 @@ class DescriptionTypeServiceMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -14,10 +14,10 @@ class DescriptionTypeServiceMobile extends StatelessWidget {
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w600,
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           maxLines: 10,
           overflow: TextOverflow.ellipsis,
@@ -25,10 +25,10 @@ class DescriptionTypeServiceMobile extends StatelessWidget {
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w400,
-            color: ColorsApp.whiteShadesColor_55,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
         ),
-        SizedBox(height: 20.0),
+        const SizedBox(height: 20.0),
       ],
     );
   }

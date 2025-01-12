@@ -10,8 +10,15 @@ class CardWebDesignComptedTablet extends StatelessWidget {
         padding: const EdgeInsets.all(30),
         width: double.infinity,
         decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            begin: Alignment.topRight,
+            colors: [
+              Color(0xffffffff),
+              Color(0xffEEEBE5),
+            ],
+          ),
           border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.outline,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -20,23 +27,23 @@ class CardWebDesignComptedTablet extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               "Our Web Design Competed Projects",
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w600,
-                color: ColorsApp.absoluteColorWhite,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: 15),
-            const Text(
+            Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               "At DigitX, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
-                color: ColorsApp.whiteShadesColor_50,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: 30),
@@ -48,7 +55,7 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                     border: Border.all(
                       width: 1,
                       style: BorderStyle.solid,
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.outline,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -69,10 +76,10 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                                   color: ColorsApp.greyShadesColor_12),
                             ),
                           ),
-                          child: const Text(
+                          child: Text(
                             "Project Name",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             ),
@@ -85,18 +92,19 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                             vertical: 24,
                             horizontal: 30,
                           ),
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             border: Border(
                               right: BorderSide(
-                                  width: 1,
-                                  style: BorderStyle.solid,
-                                  color: ColorsApp.greyShadesColor_12),
+                                width: 1,
+                                style: BorderStyle.solid,
+                                color: Theme.of(context).colorScheme.outline,
+                              ),
                             ),
                           ),
-                          child: const Text(
+                          child: Text(
                             "Industry",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             ),
@@ -109,10 +117,10 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                             vertical: 24,
                             horizontal: 30,
                           ),
-                          child: const Text(
+                          child: Text(
                             "Website URL",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             ),
@@ -125,23 +133,24 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                 const SizedBox(height: 20),
                 Table(
                   border: TableBorder.all(
-                      borderRadius: BorderRadius.circular(10),
-                      width: 1,
-                      style: BorderStyle.solid,
-                      color: ColorsApp.greyShadesColor_12),
-                  children: const [
+                    borderRadius: BorderRadius.circular(10),
+                    width: 1,
+                    style: BorderStyle.solid,
+                    color: Theme.of(context).colorScheme.outline,
+                  ),
+                  children: [
                     TableRow(
                       children: [
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "TechGuru Inc.",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -150,14 +159,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                         ),
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "Technology",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -166,14 +175,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                         ),
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "www.techguruinc.com",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 decoration: TextDecoration.underline,
@@ -187,14 +196,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                       children: [
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "GreenEarth Eco Store",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -203,14 +212,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                         ),
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "Design Agency",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -219,14 +228,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                         ),
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "www.greenearthecostore.com",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 decoration: TextDecoration.underline,
@@ -240,14 +249,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                       children: [
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "GlobalTech Solutions",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -256,14 +265,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                         ),
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "E-commerce",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -272,14 +281,14 @@ class CardWebDesignComptedTablet extends StatelessWidget {
                         ),
                         TableCell(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 24,
                               horizontal: 30,
                             ),
                             child: Text(
                               "www.globaltechsolutions.com",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 decoration: TextDecoration.underline,
