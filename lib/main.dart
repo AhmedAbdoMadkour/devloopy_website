@@ -1,4 +1,10 @@
 
+import 'package:devloopy_website/cubit/blog_cubit/blog_cubit.dart';
+import 'package:devloopy_website/cubit/navigation_cubit.dart';
+import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
+import 'package:devloopy_website/cubit/testimonials_cubit/testimonals_cubit.dart';
+import 'package:devloopy_website/pages/home_page/home_page.dart';
+import 'package:devloopy_website/pages/main_page.dart';
 import 'package:devloopy_website/pages/services_page/services_page.dart';
 import 'package:devloopy_website/theme/light_theme.dart';
 import 'package:flutter/material.dart';
@@ -19,13 +25,15 @@ class DevLoopy extends StatelessWidget {
           BlocProvider<ServicesCubit>(create: (context) => ServicesCubit()),
           BlocProvider<TestimonalsCubit>(
               create: (context) => TestimonalsCubit()),
+          BlocProvider<NavigationCubit>(create: (context) => NavigationCubit()),
+
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: LightTheme.theme,
           // darkTheme: DarkTheme.theme,
           // themeMode: ThemeMode.system,
-          home: const HomePage(),
+          home:  MainPage(),
         ));
   }
 }

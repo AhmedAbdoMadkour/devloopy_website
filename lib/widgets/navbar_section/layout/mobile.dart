@@ -7,6 +7,7 @@ class NavbarMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Theme.of(context).colorScheme.surface,
       padding: const EdgeInsets.only(
         top: 40,
         right: 16,

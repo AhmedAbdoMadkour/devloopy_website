@@ -71,7 +71,7 @@ class FooterSectionDeskTop extends StatelessWidget {
             indent: 15,
           ),
           const SizedBox(height: 60),
-          Row(
+          const Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -79,26 +79,30 @@ class FooterSectionDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomButtonLinkPage(
+                    index: 0,
                     namePageLink: "Home",
-                    colornamePageLink: Theme.of(context).colorScheme.primary,
+                    //colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
+                    index: 0,
                     namePageLink: "Benefits",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 0,
                     namePageLink: "Our Testimonials",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 0,
                     namePageLink: "Partners",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -108,32 +112,37 @@ class FooterSectionDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomButtonLinkPage(
+                    index: 1,
                     namePageLink: "Services",
-                    colornamePageLink: Theme.of(context).colorScheme.primary,
+                    //colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
+                    index: 1,
                     namePageLink: "Web Design",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 1,
                     namePageLink: "Website Development",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                   // colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 1,
                     namePageLink: "App Development",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 1,
                     namePageLink: "Digital Marketing",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -143,38 +152,44 @@ class FooterSectionDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomButtonLinkPage(
+                    index: 2,
                     namePageLink: "Projects",
-                    colornamePageLink: Theme.of(context).colorScheme.primary,
+                    //colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
+                    index: 2,
                     namePageLink: "ABC Tech Solutions",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 2,
                     namePageLink: "GreenEarth Eco Store",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                   // colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 2,
                     namePageLink: "HealthTech Innovations",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 2,
                     namePageLink: "GlobalTech Solutions",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 2,
                     namePageLink: "TechGuru Inc",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -184,26 +199,30 @@ class FooterSectionDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomButtonLinkPage(
+                    index: 3,
                     namePageLink: "About Us",
-                    colornamePageLink: Theme.of(context).colorScheme.primary,
+                    //colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
+                    index: 3,
                     namePageLink: "Our Team",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 3,
                     namePageLink: "Achievements",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 3,
                     namePageLink: "Awards",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -213,26 +232,30 @@ class FooterSectionDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomButtonLinkPage(
+                    index: 4,
                     namePageLink: "Careers",
-                    colornamePageLink: Theme.of(context).colorScheme.primary,
+                    //colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
+                    index: 4,
                     namePageLink: "Job Openings",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 4,
                     namePageLink: "Benefits & Perks",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
                   CustomButtonLinkPage(
+                    index: 4,
                     namePageLink: "Employee Refral",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -242,14 +265,16 @@ class FooterSectionDeskTop extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomButtonLinkPage(
+                    index: 5,
                     namePageLink: "Blogs",
-                    colornamePageLink: Theme.of(context).colorScheme.primary,
+                    //colornamePageLink: Theme.of(context).colorScheme.primary,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                   CustomButtonLinkPage(
+                    index: 5,
                     namePageLink: "Our Blogs",
-                    colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -269,9 +294,10 @@ class FooterSectionDeskTop extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CustomButtonLinkPage(
-                  namePageLink: "@2023 Digitax. All Rights Reserved.",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                const CustomButtonLinkPage(
+                  index: 0,
+                  namePageLink: "@2025 Dev Loopy. All Rights Reserved.",
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                 ),
@@ -283,26 +309,29 @@ class FooterSectionDeskTop extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                Row(
+                const Row(
                   children: [
                     CustomButtonLinkPage(
+                      index: 0,
                       namePageLink: "Privacy Policy",
-                      colornamePageLink:
-                          Theme.of(context).colorScheme.onSurface,
+                      // colornamePageLink:
+                      //     Theme.of(context).colorScheme.onSurface,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
                     CustomButtonLinkPage(
+                      index: 0,
                       namePageLink: "Terms & Conditions",
-                      colornamePageLink:
-                          Theme.of(context).colorScheme.onSurface,
+                      // colornamePageLink:
+                      //     Theme.of(context).colorScheme.onSurface,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
                     CustomButtonLinkPage(
+                      index: 0,
                       namePageLink: "Cookie Policy",
-                      colornamePageLink:
-                          Theme.of(context).colorScheme.onSurface,
+                      // colornamePageLink:
+                      //     Theme.of(context).colorScheme.onSurface,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),

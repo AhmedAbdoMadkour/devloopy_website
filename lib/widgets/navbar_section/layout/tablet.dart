@@ -7,6 +7,7 @@ class NavbarTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Theme.of(context).colorScheme.surface,
       padding: const EdgeInsets.symmetric(
         horizontal: 8,
         vertical: 20,
@@ -34,52 +35,59 @@ class NavbarTablet extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
+          const Expanded(
             flex: 4,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 CustomButtonLinkPage(
+                  index: 0,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Home",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
+                  index: 1,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Services",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
+                  index: 2,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Projects",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
+                  index: 3,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "About Us",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
+                  index: 4,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Contact Us",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
+                  index: 5,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Careers",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
                 CustomButtonLinkPage(
+                  index: 6,
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
                   namePageLink: "Blogs",
-                  colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                  //colornamePageLink: Theme.of(context).colorScheme.onSurface,
                 ),
               ],
             ),

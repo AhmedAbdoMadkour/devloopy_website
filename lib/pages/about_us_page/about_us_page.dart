@@ -23,7 +23,7 @@ class AboutUsPage extends StatelessWidget {
             //    OurAchievementsSection(), Solve this is section
             OurAwaedsSection(),
             CTASection(),
-            FooterSection(),
+            //FooterSection(),
           ],
         ),
       ),
