@@ -18,7 +18,7 @@ class CardChooseSectionDeskTop extends StatelessWidget {
         ),
         itemBuilder: (context, index) {
           return Container(
-            decoration: decorationCardChooseSection(index),
+            decoration: decorationCardChooseSection(index, context),
             child: Container(
               margin: const EdgeInsets.symmetric(vertical: 50.0),
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -49,14 +49,15 @@ class CardChooseSectionDeskTop extends StatelessWidget {
     );
   }
 
-  BoxDecoration decorationCardChooseSection(int index) {
+  BoxDecoration decorationCardChooseSection(int index, BuildContext context) {
     return BoxDecoration(
+
       border: Border(
           bottom: (index == 0 || index == 1 || index == 2)
-              ? const BorderSide(
+              ?  BorderSide(
                   style: BorderStyle.solid,
                   width: 1.0,
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.outline// ColorsApp.greyShadesColor_12,
                 )
               : BorderSide.none),
       image: const DecorationImage(

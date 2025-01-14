@@ -31,7 +31,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
                 ],
               ),
               borderRadius: BorderRadius.circular(20),
-              border: bordercardsevicesection(),
+              border: bordercardsevicesection(context),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,11 +48,11 @@ class CardServicesSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Border bordercardsevicesection() {
+  Border bordercardsevicesection(BuildContext context) {
     return Border.all(
       style: BorderStyle.solid,
       width: 1.0,
-      color: ColorsApp.greyShadesColor_06,
+      color: Theme.of(context).colorScheme.outline //ColorsApp.greyShadesColor_06,
     );
   }
 
