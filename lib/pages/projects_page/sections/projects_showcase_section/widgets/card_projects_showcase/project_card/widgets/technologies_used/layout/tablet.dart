@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TechnologiesUsedTablet extends StatelessWidget {
@@ -8,15 +7,15 @@ class TechnologiesUsedTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(20),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         border: Border(
           right: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           left: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -24,39 +23,68 @@ class TechnologiesUsedTablet extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text(
+          Text(
             "Technologies Used",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
           ),
           const SizedBox(height: 10),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                width: 40,
-                height: 40,
-                "assets/icons/Icon_figma.png",
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
-              const SizedBox(width: 6),
-              Image.asset(
-                width: 40,
-                height: 40,
-                "assets/icons/Icon_css.png",
+              const SizedBox(width: 20),
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
-              const SizedBox(width: 6),
-              Image.asset(
-                width: 40,
-                height: 40,
-                "assets/icons/Icon_html.png",
+              const SizedBox(width: 20),
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
-              const SizedBox(width: 6),
-              Image.asset(
-                width: 40,
-                height: 40,
-                "assets/icons/Icon_js.png",
+              const SizedBox(width: 20),
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
             ],
           )

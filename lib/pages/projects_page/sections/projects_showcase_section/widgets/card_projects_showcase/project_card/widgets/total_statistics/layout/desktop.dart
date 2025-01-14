@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TotalStatisticsDeskTop extends StatelessWidget {
@@ -12,7 +11,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           )),
@@ -21,19 +20,19 @@ class TotalStatisticsDeskTop extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.only(right: 50),
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
                 border: Border(
                     right: BorderSide(
-                        color: ColorsApp.greyShadesColor_10,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         width: 1,
                         style: BorderStyle.solid))),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Category",
                   style: TextStyle(
-                      color: ColorsApp.whiteShadesColor_55,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                       height: 2),
@@ -41,7 +40,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                 Text(
                   "E-commerce",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
@@ -51,19 +50,19 @@ class TotalStatisticsDeskTop extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.only(right: 50),
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
                 border: Border(
                     right: BorderSide(
-                        color: ColorsApp.greyShadesColor_10,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         width: 1,
                         style: BorderStyle.solid))),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Time Taken",
                   style: TextStyle(
-                      color: ColorsApp.whiteShadesColor_55,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                       height: 2),
@@ -71,7 +70,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                 Text(
                   "4 Months",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
@@ -81,19 +80,19 @@ class TotalStatisticsDeskTop extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.only(right: 50),
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
                 border: Border(
                     right: BorderSide(
-                        color: ColorsApp.greyShadesColor_10,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         width: 1,
                         style: BorderStyle.solid))),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Start Date",
                   style: TextStyle(
-                      color: ColorsApp.whiteShadesColor_55,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                       height: 2),
@@ -101,7 +100,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                 Text(
                   "January 15, 2023",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
@@ -111,13 +110,13 @@ class TotalStatisticsDeskTop extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.only(right: 50),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Completed Date",
                   style: TextStyle(
-                      color: ColorsApp.whiteShadesColor_55,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                       height: 2),
@@ -125,7 +124,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                 Text(
                   "May 15, 2023",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),

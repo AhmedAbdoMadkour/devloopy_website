@@ -11,20 +11,28 @@ class HeaderInformationContactusDeskTop extends StatelessWidget {
         children: [
           Expanded(
             child: Image.asset(
-              'assets/images/backgroundservices1.png',
+              'assets/images/background_left_hero_section.png',
               fit: BoxFit.cover,
             ),
           ),
           Expanded(
-            flex: 2,
-            child: Image.asset(
-              'assets/images/image_contactus_hero.png',
-              fit: BoxFit.cover,
+            child: Container(
+              width: 731,
+              height: 549,
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+                borderRadius: BorderRadius.circular(39),
+              ),
+              child: Image.asset(
+                width: 323,
+                height: 330,
+                "assets/images/Dev-Loopy-Icon_white 2.png",
+              ),
             ),
           ),
           Expanded(
             child: Image.asset(
-              'assets/images/backgroundservices.png',
+              'assets/images/background_right_hero_section.png',
               fit: BoxFit.cover,
             ),
           ),

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardUpcomingProjectDeskTop extends StatelessWidget {
@@ -20,16 +19,9 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.all(40),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topCenter,
-                colors: [
-                  ColorsApp.absoluteColorBlack,
-                  ColorsApp.greyShadesColor_06,
-                ],
-              ),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_06,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -37,17 +29,29 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Image.asset(
-                      width: 60,
-                      height: 60,
-                      "assets/icons/Icon_fitness_success.png",
+                    Container(
+                      padding: const EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 10,
+                          style: BorderStyle.solid,
+                        ),
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: Icon(
+                        Icons.hotel_class_rounded,
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        size: 34,
+                      ),
                     ),
-                    const Text(
+                    const SizedBox(width: 10),
+                    Text(
                       "Educational Learning App",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 28,
                         fontWeight: FontWeight.w600,
                       ),
@@ -61,7 +65,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -71,19 +75,22 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                     children: [
                       Container(
                         padding: const EdgeInsets.only(right: 40),
-                        decoration: const BoxDecoration(
-                            border: Border(
-                                right: BorderSide(
-                                    color: ColorsApp.greyShadesColor_10,
-                                    width: 1,
-                                    style: BorderStyle.solid))),
-                        child: const Column(
+                        decoration: BoxDecoration(
+                          border: Border(
+                            right: BorderSide(
+                                color: Theme.of(context).colorScheme.outline,
+                                width: 1,
+                                style: BorderStyle.solid),
+                          ),
+                        ),
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Category",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -91,7 +98,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                             Text(
                               "E-commerce",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 20,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -99,13 +106,13 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Column(
+                      Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Expected Completion",
                             style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
@@ -113,7 +120,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                           Text(
                             "Q4 2024",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.w400,
                             ),
@@ -127,27 +134,26 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                   padding: const EdgeInsets.all(40),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
-                      begin: Alignment.topLeft,
+                      begin: Alignment.topRight,
                       colors: [
-                        ColorsApp.absoluteColorBlack,
-                        ColorsApp.greyShadesColor_06,
+                        Color(0xffFFFFFF),
+                        Color(0xffEEEBE5),
                       ],
                     ),
-                    color: ColorsApp.greyShadesColor_06,
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_06,
+                      color: Theme.of(context).colorScheme.onSurface,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: const Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Project Description",
                         style: TextStyle(
-                            color: ColorsApp.absoluteColorWhite,
+                            color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 22,
                             fontWeight: FontWeight.w400,
                             height: 2),
@@ -157,7 +163,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         "We are collaborating with an eco-conscious startup to create an innovative e-commerce platform that promotes sustainable products and environmentally friendly practices. The platform will empower consumers to make eco-conscious choices while supporting sustainable businesses. This project aligns with our commitment to creating digital solutions that contribute to a greener future.",
                         style: TextStyle(
-                            color: ColorsApp.whiteShadesColor_55,
+                            color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 18,
                             fontWeight: FontWeight.w400),
                       ),

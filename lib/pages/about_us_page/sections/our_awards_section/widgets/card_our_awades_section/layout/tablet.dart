@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardOurAwadesSectionTablet extends StatelessWidget {
@@ -25,20 +24,16 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
               vertical: 50,
             ),
             decoration: BoxDecoration(
-              image: const DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage("assets/images/Abstract_Design.png"),
-              ),
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [
-                  ColorsApp.absoluteColorBlack,
-                  ColorsApp.greyShadesColor_06,
+                  Color(0xffffffff),
+                  Color(0xffeeebe5),
                 ],
               ),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_06,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -47,11 +42,24 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Image.asset(
-                      width: 114,
-                      height: 114,
-                      "assets/icons/Icon_our_awards.png",
+                    Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 6,
+                          style: BorderStyle.solid,
+                        ),
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: Icon(
+                        Icons.tips_and_updates,
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        size: 34,
+                      ),
                     ),
+                    const SizedBox(height: 10),
                     Container(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 10,
@@ -60,7 +68,7 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -68,16 +76,15 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Image.asset(
-                            width: 20,
-                            height: 20,
-                            "assets/icons/Icon_clandier.png",
+                          Icon(
+                            Icons.calendar_month_outlined,
+                            color: Theme.of(context).colorScheme.onSurface,
                           ),
                           const SizedBox(width: 6),
-                          const Text(
+                          Text(
                             "October 2017",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 14,
                             ),
                           ),
@@ -88,13 +95,13 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                 ),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 20),
-                  child: const Column(
+                  child: Column(
                     children: [
                       Text(
                         "Digital Excellence Award",
                         style: TextStyle(
                           height: 2,
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
@@ -104,7 +111,7 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         "Recognition for outstanding contributions to the digital industry, celebrating our ability to deliver exceptional web design and development solutions that push the boundaries of creativity and functionality.",
                         style: TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
@@ -120,18 +127,25 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
+                    gradient: const LinearGradient(
+                      begin: Alignment.topRight,
+                      colors: [
+                        Color(0xffFFFFFF),
+                        Color(0xffEEEBE5),
+                      ],
+                    ),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.onSurface,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: const Column(
+                  child: Column(
                     children: [
                       Text(
                         "Why",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
@@ -142,7 +156,7 @@ class CardOurAwadesSectionTablet extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         "Innovative web design and development solutions.",
                         style: TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),

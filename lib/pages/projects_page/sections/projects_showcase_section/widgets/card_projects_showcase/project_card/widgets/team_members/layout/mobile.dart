@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TeamMeembersMobile extends StatelessWidget {
@@ -8,15 +7,15 @@ class TeamMeembersMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 18),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         border: Border(
           right: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           left: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -25,10 +24,10 @@ class TeamMeembersMobile extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Team Members",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
@@ -37,10 +36,10 @@ class TeamMeembersMobile extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 20),
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -49,10 +48,10 @@ class TeamMeembersMobile extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Web Developer",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_65,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -80,13 +79,13 @@ class TeamMeembersMobile extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const Column(
+                        Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
                               "John Smith ,",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -94,7 +93,7 @@ class TeamMeembersMobile extends StatelessWidget {
                             Text(
                               "Emily Johnson",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -108,10 +107,10 @@ class TeamMeembersMobile extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 18),
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -120,10 +119,10 @@ class TeamMeembersMobile extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "UI UX Designer",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_65,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 2,
@@ -145,13 +144,13 @@ class TeamMeembersMobile extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const Column(
+                        Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
                               "Jessica Lee",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -168,10 +167,10 @@ class TeamMeembersMobile extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Project manager",
                       style: TextStyle(
-                          color: ColorsApp.whiteShadesColor_65,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                           height: 2),
@@ -190,10 +189,10 @@ class TeamMeembersMobile extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const Text(
+                        Text(
                           "Michael Williams",
                           style: TextStyle(
-                            color: ColorsApp.absoluteColorWhite,
+                            color: Theme.of(context).colorScheme.onPrimary,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),

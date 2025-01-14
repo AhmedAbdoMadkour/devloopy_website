@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/description_project.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/methods_uesd/layout/tablet.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/team_members/layout/tablet.dart';
@@ -16,11 +15,7 @@ class ProjectCardTablet extends StatelessWidget {
       padding: const EdgeInsets.all(50),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
-          width: 1,
-          style: BorderStyle.solid,
-        ),
+        color: Theme.of(context).colorScheme.primary,
       ),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,

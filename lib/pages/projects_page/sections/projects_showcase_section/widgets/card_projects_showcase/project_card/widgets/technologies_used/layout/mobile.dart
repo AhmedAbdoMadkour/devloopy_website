@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TechnologiesUsedMobile extends StatelessWidget {
@@ -8,15 +7,15 @@ class TechnologiesUsedMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(12),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         border: Border(
           right: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           left: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -24,10 +23,10 @@ class TechnologiesUsedMobile extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text(
+          Text(
             "Technologies Used",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
@@ -35,28 +34,56 @@ class TechnologiesUsedMobile extends StatelessWidget {
           const SizedBox(height: 10),
           Row(
             children: [
-              Image.asset(
+              Container(
                 width: 40,
                 height: 40,
-                "assets/icons/Icon_figma.png",
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
               const SizedBox(width: 6),
-              Image.asset(
+              Container(
                 width: 40,
                 height: 40,
-                "assets/icons/Icon_css.png",
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
               const SizedBox(width: 6),
-              Image.asset(
+              Container(
                 width: 40,
                 height: 40,
-                "assets/icons/Icon_html.png",
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
               const SizedBox(width: 6),
-              Image.asset(
+              Container(
                 width: 40,
                 height: 40,
-                "assets/icons/Icon_js.png",
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
               ),
             ],
           )

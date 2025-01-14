@@ -1,5 +1,5 @@
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/layout/mobile.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';
 
@@ -19,16 +19,16 @@ class ProjectsShowcaseSectionMobile extends StatelessWidget {
           CustomTitelSectionMobile(
             nameTitleSection: "Projects Showcase",
           ),
-          CustomSecondDescriptionMobile(
-              description:
+          CustomDescriptionSectionMobile(
+              descriptionSection:
                   "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself."),
           SizedBox(height: 30),
           CardProjectsShowcaseMobile(
-            imageShowcase: "assets/images/Image_showcase_red.png",
+            imageShowcase: "assets/images/image_ecommerce_revolution.png",
           ),
           SizedBox(height: 40),
           CardProjectsShowcaseMobile(
-            imageShowcase: "assets/images/Image_showcase_green.png",
+            imageShowcase: "assets/images/image_ecommerce_website_examples.png",
           ),
         ],
       ),

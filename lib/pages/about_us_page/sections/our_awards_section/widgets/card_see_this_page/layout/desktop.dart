@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardSeeThisPageDeskTop extends StatelessWidget {
@@ -9,10 +8,10 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        const Text(
+        Text(
           "See This Pages",
           style: TextStyle(
-            color: ColorsApp.absoluteColorWhite,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 24,
             fontWeight: FontWeight.w400,
           ),
@@ -35,20 +34,16 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
                   vertical: 60,
                 ),
                 decoration: BoxDecoration(
-                  image: const DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage("assets/images/Abstract_Design.png"),
-                  ),
                   gradient: const LinearGradient(
-                    begin: Alignment.topCenter,
+                    begin: Alignment.topRight,
                     colors: [
-                      ColorsApp.absoluteColorBlack,
-                      ColorsApp.greyShadesColor_06,
+                      Color(0xffffffff),
+                      Color(0xffeeebe5),
                     ],
                   ),
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_06,
+                    color: Theme.of(context).colorScheme.outline,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
@@ -57,11 +52,25 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Image.asset(
-                          width: 172,
-                          height: 172,
-                          "assets/icons/icon_see.png",
+                        Container(
+                          padding: const EdgeInsets.all(24),
+                          decoration: BoxDecoration(
+                            color:
+                                Theme.of(context).colorScheme.primaryContainer,
+                            border: Border.all(
+                              color: Theme.of(context).colorScheme.primary,
+                              width: 10,
+                              style: BorderStyle.solid,
+                            ),
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                          child: Icon(
+                            Icons.tips_and_updates,
+                            color: Theme.of(context).colorScheme.onPrimary,
+                            size: 34,
+                          ),
                         ),
+                        const SizedBox(height: 10),
                         Container(
                           padding: const EdgeInsets.only(
                             top: 10,
@@ -76,21 +85,21 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
                       margin: const EdgeInsets.symmetric(vertical: 20),
                       child: Column(
                         children: [
-                          const Text(
+                          Text(
                             "Careers At DigitX",
                             style: TextStyle(
                               height: 2,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 24,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
-                          const Text(
+                          Text(
                             maxLines: 8,
                             "At DigitX, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
                             style: TextStyle(
                               height: 2,
-                              color: ColorsApp.whiteShadesColor_55,
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             ),
@@ -107,18 +116,20 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
                                   border: Border.all(
                                     style: BorderStyle.solid,
                                     width: 1.0,
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                   ),
                                 ),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    const Text(
+                                    Text(
                                       "View Page",
                                       style: TextStyle(
-                                        color: ColorsApp.absoluteColorWhite,
-                                        fontFamily: FontsApp.fontFamilySora,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSurface,
                                         fontSize: 16.0,
                                       ),
                                     ),
@@ -131,13 +142,17 @@ class CardSeeThisPageDeskTop extends StatelessWidget {
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 6.0, vertical: 2.0),
                                         decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(20.0),
-                                            color:
-                                                ColorsApp.greyShadesColor_10),
-                                        child: const Icon(
+                                          borderRadius:
+                                              BorderRadius.circular(20.0),
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onSurface,
+                                        ),
+                                        child: Icon(
                                           Icons.arrow_right_alt,
-                                          color: ColorsApp.absoluteColorWhite,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .surface,
                                         ),
                                       ),
                                     ),

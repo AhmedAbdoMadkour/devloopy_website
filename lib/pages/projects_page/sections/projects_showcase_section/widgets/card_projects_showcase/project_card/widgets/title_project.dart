@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TitleProject extends StatelessWidget {
@@ -12,7 +11,7 @@ class TitleProject extends StatelessWidget {
     return Text(
       "Project Description",
       style: TextStyle(
-        color: ColorsApp.absoluteColorWhite,
+        color: Theme.of(context).colorScheme.onPrimary,
         fontSize: fontSize,
         fontWeight: FontWeight.w400,
         height: 3,

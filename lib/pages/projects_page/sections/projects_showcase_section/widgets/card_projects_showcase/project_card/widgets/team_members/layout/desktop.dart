@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TeamMeembersDeskTop extends StatelessWidget {
@@ -10,9 +9,10 @@ class TeamMeembersDeskTop extends StatelessWidget {
       margin: const EdgeInsets.only(top: 50),
       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
+          color: Theme.of(context).colorScheme.onPrimary,
           width: 1,
           style: BorderStyle.solid,
         ),
@@ -20,10 +20,10 @@ class TeamMeembersDeskTop extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Team Members",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 20,
               fontWeight: FontWeight.w400,
             ),
@@ -38,7 +38,7 @@ class TeamMeembersDeskTop extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
@@ -46,10 +46,10 @@ class TeamMeembersDeskTop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Web Developer",
                       style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 20,
                           fontWeight: FontWeight.w400,
                           height: 2),
@@ -63,23 +63,25 @@ class TeamMeembersDeskTop extends StatelessWidget {
                             children: [
                               Positioned(
                                 child: Image.asset(
-                                    "assets/icons/icon_face_one.png"),
+                                  "assets/icons/icon_face_one.png",
+                                ),
                               ),
                               Positioned(
                                 right: 12,
                                 child: Image.asset(
-                                    "assets/icons/icon_face_two.png"),
+                                  "assets/icons/icon_face_two.png",
+                                ),
                               ),
                             ],
                           ),
                         ),
-                        const Column(
+                        Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
                               "John Smith ,",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -87,7 +89,7 @@ class TeamMeembersDeskTop extends StatelessWidget {
                             Text(
                               "Emily Johnson",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -101,11 +103,11 @@ class TeamMeembersDeskTop extends StatelessWidget {
               ),
               Container(
                 margin: const EdgeInsets.only(right: 20),
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(30),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
@@ -113,10 +115,10 @@ class TeamMeembersDeskTop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "UI UX Designer",
                       style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 20,
                           fontWeight: FontWeight.w400,
                           height: 2),
@@ -135,13 +137,13 @@ class TeamMeembersDeskTop extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const Column(
+                        Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
                               "Jessica Lee",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -159,7 +161,7 @@ class TeamMeembersDeskTop extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
@@ -167,10 +169,10 @@ class TeamMeembersDeskTop extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Project manager",
                       style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 20,
                           fontWeight: FontWeight.w400,
                           height: 2),
@@ -189,13 +191,13 @@ class TeamMeembersDeskTop extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const Column(
+                        Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
                               "Michael Williams",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),

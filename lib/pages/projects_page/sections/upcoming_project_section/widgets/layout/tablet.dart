@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardUpcomingProjectTablet extends StatelessWidget {
@@ -21,16 +20,9 @@ class CardUpcomingProjectTablet extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topCenter,
-                colors: [
-                  ColorsApp.absoluteColorBlack,
-                  ColorsApp.greyShadesColor_06,
-                ],
-              ),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_06,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -38,17 +30,31 @@ class CardUpcomingProjectTablet extends StatelessWidget {
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Image.asset(
-                      width: 52,
-                      height: 52,
-                      "assets/icons/Icon_fitness_success.png",
+                    Container(
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 6,
+                          style: BorderStyle.solid,
+                        ),
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: Icon(
+                        Icons.hotel_class_rounded,
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        size: 34,
+                      ),
                     ),
-                    const Text(
+                    const SizedBox(
+                      width: 6,
+                    ),
+                    Text(
                       "Educational Learning App",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
                       ),
@@ -64,7 +70,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -75,13 +81,14 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                     children: [
                       Container(
                         decoration: const BoxDecoration(),
-                        child: const Column(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Category",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -89,7 +96,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                             Text(
                               "E-commerce",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -97,16 +104,16 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Divider(
-                        color: ColorsApp.greyShadesColor_10,
+                      Divider(
+                        color: Theme.of(context).colorScheme.outline,
                       ),
-                      const Column(
+                      Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Expected Completion",
                             style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 height: 2),
@@ -114,7 +121,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                           Text(
                             "Q4 2024",
                             style: TextStyle(
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
                             ),
@@ -129,27 +136,26 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                   margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
-                      begin: Alignment.topLeft,
+                      begin: Alignment.topRight,
                       colors: [
-                        ColorsApp.absoluteColorBlack,
-                        ColorsApp.greyShadesColor_06,
+                        Color(0xffffffff),
+                        Color(0xffeeebe5),
                       ],
                     ),
-                    color: ColorsApp.greyShadesColor_06,
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_06,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: const Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Project Description",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                           height: 2,
@@ -159,7 +165,7 @@ class CardUpcomingProjectTablet extends StatelessWidget {
                         maxLines: 12,
                         "Our team is collaborating with a leading healthcare provider to enhance their existing platform. The project aims to streamline user experiences, optimize database performance, and implement advanced security measures to safeguard patient data. This ambitious undertaking will elevate the platform's capabilities and revolutionize healthcare accessibility for users.",
                         style: TextStyle(
-                          color: ColorsApp.whiteShadesColor_55,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
