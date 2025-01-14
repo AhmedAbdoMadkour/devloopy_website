@@ -13,8 +13,6 @@ class CardTestimonialsSectionDeskTop extends StatelessWidget {
     return BlocBuilder<TestimonalsCubit, TestimonialsStates>(
         builder: (context, state) {
       if (state is TestimoniaksInitState) {
-        return const Text("Madkour");
-      } else {
         return Container(
           padding: const EdgeInsets.symmetric(horizontal: 150.0),
           height: 450,
@@ -97,6 +95,9 @@ class CardTestimonialsSectionDeskTop extends StatelessWidget {
             },
           ),
         );
+
+      } else {
+        return const Text("Madkour");
       }
     });
   }
