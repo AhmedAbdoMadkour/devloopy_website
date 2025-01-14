@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardFeaturesSectionMobile extends StatelessWidget {
@@ -23,8 +22,8 @@ class CardFeaturesSectionMobile extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(
                   bottom: (index == 0 || index == 1 || index == 2 || index == 3)
-                      ? const BorderSide(
-                          color: ColorsApp.greyShadesColor_10,
+                      ? BorderSide(
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         )
@@ -32,27 +31,39 @@ class CardFeaturesSectionMobile extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Image.asset(
-                  width: 56,
-                  height: 56,
-                  "assets/icons/chooseMarketing.png",
+                Container(
+                  padding: const EdgeInsets.all(24),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primaryContainer,
+                    border: Border.all(
+                      color: Theme.of(context).colorScheme.primary,
+                      width: 4,
+                      style: BorderStyle.solid,
+                    ),
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Icon(
+                    Icons.hotel_class_rounded,
+                    color: Theme.of(context).colorScheme.onPrimary,
+                    size: 34,
+                  ),
                 ),
                 const SizedBox(height: 10),
-                const Text(
+                Text(
                   "Strategic Planning",
                   style: TextStyle(
                     height: 3,
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const Text(
+                Text(
                   maxLines: 5,
                   overflow: TextOverflow.ellipsis,
                   "Every project begins with thorough research and strategic planning to ensure a holistic understanding of our clients' objectives and target audience.",
                   style: TextStyle(
-                    color: ColorsApp.whiteShadesColor_55,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),

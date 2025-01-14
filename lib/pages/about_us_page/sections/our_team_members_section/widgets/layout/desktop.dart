@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardOurTeamMemberDeskTop extends StatelessWidget {
@@ -20,20 +19,13 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return Container(
             decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  begin: Alignment.topCenter,
-                  colors: [
-                    ColorsApp.absoluteColorBlack,
-                    ColorsApp.greyShadesColor_06,
-                  ],
-                ),
-                image: const DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage("assets/images/Abstract_Design.png")),
-                borderRadius: BorderRadius.circular(24),
-                border: Border.all(
-                  color: ColorsApp.greyShadesColor_06,
-                )),
+              color: Theme.of(context).colorScheme.primary,
+              image: const DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage("assets/images/Abstract_Design.png"),
+              ),
+              borderRadius: BorderRadius.circular(24),
+            ),
             child: Column(
               children: [
                 Expanded(
@@ -41,15 +33,35 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Image.asset(
-                        width: 140,
-                        height: 140,
-                        "assets/images/team_member_one.png",
+                      Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          border: Border.all(
+                            color: Theme.of(context).colorScheme.onPrimary,
+                            width: 1,
+                            style: BorderStyle.solid,
+                          ),
+                        ),
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            border: Border.all(
+                              color: Theme.of(context).colorScheme.onPrimary,
+                              width: 1,
+                              style: BorderStyle.solid,
+                            ),
+                          ),
+                          child: Image.asset(
+                            "assets/images/Image_person_blog.png",
+                          ),
+                        ),
                       ),
-                      const Text(
+                      Text(
                         "John Smith",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 22,
                           fontWeight: FontWeight.w600,
                         ),
@@ -63,19 +75,19 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
                           gradient: const LinearGradient(
                             begin: Alignment.topRight,
                             colors: [
-                              ColorsApp.absoluteColorBlack,
-                              ColorsApp.greyShadesColor_06,
+                              Color(0xff0B43DB),
+                              Color.fromARGB(190, 11, 66, 219),
                             ],
                           ),
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(
-                            color: ColorsApp.greyShadesColor_12,
+                            color: Theme.of(context).colorScheme.onPrimary,
                           ),
                         ),
-                        child: const Text(
+                        child: Text(
                           "Co-Founder & CEO",
                           style: TextStyle(
-                            color: ColorsApp.absoluteColorWhite,
+                            color: Theme.of(context).colorScheme.onPrimary,
                             fontSize: 18,
                             fontWeight: FontWeight.w400,
                           ),
@@ -84,8 +96,8 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Divider(
-                  color: ColorsApp.greyShadesColor_12,
+                Divider(
+                  color: Theme.of(context).colorScheme.onPrimary,
                   thickness: .5,
                 ),
                 Expanded(
@@ -97,21 +109,21 @@ class CardOurTeamMemberDeskTop extends StatelessWidget {
                         child: Image.asset(
                           width: 64,
                           height: 64,
-                          "assets/icons/Button_insegram.png",
+                          "assets/images/image_Button_instgram.png",
                         ),
                       ),
                       GestureDetector(
                         child: Image.asset(
                           width: 64,
                           height: 64,
-                          "assets/icons/Button_twitter.png",
+                          "assets/images/image_Button_linkedin.png",
                         ),
                       ),
                       GestureDetector(
                         child: Image.asset(
                           width: 64,
                           height: 64,
-                          "assets/icons/Button_linkdin.png",
+                          "assets/images/image_Button_twitter.png",
                         ),
                       ),
                     ],

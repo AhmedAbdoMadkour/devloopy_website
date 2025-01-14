@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TechnologiesUsedDeskTop extends StatelessWidget {
@@ -12,7 +11,7 @@ class TechnologiesUsedDeskTop extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
+          color: Theme.of(context).colorScheme.onPrimary,
           width: 1,
           style: BorderStyle.solid,
         ),
@@ -20,10 +19,10 @@ class TechnologiesUsedDeskTop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Technologies Used",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 20,
               fontWeight: FontWeight.w400,
             ),
@@ -32,13 +31,57 @@ class TechnologiesUsedDeskTop extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.asset("assets/icons/Icon_figma.png"),
+              Container(
+                width: 56,
+                height: 56,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
+              ),
               const SizedBox(width: 50),
-              Image.asset("assets/icons/Icon_css.png"),
+              Container(
+                width: 56,
+                height: 56,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
+              ),
               const SizedBox(width: 50),
-              Image.asset("assets/icons/Icon_html.png"),
+              Container(
+                width: 56,
+                height: 56,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
+              ),
               const SizedBox(width: 50),
-              Image.asset("assets/icons/Icon_js.png"),
+              Container(
+                width: 56,
+                height: 56,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primaryContainer,
+                ),
+                child: Icon(
+                  Icons.flutter_dash,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
+              ),
             ],
           )
         ],

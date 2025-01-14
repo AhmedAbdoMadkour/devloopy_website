@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/pages/about_us_page/sections/our_awards_section/our_awaeds_section.dart';
 import 'package:devloopy_website/pages/about_us_page/sections/our_team_members_section/our_team_members.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
@@ -13,7 +12,6 @@ class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: ColorsApp.absoluteColorBlack,
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -11,23 +11,27 @@ class HeaderInformationContactusTablet extends StatelessWidget {
         children: [
           Expanded(
             child: Image.asset(
-              height: 300,
-              'assets/images/backgroundservices1.png',
+              'assets/images/background_left_hero_section.png',
               fit: BoxFit.cover,
             ),
           ),
           Expanded(
-            flex: 2,
-            child: Image.asset(
-              height: 300,
-              'assets/images/image_contactus_hero.png',
-              fit: BoxFit.cover,
+            child: Container(
+              width: 420,
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+                borderRadius: BorderRadius.circular(39),
+              ),
+              child: Image.asset(
+                width: 250,
+                height: 253,
+                "assets/images/Dev-Loopy-Icon_white 2.png",
+              ),
             ),
           ),
           Expanded(
             child: Image.asset(
-              height: 300,
-              'assets/images/backgroundservices.png',
+              'assets/images/background_right_hero_section.png',
               fit: BoxFit.cover,
             ),
           ),

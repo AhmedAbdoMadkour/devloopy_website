@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
@@ -13,19 +12,15 @@ class CardTitleContactTablet extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_12,
+          color: Theme.of(context).colorScheme.outline,
           width: 1,
           style: BorderStyle.solid,
         ),
-        image: const DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage("assets/images/Abstract_Design.png"),
-        ),
         gradient: const LinearGradient(
-          begin: Alignment.topCenter,
+          begin: Alignment.topRight,
           colors: [
-            ColorsApp.absoluteColorBlack,
-            ColorsApp.greyShadesColor_06,
+            Color(0xffffffff),
+            Color(0xffeeebe5),
           ],
         ),
       ),
@@ -42,20 +37,15 @@ class CardTitleContactTablet extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             height: 67,
             decoration: BoxDecoration(
-              color: ColorsApp.greyShadesColor_06,
+              color: Theme.of(context).colorScheme.primary,
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
-                width: 1,
-                style: BorderStyle.solid,
-              ),
             ),
-            child: const Center(
+            child: Center(
               child: Text(
                 maxLines: 1,
                 "Feel free to contact us through any of the following channels",
                 style: TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
+                  color: Theme.of(context).colorScheme.onPrimary,
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
                 ),

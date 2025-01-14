@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class TotalStatisticsMobile extends StatelessWidget {
@@ -9,24 +8,24 @@ class TotalStatisticsMobile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       height: 170,
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(12),
           topRight: Radius.circular(12),
         ),
         border: Border(
           top: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           right: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           left: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -45,26 +44,26 @@ class TotalStatisticsMobile extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(
                   bottom: (index == 0 || index == 1)
-                      ? const BorderSide(
-                          color: ColorsApp.greyShadesColor_10,
+                      ? BorderSide(
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid)
                       : BorderSide.none,
                   right: (index == 0 || index == 2)
-                      ? const BorderSide(
-                          color: ColorsApp.greyShadesColor_10,
+                      ? BorderSide(
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid)
                       : BorderSide.none),
             ),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "Category",
                   style: TextStyle(
-                    color: ColorsApp.whiteShadesColor_55,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
                     height: 2,
@@ -73,7 +72,7 @@ class TotalStatisticsMobile extends StatelessWidget {
                 Text(
                   "E-commerce",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
                   ),

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class MethodsUesdTablet extends StatelessWidget {
@@ -12,24 +11,24 @@ class MethodsUesdTablet extends StatelessWidget {
         left: 18,
         bottom: 18,
       ),
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(12),
           bottomRight: Radius.circular(12),
         ),
         border: Border(
           right: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           bottom: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
           left: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid,
           ),
@@ -38,10 +37,10 @@ class MethodsUesdTablet extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Methods Used",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 18,
               fontWeight: FontWeight.w400,
               height: 2,
@@ -59,14 +58,14 @@ class MethodsUesdTablet extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       width: 1,
                       style: BorderStyle.solid),
                 ),
-                child: const Text(
+                child: Text(
                   "Agile Development",
                   style: TextStyle(
-                    color: ColorsApp.whiteShadesColor_65,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
                   ),
@@ -84,14 +83,14 @@ class MethodsUesdTablet extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: const Text(
+                    child: Text(
                       "User Testing",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_65,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                       ),
@@ -106,14 +105,14 @@ class MethodsUesdTablet extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: const Text(
+                    child: Text(
                       "A/B Testing",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_65,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                       ),

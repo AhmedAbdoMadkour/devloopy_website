@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class MethodsUesdDeskTop extends StatelessWidget {
@@ -10,19 +9,20 @@ class MethodsUesdDeskTop extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 50),
       padding: const EdgeInsets.all(40),
       decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.onPrimary,
             width: 1,
             style: BorderStyle.solid),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Methods Used",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onPrimary,
               fontSize: 22,
               fontWeight: FontWeight.w400,
             ),
@@ -33,7 +33,7 @@ class MethodsUesdDeskTop extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.onPrimary,
                   width: 1,
                   style: BorderStyle.solid),
             ),
@@ -41,10 +41,10 @@ class MethodsUesdDeskTop extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     border: Border(
                       right: BorderSide(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
@@ -60,14 +60,14 @@ class MethodsUesdDeskTop extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: const Text(
+                    child: Text(
                       "Agile Development",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                       ),
@@ -77,10 +77,10 @@ class MethodsUesdDeskTop extends StatelessWidget {
                 Container(
                   width: 240,
                   height: 63,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     border: Border(
                       right: BorderSide(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
@@ -92,14 +92,14 @@ class MethodsUesdDeskTop extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: const Text(
+                    child: Text(
                       "User Testing",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                       ),
@@ -116,14 +116,14 @@ class MethodsUesdDeskTop extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.onPrimary,
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: const Text(
+                    child: Text(
                       "A/B Testing",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.onPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                       ),

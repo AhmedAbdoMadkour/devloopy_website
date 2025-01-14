@@ -1,5 +1,5 @@
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/layout/tablet.dart';
-import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
@@ -19,16 +19,16 @@ class ProjectsShowcaseSectionTablet extends StatelessWidget {
           CustomTitelSectionTablet(
             nameTitleSection: "Showcase",
           ),
-          CustomSecondDescriptionTablet(
-              description:
+          CustomDescriptionSectionTablet(
+              descriptionSection:
                   "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself."),
           SizedBox(height: 30),
           CardProjectsShowcaseTablet(
-            imageShowcase: "assets/images/Image_showcase_red.png",
+            imageShowcase: "assets/images/image_project_showcase_one.png",
           ),
           SizedBox(height: 50),
           CardProjectsShowcaseTablet(
-            imageShowcase: "assets/images/Image_showcase_green.png",
+            imageShowcase: "assets/images/image_project_showcase_two.png",
           ),
         ],
       ),
