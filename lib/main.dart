@@ -35,7 +35,7 @@ class DevLoopy extends StatelessWidget {
           theme: LightTheme.theme,
           // darkTheme: DarkTheme.theme,
           // themeMode: ThemeMode.system,
-
+          home: MainPage()
 
         ));
   }

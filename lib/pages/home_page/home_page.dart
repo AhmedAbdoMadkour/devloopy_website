@@ -15,9 +15,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      body: const SingleChildScrollView(
+    return const Scaffold(
+      //backgroundColor: Theme.of(context).colorScheme.surface,
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Navbar(),
