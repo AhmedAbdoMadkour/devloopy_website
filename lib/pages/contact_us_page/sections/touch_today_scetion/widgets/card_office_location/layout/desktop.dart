@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardOfficeLocationDeskTop extends StatelessWidget {
@@ -11,23 +10,23 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             "Office Locations",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 24,
               fontWeight: FontWeight.w600,
             ),
           ),
-          const Text(
+          Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
             "Visit our offices to have a face-to-face discussion with  face-to-face discussion with face-to-face discussion with our team. We have locations in",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
@@ -39,7 +38,7 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.outline,
                   style: BorderStyle.solid,
                   width: 1),
             ),
@@ -59,20 +58,16 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                     vertical: 50,
                   ),
                   decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage("assets/images/Abstract_Design.png"),
-                    ),
                     gradient: const LinearGradient(
-                      begin: Alignment.topCenter,
+                      begin: Alignment.topRight,
                       colors: [
-                        ColorsApp.absoluteColorBlack,
-                        ColorsApp.greyShadesColor_06,
+                        Color(0xffffffff),
+                        Color(0xffeeebe5),
                       ],
                     ),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_06,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -81,35 +76,50 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Image.asset(
-                            width: 160,
-                            height: 160,
-                            "assets/images/iamge_office_location.png",
-                          ),
+                          Container(
+                            padding: const EdgeInsets.all(24),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Theme.of(context).colorScheme.primary,
+                                width: 10,
+                                style: BorderStyle.solid,
+                              ),
+                              borderRadius: BorderRadius.circular(100),
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .primaryContainer,
+                            ),
+                            child: Icon(
+                              Icons.home_work_sharp,
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .onPrimaryContainer,
+                            ),
+                          )
                         ],
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 10),
                         child: Column(
                           children: [
-                            const Text(
+                            Text(
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               "New York City",
                               style: TextStyle(
                                 height: 2,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 24,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                            const Text(
+                            Text(
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               "123 Main Street, Suite 456, New York, NY 10001",
                               style: TextStyle(
                                 height: 2,
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -130,20 +140,23 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                                     border: Border.all(
                                       style: BorderStyle.solid,
                                       width: 1.0,
-                                      color: ColorsApp.greyShadesColor_12,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                     ),
                                   ),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      const Text(
+                                      Text(
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
                                         "Get Direction",
                                         style: TextStyle(
-                                          color: ColorsApp.absoluteColorWhite,
-                                          fontFamily: FontsApp.fontFamilySora,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onSurface,
                                           fontSize: 16.0,
                                         ),
                                       ),
@@ -156,13 +169,17 @@ class CardOfficeLocationDeskTop extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 6.0, vertical: 2.0),
                                           decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(20.0),
-                                              color:
-                                                  ColorsApp.greyShadesColor_10),
-                                          child: const Icon(
+                                            borderRadius:
+                                                BorderRadius.circular(20.0),
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .onSurface,
+                                          ),
+                                          child: Icon(
                                             Icons.arrow_right_alt,
-                                            color: ColorsApp.absoluteColorWhite,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .surface,
                                           ),
                                         ),
                                       ),

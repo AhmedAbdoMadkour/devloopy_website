@@ -12,24 +12,24 @@ class CardOfficeLocationTablet extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             "Office Locations",
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
-          const Text(
+          Text(
             textAlign: TextAlign.center,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Visit our offices to have a face-to-face discussion with our team. We have locations in",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 14,
               fontWeight: FontWeight.w400,
             ),
@@ -41,7 +41,7 @@ class CardOfficeLocationTablet extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.outline,
                   style: BorderStyle.solid,
                   width: 1),
             ),
@@ -61,20 +61,16 @@ class CardOfficeLocationTablet extends StatelessWidget {
                     vertical: 50,
                   ),
                   decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage("assets/images/Abstract_Design.png"),
-                    ),
                     gradient: const LinearGradient(
-                      begin: Alignment.topCenter,
+                      begin: Alignment.topRight,
                       colors: [
-                        ColorsApp.absoluteColorBlack,
-                        ColorsApp.greyShadesColor_06,
+                        Color(0xffffffff),
+                        Color(0xffeeebe5),
                       ],
                     ),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_06,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -83,35 +79,52 @@ class CardOfficeLocationTablet extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Image.asset(
-                              width: 114,
-                              "assets/images/iamge_office_location.png"),
+                          Container(
+                            padding: const EdgeInsets.all(14),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Theme.of(context).colorScheme.primary,
+                                width: 6,
+                                style: BorderStyle.solid,
+                              ),
+                              borderRadius: BorderRadius.circular(100),
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .primaryContainer,
+                            ),
+                            child: Icon(
+                              Icons.home_work_sharp,
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .onPrimaryContainer,
+                            ),
+                          )
                         ],
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 20),
                         child: Column(
                           children: [
-                            const Text(
+                            Text(
                               textAlign: TextAlign.center,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               "New York City",
                               style: TextStyle(
                                 height: 2,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                            const Text(
+                            Text(
                               textAlign: TextAlign.center,
                               "123 Main Street, Suite 456, New York, NY 10001",
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
                                 height: 2,
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -132,19 +145,22 @@ class CardOfficeLocationTablet extends StatelessWidget {
                                     border: Border.all(
                                       style: BorderStyle.solid,
                                       width: 1.0,
-                                      color: ColorsApp.greyShadesColor_12,
+                                      color:
+                                          Theme.of(context).colorScheme.outline,
                                     ),
                                   ),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      const Text(
+                                      Text(
                                         "Get Direction",
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
                                         style: TextStyle(
-                                          color: ColorsApp.absoluteColorWhite,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onSurface,
                                           fontFamily: FontsApp.fontFamilySora,
                                           fontSize: 16.0,
                                         ),
@@ -158,13 +174,17 @@ class CardOfficeLocationTablet extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 6.0, vertical: 2.0),
                                           decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(20.0),
-                                              color:
-                                                  ColorsApp.greyShadesColor_10),
-                                          child: const Icon(
+                                            borderRadius:
+                                                BorderRadius.circular(20.0),
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .onSurface,
+                                          ),
+                                          child: Icon(
                                             Icons.arrow_right_alt,
-                                            color: ColorsApp.absoluteColorWhite,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .surface,
                                           ),
                                         ),
                                       ),

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class NavbarMobile extends StatelessWidget {
@@ -7,17 +6,17 @@ class NavbarMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).colorScheme.surface,
       padding: const EdgeInsets.only(
         top: 40,
         right: 16,
         bottom: 14,
         left: 16,
       ),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surface,
         border: Border(
           bottom: BorderSide(
-            color: ColorsApp.greyShadesColor_12,
+            color: Theme.of(context).colorScheme.outline,
             width: 1,
             style: BorderStyle.solid,
           ),

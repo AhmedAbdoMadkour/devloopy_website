@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardStepsApplyDeskTop extends StatelessWidget {
@@ -14,7 +13,7 @@ class CardStepsApplyDeskTop extends StatelessWidget {
             physics: const NeverScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
-              mainAxisExtent: 430,
+              mainAxisExtent: 380,
               crossAxisSpacing: 30,
               mainAxisSpacing: 30,
             ),
@@ -22,16 +21,10 @@ class CardStepsApplyDeskTop extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               return Container(
                 decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    begin: Alignment.topCenter,
-                    colors: [
-                      ColorsApp.absoluteColorBlack,
-                      ColorsApp.greyShadesColor_06,
-                    ],
-                  ),
+                  color: Theme.of(context).colorScheme.primaryContainer,
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_06,
+                    color: Theme.of(context).colorScheme.outline,
                     width: 1,
                     style: BorderStyle.solid,
                   ),
@@ -41,33 +34,32 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 100,
-                      decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.only(
+                      decoration: BoxDecoration(
+                        borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20),
                         ),
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage(
-                              "assets/images/background_howtoapply.png"), // After that change image
-                        ),
+                        color: Theme.of(context).colorScheme.primary,
                       ),
-                      child: const Padding(
-                        padding: EdgeInsets.only(top: 34.0, left: 11),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 34.0, left: 11),
                         child: Text(
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           "Step 01",
                           style: TextStyle(
-                            color: ColorsApp.absoluteColorWhite,
+                            color: Theme.of(context).colorScheme.onPrimary,
                             fontSize: 24,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.all(30),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                      ),
+                      padding: const EdgeInsets.all(30),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -77,7 +69,9 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                             "Explore Job Listings",
                             style: TextStyle(
                               height: 3,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .onPrimaryContainer,
                               fontSize: 20,
                               fontWeight: FontWeight.w600,
                             ),
@@ -87,7 +81,9 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             "Visit our website's \"Careers\" page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
                             style: TextStyle(
-                              color: ColorsApp.whiteShadesColor_55,
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .onPrimaryContainer,
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                             ),
@@ -105,8 +101,15 @@ class CardStepsApplyDeskTop extends StatelessWidget {
           padding: const EdgeInsets.all(50),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
+            gradient: const LinearGradient(
+              begin: Alignment.topRight,
+              colors: [
+                Color(0xffffffff),
+                Color(0xffeeebe5),
+              ],
+            ),
             border: Border.all(
-              color: ColorsApp.greyShadesColor_12,
+              color: Theme.of(context).colorScheme.outline,
               width: 1,
               style: BorderStyle.solid,
             ),
@@ -115,18 +118,29 @@ class CardStepsApplyDeskTop extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.asset(
-                    width: 74,
-                    height: 74,
-                    "assets/images/icon_toapply.png",
+                  Container(
+                    padding: const EdgeInsets.all(24),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.primaryContainer,
+                      borderRadius: BorderRadius.circular(100),
+                      border: Border.all(
+                        color: Theme.of(context).colorScheme.primary,
+                        width: 10,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    child: Icon(
+                      Icons.auto_awesome,
+                      color: Theme.of(context).colorScheme.onPrimaryContainer,
+                    ),
                   ),
                   const SizedBox(width: 10),
-                  const Text(
+                  Text(
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     "We value your interest in DigitX",
                     style: TextStyle(
-                      color: ColorsApp.absoluteColorWhite,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 24,
                       fontWeight: FontWeight.w600,
                     ),
@@ -134,12 +148,12 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 6),
-              const Text(
+              Text(
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
                 "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
                 style: TextStyle(
-                  color: ColorsApp.whiteShadesColor_50,
+                  color: Theme.of(context).colorScheme.onSurface,
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                 ),

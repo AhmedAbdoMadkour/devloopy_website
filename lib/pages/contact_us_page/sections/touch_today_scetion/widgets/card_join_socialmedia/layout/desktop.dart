@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardJoinSocialmediaDeskTop extends StatelessWidget {
@@ -12,22 +11,22 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             "Join Us on Social Media",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 24,
               fontWeight: FontWeight.w600,
             ),
           ),
-          const Text(
+          Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Stay updated with our latest projects, industry insights, and company news by following us on social media",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
@@ -41,8 +40,14 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
+                colors: [
+                  Color(0xffffffff),
+                  Color(0xffeeebe5),
+                ],
+              ),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -54,45 +59,48 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
                   children: [
                     GestureDetector(
                       child: Image.asset(
-                          width: 74,
-                          height: 74,
-                          "assets/images/image_Button_linkedin.png"),
+                        width: 74,
+                        height: 74,
+                        "assets/images/image_Button_linkedin.png",
+                      ),
                     ),
                     const SizedBox(width: 10),
                     GestureDetector(
                       child: Image.asset(
-                          width: 74,
-                          height: 74,
-                          "assets/images/image_Button_instagram.png"),
+                        width: 74,
+                        height: 74,
+                        "assets/images/image_Button_instgram.png",
+                      ),
                     ),
                     const SizedBox(width: 10),
                     GestureDetector(
                       child: Image.asset(
-                          width: 74,
-                          height: 74,
-                          "assets/images/image_Button_x.png"),
+                        width: 74,
+                        height: 74,
+                        "assets/images/image_Button_linkedin.png",
+                      ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const Text(
+                Text(
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   "Thank You!",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 24,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 const SizedBox(height: 16),
-                const Text(
+                Text(
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                   "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(
-                    color: ColorsApp.whiteShadesColor_50,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),

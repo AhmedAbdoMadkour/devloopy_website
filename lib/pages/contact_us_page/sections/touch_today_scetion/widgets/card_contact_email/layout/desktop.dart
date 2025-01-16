@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardContactEmailDeskTop extends StatelessWidget {
@@ -10,13 +9,13 @@ class CardContactEmailDeskTop extends StatelessWidget {
       margin: const EdgeInsets.only(top: 50),
       child: Column(
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             "Contact Us Via Email",
             style: TextStyle(
               height: 5,
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 24,
               fontWeight: FontWeight.w600,
             ),
@@ -25,8 +24,15 @@ class CardContactEmailDeskTop extends StatelessWidget {
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
+                begin: Alignment.topRight,
+                colors: [
+                  Color(0xffffffff),
+                  Color(0xffeeebe5),
+                ],
+              ),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -37,12 +43,12 @@ class CardContactEmailDeskTop extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       "For General Inquiries",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -53,7 +59,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -62,17 +68,17 @@ class CardContactEmailDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(children: [
+                          Row(children: [
                             Icon(
                               Icons.email_outlined,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.surface,
                               size: 20,
                               weight: 20,
                             ),
                             Text(
                               "info@digitx.com",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -85,17 +91,12 @@ class CardContactEmailDeskTop extends StatelessWidget {
                                 vertical: 6,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color: ColorsApp.greyShadesColor_12,
-                                  width: 1,
-                                  style: BorderStyle.solid,
-                                ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.arrow_right_alt,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.surface,
                                 weight: 28,
                               ),
                             ),
@@ -108,12 +109,12 @@ class CardContactEmailDeskTop extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       "For Business Collaborations",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -124,7 +125,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -133,17 +134,17 @@ class CardContactEmailDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(children: [
+                          Row(children: [
                             Icon(
                               Icons.email_outlined,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               size: 20,
                               weight: 20,
                             ),
                             Text(
                               "partnerships@digitx.com",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -156,17 +157,18 @@ class CardContactEmailDeskTop extends StatelessWidget {
                                 vertical: 6,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 borderRadius: BorderRadius.circular(100),
                                 border: Border.all(
-                                  color: ColorsApp.greyShadesColor_12,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   width: 1,
                                   style: BorderStyle.solid,
                                 ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.arrow_right_alt,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.surface,
                                 weight: 28,
                               ),
                             ),
@@ -179,12 +181,12 @@ class CardContactEmailDeskTop extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       "For Job Opportunities",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -195,7 +197,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -204,17 +206,17 @@ class CardContactEmailDeskTop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(children: [
+                          Row(children: [
                             Icon(
                               Icons.email_outlined,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.surface,
                               size: 20,
                               weight: 20,
                             ),
                             Text(
                               "careers@digitx.com",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -227,17 +229,12 @@ class CardContactEmailDeskTop extends StatelessWidget {
                                 vertical: 6,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color: ColorsApp.greyShadesColor_12,
-                                  width: 1,
-                                  style: BorderStyle.solid,
-                                ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.arrow_right_alt,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.surface,
                                 weight: 28,
                               ),
                             ),

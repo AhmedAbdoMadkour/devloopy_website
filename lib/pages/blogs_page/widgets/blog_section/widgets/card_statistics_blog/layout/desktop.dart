@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardStatisticsBlogDeskTop extends StatelessWidget {
@@ -10,33 +9,41 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 30),
       child: Row(
         children: [
-          Image.asset(
-            // width: 686,
-            // height: 515,
-            "assets/images/image_blog_statistics.png",
+          Container(
+            width: 686,
+            height: 515,
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.primary,
+              borderRadius: BorderRadius.circular(39),
+            ),
+            child: Image.asset(
+              width: 323,
+              height: 330,
+              "assets/images/Dev-Loopy-Icon_white 2.png",
+            ),
           ),
           const SizedBox(width: 40),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   "Web Design Trends Shaping 2023",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 24,
                     fontWeight: FontWeight.w600,
                     height: 3,
                   ),
                 ),
-                const Text(
+                Text(
                   maxLines: 12,
                   overflow: TextOverflow.ellipsis,
                   " Stay ahead of the design curve with insights into the latest web design trends. From immersive user experiences to bold color choices, explore the design elements that will dominate the digital landscape in 2023 and beyond",
                   style: TextStyle(
-                    color: ColorsApp.whiteShadesColor_55,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -49,7 +56,7 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.onSurface,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -60,6 +67,7 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                       crossAxisCount: 2,
                       mainAxisExtent: 75,
                     ),
+                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: 4,
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
@@ -67,20 +75,22 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                         decoration: BoxDecoration(
                           border: Border(
                             right: (index == 0 || index == 2)
-                                ? const BorderSide(
-                                    color: ColorsApp.greyShadesColor_10,
+                                ? BorderSide(
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid)
                                 : BorderSide.none,
                             bottom: (index == 0 || index == 1)
-                                ? const BorderSide(
-                                    color: ColorsApp.greyShadesColor_10,
+                                ? BorderSide(
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid)
                                 : BorderSide.none,
                           ),
                         ),
-                        child: const Column(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -88,7 +98,8 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Read Time",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -98,7 +109,7 @@ class CardStatisticsBlogDeskTop extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "6 minutes",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),

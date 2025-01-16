@@ -18,21 +18,21 @@ class ContentArea extends StatelessWidget {
       builder: (context, selectedIndex) {
         switch (selectedIndex) {
           case 0:
-            return HomePage();
+            return const HomePage();
           case 1:
-            return ServicesPage();
+            return const ServicesPage();
           case 2:
-            return ProjectsPage();
+            return const ProjectsPage();
           case 3:
-            return AboutUsPage();
+            return const AboutUsPage();
           case 4:
-            return ContactUsPage();
+            return const ContactUsPage();
           case 5:
-            return CareersPage();
+            return const CareersPage();
           case 6:
-            return BlogsPage();
+            return const BlogsPage();
           default:
-            return Center(child: Text('Unknown Page'));
+            return const Center(child: Text('Unknown Page'));
         }
       },
     );
