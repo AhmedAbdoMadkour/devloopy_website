@@ -17,7 +17,7 @@ class LightTheme {
         onSurface: Color(0xff333333),
         outline: Color(0xffE3DDD4),//1F1F1F
       ),
-      scaffoldBackgroundColor: Colors.white,
+      scaffoldBackgroundColor: Color(0xffEEEBE5),//Colors.white,
       fontFamily: FontsApp.fontFamilySora,
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.blue,
