@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardBenefitsAndPerksTablet extends StatelessWidget {
@@ -10,21 +9,9 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
       padding: const EdgeInsets.all(24),
       margin: const EdgeInsets.symmetric(vertical: 24),
       decoration: BoxDecoration(
-        image: const DecorationImage(
-          image: AssetImage("assets/images/Abstract_Design.png"),
-          alignment: Alignment.topLeft,
-          fit: BoxFit.fitHeight,
-        ),
-        gradient: const LinearGradient(
-          begin: Alignment.topCenter,
-          colors: [
-            ColorsApp.absoluteColorBlack,
-            ColorsApp.greyShadesColor_06,
-          ],
-        ),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_06,
+          color: Theme.of(context).colorScheme.outline,
           width: 1,
           style: BorderStyle.solid,
         ),
@@ -34,17 +21,24 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
         children: [
           Row(
             children: [
-              Image.asset(
-                width: 56,
-                height: 56,
-                "assets/icons/Icon_healthy.png",
+              Container(
+                width: 66,
+                height: 66,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+                child: Icon(
+                  Icons.heart_broken,
+                  color: Theme.of(context).colorScheme.onPrimary,
+                ),
               ),
               const SizedBox(width: 10),
-              const Expanded(
+              Expanded(
                 child: Text(
                   "Health and Wellness",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
@@ -57,13 +51,20 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
+                begin: Alignment.topRight,
+                colors: [
+                  Color(0xffffffff),
+                  Color(0xffeeebe5),
+                ],
+              ),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
             ),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
@@ -72,7 +73,7 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
                     Text(
                       "\u2022 Health Insurance: ",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
@@ -82,7 +83,7 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       "Comprehensive health insurance plans to cover medical, dental, and vision needs.",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
@@ -95,7 +96,7 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
                     Text(
                       "\u2022 Mental Health Support:",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
@@ -105,7 +106,7 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       "Employee Assistance Program (EAP) providing counseling and support services.",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
@@ -118,7 +119,7 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
                     Text(
                       "\u2022 Wellness Programs:  ",
                       style: TextStyle(
-                        color: ColorsApp.absoluteColorWhite,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
@@ -128,7 +129,7 @@ class CardBenefitsAndPerksTablet extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       "Initiatives to promote physical and mental well-being, such as fitness classes and workshops. ",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),

@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardStatisticsBlogTablet extends StatelessWidget {
@@ -10,22 +9,30 @@ class CardStatisticsBlogTablet extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 30),
       child: Column(
         children: [
-          Image.asset(
-            width: 505,
-            height: 364,
-            "assets/images/image_blog_statistics.png",
+          Container(
+            width: 686,
+            height: 515,
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.primary,
+              borderRadius: BorderRadius.circular(39),
+            ),
+            child: Image.asset(
+              width: 323,
+              height: 330,
+              "assets/images/Dev-Loopy-Icon_white 2.png",
+            ),
           ),
           const SizedBox(width: 40),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
                 "Web Design Trends Shaping 2023",
                 style: TextStyle(
-                  color: ColorsApp.absoluteColorWhite,
+                  color: Theme.of(context).colorScheme.onSurface,
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                   height: 3,
@@ -35,13 +42,13 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                 maxLines: 4,
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                text: const TextSpan(
+                text: TextSpan(
                   children: [
                     TextSpan(
                       text:
                           " Stay ahead of the design curve with insights into the latest web design trends. From immersive user experiences to bold color choices, explore the design elements that will dominate the digital landscape in 2023 and beyond",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                       ),
@@ -60,7 +67,7 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                        color: ColorsApp.greyShadesColor_12,
+                        color: Theme.of(context).colorScheme.outline,
                         width: 1,
                         style: BorderStyle.solid,
                       )),
@@ -74,15 +81,15 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                           horizontal: 30,
                           vertical: 10,
                         ),
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           border: Border(
                             right: BorderSide(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.outline,
                                 width: 1,
                                 style: BorderStyle.solid),
                           ),
                         ),
-                        child: const Column(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -90,7 +97,8 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Read Time",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -100,7 +108,7 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "6 minutes",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -113,15 +121,15 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                           horizontal: 30,
                           vertical: 10,
                         ),
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           border: Border(
                             right: BorderSide(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.outline,
                                 width: 1,
                                 style: BorderStyle.solid),
                           ),
                         ),
-                        child: const Column(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -129,7 +137,8 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Author",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -139,7 +148,7 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Laura Turner",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -152,15 +161,15 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                           horizontal: 30,
                           vertical: 10,
                         ),
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           border: Border(
                             right: BorderSide(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.outline,
                                 width: 1,
                                 style: BorderStyle.solid),
                           ),
                         ),
-                        child: const Column(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -168,7 +177,8 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Published Date",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -178,7 +188,7 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "15 / 01 / 2023",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -191,7 +201,7 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                           horizontal: 30,
                           vertical: 10,
                         ),
-                        child: const Column(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -199,7 +209,8 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Category",
                               style: TextStyle(
-                                  color: ColorsApp.whiteShadesColor_55,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
@@ -209,7 +220,7 @@ class CardStatisticsBlogTablet extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               "Design",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),

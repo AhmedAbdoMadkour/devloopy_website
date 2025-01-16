@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardRewardsEmployeeTablet extends StatelessWidget {
@@ -24,7 +23,7 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
                 width: 1,
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 style: BorderStyle.solid,
               ),
             ),
@@ -33,25 +32,21 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                 Container(
                   height: 75,
                   alignment: Alignment.center,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/Abstract_Design.png"),
-                      fit: BoxFit.cover,
-                    ),
+                  decoration: BoxDecoration(
                     border: Border(
                       bottom: BorderSide(
-                        color: ColorsApp.greyShadesColor_12,
+                        color: Theme.of(context).colorScheme.outline,
                         width: 1,
                         style: BorderStyle.solid,
                       ),
                     ),
                   ),
-                  child: const Text(
+                  child: Text(
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     "Rewards and Recognition",
                     style: TextStyle(
-                      color: ColorsApp.absoluteColorWhite,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
                     ),
@@ -62,15 +57,9 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                   padding: const EdgeInsets.all(16),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                        begin: Alignment.topRight,
-                        colors: [
-                          ColorsApp.absoluteColorBlack,
-                          ColorsApp.greyShadesColor_06,
-                        ]),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_06,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
@@ -80,12 +69,12 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                       RichText(
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
-                        text: const TextSpan(
+                        text: TextSpan(
                           children: [
                             TextSpan(
                               text: "\u2022 ",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -94,7 +83,7 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                               text:
                                   "For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards. ",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -105,12 +94,12 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                       RichText(
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
-                        text: const TextSpan(
+                        text: TextSpan(
                           children: [
                             TextSpan(
                               text: "\u2022 ",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -119,7 +108,7 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                               text:
                                   "For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards. ",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -130,12 +119,12 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                       RichText(
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
-                        text: const TextSpan(
+                        text: TextSpan(
                           children: [
                             TextSpan(
                               text: "\u2022 ",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -144,7 +133,7 @@ class CardRewardsEmployeeTablet extends StatelessWidget {
                               text:
                                   "For each successful referral, you will be rewarded with a generous cash bonus or an equivalent value in gift cards. ",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),

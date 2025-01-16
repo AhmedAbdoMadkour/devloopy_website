@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class NavbarBlogSectionDeskTop extends StatelessWidget {
@@ -10,10 +9,10 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
       width: 640,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: const Color(0xff1a1a1a),
+        color: Theme.of(context).colorScheme.onPrimary,
         borderRadius: BorderRadius.circular(100),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_15,
+          color: Theme.of(context).colorScheme.primary,
           width: 1,
           style: BorderStyle.solid,
         ),
@@ -26,20 +25,20 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               vertical: 16,
             ),
             decoration: BoxDecoration(
-              color: const Color(0xff1a1a1a),
+              color: Theme.of(context).colorScheme.onPrimary,
               borderRadius: BorderRadius.circular(100),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_15,
+                color: Theme.of(context).colorScheme.primary,
                 width: 1,
                 style: BorderStyle.solid,
               ),
             ),
-            child: const Text(
+            child: Text(
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               "All",
               style: TextStyle(
-                color: ColorsApp.whiteShadesColor_50,
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
               ),
@@ -52,20 +51,20 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               vertical: 16,
             ),
             decoration: BoxDecoration(
-              color: const Color(0xff1a1a1a),
+              color: Theme.of(context).colorScheme.onPrimary,
               borderRadius: BorderRadius.circular(100),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_15,
+                color: Theme.of(context).colorScheme.primary,
                 width: 1,
                 style: BorderStyle.solid,
               ),
             ),
-            child: const Text(
+            child: Text(
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              "Business",
+              "All",
               style: TextStyle(
-                color: ColorsApp.whiteShadesColor_50,
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
               ),
@@ -78,20 +77,20 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               vertical: 16,
             ),
             decoration: BoxDecoration(
-              color: ColorsApp.absoluteColorBlack,
+              color: Theme.of(context).colorScheme.onPrimary,
               borderRadius: BorderRadius.circular(100),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_15,
+                color: Theme.of(context).colorScheme.primary,
                 width: 1,
                 style: BorderStyle.solid,
               ),
             ),
-            child: const Text(
+            child: Text(
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              "Design",
+              "All",
               style: TextStyle(
-                color: ColorsApp.whiteShadesColor_50,
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
               ),
@@ -104,20 +103,20 @@ class NavbarBlogSectionDeskTop extends StatelessWidget {
               vertical: 16,
             ),
             decoration: BoxDecoration(
-              color: const Color(0xff1a1a1a),
+              color: Theme.of(context).colorScheme.onPrimary,
               borderRadius: BorderRadius.circular(100),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_15,
+                color: Theme.of(context).colorScheme.primary,
                 width: 1,
                 style: BorderStyle.solid,
               ),
             ),
-            child: const Text(
+            child: Text(
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              "Development",
+              "All",
               style: TextStyle(
-                color: ColorsApp.whiteShadesColor_50,
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
               ),

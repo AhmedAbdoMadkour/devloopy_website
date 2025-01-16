@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardJoinSocialmediaMobile extends StatelessWidget {
@@ -10,24 +9,24 @@ class CardJoinSocialmediaMobile extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 30),
       child: Column(
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             textAlign: TextAlign.center,
             "Join Us on Social Media",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 18,
               fontWeight: FontWeight.w600,
               height: 3,
             ),
           ),
-          const Text(
+          Text(
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
             "Stay updated with our latest projects, industry insights, and company news by following us on social media",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 14,
               fontWeight: FontWeight.w400,
             ),
@@ -40,8 +39,15 @@ class CardJoinSocialmediaMobile extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
+                begin: Alignment.topRight,
+                colors: [
+                  Color(0xffffffff),
+                  Color(0xffeeebe5),
+                ],
+              ),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -63,7 +69,7 @@ class CardJoinSocialmediaMobile extends StatelessWidget {
                       child: Image.asset(
                         width: 58,
                         height: 58,
-                        "assets/images/image_Button_instagram.png",
+                        "assets/images/image_Button_instgram.png",
                       ),
                     ),
                     const SizedBox(width: 10),
@@ -71,27 +77,27 @@ class CardJoinSocialmediaMobile extends StatelessWidget {
                       child: Image.asset(
                         width: 58,
                         height: 58,
-                        "assets/images/image_Button_x.png",
+                        "assets/images/image_Button_linkedin.png",
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const Text(
+                Text(
                   "Thank You!",
                   style: TextStyle(
-                    color: ColorsApp.absoluteColorWhite,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 const SizedBox(height: 16),
-                const Text(
+                Text(
                   maxLines: 3,
                   textAlign: TextAlign.center,
                   "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(
-                    color: ColorsApp.whiteShadesColor_55,
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),

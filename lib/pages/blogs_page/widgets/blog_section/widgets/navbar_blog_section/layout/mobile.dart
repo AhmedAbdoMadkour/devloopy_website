@@ -11,10 +11,10 @@ class NavbarBlogSectionMobile extends StatelessWidget {
       height: 65,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: const Color(0xff1a1a1a),
+        color: Theme.of(context).colorScheme.onPrimary,
         borderRadius: BorderRadius.circular(100),
         border: Border.all(
-          color: ColorsApp.greyShadesColor_15,
+          color: Theme.of(context).colorScheme.primary,
           width: 1,
           style: BorderStyle.solid,
         ),
@@ -33,10 +33,10 @@ class NavbarBlogSectionMobile extends StatelessWidget {
             ),
             margin: const EdgeInsets.symmetric(horizontal: 10),
             decoration: BoxDecoration(
-              color: const Color(0xff1a1a1a),
+              color: Theme.of(context).colorScheme.onPrimary,
               borderRadius: BorderRadius.circular(100),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_15,
+                color: Theme.of(context).colorScheme.primary,
                 width: 1,
                 style: BorderStyle.solid,
               ),

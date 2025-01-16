@@ -7,7 +7,7 @@ class TeamMeembersDeskTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 50),
-      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primaryContainer,
         borderRadius: BorderRadius.circular(12),

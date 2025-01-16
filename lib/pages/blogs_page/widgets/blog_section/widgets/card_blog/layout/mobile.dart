@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardBlogMobile extends StatelessWidget {
@@ -26,18 +25,14 @@ class CardBlogMobile extends StatelessWidget {
                   gradient: const LinearGradient(
                     begin: Alignment.topRight,
                     colors: [
-                      ColorsApp.absoluteColorBlack,
-                      ColorsApp.greyShadesColor_06,
+                      Color.fromARGB(172, 11, 66, 219),
+                      Color(0xffffffff),
                     ],
                   ),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.outline,
                     width: 1,
                     style: BorderStyle.solid,
-                  ),
-                  image: const DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage("assets/images/Abstract_Design.png"),
                   ),
                 ),
                 child: Image.asset(
@@ -57,12 +52,12 @@ class CardBlogMobile extends StatelessWidget {
                         "assets/images/Image_person_blog.png",
                       ),
                       const SizedBox(width: 5),
-                      const Text(
+                      Text(
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         "Daniel Lee",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
                         ),
@@ -79,24 +74,24 @@ class CardBlogMobile extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(
-                            color: ColorsApp.greyShadesColor_12,
+                            color: Theme.of(context).colorScheme.outline,
                             width: 1,
                             style: BorderStyle.solid,
                           ),
                         ),
-                        child: const Row(
+                        child: Row(
                           children: [
                             Icon(
                               size: 20,
                               Icons.access_time_outlined,
-                              color: ColorsApp.whiteShadesColor_55,
+                              color: Theme.of(context).colorScheme.onSurface,
                             ),
                             Text(
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               "6 min read",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -114,24 +109,24 @@ class CardBlogMobile extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(
-                            color: ColorsApp.greyShadesColor_12,
+                            color: Theme.of(context).colorScheme.outline,
                             width: 1,
                             style: BorderStyle.solid,
                           ),
                         ),
-                        child: const Row(
+                        child: Row(
                           children: [
                             Icon(
                               size: 20,
                               Icons.calendar_month_outlined,
-                              color: ColorsApp.whiteShadesColor_55,
+                              color: Theme.of(context).colorScheme.onSurface,
                             ),
                             Text(
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               "March 2019",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -144,7 +139,7 @@ class CardBlogMobile extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              const Column(
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -152,18 +147,18 @@ class CardBlogMobile extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     "The Psychology of Visual Design in Branding",
                     style: TextStyle(
-                      color: ColorsApp.absoluteColorWhite,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                     "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions",
                     style: TextStyle(
-                      color: ColorsApp.whiteShadesColor_55,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
                     ),
@@ -178,18 +173,18 @@ class CardBlogMobile extends StatelessWidget {
                     vertical: 14,
                   ),
                   decoration: BoxDecoration(
-                    color: ColorsApp.greyShadesColor_10,
+                    color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
+                      color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: const Text(
+                  child: Text(
                     "Read More",
                     style: TextStyle(
-                      color: ColorsApp.absoluteColorWhite,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
                     ),

@@ -7,14 +7,14 @@ class CardChooseSectionDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 880, // Set a fixed height to avoid overflow
+      height: 910, // Set a fixed height to avoid overflow
       child: GridView.builder(
         itemCount: 6,
         physics:
             const NeverScrollableScrollPhysics(), // Disable gridview scrolling
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
-          mainAxisExtent: 470,
+          mainAxisExtent: 480,
         ),
         itemBuilder: (context, index) {
           return Container(
@@ -51,14 +51,15 @@ class CardChooseSectionDeskTop extends StatelessWidget {
 
   BoxDecoration decorationCardChooseSection(int index, BuildContext context) {
     return BoxDecoration(
-
       border: Border(
           bottom: (index == 0 || index == 1 || index == 2)
-              ?  BorderSide(
+              ? BorderSide(
                   style: BorderStyle.solid,
                   width: 1.0,
-                  color: Theme.of(context).colorScheme.outline// ColorsApp.greyShadesColor_12,
-                )
+                  color: Theme.of(context)
+                      .colorScheme
+                      .outline // ColorsApp.greyShadesColor_12,
+                  )
               : BorderSide.none),
       image: const DecorationImage(
         fit: BoxFit.cover,

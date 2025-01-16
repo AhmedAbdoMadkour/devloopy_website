@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardInquiryFormTablet extends StatelessWidget {
@@ -10,25 +9,25 @@ class CardInquiryFormTablet extends StatelessWidget {
       padding: const EdgeInsets.only(top: 50),
       child: Column(
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             "Online Inquiry Form",
             style: TextStyle(
               height: 3,
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
-          const Text(
+          Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Please fill in the following details, and we'll get back to you within 24 hours.",
             style: TextStyle(
-              color: ColorsApp.whiteShadesColor_50,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 16,
-              fontWeight: FontWeight.w600,
+              fontWeight: FontWeight.w400,
             ),
           ),
           Container(
@@ -36,7 +35,7 @@ class CardInquiryFormTablet extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -54,12 +53,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Name",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -69,20 +69,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Enter your Name",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -97,12 +100,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Email",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -112,20 +116,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Enter your Email",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -140,12 +147,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Phone Number",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -155,20 +163,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Enter your Phone Number",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -188,12 +199,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Select Service",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -203,20 +215,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Select Your Service",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -231,12 +246,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Company / organization Name",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -246,20 +262,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Enter Name",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -274,12 +293,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Subject",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -289,20 +309,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Select Your Subject",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -321,12 +344,13 @@ class CardInquiryFormTablet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
-                              const Text(
+                              Text(
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 "Message",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   height: 3,
@@ -341,20 +365,23 @@ class CardInquiryFormTablet extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   border: Border.all(
-                                    color: ColorsApp.greyShadesColor_12,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                     width: 1,
                                     style: BorderStyle.solid,
                                   ),
                                 ),
-                                child: const TextField(
+                                child: TextField(
                                   decoration: InputDecoration(
                                     hintText: "Entar Your Message",
                                     hintStyle: TextStyle(
-                                      color: ColorsApp.greyShadesColor_40,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
                                     ),
-                                    border: OutlineInputBorder(
+                                    border: const OutlineInputBorder(
                                       borderSide: BorderSide.none,
                                     ),
                                   ),
@@ -369,15 +396,19 @@ class CardInquiryFormTablet extends StatelessWidget {
                                       vertical: 18,
                                     ),
                                     decoration: BoxDecoration(
-                                      color: ColorsApp.greyShadesColor_10,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
                                       borderRadius: BorderRadius.circular(50.0),
                                       border: Border.all(
                                         style: BorderStyle.solid,
                                         width: 1.0,
-                                        color: ColorsApp.greyShadesColor_15,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .outline,
                                       ),
                                     ),
-                                    child: const Row(
+                                    child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
@@ -387,14 +418,18 @@ class CardInquiryFormTablet extends StatelessWidget {
                                           overflow: TextOverflow.ellipsis,
                                           "Send Your Inquiry",
                                           style: TextStyle(
-                                            fontFamily: FontsApp.fontFamilySora,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .surface,
                                             fontSize: 14.0,
                                             fontWeight: FontWeight.w400,
                                           ),
                                         ),
                                         Icon(
                                           Icons.arrow_right_alt,
-                                          color: ColorsApp.absoluteColorWhite,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .surface,
                                         ),
                                       ],
                                     ),

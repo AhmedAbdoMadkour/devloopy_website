@@ -1,4 +1,3 @@
-import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class CardContactEmailMobile extends StatelessWidget {
@@ -10,11 +9,11 @@ class CardContactEmailMobile extends StatelessWidget {
       margin: const EdgeInsets.only(top: 30),
       child: Column(
         children: [
-          const Text(
+          Text(
             maxLines: 1,
             "Contact Us Via Email",
             style: TextStyle(
-              color: ColorsApp.absoluteColorWhite,
+              color: Theme.of(context).colorScheme.onSurface,
               fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
@@ -25,7 +24,7 @@ class CardContactEmailMobile extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: ColorsApp.greyShadesColor_12,
+                color: Theme.of(context).colorScheme.outline,
                 width: 1,
                 style: BorderStyle.solid,
               ),
@@ -36,11 +35,11 @@ class CardContactEmailMobile extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       maxLines: 1,
                       "For General Inquiries",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -56,7 +55,7 @@ class CardContactEmailMobile extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -65,17 +64,17 @@ class CardContactEmailMobile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(children: [
+                          Row(children: [
                             Icon(
                               Icons.email_outlined,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               size: 20,
                               weight: 20,
                             ),
                             Text(
                               "info@digitx.com",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -88,17 +87,17 @@ class CardContactEmailMobile extends StatelessWidget {
                                 vertical: 5,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 borderRadius: BorderRadius.circular(100),
                                 border: Border.all(
-                                  color: ColorsApp.greyShadesColor_12,
+                                  color: Theme.of(context).colorScheme.outline,
                                   width: 1,
                                   style: BorderStyle.solid,
                                 ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.arrow_right_alt,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.surface,
                                 weight: 13.6,
                               ),
                             ),
@@ -111,11 +110,11 @@ class CardContactEmailMobile extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       maxLines: 1,
                       "For Business Collaborations",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -131,7 +130,7 @@ class CardContactEmailMobile extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.surface,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -140,18 +139,19 @@ class CardContactEmailMobile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(
+                          Row(
                             children: [
                               Icon(
                                 Icons.email_outlined,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 size: 20,
                                 weight: 20,
                               ),
                               Text(
                                 "partnerships@digitx.com",
                                 style: TextStyle(
-                                  color: ColorsApp.absoluteColorWhite,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -165,17 +165,17 @@ class CardContactEmailMobile extends StatelessWidget {
                                 vertical: 5,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 borderRadius: BorderRadius.circular(100),
                                 border: Border.all(
-                                  color: ColorsApp.greyShadesColor_12,
+                                  color: Theme.of(context).colorScheme.outline,
                                   width: 1,
                                   style: BorderStyle.solid,
                                 ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.arrow_right_alt,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.surface,
                                 weight: 13.6,
                               ),
                             ),
@@ -188,11 +188,11 @@ class CardContactEmailMobile extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       maxLines: 1,
                       "For Job Opportunities",
                       style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                         height: 3,
@@ -208,7 +208,7 @@ class CardContactEmailMobile extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         border: Border.all(
-                          color: ColorsApp.greyShadesColor_12,
+                          color: Theme.of(context).colorScheme.outline,
                           width: 1,
                           style: BorderStyle.solid,
                         ),
@@ -217,17 +217,17 @@ class CardContactEmailMobile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Row(children: [
+                          Row(children: [
                             Icon(
                               Icons.email_outlined,
-                              color: ColorsApp.absoluteColorWhite,
+                              color: Theme.of(context).colorScheme.onSurface,
                               size: 20,
                               weight: 20,
                             ),
                             Text(
                               "careers@digitx.com",
                               style: TextStyle(
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -240,17 +240,17 @@ class CardContactEmailMobile extends StatelessWidget {
                                 vertical: 5,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsApp.greyShadesColor_10,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 borderRadius: BorderRadius.circular(100),
                                 border: Border.all(
-                                  color: ColorsApp.greyShadesColor_12,
+                                  color: Theme.of(context).colorScheme.outline,
                                   width: 1,
                                   style: BorderStyle.solid,
                                 ),
                               ),
-                              child: const Icon(
+                              child: Icon(
                                 Icons.arrow_right_alt,
-                                color: ColorsApp.absoluteColorWhite,
+                                color: Theme.of(context).colorScheme.surface,
                                 weight: 13.6,
                               ),
                             ),

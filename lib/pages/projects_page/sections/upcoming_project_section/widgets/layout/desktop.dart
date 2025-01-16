@@ -17,7 +17,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            padding: const EdgeInsets.all(40),
+            padding: const EdgeInsets.all(25),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
@@ -31,7 +31,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(24),
+                      padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         color: Theme.of(context).colorScheme.primaryContainer,
                         border: Border.all(
@@ -47,7 +47,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                         size: 34,
                       ),
                     ),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: 6),
                     Text(
                       "Educational Learning App",
                       style: TextStyle(

@@ -18,14 +18,13 @@ class HeaderInformationContactusTablet extends StatelessWidget {
           Expanded(
             child: Container(
               width: 420,
+              height: double.infinity,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
                 borderRadius: BorderRadius.circular(39),
               ),
               child: Image.asset(
-                width: 250,
-                height: 253,
-                "assets/images/Dev-Loopy-Icon_white 2.png",
+                "assets/images/Dev-Loopy_Icon_white_1.png",
               ),
             ),
           ),

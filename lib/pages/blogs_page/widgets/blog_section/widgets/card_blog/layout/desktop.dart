@@ -7,12 +7,12 @@ class CardBlogDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 1700,
+      height: 1430,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisExtent: 825,
+          mainAxisExtent: 665,
           crossAxisSpacing: 50,
           mainAxisSpacing: 50,
         ),
@@ -26,18 +26,14 @@ class CardBlogDeskTop extends StatelessWidget {
                   gradient: const LinearGradient(
                     begin: Alignment.topRight,
                     colors: [
-                      ColorsApp.absoluteColorBlack,
-                      ColorsApp.greyShadesColor_06,
+                      Color.fromARGB(172, 11, 66, 219),
+                      Color(0xffffffff),
                     ],
                   ),
                   border: Border.all(
-                    color: ColorsApp.greyShadesColor_12,
+                    color: Theme.of(context).colorScheme.outline,
                     width: 1,
                     style: BorderStyle.solid,
-                  ),
-                  image: const DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage("assets/images/Abstract_Design.png"),
                   ),
                 ),
                 child: Image.asset(
@@ -57,12 +53,12 @@ class CardBlogDeskTop extends StatelessWidget {
                         "assets/images/Image_person_blog.png",
                       ),
                       const SizedBox(width: 10),
-                      const Text(
+                      Text(
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         "Daniel Lee",
                         style: TextStyle(
-                          color: ColorsApp.absoluteColorWhite,
+                          color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
                         ),
@@ -74,27 +70,29 @@ class CardBlogDeskTop extends StatelessWidget {
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 10),
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 18, vertical: 14),
+                          horizontal: 18,
+                          vertical: 14,
+                        ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(
-                            color: ColorsApp.greyShadesColor_12,
+                            color: Theme.of(context).colorScheme.outline,
                             width: 1,
                             style: BorderStyle.solid,
                           ),
                         ),
-                        child: const Row(
+                        child: Row(
                           children: [
                             Icon(
                               Icons.access_time_outlined,
-                              color: ColorsApp.whiteShadesColor_55,
+                              color: Theme.of(context).colorScheme.onSurface,
                             ),
                             Text(
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               "6 min read",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -109,23 +107,23 @@ class CardBlogDeskTop extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(
-                            color: ColorsApp.greyShadesColor_12,
+                            color: Theme.of(context).colorScheme.outline,
                             width: 1,
                             style: BorderStyle.solid,
                           ),
                         ),
-                        child: const Row(
+                        child: Row(
                           children: [
                             Icon(
                               Icons.calendar_month_outlined,
-                              color: ColorsApp.whiteShadesColor_55,
+                              color: Theme.of(context).colorScheme.onSurface,
                             ),
                             Text(
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               "March 2019",
                               style: TextStyle(
-                                color: ColorsApp.whiteShadesColor_55,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -138,7 +136,7 @@ class CardBlogDeskTop extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              const Column(
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -146,17 +144,18 @@ class CardBlogDeskTop extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     "The Psychology of Visual Design in Branding",
                     style: TextStyle(
-                        height: 3,
-                        color: ColorsApp.absoluteColorWhite,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600),
+                      height: 3,
+                      color: Theme.of(context).colorScheme.onSurface,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                   Text(
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions",
                     style: TextStyle(
-                        color: ColorsApp.whiteShadesColor_55,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
                         fontWeight: FontWeight.w400),
                   ),
@@ -170,7 +169,7 @@ class CardBlogDeskTop extends StatelessWidget {
                     vertical: 18,
                   ),
                   decoration: BoxDecoration(
-                    color: ColorsApp.greyShadesColor_10,
+                    color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(
                       color: ColorsApp.greyShadesColor_12,
@@ -178,10 +177,10 @@ class CardBlogDeskTop extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: const Text(
+                  child: Text(
                     "Read More",
                     style: TextStyle(
-                      color: ColorsApp.absoluteColorWhite,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
