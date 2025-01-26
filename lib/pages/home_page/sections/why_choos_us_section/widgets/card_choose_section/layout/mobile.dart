@@ -1,4 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/why_choose_us_card_data.dart';
 import 'package:flutter/material.dart';
 
 class CardChooseSectionMobile extends StatelessWidget {
@@ -9,7 +10,7 @@ class CardChooseSectionMobile extends StatelessWidget {
     return SizedBox(
       height: 1000, // Set a fixed height to avoid overflow
       child: GridView.builder(
-        itemCount: 3,
+        itemCount: whyChooseUsCardData.length,
         physics:
             const NeverScrollableScrollPhysics(), // Disable gridview scrolling
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -24,9 +25,9 @@ class CardChooseSectionMobile extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Column(
                 children: [
-                  iconCardChooseSection(context),
+                  iconCardChooseSection(context, index),
                   const SizedBox(height: 10.0),
-                  titleCardChooseSection(context),
+                  titleCardChooseSection(context, index),
                   const SizedBox(height: 10.0),
                   bottonCardChooseSection(context),
                 ],
@@ -57,7 +58,7 @@ class CardChooseSectionMobile extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection(context) {
+  Widget iconCardChooseSection(context, int index) {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -70,18 +71,18 @@ class CardChooseSectionMobile extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Icon(
-        Icons.tips_and_updates,
+        whyChooseUsCardData[index].icon,
         color: Theme.of(context).colorScheme.onPrimary,
         size: 25,
       ),
     );
   }
 
-  Widget titleCardChooseSection(context) {
+  Widget titleCardChooseSection(context, int index) {
     return Column(
       children: [
         Text(
-          "Expertise That Drives Results",
+          whyChooseUsCardData[index].title,
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
@@ -94,7 +95,7 @@ class CardChooseSectionMobile extends StatelessWidget {
           textAlign: TextAlign.center,
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
-          "Our team of seasoned professionals  brings years of  experience and expertise to the table.",
+          whyChooseUsCardData[index].description,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontSize: 18.0,

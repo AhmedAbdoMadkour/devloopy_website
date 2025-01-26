@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/hero_section_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/hero_section/widgets/hero_section_buttons/layout/mobile.dart';
 import 'package:devloopy_website/pages/home_page/sections/hero_section/widgets/hero_section_image/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
@@ -14,26 +15,25 @@ class HerosectionMobile extends StatelessWidget {
         const HeroSectionImageMobile(),
         Container(
           padding: const EdgeInsets.only(top: 50),
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage("assets/images/backgroundherosection.png"),
+              image: AssetImage(heroSectionData.image),
             ),
           ),
-          child: const Column(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CustomTitleMobile(
-                nameTitle: "Digital Solutions",
-                spanTitle: "That Drive Success",
+                nameTitle: heroSectionData.title_1,
+                spanTitle: heroSectionData.title_2,
                 crossAxisAlignment: CrossAxisAlignment.center,
               ),
               CustomSecondDescriptionMobile(
-                description:
-                    "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                description: heroSectionData.description,
               ),
-              SizedBox(height: 30),
-              HeroSectionButtonsMobile(),
+              const SizedBox(height: 30),
+              const HeroSectionButtonsMobile(),
             ],
           ),
         ),

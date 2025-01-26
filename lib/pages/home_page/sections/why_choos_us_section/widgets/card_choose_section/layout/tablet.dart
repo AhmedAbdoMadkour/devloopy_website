@@ -1,4 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/why_choose_us_card_data.dart';
 import 'package:flutter/material.dart';
 
 class CardChooseSectionTablet extends StatelessWidget {
@@ -9,7 +10,7 @@ class CardChooseSectionTablet extends StatelessWidget {
     return SizedBox(
       height: 1300, // Set a fixed height to avoid overflow
       child: GridView.builder(
-        itemCount: 6,
+        itemCount: whyChooseUsCardData.length,
         physics:
             const NeverScrollableScrollPhysics(), // Disable gridview scrolling
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -34,9 +35,9 @@ class CardChooseSectionTablet extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  iconCardChooseSection(context),
+                  iconCardChooseSection(context, index),
                   const SizedBox(height: 20.0),
-                  titleCardChooseSection(context),
+                  titleCardChooseSection(context, index),
                   const SizedBox(height: 20.0),
                   bottonCardChooseSection(context),
                 ],
@@ -65,7 +66,7 @@ class CardChooseSectionTablet extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection(context) {
+  Widget iconCardChooseSection(context, int index) {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
@@ -78,20 +79,20 @@ class CardChooseSectionTablet extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Icon(
-        Icons.tips_and_updates,
+        whyChooseUsCardData[index].icon,
         color: Theme.of(context).colorScheme.onPrimary,
         size: 30,
       ),
     );
   }
 
-  Widget titleCardChooseSection(context) {
+  Widget titleCardChooseSection(context, int index) {
     return Expanded(
       child: Column(
         children: [
           Text(
             textAlign: TextAlign.center,
-            "Expertise That Drives Results",
+            whyChooseUsCardData[index].title,
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurface,
               fontSize: 20.0,
@@ -104,7 +105,7 @@ class CardChooseSectionTablet extends StatelessWidget {
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
               maxLines: 3,
-              "Our team of seasoned professionals  brings years of  experience and expertise to the table. ",
+              whyChooseUsCardData[index].description,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 16.0,

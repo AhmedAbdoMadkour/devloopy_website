@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/hero_section_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/hero_section/widgets/hero_section_buttons/layout/tablet.dart';
 import 'package:devloopy_website/pages/home_page/sections/hero_section/widgets/hero_section_image/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/tablet.dart';
@@ -13,29 +14,28 @@ class HerosectionTabLet extends StatelessWidget {
       children: [
         Expanded(
           child: Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage("assets/images/backgroundherosection.png"),
+                image: AssetImage(heroSectionData.image),
               ),
             ),
-            child: const Padding(
-              padding: EdgeInsets.all(50),
+            child: Padding(
+              padding: const EdgeInsets.all(50),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomTitleTablet(
-                    nameTitle: "Digital Solutions",
-                    spanTitle: "That Drive Success",
+                    nameTitle: heroSectionData.title_1,
+                    spanTitle: heroSectionData.title_2,
                     crossAxisAlignment: CrossAxisAlignment.center,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   CustomSecondDescriptionTablet(
-                    description:
-                        "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                    description: heroSectionData.description,
                   ),
-                  SizedBox(height: 20),
-                  HeroSectionButtonsTablet(),
+                  const SizedBox(height: 20),
+                  const HeroSectionButtonsTablet(),
                 ],
               ),
             ),
