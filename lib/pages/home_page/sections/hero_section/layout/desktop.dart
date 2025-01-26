@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/hero_section_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/hero_section/widgets/hero_section_buttons/layout/desktop.dart';
 import 'package:devloopy_website/pages/home_page/sections/hero_section/widgets/hero_section_image/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/desktop.dart';
@@ -15,29 +16,28 @@ class HerosectionDeskTop extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage("assets/images/backgroundherosection.png"),
+                  image: AssetImage(heroSectionData.image),
                 ),
               ),
-              child: const Padding(
-                padding: EdgeInsets.all(85.0),
+              child: Padding(
+                padding: const EdgeInsets.all(85.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomTitleDeskTop(
-                      nameTitle: "Digital Solutions ",
-                      spanTitle: "That Drive Success",
+                      nameTitle: heroSectionData.title_1,
+                      spanTitle: heroSectionData.title_2,
                       crossAxisAlignment: CrossAxisAlignment.start,
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     CustomSecondDescriptionDeskTop(
-                      description:
-                          "At DigitX, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.",
+                      description: heroSectionData.description,
                     ),
-                    SizedBox(height: 60),
-                    HeroSectionButtonsDeskTop(),
+                    const SizedBox(height: 60),
+                    const HeroSectionButtonsDeskTop(),
                   ],
                 ),
               ),
