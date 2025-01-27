@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/under_construction_data.dart';
 import 'package:flutter/material.dart';
 
 class UnderConstructionSectionMobile extends StatelessWidget {
@@ -5,6 +6,7 @@ class UnderConstructionSectionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    UnderConstructionData uc = UnderConstructionData();
     return Container(
       height: 130,
       decoration: BoxDecoration(
@@ -62,7 +64,7 @@ class UnderConstructionSectionMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "14",
+                      uc.diffDays.toString(),
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onPrimary,
                         fontWeight: FontWeight.w400,
@@ -102,7 +104,7 @@ class UnderConstructionSectionMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "02",
+                      uc.diffHours.toString(),
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onPrimary,
                         fontWeight: FontWeight.w400,
@@ -142,7 +144,7 @@ class UnderConstructionSectionMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "09",
+                      uc.diffMins.toString(),
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onPrimary,
                         fontWeight: FontWeight.w400,
@@ -182,7 +184,7 @@ class UnderConstructionSectionMobile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "09",
+                      uc.diffSecs.toString(),
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onPrimary,
                         fontWeight: FontWeight.w400,
