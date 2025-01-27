@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/our_services_data/our_sevices_intro_data.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/our_services_section/widgets/card_services_section/layout/desktop.dart';
@@ -14,18 +15,17 @@ class OurServicesSectionDeskTop extends StatelessWidget {
         left: 150,
         right: 150,
       ),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: "Our Services",
+            nameTitleSection: ourServicesIntrodata.nameTitleSection,
           ),
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
           CustomDescriptionSectionDesktop(
-            descriptionSection:
-                "At DigitX, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing",
+            descriptionSection: ourServicesIntrodata.descriptionSection,
           ),
-          SizedBox(height: 50.0),
-          CardServicesSectionDeskTop(),
+          const SizedBox(height: 50.0),
+          const CardServicesSectionDeskTop(),
         ],
       ),
     );
