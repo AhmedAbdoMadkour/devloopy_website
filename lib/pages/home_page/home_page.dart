@@ -8,6 +8,7 @@ import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
 import 'package:devloopy_website/widgets/footer_section/footer_section.dart';
 import 'package:devloopy_website/widgets/navbar_section/navbar_section.dart';
 import 'package:devloopy_website/widgets/our_services_section/our_services_section.dart';
+import 'package:devloopy_website/widgets/under_construction_section/under_construction_section.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,6 +21,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            UnderConstructionSection(),
             Navbar(),
             Herosection(),
             Whychoosussection(),
