@@ -1,4 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/our_services_data/our_services_card_data.dart';
 import 'package:flutter/material.dart';
 
 class CardServicesSectionDeskTop extends StatelessWidget {
@@ -7,15 +8,13 @@ class CardServicesSectionDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      //height: 1630.0,
       height: 1250.0,
       child: GridView.builder(
-        itemCount: 4,
+        itemCount: ourServicesCardData.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 50.0,
-          //mainAxisExtent: 790.0,
           mainAxisExtent: 600.0,
           crossAxisSpacing: 50.0,
         ),
@@ -37,8 +36,8 @@ class CardServicesSectionDeskTop extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconCardChooseSection(context),
-                titleCardChooseSection(context),
+                iconCardChooseSection(context, index),
+                titleCardChooseSection(context, index),
                 bottonCardBookSevices(context),
               ],
             ),
@@ -50,20 +49,15 @@ class CardServicesSectionDeskTop extends StatelessWidget {
 
   Border bordercardsevicesection(BuildContext context) {
     return Border.all(
-      style: BorderStyle.solid,
-      width: 1.0,
-      color: Theme.of(context).colorScheme.outline //ColorsApp.greyShadesColor_06,
-    );
+        style: BorderStyle.solid,
+        width: 1.0,
+        color: Theme.of(context)
+            .colorScheme
+            .outline //ColorsApp.greyShadesColor_06,
+        );
   }
 
-  DecorationImage backgroundcardchoosesection() {
-    return const DecorationImage(
-      fit: BoxFit.cover,
-      image: AssetImage("assets/images/Abstract_Design.png"),
-    );
-  }
-
-  Widget iconCardChooseSection(context) {
+  Widget iconCardChooseSection(context, index) {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
@@ -76,18 +70,18 @@ class CardServicesSectionDeskTop extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Icon(
-        Icons.ads_click,
+        ourServicesCardData[index].icon,
         color: Theme.of(context).colorScheme.onPrimary,
         size: 34,
       ),
     );
   }
 
-  Widget titleCardChooseSection(context) {
+  Widget titleCardChooseSection(context, index) {
     return Column(
       children: [
         Text(
-          "Web Development",
+          ourServicesCardData[index].titleCardServices,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
@@ -96,7 +90,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Text(
-          "Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build dynamic and scalable websites that cater to your business objectives.",
+          ourServicesCardData[index].descriptionCardServices,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,

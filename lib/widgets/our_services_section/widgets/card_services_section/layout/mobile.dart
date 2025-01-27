@@ -1,4 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/our_services_data/our_services_card_data.dart';
 import 'package:flutter/material.dart';
 
 class CardServicesSectionMobile extends StatelessWidget {
@@ -9,7 +10,7 @@ class CardServicesSectionMobile extends StatelessWidget {
     return SizedBox(
       height: 1650.0,
       child: GridView.builder(
-        itemCount: 4,
+        itemCount: ourServicesCardData.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
@@ -34,8 +35,8 @@ class CardServicesSectionMobile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconCardChooseSection(context),
-                titleCardChooseSection(context),
+                iconCardChooseSection(context, index),
+                titleCardChooseSection(context, index),
                 bottonCardChooseSection(context),
               ],
             ),
@@ -53,7 +54,7 @@ class CardServicesSectionMobile extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection(context) {
+  Widget iconCardChooseSection(context, index) {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
@@ -66,18 +67,18 @@ class CardServicesSectionMobile extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Icon(
-        Icons.ads_click,
+        ourServicesCardData[index].icon,
         color: Theme.of(context).colorScheme.onPrimary,
         size: 34,
       ),
     );
   }
 
-  Widget titleCardChooseSection(context) {
+  Widget titleCardChooseSection(context, index) {
     return Column(
       children: [
         Text(
-          "Web Development",
+          ourServicesCardData[index].titleCardServices,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
@@ -92,7 +93,7 @@ class CardServicesSectionMobile extends StatelessWidget {
               child: Text(
                 overflow: TextOverflow.ellipsis,
                 maxLines: 3,
-                "Unlock Your Online Potential In today's digital age, a powerful web presence is essential for any business. At DigitX, our web development services empower you to stand out in the crowded online landscape. We create responsive and dynamic websites tailored to your unique needs, ensuring seamless user experiences across all devices. From e-commerce platforms to interactive web applications, our expert developers bring your vision to life, making your online journey a resounding success.",
+                ourServicesCardData[index].descriptionCardServices,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurface,
                   fontFamily: FontsApp.fontFamilySora,
