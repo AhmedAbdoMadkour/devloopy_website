@@ -1,7 +1,7 @@
 import 'package:devloopy_website/models/domain_models/our_services_model.dart';
 import 'package:flutter/material.dart';
 
-List<OurServicesModel> ourServicesCardData = [
+List<OurServicesModel> ourServicesData = [
   OurServicesModel(
     icon: Icons.web, // Web Development icon
     titleCardServices: 'Web Development',

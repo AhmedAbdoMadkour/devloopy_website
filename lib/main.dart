@@ -3,6 +3,7 @@ import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
 import 'package:devloopy_website/cubit/testimonials_cubit/testimonals_cubit.dart';
 import 'package:devloopy_website/pages/main_page.dart';
+import 'package:devloopy_website/theme/dark_theme.dart';
 import 'package:devloopy_website/theme/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,8 +28,8 @@ class DevLoopy extends StatelessWidget {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: LightTheme.theme,
-          // darkTheme: DarkTheme.theme,
-          // themeMode: ThemeMode.system,
+          darkTheme: DarkTheme.theme,
+          themeMode: ThemeMode.system,
           home: const MainPage(),
         ));
   }

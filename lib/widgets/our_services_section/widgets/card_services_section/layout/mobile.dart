@@ -1,5 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/data/our_services_data/our_services_card_data.dart';
+import 'package:devloopy_website/data/our_services_data/our_services_data.dart';
 import 'package:flutter/material.dart';
 
 class CardServicesSectionMobile extends StatelessWidget {
@@ -10,7 +10,7 @@ class CardServicesSectionMobile extends StatelessWidget {
     return SizedBox(
       height: 1650.0,
       child: GridView.builder(
-        itemCount: ourServicesCardData.length,
+        itemCount: ourServicesData.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
@@ -67,7 +67,7 @@ class CardServicesSectionMobile extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Icon(
-        ourServicesCardData[index].icon,
+        ourServicesData[index].icon,
         color: Theme.of(context).colorScheme.onPrimary,
         size: 34,
       ),
@@ -78,7 +78,7 @@ class CardServicesSectionMobile extends StatelessWidget {
     return Column(
       children: [
         Text(
-          ourServicesCardData[index].titleCardServices,
+          ourServicesData[index].titleCardServices,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
@@ -93,7 +93,7 @@ class CardServicesSectionMobile extends StatelessWidget {
               child: Text(
                 overflow: TextOverflow.ellipsis,
                 maxLines: 3,
-                ourServicesCardData[index].descriptionCardServices,
+                ourServicesData[index].descriptionCardServices,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurface,
                   fontFamily: FontsApp.fontFamilySora,

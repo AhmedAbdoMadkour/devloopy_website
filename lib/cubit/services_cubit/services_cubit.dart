@@ -6,15 +6,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class ServicesCubit extends Cubit<ServicesStates> {
   ServicesCubit() : super(ServicesInitialState());
 
-  Future<void> GetAllServices() async {
+  Future<void> displayAllServices() async {
     OurServicesRepo servicesRepo = OurServicesRepo();
+    List<OurServicesModel> services = await servicesRepo.getAllServices();
 
-    List<OurServicesModel> services = await servicesRepo.GetAllServices();
-
-    if (services == null) {
-      emit(ServicesFailuerSate());
+    // ### CUBIT role
+    if (services.isEmpty) {
+      emit(ServicesNoDataState());
     } else {
-      emit(ServicesSuccessState());
+      emit(ServicesListSuccessState(services));
     }
   }
 }
