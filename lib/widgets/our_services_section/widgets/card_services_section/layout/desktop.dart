@@ -10,7 +10,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    context.read()<ServicesCubit>().displayAllServices();
+    context.read<ServicesCubit>().displayAllServices();
 
     return BlocBuilder<ServicesCubit, ServicesStates>(
       builder: (context, state) {
