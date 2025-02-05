@@ -1,5 +1,5 @@
 import 'package:devloopy_website/cubit/services_cubit/services_states.dart';
-import 'package:devloopy_website/models/domain_models/our_services_model.dart';
+import 'package:devloopy_website/models/response.dart';
 import 'package:devloopy_website/repositories/our_services_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -8,13 +8,17 @@ class ServicesCubit extends Cubit<ServicesStates> {
 
   Future<void> displayAllServices() async {
     OurServicesRepo servicesRepo = OurServicesRepo();
-    List<OurServicesModel> services = await servicesRepo.getAllServices();
+    GenericResponse response = await servicesRepo.getAllServices();
 
     // ### CUBIT role
-    if (services.isEmpty) {
-      emit(ServicesNoDataState());
+    if (response.status == Status.success) {
+      emit(ServicesListSuccessState(response.obj));
     } else {
-      emit(ServicesListSuccessState(services));
+      emit(ServicesNoDataState());
     }
   }
 }
+
+// Success -> Data -> Success -> List<>
+// Success -> NoData (NULL) -> Fail -> Error message
+// Fail -> error -> Fail -> Error message
