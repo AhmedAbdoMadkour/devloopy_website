@@ -3,7 +3,7 @@ import 'package:devloopy_website/models/domain_models/our_services_model.dart';
 import 'package:devloopy_website/models/response.dart';
 
 class OurServicesRepo {
-  Future<GenericResponse> getAllServices() async {
+  Future<GenericResponse<List<OurServicesModel>>> getAllServices() async {
     // ###1 API Call -> result json
     List<OurServicesModel> services = ourServicesData;
 
