@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class OurServicesCardModel {
+class ServicesDomainModel {
   final IconData icon;
   final String titleCardServices;
   final String descriptionCardServices;
-  OurServicesCardModel(
+  ServicesDomainModel(
       {required this.icon,
       required this.titleCardServices,
       required this.descriptionCardServices});
