@@ -1,47 +1,60 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
+import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_states.dart';
+import 'package:devloopy_website/data/partners_cliens_data/partners_client_card_date.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CarddOurPartnersSectionDeskTop extends StatelessWidget {
   const CarddOurPartnersSectionDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 1150.0,
-      child: GridView.builder(
-        itemCount: 6,
-        physics: const NeverScrollableScrollPhysics(),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-          mainAxisSpacing: 50.0,
-          mainAxisExtent: 542.0,
-          crossAxisSpacing: 50.0,
-        ),
-        itemBuilder: (context, index) {
-          return Container(
-            padding: const EdgeInsets.all(20.0),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topCenter,
-                colors: [
-                  Color(0xffFFFFFF),
-                  Color(0xffEEEBE5),
-                ],
+    context.read<PartnersClientCubit>().displayAllPartnersClient();
+    return BlocBuilder<PartnersClientCubit, PartnersClientStates>(
+      builder: (context, state) {
+        if (state is PartnersClientSuccessState) {
+          return SizedBox(
+            height: 1200.0,
+            child: GridView.builder(
+              itemCount: partnersClientsCarddata.length,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                mainAxisSpacing: 50.0,
+                mainAxisExtent: 542.0,
+                crossAxisSpacing: 50.0,
               ),
-              borderRadius: BorderRadius.circular(20),
-              border: bordercardsevicesection(context),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                iconCardChooseSection(context),
-                titleCardChooseSection(context),
-              ],
+              itemBuilder: (context, index) {
+                return Container(
+                  padding: const EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topCenter,
+                      colors: [
+                        Color(0xffFFFFFF),
+                        Color(0xffEEEBE5),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: bordercardsevicesection(context),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      iconCardChooseSection(context, index),
+                      titleCardChooseSection(context, index),
+                    ],
+                  ),
+                );
+              },
             ),
           );
-        },
-      ),
+        } else {
+          return const Text("No Data");
+        }
+      },
     );
   }
 
@@ -53,7 +66,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Widget iconCardChooseSection(context) {
+  Widget iconCardChooseSection(context, index) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -74,7 +87,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
           child: Image.asset(
             width: 40,
             height: 40,
-            "assets/icons/icon_logo_partners.png",
+            partnersClientsCarddata[index].image,
           ),
         ),
         const Icon(Icons.add),
@@ -92,7 +105,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
           ),
           child: Icon(
-            Icons.ads_click,
+            partnersClientsCarddata[index].icon,
             opticalSize: 40,
             color: Theme.of(context).colorScheme.onPrimary,
             size: 34,
@@ -102,11 +115,11 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
     );
   }
 
-  Widget titleCardChooseSection(context) {
+  Widget titleCardChooseSection(context, index) {
     return Column(
       children: [
         Text(
-          "ABC Tech Solutions",
+          partnersClientsCarddata[index].titleCardPartners,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
@@ -116,7 +129,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
         const SizedBox(height: 10),
         Text(
           textAlign: TextAlign.center,
-          "A leading technology firm that trusted DigitX to develop their responsive website, showcasing their cutting-edge products and services.",
+          partnersClientsCarddata[index].descriptionCardPartners,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,

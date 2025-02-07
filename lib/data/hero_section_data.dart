@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/ui_models/home_page/hero_section_model.dart';
+import 'package:devloopy_website/models/home_page_models/hero_section_model.dart';
 
 HeroSectionModel heroSectionData = HeroSectionModel(
   image: "assets/images/backgroundherosection.png",

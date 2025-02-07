@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class WhyChooseUsCardModel {
-  WhyChooseUsCardModel(
+class WhyChooseUsDomainModel {
+  WhyChooseUsDomainModel(
       {required this.icon, required this.title, required this.description});
 
   IconData icon;

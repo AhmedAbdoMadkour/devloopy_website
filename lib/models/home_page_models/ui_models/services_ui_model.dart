@@ -1,7 +1,7 @@
-class OurServicesIntroModel {
+class ServicesUiModel {
   final String nameTitleSection;
   final String descriptionSection;
-  OurServicesIntroModel({
+  ServicesUiModel({
     required this.nameTitleSection,
     required this.descriptionSection,
   });
