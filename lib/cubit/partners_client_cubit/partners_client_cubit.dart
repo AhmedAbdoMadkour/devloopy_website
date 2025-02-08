@@ -16,6 +16,8 @@ class PartnersClientCubit extends Cubit<PartnersClientStates> {
     }
   }
 
+  void addPartnersClient() {}
+
   // void addPartnersClient() async {
   //   PartnersClientRepo partnersRepo = PartnersClientRepo();
   //   PartnersClientsCardModel partnersModel = PartnersClientsCardModel(

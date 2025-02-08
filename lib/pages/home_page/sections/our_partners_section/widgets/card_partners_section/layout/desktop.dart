@@ -1,7 +1,7 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_states.dart';
-import 'package:devloopy_website/data/partners_cliens_data/partners_client_card_date.dart';
+import 'package:devloopy_website/data/home_data/home_domain_data/partners_domain_date.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,7 +17,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
           return SizedBox(
             height: 1200.0,
             child: GridView.builder(
-              itemCount: partnersClientsCarddata.length,
+              itemCount: partnersDomaindata.length,
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
@@ -87,7 +87,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
           child: Image.asset(
             width: 40,
             height: 40,
-            partnersClientsCarddata[index].image,
+            partnersDomaindata[index].image,
           ),
         ),
         const Icon(Icons.add),
@@ -105,7 +105,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
           ),
           child: Icon(
-            partnersClientsCarddata[index].icon,
+            partnersDomaindata[index].icon,
             opticalSize: 40,
             color: Theme.of(context).colorScheme.onPrimary,
             size: 34,
@@ -119,7 +119,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
     return Column(
       children: [
         Text(
-          partnersClientsCarddata[index].titleCardPartners,
+          partnersDomaindata[index].titleCardPartners,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
@@ -129,7 +129,7 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
         const SizedBox(height: 10),
         Text(
           textAlign: TextAlign.center,
-          partnersClientsCarddata[index].descriptionCardPartners,
+          partnersDomaindata[index].descriptionCardPartners,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,

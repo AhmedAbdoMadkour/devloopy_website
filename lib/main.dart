@@ -1,8 +1,8 @@
 import 'package:devloopy_website/cubit/blog_cubit/blog_cubit.dart';
 import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
-import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
 import 'package:devloopy_website/cubit/testimonials_cubit/testimonals_cubit.dart';
+import 'package:devloopy_website/cubit/work_cubit/work_cubit.dart';
 import 'package:devloopy_website/pages/main_page.dart';
 import 'package:devloopy_website/theme/light_theme.dart';
 import 'package:flutter/material.dart';
@@ -19,14 +19,20 @@ class DevLoopy extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
-          BlocProvider<BlogCubit>(create: (context) => BlogCubit()),
-          BlocProvider<ServicesCubit>(create: (context) => ServicesCubit()),
+          BlocProvider<BlogCubit>(
+            create: (context) => BlogCubit(),
+          ),
           BlocProvider<TestimonalsCubit>(
               create: (context) => TestimonalsCubit()),
-          BlocProvider<NavigationCubit>(create: (context) => NavigationCubit()),
+          BlocProvider<NavigationCubit>(
+            create: (context) => NavigationCubit(),
+          ),
           BlocProvider<PartnersClientCubit>(
             create: (context) => PartnersClientCubit(),
-          )
+          ),
+          BlocProvider(
+            create: (context) => WorkCubit(),
+          ),
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,

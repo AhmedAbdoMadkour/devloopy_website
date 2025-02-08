@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/our_services_data/our_sevices_intro_data.dart';
+import 'package:devloopy_website/data/home_data/home_ui_data/sevices_ui_data.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/our_services_section/widgets/card_services_section/layout/mobile.dart';
@@ -18,11 +18,11 @@ class OurServicesSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: ourServicesIntrodata.nameTitleSection,
+            nameTitleSection: servicesUidata.nameTitleSection,
           ),
           const SizedBox(height: 10.0),
           CustomDescriptionSectionMobile(
-            descriptionSection: ourServicesIntrodata.descriptionSection,
+            descriptionSection: servicesUidata.descriptionSection,
           ),
           const SizedBox(height: 30.0),
           const CardServicesSectionMobile(),
