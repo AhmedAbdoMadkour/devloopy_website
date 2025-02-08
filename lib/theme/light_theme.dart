@@ -15,9 +15,9 @@ class LightTheme {
         onError: Color(0x000000ff),
         surface: Color(0xffEEEBE5),
         onSurface: Color(0xff333333),
-        outline: Color(0xffE3DDD4),//1F1F1F
+        outline: Color(0xffE3DDD4), //1F1F1F
       ),
-      scaffoldBackgroundColor: Color(0xffEEEBE5),//Colors.white,
+      scaffoldBackgroundColor: const Color(0xffEEEBE5), //Colors.white,
       fontFamily: FontsApp.fontFamilySora,
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.blue,

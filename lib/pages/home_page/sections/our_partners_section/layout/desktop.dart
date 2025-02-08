@@ -1,11 +1,8 @@
-import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
-import 'package:devloopy_website/data/partners_cliens_data/partners_client_intro_data.dart';
+import 'package:devloopy_website/data/home_data/home_ui_data/partners_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/our_partners_section/widgets/card_partners_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
-import 'package:devloopy_website/data/partners_cliens_data/partners_client_intro_data.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OurPartnersSectionDeskTop extends StatelessWidget {
   const OurPartnersSectionDeskTop({super.key});
@@ -22,19 +19,15 @@ class OurPartnersSectionDeskTop extends StatelessWidget {
         children: [
           MouseRegion(
             child: GestureDetector(
-              onTap: () {
-                //   context.read<PartnersClientCubit>().addPartnersClient();
-                print("Madkour");
-              },
+              onTap: () {},
               child: CustomTitelSectionDeskTop(
-                nameTitleSection: partnersClientsIntrodata.titlePartnersClients,
+                nameTitleSection: partnersUidata.titlePartnersClients,
               ),
             ),
           ),
           const SizedBox(height: 27),
           CustomDescriptionSectionDesktop(
-            descriptionSection:
-                partnersClientsIntrodata.descriptionPartnersClients,
+            descriptionSection: partnersUidata.descriptionPartnersClients,
           ),
           const SizedBox(height: 50),
           const CarddOurPartnersSectionDeskTop(),

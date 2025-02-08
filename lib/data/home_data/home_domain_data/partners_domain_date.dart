@@ -1,7 +1,7 @@
 import 'package:devloopy_website/models/home_page_models/domain_models/partners_domain_model.dart';
 import 'package:flutter/material.dart';
 
-List<PartnersDomainModel> partnersClientsCarddata = [
+List<PartnersDomainModel> partnersDomaindata = [
   PartnersDomainModel(
       image: "assets/icons/icon_logo_partners.png",
       icon: Icons.android_sharp,
