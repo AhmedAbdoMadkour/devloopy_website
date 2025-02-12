@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/home_data/home_ui_data/cta_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class TitleDescriptionCTASectionMobile extends StatelessWidget {
@@ -8,7 +9,7 @@ class TitleDescriptionCTASectionMobile extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "Ready to Transform Your Digital Presence?",
+          ctaUiData.titlectasction,
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onPrimary,
@@ -19,9 +20,7 @@ class TitleDescriptionCTASectionMobile extends StatelessWidget {
         const SizedBox(height: 20.0),
         Text(
           textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
-          maxLines: 3,
-          "Take the first step towards digital success with DigitX by your side.",
+          ctaUiData.descriptioncta,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onPrimary,
             fontSize: 14.0,

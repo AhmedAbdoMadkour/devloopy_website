@@ -1,4 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/home_data/home_ui_data/cta_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class ButtonCTASectionMobile extends StatelessWidget {
@@ -9,9 +10,9 @@ class ButtonCTASectionMobile extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text(
-          "Unlock Your Digital Potential Today",
-          style: TextStyle(
+        Text(
+          ctaUiData.title,
+          style: const TextStyle(
             color: ColorsApp.absoluteColorWhite,
             fontSize: 14.0,
             fontWeight: FontWeight.w400,

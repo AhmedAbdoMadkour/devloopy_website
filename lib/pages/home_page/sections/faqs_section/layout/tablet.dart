@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/home_data/home_ui_data/faqs_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/box_search_button_faqs/layout/tablet.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/card_faqs_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
@@ -15,20 +16,19 @@ class FAQSSectionTablet extends StatelessWidget {
         left: 24,
         right: 24,
       ),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: "Frequently Asked Questions",
+            nameTitleSection: faqsUiData.titleFAQS,
           ),
-          SizedBox(height: 27),
+          const SizedBox(height: 27),
           CustomDescriptionSectionTablet(
-            descriptionSection:
-                "Got questions? We've got answers. Check out our frequently asked questions section to find valuable insights into our processes, pricing, and more. Transparency is at the core of our client interactions.",
+            descriptionSection: faqsUiData.descriptionFAQS,
           ),
-          SizedBox(height: 37),
-          BoxSearchButtonFaqsTablet(),
-          SizedBox(height: 50),
-          CardFaqsSectionTablet(),
+          const SizedBox(height: 37),
+          const BoxSearchButtonFaqsTablet(),
+          const SizedBox(height: 50),
+          const CardFaqsSectionTablet(),
         ],
       ),
     );

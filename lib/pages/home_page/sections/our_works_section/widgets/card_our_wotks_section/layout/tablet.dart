@@ -67,26 +67,31 @@ class CardOurWorksSectionTablet extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 10),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                  "Category: ${workDomainData[index].typeWorkCard}",
+                          RichText(
+                            text: TextSpan(
+                              children: [
+                                TextSpan(
+                                  text:
+                                      "Category: ${workDomainData[index].typeWorkCard}",
                                   style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.onSurface,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w400,
-                                  )),
-                              Text(
-                                  "${workDomainData[index].dateWork.year}/${workDomainData[index].dateWork.month}/${workDomainData[index].dateWork.day}",
+                                  ),
+                                ),
+                                TextSpan(
+                                  text:
+                                      "${workDomainData[index].dateWork.year}/${workDomainData[index].dateWork.month}/${workDomainData[index].dateWork.day}",
                                   style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.onSurface,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w400,
-                                  ))
-                            ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                           const SizedBox(height: 10),
                           Row(
