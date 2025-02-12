@@ -21,7 +21,7 @@ class ServicesCategoriesSectionDeskTop extends StatelessWidget {
           ),
           CustomDescriptionSectionDesktop(
             descriptionSection:
-                "At DigitX, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing.",
+                "At DevLoopy, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing.",
           ),
           TypeCategorieServiceDeskTop(),
         ],

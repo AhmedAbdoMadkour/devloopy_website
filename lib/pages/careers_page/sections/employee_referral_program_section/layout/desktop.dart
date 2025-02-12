@@ -22,7 +22,7 @@ class EmployeeReferralProgramSectionDeskTop extends StatelessWidget {
           SizedBox(height: 20),
           CustomDescriptionSectionDesktop(
             descriptionSection:
-                "At DigitX, we believe that our employees are our most valuable asset. We recognize the importance of building a strong and talented team, and we encourage our employees to play an active role in shaping our workforce. Introducing our Employee Referral Program – an opportunity for you to help us find exceptional talent and be rewarded for your contributions.",
+                "At DevLoopy, we believe that our employees are our most valuable asset. We recognize the importance of building a strong and talented team, and we encourage our employees to play an active role in shaping our workforce. Introducing our Employee Referral Program – an opportunity for you to help us find exceptional talent and be rewarded for your contributions.",
           ),
           SizedBox(height: 20),
           CardEmployeeReferralDeskTop(),

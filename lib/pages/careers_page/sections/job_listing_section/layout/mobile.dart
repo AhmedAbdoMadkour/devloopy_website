@@ -17,7 +17,7 @@ class JobListingSectionMobile extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: "Job Listings at DigitX",
+            nameTitleSection: "Job Listings at DevLoopy",
           ),
           CustomSecondDescriptionMobile(
             description:

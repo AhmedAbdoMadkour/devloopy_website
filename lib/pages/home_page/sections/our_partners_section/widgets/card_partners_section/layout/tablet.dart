@@ -114,7 +114,7 @@ class CardOurPartnersSectionTablet extends StatelessWidget {
         const SizedBox(height: 10),
         Text(
           textAlign: TextAlign.center,
-          "A leading technology firm that trusted DigitX to develop their responsive website, showcasing their cutting-edge products and services.",
+          "A leading technology firm that trusted DevLoopy to develop their responsive website, showcasing their cutting-edge products and services.",
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontSize: 14.0,
