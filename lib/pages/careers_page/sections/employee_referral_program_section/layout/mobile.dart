@@ -21,7 +21,7 @@ class EmployeeReferralProgramSectionMobile extends StatelessWidget {
           ),
           CustomDescriptionSectionMobile(
             descriptionSection:
-                "At DevLoopy, we believe that our employees are our most valuable asset. We recognize the importance of building a strong and talented team, and we encourage our employees to play an active role in shaping our workforce. Introducing our Employee Referral Program – an opportunity for you to help us find exceptional talent and be rewarded for your contributions.",
+                "At DigitX, we believe that our employees are our most valuable asset. We recognize the importance of building a strong and talented team, and we encourage our employees to play an active role in shaping our workforce. Introducing our Employee Referral Program – an opportunity for you to help us find exceptional talent and be rewarded for your contributions.",
           ),
           CardEmployeeReferralMobile(),
         ],

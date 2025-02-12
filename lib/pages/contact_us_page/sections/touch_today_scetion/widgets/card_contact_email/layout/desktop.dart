@@ -76,7 +76,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
-                              "info@DevLoopy.com",
+                              "info@digitx.com",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 16,
@@ -142,7 +142,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
-                              "partnerships@DevLoopy.com",
+                              "partnerships@digitx.com",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
@@ -214,7 +214,7 @@ class CardContactEmailDeskTop extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
-                              "careers@DevLoopy.com",
+                              "careers@digitx.com",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,

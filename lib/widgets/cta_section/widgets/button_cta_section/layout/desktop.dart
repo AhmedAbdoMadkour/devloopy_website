@@ -1,4 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/home_data/home_ui_data/cta_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class ButtonCTASectionDeskTop extends StatelessWidget {
@@ -10,7 +11,7 @@ class ButtonCTASectionDeskTop extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          "Unlock Your Digital Potential Today",
+          ctaUiData.title,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onPrimary,
             fontSize: 14.0,

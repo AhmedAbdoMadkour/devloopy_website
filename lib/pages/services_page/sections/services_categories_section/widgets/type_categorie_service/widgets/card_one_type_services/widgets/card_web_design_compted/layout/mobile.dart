@@ -38,7 +38,7 @@ class CardWebDesignComptedMobile extends StatelessWidget {
             Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
-              "At DevLoopy, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+              "At DigitX, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w400,

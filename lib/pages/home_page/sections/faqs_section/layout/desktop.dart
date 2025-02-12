@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/home_data/home_ui_data/faqs_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/box_search_button_faqs/layout/desktop.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/card_faqs_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
@@ -15,20 +16,19 @@ class FAQSSectionDeskTop extends StatelessWidget {
         left: 150.0,
         right: 150.0,
       ),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: " Asked Questions",
+            nameTitleSection: faqsUiData.titleFAQS,
           ),
-          SizedBox(height: 27),
+          const SizedBox(height: 27),
           CustomDescriptionSectionDesktop(
-            descriptionSection:
-                "Got questions? We've got answers. Check out our frequently asked questions section to find valuable insights into our processes, pricing, and more. Transparency is at the core of our client interactions.",
+            descriptionSection: faqsUiData.descriptionFAQS,
           ),
-          SizedBox(height: 37),
-          BoxSearchButtonFaqsDeskTop(),
-          SizedBox(height: 50),
-          CardFaqsSectionDeskTop(),
+          const SizedBox(height: 37),
+          const BoxSearchButtonFaqsDeskTop(),
+          const SizedBox(height: 50),
+          const CardFaqsSectionDeskTop(),
         ],
       ),
     );

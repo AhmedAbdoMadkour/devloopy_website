@@ -34,7 +34,7 @@ class CardOurAchievementsTablet extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             const Text(
-                              "Foundation of DevLoopy",
+                              "Foundation of DigitX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
                                 fontSize: 18,
@@ -145,7 +145,7 @@ class CardOurAchievementsTablet extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             const Text(
-                              "Foundation of DevLoopy",
+                              "Foundation of DigitX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
                                 fontSize: 18,
@@ -256,7 +256,7 @@ class CardOurAchievementsTablet extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             const Text(
-                              "Foundation of DevLoopy",
+                              "Foundation of DigitX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
                                 fontSize: 18,
@@ -367,7 +367,7 @@ class CardOurAchievementsTablet extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             const Text(
-                              "Foundation of DevLoopy",
+                              "Foundation of DigitX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
                                 fontSize: 18,
@@ -478,7 +478,7 @@ class CardOurAchievementsTablet extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             const Text(
-                              "Foundation of DevLoopy",
+                              "Foundation of DigitX",
                               style: TextStyle(
                                 color: ColorsApp.absoluteColorWhite,
                                 fontSize: 18,

@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/services_data/services_ui_data/categories_ui_section_data/categories_ui_data.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
@@ -8,8 +9,8 @@ class ServicesCategoriesSectionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(
+    return Padding(
+      padding: const EdgeInsets.only(
         top: 50.0,
         right: 16,
         left: 16,
@@ -17,13 +18,12 @@ class ServicesCategoriesSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: "Categories of Services",
+            nameTitleSection: categoriesUidata.titleCategorie,
           ),
           CustomSecondDescriptionMobile(
-            description:
-                "At DevLoopy, we are committed to providing exceptional digital solutions tailored to suit your unique business needs. Our comprehensive service offerings cover a wide spectrum of digital disciplines, including web design, app development, web development, and marketing.",
+            description: categoriesUidata.descriptionCategorie,
           ),
-          TypeCategorieServiceMobile(),
+          const TypeCategorieServiceMobile(),
         ],
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/home_data/home_ui_data/cta_ui_data.dart';
 import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/layout/desktop.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class CTASectionDeskTop extends StatelessWidget {
           const ButtonCTASectionDeskTop(),
           const SizedBox(height: 10.0),
           Image.asset(
-            "assets/images/dev_loopy_cta_desktop.png",
+            ctaUiData.image,
             width: 1596,
           ),
           const SizedBox(height: 30.0),

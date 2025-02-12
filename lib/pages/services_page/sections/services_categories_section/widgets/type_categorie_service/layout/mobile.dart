@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/services_data/services_ui_data/categories_ui_section_data/button_type_categories_ui_data.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_one_type_services/layout/mobile.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/button_type_services.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_one_type_services/widgets/card_web_design_compted/layout/mobile.dart';
@@ -19,21 +20,19 @@ class TypeCategorieServiceMobile extends StatelessWidget {
           SizedBox(
             height: 60,
             child: ListView.builder(
-              itemCount: 4,
+              itemCount: buttonTypeCategoriesUiData.length,
               itemExtent: 250,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Container(
                   margin: const EdgeInsets.only(right: 10),
-
                   child: ButtonTypeServices(
                     iconTypeService: Icon(
                       Icons.terminal,
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
-
-
-                    nameTypeService: "Web Design",
+                    nameTypeService:
+                        buttonTypeCategoriesUiData[index].nameCategories,
                     sizeFont: 14,
                   ),
                 );

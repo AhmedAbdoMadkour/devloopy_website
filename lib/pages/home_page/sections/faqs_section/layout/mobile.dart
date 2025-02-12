@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/home_data/home_ui_data/faqs_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/box_search_button_faqs/layout/mobile.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/card_faqs_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
@@ -15,21 +16,20 @@ class FAQSSectionMobile extends StatelessWidget {
         left: 16,
         right: 16,
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: "Frequently Asked Questions",
+            nameTitleSection: faqsUiData.titleFAQS,
           ),
-          SizedBox(height: 6),
+          const SizedBox(height: 6),
           CustomDescriptionSectionMobile(
-            descriptionSection:
-                "Got questions? We've got answers. Check out our frequently asked questions section to find valuable insights into our processes, pricing, and more. Transparency is at the core of our client interactions.",
+            descriptionSection: faqsUiData.descriptionFAQS,
           ),
-          SizedBox(height: 20),
-          BoxSearchButtonFaqsMobile(),
-          SizedBox(height: 20),
-          CardFaqsSectionMobile(),
+          const SizedBox(height: 20),
+          const BoxSearchButtonFaqsMobile(),
+          const SizedBox(height: 20),
+          const CardFaqsSectionMobile(),
         ],
       ),
     );
