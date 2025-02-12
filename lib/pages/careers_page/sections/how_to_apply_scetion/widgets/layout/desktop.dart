@@ -138,7 +138,7 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                   Text(
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    "We value your interest in DigitX",
+                    "We value your interest in DevLoopy",
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onSurface,
                       fontSize: 24,
@@ -151,7 +151,7 @@ class CardStepsApplyDeskTop extends StatelessWidget {
               Text(
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
-                "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
+                "We value your interest in DevLoopy and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DevLoopy!",
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurface,
                   fontSize: 18,

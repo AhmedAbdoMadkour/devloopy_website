@@ -95,7 +95,7 @@ class CardJoinSocialmediaMobile extends StatelessWidget {
                 Text(
                   maxLines: 3,
                   textAlign: TextAlign.center,
-                  "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
+                  "For considering DevLoopy for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,

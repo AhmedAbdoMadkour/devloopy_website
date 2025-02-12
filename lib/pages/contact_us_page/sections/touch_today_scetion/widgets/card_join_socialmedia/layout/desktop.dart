@@ -98,7 +98,7 @@ class CardJoinSocialmediaDeskTop extends StatelessWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
-                  "For considering DigitX for your digital needs. We look forward to connecting with you and being part of your digital success!",
+                  "For considering DevLoopy for your digital needs. We look forward to connecting with you and being part of your digital success!",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,

@@ -86,7 +86,7 @@ class CardSeeThisPageMobile extends StatelessWidget {
                         child: Column(
                           children: [
                             Text(
-                              "Careers At DigitX",
+                              "Careers At DevLoopy",
                               style: TextStyle(
                                 height: 2,
                                 color: Theme.of(context).colorScheme.onSurface,
@@ -98,7 +98,7 @@ class CardSeeThisPageMobile extends StatelessWidget {
                               textAlign: TextAlign.center,
                               maxLines: 12,
                               overflow: TextOverflow.ellipsis,
-                              "At DigitX, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
+                              "At DevLoopy, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,

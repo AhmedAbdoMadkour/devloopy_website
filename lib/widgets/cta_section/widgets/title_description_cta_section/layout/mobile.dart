@@ -21,7 +21,7 @@ class TitleDescriptionCTASectionMobile extends StatelessWidget {
           textAlign: TextAlign.center,
           overflow: TextOverflow.ellipsis,
           maxLines: 3,
-          "Take the first step towards digital success with DigitX by your side.",
+          "Take the first step towards digital success with DevLoopy by your side.",
           style: TextStyle(
             color: Theme.of(context).colorScheme.onPrimary,
             fontSize: 14.0,

@@ -34,7 +34,7 @@ class CardOurAchievementsDeskTop extends StatelessWidget {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 const Text(
-                                  "Foundation of DigitX",
+                                  "Foundation of DevLoopy",
                                   style: TextStyle(
                                     color: ColorsApp.absoluteColorWhite,
                                     fontSize: 28,
@@ -129,7 +129,7 @@ class CardOurAchievementsDeskTop extends StatelessWidget {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 const Text(
-                                  "Foundation of DigitX",
+                                  "Foundation of DevLoopy",
                                   style: TextStyle(
                                     color: ColorsApp.absoluteColorWhite,
                                     fontSize: 28,
@@ -224,7 +224,7 @@ class CardOurAchievementsDeskTop extends StatelessWidget {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 const Text(
-                                  "Foundation of DigitX",
+                                  "Foundation of DevLoopy",
                                   style: TextStyle(
                                     color: ColorsApp.absoluteColorWhite,
                                     fontSize: 28,
@@ -319,7 +319,7 @@ class CardOurAchievementsDeskTop extends StatelessWidget {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 const Text(
-                                  "Foundation of DigitX",
+                                  "Foundation of DevLoopy",
                                   style: TextStyle(
                                     color: ColorsApp.absoluteColorWhite,
                                     fontSize: 28,
@@ -414,7 +414,7 @@ class CardOurAchievementsDeskTop extends StatelessWidget {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 const Text(
-                                  "Foundation of DigitX",
+                                  "Foundation of DevLoopy",
                                   style: TextStyle(
                                     color: ColorsApp.absoluteColorWhite,
                                     fontSize: 28,

@@ -22,7 +22,7 @@ class SuccessStoriesSectionMobile extends StatelessWidget {
           ),
           const CustomDescriptionSectionMobile(
               descriptionSection:
-                  "At DigitX, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
+                  "At DevLoopy, our success is defined by the achievements of our valued clients. We take immense pride in the transformative impact our digital solutions have had on their businesses. Here are some inspiring success stories that highlight the outcomes of our collaborative efforts"),
           const SizedBox(height: 16),
           const CardSuccessStoriesSectionMobile(),
           const SizedBox(height: 20),

@@ -21,7 +21,7 @@ class KeyFeaturesSectionMobile extends StatelessWidget {
           ),
           CustomSecondDescriptionMobile(
             description:
-                "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
+                "Partnering with DevLoopy offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
           ),
           CardFeaturesSectionMobile(),
         ],
