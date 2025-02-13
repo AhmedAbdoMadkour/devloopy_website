@@ -212,7 +212,7 @@ class CardJobListingTablet extends StatelessWidget {
                 Text(
                   maxLines: 12,
                   overflow: TextOverflow.ellipsis,
-                  "As a Web Designer at DevLoopy, you will be responsible for creating visually stunning and user-friendly website designs. Working closely with our development and marketing teams, you will turn creative concepts into functional web interfaces that deliver exceptional user experiences. This role offers an opportunity to showcase your design expertise and contribute to a wide range of exciting projects for diverse clients.",
+                  "As a Web Designer at DigitX, you will be responsible for creating visually stunning and user-friendly website designs. Working closely with our development and marketing teams, you will turn creative concepts into functional web interfaces that deliver exceptional user experiences. This role offers an opportunity to showcase your design expertise and contribute to a wide range of exciting projects for diverse clients.",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 16,

@@ -15,14 +15,14 @@ class WhychoosussectionMobile extends StatelessWidget {
         child: const Column(
           children: [
             CustomTitleMobile(
-              nameTitle: "Reasons to Choose DevLoopy for ",
+              nameTitle: "Reasons to Choose DigitX for ",
               spanTitle: "Your Digital Journey",
               crossAxisAlignment: CrossAxisAlignment.center,
             ),
             SizedBox(height: 20.0),
             CustomDescriptionSectionMobile(
               descriptionSection:
-                  "Partnering with DevLoopy offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
+                  "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
             ),
             SizedBox(height: 30.0),
             CardChooseSectionMobile(),

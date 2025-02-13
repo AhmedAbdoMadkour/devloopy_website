@@ -30,7 +30,7 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             const Text(
-              "At DevLoopy, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+              "At DigitX, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w400,

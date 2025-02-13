@@ -1,49 +1,61 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/data/home_data/home_domain_data/services_domain_data.dart';
+import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
+import 'package:devloopy_website/cubit/services_cubit/services_states.dart';
+import 'package:devloopy_website/data/general_data.dart/general_domain_data/services_domain_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CardServicesSectionDeskTop extends StatelessWidget {
   const CardServicesSectionDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 1250.0,
-      child: GridView.builder(
-        itemCount: servicesDomainData.length,
-        physics: const NeverScrollableScrollPhysics(),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: 50.0,
-          mainAxisExtent: 600.0,
-          crossAxisSpacing: 50.0,
-        ),
-        itemBuilder: (context, index) {
-          return Container(
-            padding: const EdgeInsets.all(30.0),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topCenter,
-                colors: [
-                  Color(0xffFFFFFF),
-                  Color(0xffEEEBE5),
-                ],
+    context.read<ServicesCubit>().displayAllServices();
+    return BlocBuilder<ServicesCubit, ServicesStates>(
+      builder: (context, state) {
+        if (state is ServicesSuccessStates) {
+          return SizedBox(
+            height: 1250.0,
+            child: GridView.builder(
+              itemCount: servicesDomainData.length,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 50.0,
+                mainAxisExtent: 600.0,
+                crossAxisSpacing: 50.0,
               ),
-              borderRadius: BorderRadius.circular(20),
-              border: bordercardsevicesection(context),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                iconCardChooseSection(context, index),
-                titleCardChooseSection(context, index),
-                bottonCardBookSevices(context),
-              ],
+              itemBuilder: (context, index) {
+                return Container(
+                  padding: const EdgeInsets.all(30.0),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topCenter,
+                      colors: [
+                        Color(0xffFFFFFF),
+                        Color(0xffEEEBE5),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: bordercardsevicesection(context),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      iconCardChooseSection(context, index),
+                      titleCardChooseSection(context, index),
+                      bottonCardBookSevices(context),
+                    ],
+                  ),
+                );
+              },
             ),
           );
-        },
-      ),
+        } else {
+          return const Text("No Data");
+        }
+      },
     );
   }
 

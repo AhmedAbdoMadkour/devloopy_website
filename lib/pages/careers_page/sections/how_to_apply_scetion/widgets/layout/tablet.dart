@@ -139,7 +139,7 @@ class CardStepsApplyTablet extends StatelessWidget {
                       child: Text(
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        "We value your interest in DevLoopy",
+                        "We value your interest in DigitX",
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 18,
@@ -153,7 +153,7 @@ class CardStepsApplyTablet extends StatelessWidget {
                 Text(
                   overflow: TextOverflow.ellipsis,
                   maxLines: 8,
-                  "We value your interest in DevLoopy and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DevLoopy!",
+                  "We value your interest in DigitX and appreciate the time and effort you put into your application. Our team looks forward to reviewing your application and finding the best talent to join our vibrant and innovative team. Apply now and take the next step towards an exciting and fulfilling career with DigitX!",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,

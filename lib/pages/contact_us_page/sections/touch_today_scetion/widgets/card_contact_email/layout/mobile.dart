@@ -72,7 +72,7 @@ class CardContactEmailMobile extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
-                              "info@DevLoopy.com",
+                              "info@digitx.com",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 12,
@@ -148,7 +148,7 @@ class CardContactEmailMobile extends StatelessWidget {
                                 weight: 20,
                               ),
                               Text(
-                                "partnerships@DevLoopy.com",
+                                "partnerships@digitx.com",
                                 style: TextStyle(
                                   color:
                                       Theme.of(context).colorScheme.onSurface,
@@ -225,7 +225,7 @@ class CardContactEmailMobile extends StatelessWidget {
                               weight: 20,
                             ),
                             Text(
-                              "careers@DevLoopy.com",
+                              "careers@digitx.com",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 14,

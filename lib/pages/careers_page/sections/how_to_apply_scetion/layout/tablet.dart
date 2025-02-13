@@ -18,7 +18,7 @@ class HowToApplySectionTablet extends StatelessWidget {
           ),
           CustomDescriptionSectionTablet(
               descriptionSection:
-                  "We are excited that you are interested in joining our team at DevLoopy! To apply for any of our job listings, please follow the simple steps below"),
+                  "We are excited that you are interested in joining our team at DigitX! To apply for any of our job listings, please follow the simple steps below"),
           CardStepsApplyTablet(),
         ],
       ),
