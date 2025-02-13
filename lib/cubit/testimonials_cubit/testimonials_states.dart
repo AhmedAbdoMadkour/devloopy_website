@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/domain_models/testimonials_domain_model.dart';
+import 'package:devloopy_website/models/domain_models/testimonials/testimonials_domain_model.dart';
 
 abstract class TestimonialsStates {}
 

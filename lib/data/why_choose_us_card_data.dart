@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/domain_models/why_choose_us_domain_model.dart';
+import 'package:devloopy_website/models/ui_models/home_page/why_choose_us_domain_model.dart';
 import 'package:flutter/material.dart';
 
 List<WhyChooseUsDomainModel> whyChooseUsCardData = [

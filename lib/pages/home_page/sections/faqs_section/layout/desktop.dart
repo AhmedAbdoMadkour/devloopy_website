@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/home_data/home_ui_data/faqs_ui_data.dart';
+import 'package:devloopy_website/data/ui_data/home_ui_data/faqs_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/box_search_button_faqs/layout/desktop.dart';
 import 'package:devloopy_website/pages/home_page/sections/faqs_section/widgets/card_faqs_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';

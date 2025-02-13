@@ -1,5 +1,5 @@
 import 'package:devloopy_website/cubit/testimonials_cubit/testimonials_states.dart';
-import 'package:devloopy_website/models/respons.dart';
+import 'package:devloopy_website/models/generic_response.dart';
 import 'package:devloopy_website/repository/testimonials_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -8,7 +8,7 @@ class TestimonalsCubit extends Cubit<TestimonialsStates> {
 
   Future<void> displayAllTestimonials() async {
     TestimonialsRepo testimonialsRepo = TestimonialsRepo();
-    GenericRespons respons = await testimonialsRepo.getAllTestimonials();
+    GenericResponse respons = await testimonialsRepo.getAllTestimonials();
     if (respons.status == Status.success) {
       emit(TestimonialsSuccessState(respons.object));
     } else {

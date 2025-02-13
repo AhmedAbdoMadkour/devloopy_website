@@ -1,5 +1,5 @@
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/data/home_data/home_ui_data/cta_ui_data.dart';
+import 'package:devloopy_website/data/ui_data/home_ui_data/cta_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class ButtonCTASectionTablet extends StatelessWidget {

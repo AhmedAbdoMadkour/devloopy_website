@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/ui_models/services_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/home_page/services_ui_model.dart';
 
 ServicesUiModel servicesUidata = ServicesUiModel(
   nameTitleSection: "Our Services",

@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/ui_models/partners_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/home_page/partners_ui_model.dart';
 
 PartnersUiModel partnersUidata = PartnersUiModel(
   titlePartnersClients: "our Partners and Clients",

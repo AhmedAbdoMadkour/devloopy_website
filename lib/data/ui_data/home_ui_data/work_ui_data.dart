@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/ui_models/work_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/home_page/work_ui_model.dart';
 
 WorkUiModel workUiData = WorkUiModel(
     titleWork: "Our Works",

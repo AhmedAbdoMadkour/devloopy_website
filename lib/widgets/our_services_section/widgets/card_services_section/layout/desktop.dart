@@ -1,7 +1,7 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_states.dart';
-import 'package:devloopy_website/data/general_data.dart/general_domain_data/services_domain_data.dart';
+import 'package:devloopy_website/data/domain_data/services_domain_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,11 +1,11 @@
 enum Status { success, fail }
 
-class GenericRespons<T> {
+class GenericResponse<T> {
   String? massage;
   Status status;
   T? object;
   int? statusCode;
 
-  GenericRespons(
+  GenericResponse(
       {this.massage, required this.status, this.object, this.statusCode});
 }

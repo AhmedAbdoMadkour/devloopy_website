@@ -1,15 +1,16 @@
-import 'package:devloopy_website/data/home_data/home_domain_data/partners_domain_date.dart';
-import 'package:devloopy_website/models/respons.dart';
-import 'package:devloopy_website/models/home_page_models/domain_models/partners_domain_model.dart';
+import 'package:devloopy_website/data/domain_data/partners_domain_date.dart';
+import 'package:devloopy_website/models/domain_models/partners/partners_domain_model.dart';
+import 'package:devloopy_website/models/generic_response.dart';
 
 class PartnersClientRepo {
-  Future<GenericRespons<List<PartnersDomainModel>>>
+  Future<GenericResponse<List<PartnersDomainModel>>>
       getAllPartnersClient() async {
     List<PartnersDomainModel> partnersClinteRepo = partnersDomaindata;
     if (partnersClinteRepo.isEmpty) {
-      return GenericRespons(status: Status.fail);
+      return GenericResponse(status: Status.fail);
     } else {
-      return GenericRespons(status: Status.success, object: partnersClinteRepo);
+      return GenericResponse(
+          status: Status.success, object: partnersClinteRepo);
     }
   }
 

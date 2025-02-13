@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/domain_models/services_domain_model.dart';
+import 'package:devloopy_website/models/domain_models/services/services_domain_model.dart';
 import 'package:flutter/material.dart';
 
 List<ServicesDomainModel> servicesDomainData = [

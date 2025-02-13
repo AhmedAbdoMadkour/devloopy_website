@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/services_page_models/ui_model/categories_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/services_page/categories_ui_model.dart';
 
 CategoriesUiModel categoriesUidata = CategoriesUiModel(
   titleCategorie: "Categories of Services",

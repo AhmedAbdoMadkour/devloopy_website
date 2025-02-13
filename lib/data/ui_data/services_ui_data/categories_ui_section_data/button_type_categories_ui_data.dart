@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/services_page_models/ui_model/button_type_categories_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/services_page/button_type_categories_ui_model.dart';
 import 'package:flutter/material.dart';
 
 List<ButtonTypeCategoriesUiModel> buttonTypeCategoriesUiData = [

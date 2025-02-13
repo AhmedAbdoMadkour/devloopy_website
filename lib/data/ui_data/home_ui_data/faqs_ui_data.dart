@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/ui_models/faqs_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/home_page/faqs_ui_model.dart';
 
 FAQSUiModel faqsUiData = FAQSUiModel(
   titleFAQS: "Asked Questions",

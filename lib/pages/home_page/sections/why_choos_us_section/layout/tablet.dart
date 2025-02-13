@@ -15,7 +15,7 @@ class WhychoosussectionTablet extends StatelessWidget {
         children: [
           CustomTitleTablet(
             nameTitle: "Reasons to Choose ",
-            spanTitle: "DigitX for Your Digital Journey",
+            spanTitle: "DevLoopy for Your Digital Journey",
             crossAxisAlignment: CrossAxisAlignment.center,
           ),
           SizedBox(
@@ -23,7 +23,7 @@ class WhychoosussectionTablet extends StatelessWidget {
           ),
           CustomDescriptionSectionTablet(
             descriptionSection:
-                "Partnering with DigitX offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
+                "Partnering with DevLoopy offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
           ),
           SizedBox(height: 50.0),
           CardChooseSectionTablet(),

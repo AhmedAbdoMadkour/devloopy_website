@@ -1,6 +1,6 @@
 import 'package:devloopy_website/cubit/faqs_cubit/faqs_cubit.dart';
 import 'package:devloopy_website/cubit/faqs_cubit/faqs_states.dart';
-import 'package:devloopy_website/data/home_data/home_domain_data/faqs_domain_data.dart';
+import 'package:devloopy_website/data/domain_data/faqs_domain_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

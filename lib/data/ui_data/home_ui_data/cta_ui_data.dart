@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/ui_models/cta_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/home_page/cta_ui_model.dart';
 
 CTAUiModel ctaUiData = CTAUiModel(
   titlectasction: "Ready to Transform Your Digital Presence?",

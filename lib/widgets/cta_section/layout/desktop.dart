@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/home_data/home_ui_data/cta_ui_data.dart';
+import 'package:devloopy_website/data/ui_data/home_ui_data/cta_ui_data.dart';
 import 'package:devloopy_website/widgets/cta_section/widgets/button_cta_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/cta_section/widgets/title_description_cta_section/layout/desktop.dart';
 import 'package:flutter/material.dart';

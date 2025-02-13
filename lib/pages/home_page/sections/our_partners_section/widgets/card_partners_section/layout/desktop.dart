@@ -1,7 +1,7 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_states.dart';
-import 'package:devloopy_website/data/home_data/home_domain_data/partners_domain_date.dart';
+import 'package:devloopy_website/data/domain_data/partners_domain_date.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/home_data/home_ui_data/testimonials_ui_data.dart';
+import 'package:devloopy_website/data/ui_data/home_ui_data/testimonials_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/our_Testimonials_section/widgets/card_testimonials_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';

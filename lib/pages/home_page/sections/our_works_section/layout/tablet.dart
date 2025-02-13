@@ -1,8 +1,7 @@
-import 'package:devloopy_website/data/home_data/home_ui_data/work_ui_data.dart';
+import 'package:devloopy_website/data/ui_data/home_ui_data/work_ui_data.dart';
 import 'package:devloopy_website/pages/home_page/sections/our_works_section/widgets/card_our_wotks_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
-
 import 'package:flutter/material.dart';
 
 class OurWorksSectionTablet extends StatelessWidget {

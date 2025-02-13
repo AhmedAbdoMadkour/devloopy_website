@@ -1,6 +1,6 @@
-import 'package:devloopy_website/data/services_data/services_ui_data/categories_ui_section_data/button_type_categories_ui_data.dart';
-import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_one_type_services/layout/mobile.dart';
+import 'package:devloopy_website/data/ui_data/services_ui_data/categories_ui_section_data/button_type_categories_ui_data.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/button_type_services.dart';
+import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_one_type_services/layout/mobile.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_one_type_services/widgets/card_web_design_compted/layout/mobile.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_one_type_services/widgets/card_web_design_portfolio/layout/mobile.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/widgets/card_two_type_services/layout/mobile.dart';

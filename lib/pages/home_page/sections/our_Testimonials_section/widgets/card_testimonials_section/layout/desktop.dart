@@ -1,6 +1,6 @@
 import 'package:devloopy_website/cubit/testimonials_cubit/testimonals_cubit.dart';
 import 'package:devloopy_website/cubit/testimonials_cubit/testimonials_states.dart';
-import 'package:devloopy_website/data/home_data/home_domain_data/testimonials_domain_data.dart';
+import 'package:devloopy_website/data/domain_data/testimonials_domain_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

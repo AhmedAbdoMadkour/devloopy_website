@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/home_page_models/domain_models/faqs_domain_model.dart';
+import 'package:devloopy_website/models/domain_models/faq/faqs_domain_model.dart';
 
 class FAQStates {}
 
