@@ -1,0 +1,2 @@
+D:/devloopy_company/projects_webset/devloopy_website/android/app/.cxx/Debug/5f232p5a/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/devloopy_company/projects_webset/devloopy_website/android/app/.cxx/Debug/5f232p5a/armeabi-v7a/CMakeFiles/rebuild_cache.dir
