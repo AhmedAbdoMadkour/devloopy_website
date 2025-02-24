@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/domain_models/services/services_domain_model.dart';
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 
 abstract class ServicesStates {}
 
@@ -9,7 +9,7 @@ class ServicesNoDataStates extends ServicesStates {}
 class ServicesLodingStates extends ServicesStates {}
 
 class ServicesSuccessStates extends ServicesStates {
-  List<ServicesDomainModel> srvicesCard;
+  List<ServicesModel> srvicesCard;
   ServicesSuccessStates({required this.srvicesCard});
 }
 

@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/domain_data/services_data.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionTypeServiceMobile extends StatelessWidget {
@@ -9,7 +10,7 @@ class DescriptionTypeServiceMobile extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Web Design",
+          servicesData.last.title,
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w600,
@@ -20,7 +21,7 @@ class DescriptionTypeServiceMobile extends StatelessWidget {
         Text(
           maxLines: 10,
           overflow: TextOverflow.ellipsis,
-          "Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DevLoopy, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
+          servicesData.last.description,
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w400,

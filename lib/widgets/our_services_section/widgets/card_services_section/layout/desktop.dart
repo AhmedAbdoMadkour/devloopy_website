@@ -1,7 +1,7 @@
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_states.dart';
-import 'package:devloopy_website/data/domain_data/services_domain_data.dart';
+import 'package:devloopy_website/data/domain_data/services_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,7 +17,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
           return SizedBox(
             height: 1250.0,
             child: GridView.builder(
-              itemCount: servicesDomainData.length,
+              itemCount: servicesData.length,
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -82,7 +82,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: Icon(
-        servicesDomainData[index].icon,
+        servicesData[index].icon,
         color: Theme.of(context).colorScheme.onPrimary,
         size: 34,
       ),
@@ -93,7 +93,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
     return Column(
       children: [
         Text(
-          servicesDomainData[index].titleCardServices,
+          servicesData[index].title,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
@@ -102,7 +102,7 @@ class CardServicesSectionDeskTop extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Text(
-          servicesDomainData[index].descriptionCardServices,
+          servicesData[index].description,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurface,
             fontFamily: FontsApp.fontFamilySora,
