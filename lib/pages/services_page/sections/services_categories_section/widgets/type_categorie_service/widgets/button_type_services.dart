@@ -33,7 +33,6 @@ class ButtonTypeServices extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               iconTypeService,
-              const SizedBox(width: 10),
               Text(
                 nameTypeService,
                 style: TextStyle(

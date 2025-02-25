@@ -9,8 +9,8 @@ class ServicesNoDataStates extends ServicesStates {}
 class ServicesLodingStates extends ServicesStates {}
 
 class ServicesSuccessStates extends ServicesStates {
-  List<ServicesModel> srvicesCard;
-  ServicesSuccessStates({required this.srvicesCard});
+  List<ServicesModel> srvices;
+  ServicesSuccessStates({required this.srvices});
 }
 
 class ServicesFailurStates extends ServicesStates {}
