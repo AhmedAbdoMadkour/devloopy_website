@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/ui_data/services_ui_data/categories_ui_section_data/categories_ui_data.dart';
+import 'package:devloopy_website/data/ui_data/services_ui_data/categories_ui_data.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/widgets/type_categorie_service/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
