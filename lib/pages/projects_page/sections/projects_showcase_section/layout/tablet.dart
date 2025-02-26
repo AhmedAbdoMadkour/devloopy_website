@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_showcase_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
@@ -8,8 +9,8 @@ class ProjectsShowcaseSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(
+    return Padding(
+      padding: const EdgeInsets.only(
         top: 80.0,
         right: 150,
         left: 150,
@@ -17,17 +18,17 @@ class ProjectsShowcaseSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: "Showcase",
+            nameTitleSection: projectsShowcaseUiData.title,
           ),
           CustomDescriptionSectionTablet(
-              descriptionSection:
-                  "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself."),
-          SizedBox(height: 30),
-          CardProjectsShowcaseTablet(
+            descriptionSection: projectsShowcaseUiData.description,
+          ),
+          const SizedBox(height: 30),
+          const CardProjectsShowcaseTablet(
             imageShowcase: "assets/images/image_project_showcase_one.png",
           ),
-          SizedBox(height: 50),
-          CardProjectsShowcaseTablet(
+          const SizedBox(height: 50),
+          const CardProjectsShowcaseTablet(
             imageShowcase: "assets/images/image_project_showcase_two.png",
           ),
         ],

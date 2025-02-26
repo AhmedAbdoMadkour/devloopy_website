@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_features_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/key_features_section/widgets/card_features_setion/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
@@ -8,19 +9,18 @@ class KeyFeaturesSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 100.0, left: 150, right: 150),
+    return Padding(
+      padding: const EdgeInsets.only(top: 100.0, left: 150, right: 150),
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: "Key Features of Our Projects",
+            nameTitleSection: projectsFeaturesUiData.title,
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           CustomDescriptionSectionDesktop(
-            descriptionSection:
-                "Partnering with DevLoopy offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
+            descriptionSection: projectsFeaturesUiData.description,
           ),
-          CardFeaturesSectionDeskTop(),
+          const CardFeaturesSectionDeskTop(),
         ],
       ),
     );

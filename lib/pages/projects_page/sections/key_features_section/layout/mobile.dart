@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_features_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/key_features_section/widgets/card_features_setion/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_second_dsecription/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
@@ -14,16 +15,15 @@ class KeyFeaturesSectionMobile extends StatelessWidget {
         left: 16,
         right: 16,
       ),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: " Key Features of Our Projects",
+            nameTitleSection: projectsFeaturesUiData.title,
           ),
           CustomSecondDescriptionMobile(
-            description:
-                "Partnering with DevLoopy offers a multitude of advantages. Experience increased brand visibility, improved customer engagement, and higher ROI. Our tailored solutions are designed to meet your unique business needs, ensuring lasting success.",
+            description: projectsFeaturesUiData.description,
           ),
-          CardFeaturesSectionMobile(),
+          const CardFeaturesSectionMobile(),
         ],
       ),
     );
