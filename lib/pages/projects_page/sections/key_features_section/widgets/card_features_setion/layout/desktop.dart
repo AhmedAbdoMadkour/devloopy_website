@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_features_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class CardFeaturesSectionDeskTop extends StatelessWidget {
@@ -13,10 +14,8 @@ class CardFeaturesSectionDeskTop extends StatelessWidget {
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           mainAxisExtent: 377,
-          // crossAxisSpacing: 50,
-          // mainAxisSpacing: 50,
         ),
-        itemCount: 5,
+        itemCount: projectsFeaturesUiData.itemsFeatures.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.all(50),
@@ -51,14 +50,14 @@ class CardFeaturesSectionDeskTop extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Icon(
-                    Icons.hotel_class_rounded,
+                    projectsFeaturesUiData.itemsFeatures[index].icon,
                     color: Theme.of(context).colorScheme.onPrimary,
                     size: 34,
                   ),
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "Strategic Planning",
+                  projectsFeaturesUiData.itemsFeatures[index].title,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 24,
@@ -69,7 +68,7 @@ class CardFeaturesSectionDeskTop extends StatelessWidget {
                 Text(
                   maxLines: 4,
                   overflow: TextOverflow.ellipsis,
-                  "Every project begins with thorough research and strategic planning to ensure a holistic understanding of our clients' objectives and target audience.",
+                  projectsFeaturesUiData.itemsFeatures[index].description,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,

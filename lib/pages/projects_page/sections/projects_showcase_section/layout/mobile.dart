@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_showcase_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
@@ -8,8 +9,8 @@ class ProjectsShowcaseSectionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(
+    return Padding(
+      padding: const EdgeInsets.only(
         top: 60.0,
         right: 16,
         left: 16,
@@ -17,17 +18,17 @@ class ProjectsShowcaseSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: "Projects Showcase",
+            nameTitleSection: projectsShowcaseUiData.title,
           ),
           CustomDescriptionSectionMobile(
-              descriptionSection:
-                  "Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we've had with diverse clients across various industries. Let our work speak for itself."),
-          SizedBox(height: 30),
-          CardProjectsShowcaseMobile(
+            descriptionSection: projectsShowcaseUiData.description,
+          ),
+          const SizedBox(height: 30),
+          const CardProjectsShowcaseMobile(
             imageShowcase: "assets/images/image_ecommerce_revolution.png",
           ),
-          SizedBox(height: 40),
-          CardProjectsShowcaseMobile(
+          const SizedBox(height: 40),
+          const CardProjectsShowcaseMobile(
             imageShowcase: "assets/images/image_ecommerce_website_examples.png",
           ),
         ],

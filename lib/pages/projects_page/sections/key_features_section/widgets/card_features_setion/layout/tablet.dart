@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_features_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class CardFeaturesSectionTablet extends StatelessWidget {
@@ -14,7 +15,7 @@ class CardFeaturesSectionTablet extends StatelessWidget {
           crossAxisCount: 3,
           mainAxisExtent: 350,
         ),
-        itemCount: 5,
+        itemCount: projectsFeaturesUiData.itemsFeatures.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -50,14 +51,14 @@ class CardFeaturesSectionTablet extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Icon(
-                    Icons.hotel_class_rounded,
+                    projectsFeaturesUiData.itemsFeatures[index].icon,
                     color: Theme.of(context).colorScheme.onPrimary,
                     size: 34,
                   ),
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "Strategic Planning",
+                  projectsFeaturesUiData.itemsFeatures[index].title,
                   style: TextStyle(
                     height: 3,
                     color: Theme.of(context).colorScheme.onSurface,
@@ -68,7 +69,7 @@ class CardFeaturesSectionTablet extends StatelessWidget {
                 Text(
                   maxLines: 6,
                   overflow: TextOverflow.ellipsis,
-                  "Every project begins with thorough research and strategic planning to ensure a holistic understanding of our clients' objectives and target audience.",
+                  projectsFeaturesUiData.itemsFeatures[index].description,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,
