@@ -10,7 +10,7 @@ class ProjectsShowcaseSectionDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 80.0,
         right: 150,
         left: 150,
@@ -25,10 +25,6 @@ class ProjectsShowcaseSectionDeskTop extends StatelessWidget {
           const SizedBox(height: 30),
           const CardProjectsShowcaseDeskTop(
             imageShowcase: "assets/images/image_project_showcase_one.png",
-          ),
-          const SizedBox(height: 50),
-          const CardProjectsShowcaseDeskTop(
-            imageShowcase: "assets/images/image_project_showcase_two.png",
           ),
         ],
       ),

@@ -15,6 +15,11 @@ List<ProjectsModel> projectsData = [
       Icons.css,
       Icons.javascript,
     ],
+    methodUsed: [
+      "Agile Development",
+      "User Testing",
+      "A/B Testing",
+    ],
   ),
   ProjectsModel(
     image: "assets/images/image_project_showcase_two.png",
@@ -28,6 +33,11 @@ List<ProjectsModel> projectsData = [
       Icons.html,
       Icons.css,
       Icons.javascript,
+    ],
+    methodUsed: [
+      "Agile Development",
+      "User Testing",
+      "A/B Testing",
     ],
   ),
 ];
