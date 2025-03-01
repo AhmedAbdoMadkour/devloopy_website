@@ -18,7 +18,7 @@ class CardFeaturesSectionDeskTop extends StatelessWidget {
         itemCount: projectsFeaturesUiData.itemsFeatures.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            padding: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(30),
             decoration: BoxDecoration(
               border: Border(
                   right: (index == 0 || index == 1 || index == 3)

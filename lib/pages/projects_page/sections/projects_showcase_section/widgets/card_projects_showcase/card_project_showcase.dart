@@ -9,10 +9,10 @@ class CardProjectShowcase extends StatelessWidget {
   final String imageShowcase;
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(
-      mobile: CardProjectsShowcaseMobile(imageShowcase: imageShowcase),
-      tablet: CardProjectsShowcaseTablet(imageShowcase: imageShowcase),
-      desktop: CardProjectsShowcaseDeskTop(imageShowcase: imageShowcase),
+    return const ResponsiveLayout(
+      mobile: CardProjectsShowcaseMobile(),
+      tablet: CardProjectsShowcaseTablet(),
+      desktop: CardProjectsShowcaseDeskTop(),
     );
   }
 }

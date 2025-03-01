@@ -23,9 +23,7 @@ class ProjectsShowcaseSectionDeskTop extends StatelessWidget {
           CustomDescriptionSectionDesktop(
               descriptionSection: projectsShowcaseUiData.description),
           const SizedBox(height: 30),
-          const CardProjectsShowcaseDeskTop(
-            imageShowcase: "assets/images/image_project_showcase_one.png",
-          ),
+          const CardProjectsShowcaseDeskTop(),
         ],
       ),
     );

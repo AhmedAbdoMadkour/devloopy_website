@@ -1,8 +1,9 @@
+import 'package:devloopy_website/data/domain_data/projects_data.dart';
 import 'package:flutter/material.dart';
 
 class MethodsUesdTablet extends StatelessWidget {
-  const MethodsUesdTablet({super.key});
-
+  const MethodsUesdTablet({super.key, required this.index});
+  final int index;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -46,40 +47,20 @@ class MethodsUesdTablet extends StatelessWidget {
               height: 2,
             ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 5),
-                padding: const EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 8,
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  border: Border.all(
-                      color: Theme.of(context).colorScheme.onPrimary,
-                      width: 1,
-                      style: BorderStyle.solid),
-                ),
-                child: Text(
-                  "Agile Development",
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.onPrimary,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
+          SizedBox(
+            height: 220,
+            child: ListView.builder(
+              itemCount: projectsData.last.methodUsed.length,
+              physics: const NeverScrollableScrollPhysics(),
+              itemBuilder: (context, indexItem) {
+                return SizedBox(
+                  width: 240,
+                  height: 70,
+                  child: Container(
+                    margin:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 8,
-                    ),
+                        vertical: 18, horizontal: 24),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
@@ -87,41 +68,21 @@ class MethodsUesdTablet extends StatelessWidget {
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: Text(
-                      "User Testing",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    //     margin: const EdgeInsets.all(5),
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 8,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      border: Border.all(
+                    child: Center(
+                      child: Text(
+                        projectsData[index].methodUsed[indexItem],
+                        style: TextStyle(
                           color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                    child: Text(
-                      "A/B Testing",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                     ),
                   ),
-                ],
-              ),
-            ],
-          ),
+                );
+              },
+            ),
+          )
         ],
       ),
     );

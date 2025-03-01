@@ -1,8 +1,9 @@
+import 'package:devloopy_website/data/domain_data/projects_data.dart';
 import 'package:flutter/material.dart';
 
 class MethodsUesdDeskTop extends StatelessWidget {
-  const MethodsUesdDeskTop({super.key});
-
+  const MethodsUesdDeskTop({super.key, required this.index});
+  final int index;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,84 +30,23 @@ class MethodsUesdDeskTop extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           Container(
+            height: 130,
+            alignment: Alignment.center,
             padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                  color: Theme.of(context).colorScheme.onPrimary,
-                  width: 1,
-                  style: BorderStyle.solid),
+                color: Theme.of(context).colorScheme.onPrimary,
+                width: 1,
+                style: BorderStyle.solid,
+              ),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border(
-                      right: BorderSide(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                  ),
-                  child: Container(
-                    width: 240,
-                    height: 63,
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 18,
-                      horizontal: 24,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      border: Border.all(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                    child: Text(
-                      "Agile Development",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 240,
-                  height: 63,
-                  decoration: BoxDecoration(
-                    border: Border(
-                      right: BorderSide(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                  ),
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 18, horizontal: 24),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      border: Border.all(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 1,
-                          style: BorderStyle.solid),
-                    ),
-                    child: Text(
-                      "User Testing",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(
+            child: ListView.builder(
+              itemCount: projectsData.last.methodUsed.length,
+              physics: const NeverScrollableScrollPhysics(),
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, indexItem) {
+                return SizedBox(
                   width: 240,
                   height: 63,
                   child: Container(
@@ -120,17 +60,19 @@ class MethodsUesdDeskTop extends StatelessWidget {
                           width: 1,
                           style: BorderStyle.solid),
                     ),
-                    child: Text(
-                      "A/B Testing",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
+                    child: Center(
+                      child: Text(
+                        projectsData[index].methodUsed[indexItem],
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onPrimary,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                );
+              },
             ),
           )
         ],

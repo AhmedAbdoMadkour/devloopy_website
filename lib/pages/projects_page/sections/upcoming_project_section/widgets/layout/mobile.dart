@@ -6,12 +6,12 @@ class CardUpcomingProjectMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 2500,
+      height: 2600,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          mainAxisExtent: 600,
+          mainAxisExtent: 630,
           mainAxisSpacing: 20,
         ),
         itemCount: 4,

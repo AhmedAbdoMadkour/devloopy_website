@@ -5,9 +5,9 @@ List<ProjectsModel> projectsData = [
   ProjectsModel(
     image: "assets/images/image_project_showcase_one.png",
     description:
-        "A dynamic e-commerce platform that revolutionized online shopping for fashion enthusiasts. The website showcases the latest trends, offers personalized recommendations, and seamless checkout options.",
+        "Madkour A dynamic e-commerce platform that revolutionized online shopping for fashion enthusiasts. The website showcases the latest trends, offers personalized recommendations, and seamless checkout options.",
     category: "E-commerce",
-    timeTaken: "4 Months",
+    timeTaken: "5 Months",
     startDate: DateTime.now(),
     completedDate: DateTime.now(),
     technologiesUsed: [
@@ -24,14 +24,13 @@ List<ProjectsModel> projectsData = [
   ProjectsModel(
     image: "assets/images/image_project_showcase_two.png",
     description:
-        "A dynamic e-commerce platform that revolutionized online shopping for fashion enthusiasts. The website showcases the latest trends, offers personalized recommendations, and seamless checkout options.",
-    category: "E-commerce",
-    timeTaken: "4 Months",
+        "Osama A dynamic e-commerce platform that revolutionized online shopping for fashion enthusiasts. The website showcases the latest trends, offers personalized recommendations, and seamless checkout options.",
+    category: "Website",
+    timeTaken: "2 Months",
     startDate: DateTime.now(),
     completedDate: DateTime.now(),
     technologiesUsed: [
-      Icons.html,
-      Icons.css,
+      Icons.flutter_dash,
       Icons.javascript,
     ],
     methodUsed: [
