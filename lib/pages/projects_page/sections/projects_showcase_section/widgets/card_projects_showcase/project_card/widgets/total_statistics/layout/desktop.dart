@@ -1,8 +1,9 @@
+import 'package:devloopy_website/data/domain_data/projects_data.dart';
 import 'package:flutter/material.dart';
 
 class TotalStatisticsDeskTop extends StatelessWidget {
-  const TotalStatisticsDeskTop({super.key});
-
+  const TotalStatisticsDeskTop({super.key, required this.index});
+  final int index;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -38,7 +39,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                       height: 2),
                 ),
                 Text(
-                  "E-commerce",
+                  projectsData[index].category,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
@@ -68,7 +69,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                       height: 2),
                 ),
                 Text(
-                  "4 Months",
+                  projectsData[index].timeTaken,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
@@ -98,7 +99,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                       height: 2),
                 ),
                 Text(
-                  "January 15, 2023",
+                  "${projectsData[index].startDate.day} / ${projectsData[index].startDate.month} / ${projectsData[index].startDate.year}",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
@@ -122,7 +123,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                       height: 2),
                 ),
                 Text(
-                  "May 15, 2023",
+                  "${projectsData[index].completedDate.day} / ${projectsData[index].completedDate.month} / ${projectsData[index].completedDate.year}",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,

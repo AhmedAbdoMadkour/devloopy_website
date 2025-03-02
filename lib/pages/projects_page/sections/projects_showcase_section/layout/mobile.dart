@@ -24,13 +24,7 @@ class ProjectsShowcaseSectionMobile extends StatelessWidget {
             descriptionSection: projectsShowcaseUiData.description,
           ),
           const SizedBox(height: 30),
-          const CardProjectsShowcaseMobile(
-            imageShowcase: "assets/images/image_ecommerce_revolution.png",
-          ),
-          const SizedBox(height: 40),
-          const CardProjectsShowcaseMobile(
-            imageShowcase: "assets/images/image_ecommerce_website_examples.png",
-          ),
+          const CardProjectsShowcaseMobile(),
         ],
       ),
     );

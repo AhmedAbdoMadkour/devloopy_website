@@ -24,13 +24,7 @@ class ProjectsShowcaseSectionTablet extends StatelessWidget {
             descriptionSection: projectsShowcaseUiData.description,
           ),
           const SizedBox(height: 30),
-          const CardProjectsShowcaseTablet(
-            imageShowcase: "assets/images/image_project_showcase_one.png",
-          ),
-          const SizedBox(height: 50),
-          const CardProjectsShowcaseTablet(
-            imageShowcase: "assets/images/image_project_showcase_two.png",
-          ),
+          const CardProjectsShowcaseTablet(),
         ],
       ),
     );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TitleProject extends StatelessWidget {
-  const TitleProject({
+class TitleProjectDescription extends StatelessWidget {
+  const TitleProjectDescription({
     super.key,
     required this.fontSize,
   });

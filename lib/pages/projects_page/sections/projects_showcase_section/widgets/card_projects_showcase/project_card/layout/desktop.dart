@@ -2,13 +2,14 @@ import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/methods_uesd/layout/desktop.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/team_members/layout/desktop.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/technologies_used/layout/desktop.dart';
-import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/title_project.dart';
+import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/title_project_description.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/widgets/total_statistics/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class ProjectCardDeskTop extends StatelessWidget {
-  const ProjectCardDeskTop({super.key});
+  const ProjectCardDeskTop({super.key, required this.index});
 
+  final int index;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,19 +23,26 @@ class ProjectCardDeskTop extends StatelessWidget {
           style: BorderStyle.solid,
         ),
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TitleProject(
+          const TitleProjectDescription(
             fontSize: 22,
           ),
           DescriptionProject(
+            index: index,
             fontSize: 16,
           ),
-          TotalStatisticsDeskTop(),
-          TechnologiesUsedDeskTop(),
-          TeamMeembersDeskTop(),
-          MethodsUesdDeskTop(),
+          TotalStatisticsDeskTop(
+            index: index,
+          ),
+          TechnologiesUsedDeskTop(
+            index: index,
+          ),
+          const TeamMeembersDeskTop(),
+          MethodsUesdDeskTop(
+            index: index,
+          ),
         ],
       ),
     );
