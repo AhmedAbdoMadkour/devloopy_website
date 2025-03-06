@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/domain_data/projects_upcoming_data.dart';
 import 'package:flutter/material.dart';
 
 class CardUpcomingProjectMobile extends StatelessWidget {
@@ -41,7 +42,7 @@ class CardUpcomingProjectMobile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(100),
                       ),
                       child: Icon(
-                        Icons.hotel_class_rounded,
+                        upcomingProjectsData[index].icon,
                         color: Theme.of(context).colorScheme.onPrimary,
                         size: 34,
                       ),
@@ -50,7 +51,7 @@ class CardUpcomingProjectMobile extends StatelessWidget {
                       width: 6,
                     ),
                     Text(
-                      "Educational Learning App",
+                      "${upcomingProjectsData[index].title}",
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 16,
@@ -92,7 +93,7 @@ class CardUpcomingProjectMobile extends StatelessWidget {
                                   height: 2),
                             ),
                             Text(
-                              "E-commerce",
+                              "${upcomingProjectsData[index].category}",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.primary,
                                 fontSize: 16,
@@ -117,7 +118,7 @@ class CardUpcomingProjectMobile extends StatelessWidget {
                                 height: 2),
                           ),
                           Text(
-                            "Q4 2024",
+                            "${upcomingProjectsData[index].expectedCompletion!.month} / ${upcomingProjectsData[index].expectedCompletion!.year}",
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
@@ -161,7 +162,7 @@ class CardUpcomingProjectMobile extends StatelessWidget {
                       ),
                       Text(
                         maxLines: 12,
-                        "Our team is collaborating with a leading healthcare provider to enhance their existing platform. The project aims to streamline user experiences, optimize database performance, and implement advanced security measures to safeguard patient data. This ambitious undertaking will elevate the platform's capabilities and revolutionize healthcare accessibility for users.",
+                        upcomingProjectsData[index].description,
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.onSurface,
                           fontSize: 14,

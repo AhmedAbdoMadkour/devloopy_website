@@ -1,3 +1,5 @@
+import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
+import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_upcoming_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/upcoming_project_section/widgets/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
@@ -8,18 +10,18 @@ class UpcomingProjectSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 80, left: 150, right: 150),
+    return Padding(
+      padding: const EdgeInsets.only(top: 80, left: 150, right: 150),
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: "projects",
+            nameTitleSection: projectsUpcomingUiData.title,
           ),
           CustomDescriptionSectionDesktop(
-              descriptionSection:
-                  "descriptiAt DevLoopy, we are continually working on exciting new projects to push the boundaries of digital innovation and deliver exceptional solutions to our valued clients. While we are thrilled to share our upcoming projects with you, we understand the importance of confidentiality and safeguarding sensitive information. Therefore, we will provide a brief overview of the upcoming projects while keeping specific details concealed.onSection"),
-          SizedBox(height: 50),
-          CardUpcomingProjectDeskTop(),
+            descriptionSection: projectsUpcomingUiData.description,
+          ),
+          const SizedBox(height: 50),
+          const CardUpcomingProjectDeskTop(),
         ],
       ),
     );

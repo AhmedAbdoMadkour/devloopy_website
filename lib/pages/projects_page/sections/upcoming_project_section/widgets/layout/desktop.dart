@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/domain_data/projects_upcoming_data.dart';
 import 'package:flutter/material.dart';
 
 class CardUpcomingProjectDeskTop extends StatelessWidget {
@@ -14,7 +15,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
           crossAxisSpacing: 40,
           mainAxisSpacing: 40,
         ),
-        itemCount: 4,
+        itemCount: upcomingProjectsData.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.all(25),
@@ -42,14 +43,14 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                         borderRadius: BorderRadius.circular(100),
                       ),
                       child: Icon(
-                        Icons.hotel_class_rounded,
+                        upcomingProjectsData[index].icon,
                         color: Theme.of(context).colorScheme.onPrimary,
                         size: 34,
                       ),
                     ),
                     const SizedBox(width: 6),
                     Text(
-                      "Educational Learning App",
+                      "${upcomingProjectsData[index].title}",
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.primary,
                         fontSize: 28,
@@ -96,7 +97,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                                   height: 2),
                             ),
                             Text(
-                              "E-commerce",
+                              "${upcomingProjectsData[index].category}",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.primary,
                                 fontSize: 20,
@@ -118,7 +119,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                                 height: 2),
                           ),
                           Text(
-                            "Q4 2024",
+                            "${upcomingProjectsData[index].expectedCompletion!.month} / ${upcomingProjectsData[index].expectedCompletion!.year}",
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
@@ -161,7 +162,7 @@ class CardUpcomingProjectDeskTop extends StatelessWidget {
                       Text(
                         maxLines: 10,
                         overflow: TextOverflow.ellipsis,
-                        "We are collaborating with an eco-conscious startup to create an innovative e-commerce platform that promotes sustainable products and environmentally friendly practices. The platform will empower consumers to make eco-conscious choices while supporting sustainable businesses. This project aligns with our commitment to creating digital solutions that contribute to a greener future.",
+                        upcomingProjectsData[index].description,
                         style: TextStyle(
                             color: Theme.of(context).colorScheme.onSurface,
                             fontSize: 18,

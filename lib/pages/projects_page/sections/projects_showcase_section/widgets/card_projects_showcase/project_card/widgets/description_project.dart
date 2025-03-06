@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/projects_data.dart';
+import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionProject extends StatelessWidget {
@@ -10,7 +10,7 @@ class DescriptionProject extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       maxLines: 6,
-      projectsData[index].description,
+      existingProjectsData[index].description,
       style: TextStyle(
         color: Theme.of(context).colorScheme.onPrimary,
         fontSize: fontSize,

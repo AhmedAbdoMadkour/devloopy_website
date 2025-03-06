@@ -1,8 +1,8 @@
-import 'package:devloopy_website/models/domain_models/projects/projects_model.dart';
+import 'package:devloopy_website/models/domain_models/projects/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
-List<ProjectsModel> projectsData = [
-  ProjectsModel(
+List<ExistingProjectsModel> existingProjectsData = [
+  ExistingProjectsModel(
     image: "assets/images/image_project_showcase_one.png",
     description:
         "Madkour A dynamic e-commerce platform that revolutionized online shopping for fashion enthusiasts. The website showcases the latest trends, offers personalized recommendations, and seamless checkout options.",
@@ -21,7 +21,7 @@ List<ProjectsModel> projectsData = [
       "A/B Testing",
     ],
   ),
-  ProjectsModel(
+  ExistingProjectsModel(
     image: "assets/images/image_project_showcase_two.png",
     description:
         "Osama A dynamic e-commerce platform that revolutionized online shopping for fashion enthusiasts. The website showcases the latest trends, offers personalized recommendations, and seamless checkout options.",

@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/projects_data.dart';
+import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class MethodsUesdMobile extends StatelessWidget {
@@ -50,7 +50,7 @@ class MethodsUesdMobile extends StatelessWidget {
           SizedBox(
             height: 220,
             child: ListView.builder(
-              itemCount: projectsData.last.methodUsed.length,
+              itemCount: existingProjectsData.last.methodUsed!.length,
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context, indexItem) {
                 return SizedBox(
@@ -70,7 +70,7 @@ class MethodsUesdMobile extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
-                        projectsData[index].methodUsed[indexItem],
+                        existingProjectsData[index].methodUsed![indexItem],
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 18,

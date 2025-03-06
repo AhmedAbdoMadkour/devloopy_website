@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/projects_data.dart';
+import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class TechnologiesUsedDeskTop extends StatelessWidget {
@@ -33,7 +33,7 @@ class TechnologiesUsedDeskTop extends StatelessWidget {
             width: 700,
             height: 56,
             child: ListView.builder(
-              itemCount: projectsData.last.technologiesUsed.length,
+              itemCount: existingProjectsData.last.technologiesUsed!.length,
               physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, indexitem) {
@@ -46,7 +46,7 @@ class TechnologiesUsedDeskTop extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primaryContainer,
                   ),
                   child: Icon(
-                    projectsData[index].technologiesUsed[indexitem],
+                    existingProjectsData[index].technologiesUsed![indexitem],
                     color: Theme.of(context).colorScheme.onPrimaryContainer,
                   ),
                 );
