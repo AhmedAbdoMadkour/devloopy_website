@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/projects_data.dart';
+import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class TotalStatisticsTablet extends StatelessWidget {
@@ -52,7 +52,7 @@ class TotalStatisticsTablet extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    projectsData[index].category,
+                    existingProjectsData[index].category,
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 14,
@@ -78,7 +78,7 @@ class TotalStatisticsTablet extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    projectsData[index].timeTaken,
+                    "${existingProjectsData[index].timeTaken}",
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 14,
@@ -111,7 +111,7 @@ class TotalStatisticsTablet extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "${projectsData[index].startDate.day} / ${projectsData[index].startDate.month} / ${projectsData[index].startDate.year}",
+                    "${existingProjectsData[index].startDate!.day} / ${existingProjectsData[index].startDate!.month} / ${existingProjectsData[index].startDate!.year}",
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 14,
@@ -137,7 +137,7 @@ class TotalStatisticsTablet extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "${projectsData[index].completedDate.day} / ${projectsData[index].completedDate.month} / ${projectsData[index].completedDate.year}",
+                    "${existingProjectsData[index].completedDate!.day} / ${existingProjectsData[index].completedDate!.month} / ${existingProjectsData[index].completedDate!.year}",
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.onPrimary,
                       fontSize: 14,

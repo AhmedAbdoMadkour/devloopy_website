@@ -1,6 +1,6 @@
-import 'package:devloopy_website/cubit/projects_cubit/projects_cubit.dart';
-import 'package:devloopy_website/cubit/projects_cubit/projects_states.dart';
-import 'package:devloopy_website/data/domain_data/projects_data.dart';
+import 'package:devloopy_website/cubit/projects_cubit/existing_projects_cubit.dart';
+import 'package:devloopy_website/cubit/projects_cubit/existing_projects_states.dart';
+import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/layout/mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,14 +11,14 @@ class CardProjectsShowcaseMobile extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    context.read<ProjectsCubit>().displayAllProjects();
-    return BlocBuilder<ProjectsCubit, ProjectsStates>(
+    context.read<ExistingProjectsCubit>().displayAllProjects();
+    return BlocBuilder<ExistingProjectsCubit, ExistingProjectsStates>(
       builder: (context, state) {
-        if (state is ProjectsSuccessState) {
+        if (state is ExistingProjectsSuccessState) {
           return SizedBox(
             height: 3100,
             child: ListView.builder(
-              itemCount: projectsData.length,
+              itemCount: existingProjectsData.length,
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return Container(
@@ -34,7 +34,7 @@ class CardProjectsShowcaseMobile extends StatelessWidget {
                       Image.asset(
                         width: 318,
                         height: 212,
-                        projectsData[index].image,
+                        "${existingProjectsData[index].image}",
                       ),
                       const SizedBox(height: 18),
                       ProjectCardMobile(
