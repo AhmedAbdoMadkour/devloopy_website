@@ -9,8 +9,8 @@ class ExistingProjectsLodingState extends ExistingProjectsStates {}
 class ExistingProjectsNoDataState extends ExistingProjectsStates {}
 
 class ExistingProjectsSuccessState extends ExistingProjectsStates {
-  List<ExistingProjectsModel> projects;
-  ExistingProjectsSuccessState(this.projects);
+  List<ExistingProjectsModel> existingProjects;
+  ExistingProjectsSuccessState(this.existingProjects);
 }
 
 class ExistingProjectsFailureState extends ExistingProjectsStates {}

@@ -1,181 +1,203 @@
-import 'package:devloopy_website/data/domain_data/projects_upcoming_data.dart';
+import 'package:devloopy_website/cubit/upcoming_projects_cubit/upcoming_projects_cubit.dart';
+import 'package:devloopy_website/cubit/upcoming_projects_cubit/upcoming_projects_states.dart';
+import 'package:devloopy_website/data/domain_data/projects/projects_upcoming_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CardUpcomingProjectDeskTop extends StatelessWidget {
   const CardUpcomingProjectDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 1597,
-      child: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisExtent: 750,
-          crossAxisSpacing: 40,
-          mainAxisSpacing: 40,
-        ),
-        itemCount: upcomingProjectsData.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Container(
-            padding: const EdgeInsets.all(25),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Theme.of(context).colorScheme.outline,
-                width: 1,
-                style: BorderStyle.solid,
+    context.read<UpcomingProjectsCubit>().displayAllUpcomingProjects();
+    return BlocBuilder<UpcomingProjectsCubit, UpcomingProjectsStates>(
+      builder: (context, state) {
+        if (state is UpcomingProjectsSuccessStates) {
+          return SizedBox(
+            height: 1597,
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisExtent: 750,
+                crossAxisSpacing: 40,
+                mainAxisSpacing: 40,
               ),
-            ),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primaryContainer,
-                        border: Border.all(
-                          color: Theme.of(context).colorScheme.primary,
-                          width: 10,
-                          style: BorderStyle.solid,
-                        ),
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      child: Icon(
-                        upcomingProjectsData[index].icon,
-                        color: Theme.of(context).colorScheme.onPrimary,
-                        size: 34,
-                      ),
-                    ),
-                    const SizedBox(width: 6),
-                    Text(
-                      "${upcomingProjectsData[index].title}",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.primary,
-                        fontSize: 28,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    )
-                  ],
-                ),
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 50),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              itemCount: upcomingProjectsData.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                       color: Theme.of(context).colorScheme.outline,
                       width: 1,
                       style: BorderStyle.solid,
                     ),
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  child: Column(
                     children: [
+                      Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(20),
+                            decoration: BoxDecoration(
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .primaryContainer,
+                              border: Border.all(
+                                color: Theme.of(context).colorScheme.primary,
+                                width: 10,
+                                style: BorderStyle.solid,
+                              ),
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                            child: Icon(
+                              upcomingProjectsData[index].icon,
+                              color: Theme.of(context).colorScheme.onPrimary,
+                              size: 25,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            upcomingProjectsData[index].title,
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.primary,
+                              fontSize: 22,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          )
+                        ],
+                      ),
                       Container(
-                        padding: const EdgeInsets.only(right: 40),
+                        margin: const EdgeInsets.symmetric(vertical: 50),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 10),
                         decoration: BoxDecoration(
-                          border: Border(
-                            right: BorderSide(
-                                color: Theme.of(context).colorScheme.outline,
-                                width: 1,
-                                style: BorderStyle.solid),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: Theme.of(context).colorScheme.outline,
+                            width: 1,
+                            style: BorderStyle.solid,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.only(right: 40),
+                              decoration: BoxDecoration(
+                                border: Border(
+                                  right: BorderSide(
+                                      color:
+                                          Theme.of(context).colorScheme.outline,
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                ),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Category",
+                                    style: TextStyle(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSurface,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w400,
+                                        height: 2),
+                                  ),
+                                  Text(
+                                    upcomingProjectsData[index].category,
+                                    style: TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Expected Completion",
+                                  style: TextStyle(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w400,
+                                      height: 2),
+                                ),
+                                Text(
+                                  "${upcomingProjectsData[index].expectedCompletion.month} / ${upcomingProjectsData[index].expectedCompletion.year}",
+                                  style: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(40),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            begin: Alignment.topRight,
+                            colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffEEEBE5),
+                            ],
+                          ),
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(
+                            color: Theme.of(context).colorScheme.onSurface,
+                            width: 1,
+                            style: BorderStyle.solid,
                           ),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Category",
+                              "Project Description",
                               style: TextStyle(
                                   color:
                                       Theme.of(context).colorScheme.onSurface,
-                                  fontSize: 18,
+                                  fontSize: 22,
                                   fontWeight: FontWeight.w400,
                                   height: 2),
                             ),
                             Text(
-                              "${upcomingProjectsData[index].category}",
+                              maxLines: 10,
+                              overflow: TextOverflow.ellipsis,
+                              upcomingProjectsData[index].description,
                               style: TextStyle(
-                                color: Theme.of(context).colorScheme.primary,
-                                fontSize: 20,
-                                fontWeight: FontWeight.w400,
-                              ),
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400),
                             ),
                           ],
                         ),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Expected Completion",
-                            style: TextStyle(
-                                color: Theme.of(context).colorScheme.onSurface,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                                height: 2),
-                          ),
-                          Text(
-                            "${upcomingProjectsData[index].expectedCompletion!.month} / ${upcomingProjectsData[index].expectedCompletion!.year}",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.primary,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ],
-                      ),
+                      )
                     ],
                   ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(40),
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      begin: Alignment.topRight,
-                      colors: [
-                        Color(0xffFFFFFF),
-                        Color(0xffEEEBE5),
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(
-                      color: Theme.of(context).colorScheme.onSurface,
-                      width: 1,
-                      style: BorderStyle.solid,
-                    ),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Project Description",
-                        style: TextStyle(
-                            color: Theme.of(context).colorScheme.onSurface,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w400,
-                            height: 2),
-                      ),
-                      Text(
-                        maxLines: 10,
-                        overflow: TextOverflow.ellipsis,
-                        upcomingProjectsData[index].description,
-                        style: TextStyle(
-                            color: Theme.of(context).colorScheme.onSurface,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400),
-                      ),
-                    ],
-                  ),
-                )
-              ],
+                );
+              },
             ),
           );
-        },
-      ),
+        } else {
+          return const Text("No Data");
+        }
+      },
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
+import 'package:devloopy_website/data/domain_data/projects/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionProject extends StatelessWidget {

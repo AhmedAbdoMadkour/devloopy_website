@@ -1,4 +1,4 @@
-import 'package:devloopy_website/models/domain_models/projects/existing_projects_model.dart';
+import 'package:devloopy_website/models/domain_models/projects/upcoming_projects_model.dart';
 import 'package:flutter/material.dart';
 
 List<UpcomingProjectsModel> upcomingProjectsData = [

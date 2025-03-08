@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
+import 'package:devloopy_website/data/domain_data/projects/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class MethodsUesdDeskTop extends StatelessWidget {
@@ -42,7 +42,7 @@ class MethodsUesdDeskTop extends StatelessWidget {
               ),
             ),
             child: ListView.builder(
-              itemCount: existingProjectsData.last.methodUsed!.length,
+              itemCount: existingProjectsData.last.methodUsed.length,
               physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, indexItem) {
@@ -62,7 +62,7 @@ class MethodsUesdDeskTop extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
-                        existingProjectsData[index].methodUsed![indexItem],
+                        existingProjectsData[index].methodUsed[indexItem],
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 18,
