@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
+import 'package:devloopy_website/data/domain_data/projects/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class TechnologiesUsedMobile extends StatelessWidget {
@@ -37,7 +37,7 @@ class TechnologiesUsedMobile extends StatelessWidget {
           SizedBox(
             height: 56,
             child: ListView.builder(
-              itemCount: existingProjectsData.last.technologiesUsed!.length,
+              itemCount: existingProjectsData.last.technologiesUsed.length,
               physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, indexitem) {
@@ -50,7 +50,7 @@ class TechnologiesUsedMobile extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primaryContainer,
                   ),
                   child: Icon(
-                    existingProjectsData[index].technologiesUsed![indexitem],
+                    existingProjectsData[index].technologiesUsed[indexitem],
                     color: Theme.of(context).colorScheme.onPrimaryContainer,
                   ),
                 );

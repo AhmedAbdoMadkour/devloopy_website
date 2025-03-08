@@ -1,4 +1,4 @@
-import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
+import 'package:devloopy_website/data/domain_data/projects/existing_projects_model.dart';
 import 'package:flutter/material.dart';
 
 class TotalStatisticsDeskTop extends StatelessWidget {
@@ -99,7 +99,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                       height: 2),
                 ),
                 Text(
-                  "${existingProjectsData[index].startDate!.day} / ${existingProjectsData[index].startDate!.month} / ${existingProjectsData[index].startDate!.year}",
+                  "${existingProjectsData[index].startDate.day} / ${existingProjectsData[index].startDate.month} / ${existingProjectsData[index].startDate.year}",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,
@@ -123,7 +123,7 @@ class TotalStatisticsDeskTop extends StatelessWidget {
                       height: 2),
                 ),
                 Text(
-                  "${existingProjectsData[index].completedDate!.day} / ${existingProjectsData[index].completedDate!.month} / ${existingProjectsData[index].completedDate!.year}",
+                  "${existingProjectsData[index].completedDate.day} / ${existingProjectsData[index].completedDate.month} / ${existingProjectsData[index].completedDate.year}",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontSize: 20,

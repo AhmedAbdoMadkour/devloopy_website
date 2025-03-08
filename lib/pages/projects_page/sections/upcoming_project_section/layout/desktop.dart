@@ -1,4 +1,3 @@
-import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
 import 'package:devloopy_website/data/ui_data/projects_ui_data/projects_upcoming_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/upcoming_project_section/widgets/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';

@@ -1,6 +1,6 @@
-import 'package:devloopy_website/cubit/projects_cubit/existing_projects_cubit.dart';
-import 'package:devloopy_website/cubit/projects_cubit/existing_projects_states.dart';
-import 'package:devloopy_website/data/domain_data/existing_projects_model.dart';
+import 'package:devloopy_website/cubit/existing_projects_cubit/existing_projects_cubit.dart';
+import 'package:devloopy_website/cubit/existing_projects_cubit/existing_projects_states.dart';
+import 'package:devloopy_website/data/domain_data/projects/existing_projects_model.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/widgets/card_projects_showcase/project_card/layout/desktop.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,7 +11,7 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    context.read<ExistingProjectsCubit>().displayAllProjects();
+    context.read<ExistingProjectsCubit>().displayAllExistingProjects();
     return BlocBuilder<ExistingProjectsCubit, ExistingProjectsStates>(
       builder: (context, state) {
         if (state is ExistingProjectsSuccessState) {
@@ -35,7 +35,7 @@ class CardProjectsShowcaseDeskTop extends StatelessWidget {
                       Image.asset(
                         width: 1226,
                         height: 696,
-                        "${existingProjectsData[index].image}",
+                        existingProjectsData[index].image,
                       ),
                       Column(
                         children: [
