@@ -19,7 +19,7 @@ class CareersPage extends StatelessWidget {
         child: Column(
           children: [
             Navbar(),
-            HeaderInformationSection(),
+            //  HeaderInformationSection(),
             JobListingSection(),
             HowToApplySection(),
             BenefitsPerksSection(),
