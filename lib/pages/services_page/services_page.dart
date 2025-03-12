@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/general_ui_data/header_information_ui_data.dart';
 import 'package:devloopy_website/pages/services_page/sections/services_categories_section/services_categories_section.dart';
 import 'package:devloopy_website/pages/services_page/sections/success_stories_section/success_stories_section.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
@@ -14,16 +15,20 @@ class ServicesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            Navbar(),
-            HeaderInformationSection(),
-            OurServicesSection(),
-            ServicesCategoriesSection(),
-            SuccessStoriesSection(),
-            CTASection(),
-            FooterSection(),
+            const Navbar(),
+            HeaderInformationSection(
+              title: headerInformationServicesUiData.title,
+              subTitle: headerInformationServicesUiData.subTitle,
+              description: headerInformationServicesUiData.description,
+            ),
+            const OurServicesSection(),
+            const ServicesCategoriesSection(),
+            const SuccessStoriesSection(),
+            const CTASection(),
+            const FooterSection(),
           ],
         ),
       ),

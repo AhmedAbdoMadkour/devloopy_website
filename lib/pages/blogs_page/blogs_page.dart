@@ -16,7 +16,7 @@ class BlogsPage extends StatelessWidget {
         child: Column(
           children: [
             Navbar(),
-            HeaderInformationSection(),
+            //    HeaderInformationSection(),
             BlogSection(),
             CTASection(),
             FooterSection(),

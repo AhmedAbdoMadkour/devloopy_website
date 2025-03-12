@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/general_ui_data/header_information_ui_data.dart';
 import 'package:devloopy_website/pages/projects_page/sections/key_features_section/key_features_section.dart';
 import 'package:devloopy_website/pages/projects_page/sections/projects_showcase_section/projects_showcase_section.dart';
 import 'package:devloopy_website/pages/projects_page/sections/upcoming_project_section/upcoming_project_section.dart';
@@ -13,12 +14,16 @@ class ProjectsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             Navbar(),
-            HeaderInformationSection(),
+            HeaderInformationSection(
+              title: headerInformationProjectsUiData.title,
+              subTitle: headerInformationProjectsUiData.subTitle,
+              description: headerInformationProjectsUiData.description,
+            ),
             KeyFeaturesSection(),
             ProjectsShowcaseSection(),
             UpcomingProjectSection(),
