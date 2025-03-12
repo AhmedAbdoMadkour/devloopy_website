@@ -17,7 +17,8 @@ class EmployeeReferralProgramSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: "Employee Referral Program",
+            title: "Employee ",
+            subTitle: "Referral Program",
           ),
           CustomDescriptionSectionMobile(
             descriptionSection:

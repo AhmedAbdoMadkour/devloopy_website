@@ -14,7 +14,8 @@ class HowToApplySectionTablet extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: "How to Apply",
+            title: "How ",
+            subTitle: "to Apply",
           ),
           CustomDescriptionSectionTablet(
               descriptionSection:

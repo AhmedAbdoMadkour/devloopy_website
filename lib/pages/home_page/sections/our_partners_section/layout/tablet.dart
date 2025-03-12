@@ -17,7 +17,8 @@ class OurPartnersSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: "  Our Partners and Clients",
+            title: "Our ",
+            subTitle: "Partners and Clients",
           ),
           SizedBox(height: 6),
           CustomDescriptionSectionTablet(

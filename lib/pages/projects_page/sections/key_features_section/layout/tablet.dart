@@ -14,7 +14,8 @@ class KeyFeaturesSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: projectsFeaturesUiData.title,
+            title: projectsFeaturesUiData.title,
+            subTitle: projectsFeaturesUiData.subTitle,
           ),
           CustomSecondDescriptionTablet(
             description: projectsFeaturesUiData.description,

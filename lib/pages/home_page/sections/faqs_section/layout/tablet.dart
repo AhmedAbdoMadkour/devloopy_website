@@ -19,11 +19,12 @@ class FAQSSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: faqsUiData.titleFAQS,
+            title: faqsUiData.title,
+            subTitle: faqsUiData.subTitle,
           ),
           const SizedBox(height: 27),
           CustomDescriptionSectionTablet(
-            descriptionSection: faqsUiData.descriptionFAQS,
+            descriptionSection: faqsUiData.description,
           ),
           const SizedBox(height: 37),
           const BoxSearchButtonFaqsTablet(),

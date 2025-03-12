@@ -18,11 +18,12 @@ class OurTestimonialsSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: testimonialsUiData.titleTestimonials,
+            title: testimonialsUiData.title,
+            subTitle: testimonialsUiData.subTitle,
           ),
           const SizedBox(height: 27),
           CustomDescriptionSectionTablet(
-            descriptionSection: testimonialsUiData.descriptionTestimonials,
+            descriptionSection: testimonialsUiData.description,
           ),
           const CardTestimonialsSectionTablet(),
         ],

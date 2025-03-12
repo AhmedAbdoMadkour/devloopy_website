@@ -21,13 +21,14 @@ class OurPartnersSectionDeskTop extends StatelessWidget {
             child: GestureDetector(
               onTap: () {},
               child: CustomTitelSectionDeskTop(
-                nameTitleSection: partnersUidata.titlePartnersClients,
+                title: partnersUidata.title,
+                subTitle: partnersUidata.subTitle,
               ),
             ),
           ),
           const SizedBox(height: 27),
           CustomDescriptionSectionDesktop(
-            descriptionSection: partnersUidata.descriptionPartnersClients,
+            descriptionSection: partnersUidata.description,
           ),
           const SizedBox(height: 50),
           const CarddOurPartnersSectionDeskTop(),

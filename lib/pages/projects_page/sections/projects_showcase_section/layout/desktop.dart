@@ -18,7 +18,8 @@ class ProjectsShowcaseSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: projectsShowcaseUiData.title,
+            title: projectsShowcaseUiData.title,
+            subTitle: projectsShowcaseUiData.subTitle,
           ),
           CustomDescriptionSectionDesktop(
               descriptionSection: projectsShowcaseUiData.description),

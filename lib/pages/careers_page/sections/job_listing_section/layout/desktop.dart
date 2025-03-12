@@ -17,7 +17,8 @@ class JobListingSectionDeskTop extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: "Job Listings at DevLoopy",
+            title: "Job Listings ",
+            subTitle: "at DevLoopy",
           ),
           SizedBox(height: 10),
           CustomDescriptionSectionDesktop(

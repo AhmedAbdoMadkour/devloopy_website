@@ -17,7 +17,8 @@ class BenefitsPerksSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: " Benefits & Perks",
+            title: " Benefits ",
+            subTitle: "& Perks",
           ),
           CustomDescriptionSectionTablet(
             descriptionSection:

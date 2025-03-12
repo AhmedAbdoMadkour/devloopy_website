@@ -2,11 +2,13 @@ import 'package:flutter/widgets.dart';
 
 class ProjectsFeaturesUiModel {
   final String title;
+  final String subTitle;
   final String description;
   final List<ProjectsFeaturesItemsUiModel> itemsFeatures;
 
   ProjectsFeaturesUiModel(
       {required this.title,
+      required this.subTitle,
       required this.description,
       required this.itemsFeatures});
 }

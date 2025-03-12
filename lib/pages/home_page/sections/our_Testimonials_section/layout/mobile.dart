@@ -14,11 +14,12 @@ class OurTestimonialsSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: testimonialsUiData.titleTestimonials,
+            title: testimonialsUiData.title,
+            subTitle: testimonialsUiData.subTitle,
           ),
           const SizedBox(height: 10),
           CustomDescriptionSectionMobile(
-            descriptionSection: testimonialsUiData.descriptionTestimonials,
+            descriptionSection: testimonialsUiData.description,
           ),
           const SizedBox(height: 17),
           const CardTestimonialsSectionMobile(),
