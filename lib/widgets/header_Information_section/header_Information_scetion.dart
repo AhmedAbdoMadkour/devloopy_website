@@ -5,14 +5,33 @@ import 'package:devloopy_website/widgets/header_Information_section/layout/table
 import 'package:flutter/material.dart';
 
 class HeaderInformationSection extends StatelessWidget {
-  const HeaderInformationSection({super.key});
+  const HeaderInformationSection(
+      {super.key,
+      required this.title,
+      required this.subTitle,
+      required this.description});
 
+  final String title;
+  final String subTitle;
+  final String description;
   @override
   Widget build(BuildContext context) {
-    return const ResponsiveLayout(
-      mobile: HeaderInformationSectionMobile(),
-      tablet: HeaderInformationSectionTablet(),
-      desktop: HeaderInformationSectionDeskTop(),
+    return ResponsiveLayout(
+      mobile: HeaderInformationSectionMobile(
+        title: title,
+        subTitle: subTitle,
+        description: description,
+      ),
+      tablet: HeaderInformationSectionTablet(
+        title: title,
+        subTitle: subTitle,
+        description: description,
+      ),
+      desktop: HeaderInformationSectionDeskTop(
+        title: title,
+        subTitle: subTitle,
+        description: description,
+      ),
     );
   }
 }

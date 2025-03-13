@@ -3,8 +3,15 @@ import 'package:devloopy_website/widgets/custom_title/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class HeaderInformationSectionTablet extends StatelessWidget {
-  const HeaderInformationSectionTablet({super.key});
+  const HeaderInformationSectionTablet(
+      {super.key,
+      required this.title,
+      required this.subTitle,
+      required this.description});
 
+  final String title;
+  final String subTitle;
+  final String description;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -47,19 +54,18 @@ class HeaderInformationSectionTablet extends StatelessWidget {
           // Add other widgets on top if needed
           Container(
             margin: const EdgeInsets.only(right: 100, left: 100),
-            child: const Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomTitleTablet(
-                  spanTitle: "Our Comprehensive ",
-                  nameTitle: "Digital Solutions",
+                  spanTitle: subTitle,
+                  nameTitle: title,
                   crossAxisAlignment: CrossAxisAlignment.start,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 CustomSecondDescriptionTablet(
-                  description:
-                      "At DevLoopy, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
+                  description: description,
                 ),
               ],
             ),

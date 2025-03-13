@@ -3,8 +3,15 @@ import 'package:devloopy_website/widgets/custom_title/layout/desktop.dart';
 import 'package:flutter/material.dart';
 
 class HeaderInformationSectionDeskTop extends StatelessWidget {
-  const HeaderInformationSectionDeskTop({super.key});
+  const HeaderInformationSectionDeskTop(
+      {super.key,
+      required this.title,
+      required this.subTitle,
+      required this.description});
 
+  final String title;
+  final String subTitle;
+  final String description;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -17,7 +24,7 @@ class HeaderInformationSectionDeskTop extends StatelessWidget {
             left: 0,
             top: 0,
             child: Image.asset(
-              'assets/images/background_left_hero_section.png',
+              "assets/images/background_left_hero_section.png",
               height: 500,
               width: 510,
               //   width: 510,
@@ -27,7 +34,7 @@ class HeaderInformationSectionDeskTop extends StatelessWidget {
 
           Positioned(
             child: Image.asset(
-              'assets/images/Abstract_Design.png',
+              "assets/images/Abstract_Design.png",
               height: 500,
               width: 900,
               fit: BoxFit.cover,
@@ -40,7 +47,7 @@ class HeaderInformationSectionDeskTop extends StatelessWidget {
             right: 0,
             top: 0,
             child: Image.asset(
-              'assets/images/background_right_hero_section.png',
+              "assets/images/background_right_hero_section.png",
               height: 500,
               width: 510,
               fit: BoxFit.cover,
@@ -51,18 +58,17 @@ class HeaderInformationSectionDeskTop extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(100),
             margin: const EdgeInsets.only(right: 405, left: 100),
-            child: const Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 CustomTitleDeskTop(
-                  nameTitle: "Our Comprehensive",
-                  spanTitle: "Digital Solutions",
+                  nameTitle: title,
+                  spanTitle: subTitle,
                   crossAxisAlignment: CrossAxisAlignment.start,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 CustomSecondDescriptionDeskTop(
-                  description:
-                      "At DevLoopy, we believe in fostering a dynamic and collaborative work environment that empowers our team members to excel in their respective fields. Join us to be part of a passionate and innovative team dedicated to crafting exceptional digital solutions for clients across the globe. We are committed to nurturing talent, encouraging professional growth, and creating a workplace where creativity thrives.",
+                  description: description,
                 ),
               ],
             ),
