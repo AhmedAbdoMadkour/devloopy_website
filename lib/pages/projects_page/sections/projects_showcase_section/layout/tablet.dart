@@ -18,7 +18,8 @@ class ProjectsShowcaseSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: projectsShowcaseUiData.title,
+            title: projectsShowcaseUiData.title,
+            subTitle: projectsShowcaseUiData.subTitle,
           ),
           CustomDescriptionSectionTablet(
             descriptionSection: projectsShowcaseUiData.description,

@@ -18,11 +18,12 @@ class OurServicesSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: servicesUidata.nameTitleSection,
+            title: servicesUidata.title,
+            subTitle: servicesUidata.subTitle,
           ),
           const SizedBox(height: 10.0),
           CustomDescriptionSectionTablet(
-            descriptionSection: servicesUidata.descriptionSection,
+            descriptionSection: servicesUidata.description,
           ),
           const SizedBox(height: 30.0),
           const CardServicesSectionTablet(),

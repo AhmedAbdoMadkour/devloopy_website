@@ -17,7 +17,8 @@ class OurAchievementsSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: "Our Achievements",
+            title: "Our ",
+            subTitle: "Achievements",
           ),
           CustomDescriptionSectionTablet(
             descriptionSection:

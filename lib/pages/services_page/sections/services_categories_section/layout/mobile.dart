@@ -18,10 +18,11 @@ class ServicesCategoriesSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: categoriesUidata.titleCategorie,
+            title: categoriesUidata.title,
+            subTitle: categoriesUidata.subTitle,
           ),
           CustomSecondDescriptionMobile(
-            description: categoriesUidata.descriptionCategorie,
+            description: categoriesUidata.description,
           ),
           const TypeCategorieServiceMobile(),
         ],

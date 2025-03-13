@@ -18,10 +18,11 @@ class ServicesCategoriesSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: categoriesUidata.titleCategorie,
+            title: categoriesUidata.title,
+            subTitle: categoriesUidata.subTitle,
           ),
           CustomDescriptionSectionDesktop(
-            descriptionSection: categoriesUidata.descriptionCategorie,
+            descriptionSection: categoriesUidata.description,
           ),
           const TypeCategorieServiceDeskTop(),
         ],

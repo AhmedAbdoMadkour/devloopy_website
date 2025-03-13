@@ -15,11 +15,12 @@ class OurWorksSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: workUiData.titleWork,
+            title: workUiData.title,
+            subTitle: workUiData.subTitle,
           ),
           const SizedBox(height: 20.0),
           CustomDescriptionSectionTablet(
-            descriptionSection: workUiData.descriptionWork,
+            descriptionSection: workUiData.description,
           ),
           const SizedBox(height: 50.0),
           const CardOurWorksSectionTablet(),

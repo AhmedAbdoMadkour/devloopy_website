@@ -4,6 +4,7 @@ import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
 import 'package:devloopy_website/cubit/existing_projects_cubit/existing_projects_cubit.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
+import 'package:devloopy_website/cubit/team_member_cubit/team_member_cubit.dart';
 import 'package:devloopy_website/cubit/testimonials_cubit/testimonals_cubit.dart';
 import 'package:devloopy_website/cubit/upcoming_projects_cubit/upcoming_projects_cubit.dart';
 import 'package:devloopy_website/cubit/work_cubit/work_cubit.dart';
@@ -49,6 +50,9 @@ class DevLoopy extends StatelessWidget {
           ),
           BlocProvider(
             create: (context) => UpcomingProjectsCubit(),
+          ),
+          BlocProvider(
+            create: (context) => TeamMemberCubit(),
           ),
         ],
         child: MaterialApp(

@@ -14,7 +14,8 @@ class UpcomingProjectSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: projectsUpcomingUiData.title,
+            title: projectsUpcomingUiData.title,
+            subTitle: projectsUpcomingUiData.subTitle,
           ),
           CustomDescriptionSectionTablet(
             descriptionSection: projectsUpcomingUiData.description,

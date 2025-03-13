@@ -14,7 +14,8 @@ class KeyFeaturesSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: projectsFeaturesUiData.title,
+            title: projectsFeaturesUiData.title,
+            subTitle: projectsFeaturesUiData.subTitle,
           ),
           const SizedBox(height: 10),
           CustomDescriptionSectionDesktop(

@@ -14,7 +14,8 @@ class UpcomingProjectSectionDeskTop extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            nameTitleSection: projectsUpcomingUiData.title,
+            title: projectsUpcomingUiData.title,
+            subTitle: projectsUpcomingUiData.subTitle,
           ),
           CustomDescriptionSectionDesktop(
             descriptionSection: projectsUpcomingUiData.description,

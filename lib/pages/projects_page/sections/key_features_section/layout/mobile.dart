@@ -18,7 +18,8 @@ class KeyFeaturesSectionMobile extends StatelessWidget {
       child: Column(
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: projectsFeaturesUiData.title,
+            title: projectsFeaturesUiData.title,
+            subTitle: projectsFeaturesUiData.subTitle,
           ),
           CustomSecondDescriptionMobile(
             description: projectsFeaturesUiData.description,

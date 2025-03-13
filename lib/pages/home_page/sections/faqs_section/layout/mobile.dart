@@ -20,11 +20,12 @@ class FAQSSectionMobile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CustomTitelSectionMobile(
-            nameTitleSection: faqsUiData.titleFAQS,
+            title: faqsUiData.title,
+            subTitle: faqsUiData.subTitle,
           ),
           const SizedBox(height: 6),
           CustomDescriptionSectionMobile(
-            descriptionSection: faqsUiData.descriptionFAQS,
+            descriptionSection: faqsUiData.description,
           ),
           const SizedBox(height: 20),
           const BoxSearchButtonFaqsMobile(),

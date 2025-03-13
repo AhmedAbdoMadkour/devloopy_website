@@ -1,7 +1,8 @@
-import 'package:devloopy_website/models/ui_models/home_page/testimonials_ui_model.dart';
+import 'package:devloopy_website/models/ui_models/section_detail.dart';
 
-TestimonialsUiModel testimonialsUiData = TestimonialsUiModel(
-  titleTestimonials: "Our Testimonials",
-  descriptionTestimonials:
+SectionDetail testimonialsUiData = SectionDetail(
+  title: "Our ",
+  subTitle: "Testimonials",
+  description:
       "Don't just take our word for it; hear what our satisfied clients have to say about their experience with DevLoopy. We take pride in building lasting relationships and delivering exceptional results.",
 );

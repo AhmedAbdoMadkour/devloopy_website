@@ -17,7 +17,8 @@ class JobListingSectionTablet extends StatelessWidget {
       child: const Column(
         children: [
           CustomTitelSectionTablet(
-            nameTitleSection: "Job Listings at DevLoopy",
+            title: "Job ",
+            subTitle: "Listings at DevLoopy",
           ),
           CustomDescriptionSectionTablet(
             descriptionSection:

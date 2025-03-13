@@ -18,7 +18,8 @@ class SuccessStoriesSectionTablet extends StatelessWidget {
       child: Column(
         children: [
           const CustomTitelSectionTablet(
-            nameTitleSection: "Our Stories ",
+            title: "Our  ",
+            subTitle: "Stories",
           ),
           const SizedBox(height: 27),
           const CustomDescriptionSectionTablet(
