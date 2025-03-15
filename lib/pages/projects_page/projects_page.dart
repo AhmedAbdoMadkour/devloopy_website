@@ -18,17 +18,17 @@ class ProjectsPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Navbar(),
+            const Navbar(),
             HeaderInformationSection(
               title: headerInformationProjectsUiData.title,
               subTitle: headerInformationProjectsUiData.subTitle,
               description: headerInformationProjectsUiData.description,
             ),
-            KeyFeaturesSection(),
-            ProjectsShowcaseSection(),
-            UpcomingProjectSection(),
-            CTASection(),
-            FooterSection(),
+            const KeyFeaturesSection(),
+            const ProjectsShowcaseSection(),
+            const UpcomingProjectSection(),
+            const CTASection(),
+            const FooterSection(),
           ],
         ),
       ),
