@@ -1,3 +1,4 @@
+import 'package:devloopy_website/cubit/awards_cubit/awards_cubit.dart';
 import 'package:devloopy_website/cubit/blog_cubit/blog_cubit.dart';
 import 'package:devloopy_website/cubit/faqs_cubit/faqs_cubit.dart';
 import 'package:devloopy_website/cubit/navigation_cubit.dart';
@@ -45,15 +46,18 @@ class DevLoopy extends StatelessWidget {
           BlocProvider<ServicesCubit>(
             create: (context) => ServicesCubit(),
           ),
-          BlocProvider(
+          BlocProvider<ExistingProjectsCubit>(
             create: (context) => ExistingProjectsCubit(),
           ),
-          BlocProvider(
+          BlocProvider<UpcomingProjectsCubit>(
             create: (context) => UpcomingProjectsCubit(),
           ),
-          BlocProvider(
+          BlocProvider<TeamMemberCubit>(
             create: (context) => TeamMemberCubit(),
           ),
+          BlocProvider<AwardsCubit>(
+            create: (context) => AwardsCubit(),
+          )
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,

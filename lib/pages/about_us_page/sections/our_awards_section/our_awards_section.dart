@@ -4,15 +4,15 @@ import 'package:devloopy_website/pages/about_us_page/sections/our_awards_section
 import 'package:devloopy_website/theme/responsive_layout.dart';
 import 'package:flutter/material.dart';
 
-class OurAwaedsSection extends StatelessWidget {
-  const OurAwaedsSection({super.key});
+class OurAwardsSection extends StatelessWidget {
+  const OurAwardsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      mobile: OurAwaedsSectionMobile(),
-      tablet: OurAwaedsSectionTablet(),
-      desktop: OurAwaedsSectionDeskTop(),
+      mobile: OurAwardsSectionMobile(),
+      tablet: OurAwardsSectionTablet(),
+      desktop: OurAwardsSectionDeskTop(),
     );
   }
 }
