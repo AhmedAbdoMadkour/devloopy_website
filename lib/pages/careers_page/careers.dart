@@ -3,6 +3,7 @@ import 'package:devloopy_website/pages/careers_page/sections/employee_referral_p
 import 'package:devloopy_website/pages/careers_page/sections/how_to_apply_scetion/how_to_apply_section.dart';
 import 'package:devloopy_website/pages/careers_page/sections/job_listing_section/job_listing_section.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
+import 'package:devloopy_website/widgets/drawer_mobile.dart';
 import 'package:devloopy_website/widgets/footer_section/footer_section.dart';
 import 'package:devloopy_website/widgets/navbar_section/navbar_section.dart';
 
@@ -14,6 +15,7 @@ class CareersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      drawer: DrawerMobile(),
       body: SingleChildScrollView(
         child: Column(
           children: [

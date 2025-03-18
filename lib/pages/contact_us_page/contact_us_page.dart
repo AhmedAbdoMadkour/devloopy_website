@@ -1,6 +1,7 @@
 import 'package:devloopy_website/pages/contact_us_page/sections/header_information_contactus/header_information_contactus.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/touch_today_scetion.dart';
 import 'package:devloopy_website/widgets/cta_section/cta_section.dart';
+import 'package:devloopy_website/widgets/drawer_mobile.dart';
 import 'package:devloopy_website/widgets/footer_section/footer_section.dart';
 import 'package:devloopy_website/widgets/navbar_section/navbar_section.dart';
 
@@ -12,6 +13,7 @@ class ContactUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      drawer: DrawerMobile(),
       body: SingleChildScrollView(
         child: Column(
           children: [
