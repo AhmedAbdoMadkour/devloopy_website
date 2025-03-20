@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/careers_ui_data/section_details/careers_ui_detial_data.dart';
 import 'package:devloopy_website/pages/careers_page/sections/job_listing_section/widget/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
@@ -14,17 +15,15 @@ class JobListingSectionTablet extends StatelessWidget {
         left: 24,
         right: 24,
       ),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionTablet(
-            title: "Job ",
-            subTitle: "Listings at DevLoopy",
+            title: jobListingData.title,
+            subTitle: jobListingData.subTitle,
           ),
           CustomDescriptionSectionTablet(
-            descriptionSection:
-                "Explore our current job listings to discover exciting career opportunities that match your skill set and interests. We offer positions in various digital disciplines, including web design, mobile app development, digital marketing, project management, and more. Each job listing provides comprehensive details about the role, responsibilities, qualifications, and benefits. Whether you are an experienced professional or a fresh graduate, we welcome talent from all backgrounds to join our team.",
-          ),
-          CardJobListingTablet(),
+              descriptionSection: jobListingData.description),
+          const CardJobListingTablet(),
         ],
       ),
     );

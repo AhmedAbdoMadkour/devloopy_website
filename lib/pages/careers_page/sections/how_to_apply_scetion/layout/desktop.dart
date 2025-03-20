@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/careers_ui_data/section_details/howtoapply_ui_data.dart';
 import 'package:devloopy_website/pages/careers_page/sections/how_to_apply_scetion/widgets/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
@@ -11,16 +12,16 @@ class HowToApplySectionDeskTop extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(top: 80),
       padding: const EdgeInsets.symmetric(horizontal: 150),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionDeskTop(
-            title: "Apply",
-            subTitle: "Apply",
+            title: howToApplyUiData.title,
+            subTitle: howToApplyUiData.subTitle,
           ),
           CustomDescriptionSectionDesktop(
-              descriptionSection:
-                  "We are excited that you are interested in joining our team at DevLoopy! To apply for any of our job listings, please follow the simple steps below"),
-          CardStepsApplyDeskTop(),
+            descriptionSection: howToApplyUiData.description,
+          ),
+          const CardStepsApplyDeskTop(),
         ],
       ),
     );
