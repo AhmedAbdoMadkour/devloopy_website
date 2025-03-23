@@ -10,7 +10,7 @@ class CardOurTeamMemberMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     context.read<TeamMemberCubit>().displayAllTeamMember();
-    return BlocBuilder(
+    return BlocBuilder<TeamMemberCubit, TeamMemberStates>(
       builder: (context, state) {
         if (state is TeamMemberSuccessStates) {
           return SizedBox(
