@@ -1,3 +1,7 @@
+import 'package:devloopy_website/data/domain_data/contact_domain_model.dart';
+import 'package:devloopy_website/data/ui_data/contact_ui_data.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class CardJoinSocialmediaTablet extends StatelessWidget {
@@ -9,28 +13,13 @@ class CardJoinSocialmediaTablet extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 30),
       child: Column(
         children: [
-          Text(
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.center,
-            "Join Us on Social Media",
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.onSurface,
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              height: 3,
-            ),
+          CustomTitelSectionTablet(
+            title: contactData.socialMedia.sectionDetail.title,
+            subTitle: contactData.socialMedia.sectionDetail.subTitle,
           ),
-          Text(
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.center,
-            "Stay updated with our latest projects, industry insights, and company news by following us on social media",
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.onSurface,
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-            ),
+          CustomDescriptionSectionTablet(
+            descriptionSection:
+                contactData.socialMedia.sectionDetail.description,
           ),
           Container(
             margin: const EdgeInsets.only(top: 40),
@@ -55,51 +44,42 @@ class CardJoinSocialmediaTablet extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    GestureDetector(
-                      child: Image.asset(
-                        width: 58,
-                        height: 58,
-                        "assets/images/image_Button_linkedin.png",
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    GestureDetector(
-                      child: Image.asset(
-                        width: 58,
-                        height: 58,
-                        "assets/images/image_Button_instgram.png",
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    GestureDetector(
-                      child: Image.asset(
-                        width: 58,
-                        height: 58,
-                        "assets/images/image_Button_linkedin.png",
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  "Thank You!",
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.onSurface,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
+                SizedBox(
+                  height: 60,
+                  child: ListView.builder(
+                    itemCount: contactData.socialMedia.socialMediaItem.length,
+                    physics: const NeverScrollableScrollPhysics(),
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: () {
+                            contactData.socialMedia.socialMediaItem[index].link;
+                            //    lunchURL(contactData.socialMedia.socialMediaItem[index].link);
+                            contactData.socialMedia.socialMediaItem[index].link;
+                          },
+                          child: Image.asset(
+                            width: 74,
+                            height: 74,
+                            contactData
+                                .socialMedia.socialMediaItem[index].image,
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ),
+                const SizedBox(height: 16),
+                CustomTitelSectionTablet(
+                    title: contactData.socialMedia.message.title,
+                    subTitle: contactData.socialMedia.message.subTitle),
                 const SizedBox(height: 16),
                 Text(
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
-                  "For considering DevLoopy for your digital needs. We look forward to connecting with you and being part of your digital success!",
+                  contactData.socialMedia.message.description,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,

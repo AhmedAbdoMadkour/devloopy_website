@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/response_privacy_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class CardOurResponseMobile extends StatelessWidget {
@@ -15,7 +16,7 @@ class CardOurResponseMobile extends StatelessWidget {
           mainAxisExtent: 300,
           mainAxisSpacing: 20,
         ),
-        itemCount: 2,
+        itemCount: responsePrivacyData.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.all(24),
@@ -51,14 +52,14 @@ class CardOurResponseMobile extends StatelessWidget {
                         color: Theme.of(context).colorScheme.primaryContainer,
                       ),
                       child: Icon(
-                        Icons.access_time_filled,
+                        responsePrivacyData[index].icon,
                         color: Theme.of(context).colorScheme.onPrimaryContainer,
                       ),
                     ),
                     const SizedBox(width: 10),
                     Text(
                       maxLines: 1,
-                      "Our Response",
+                      responsePrivacyData[index].title,
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
@@ -71,7 +72,7 @@ class CardOurResponseMobile extends StatelessWidget {
                 Text(
                   overflow: TextOverflow.ellipsis,
                   maxLines: 9,
-                  "We understand the importance of timely responses, and our team is committed to addressing your inquiries promptly. Whether you have a specific project in mind, need advice on digital strategies, or want to explore partnership opportunities, we are here to assist you at every step.",
+                  responsePrivacyData[index].description,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,

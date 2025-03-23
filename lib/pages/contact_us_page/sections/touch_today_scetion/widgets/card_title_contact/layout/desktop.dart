@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/domain_data/contact_domain_model.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/desktop.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/desktop.dart';
 import 'package:flutter/material.dart';
@@ -31,13 +32,12 @@ class CardTitleContactDeskTop extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          const CustomTitelSectionDeskTop(
-            title: "Touch ",
-            subTitle: "with Us Today!",
+          CustomTitelSectionDeskTop(
+            title: contactData.cardWelcomeMessage.title,
+            subTitle: contactData.cardWelcomeMessage.subTitle,
           ),
-          const CustomDescriptionSectionDesktop(
-            descriptionSection:
-                "At DevLoopy, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, we encourage you to reach out to our dedicated team. Connect with us through any of the channels below, and we'll be delighted to assist you on your digital journey.",
+          CustomDescriptionSectionDesktop(
+            descriptionSection: contactData.cardWelcomeMessage.description,
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
@@ -50,7 +50,7 @@ class CardTitleContactDeskTop extends StatelessWidget {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.center,
-              "Feel free to contact us through any of the following channels",
+              contactData.message,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onPrimary,
                 fontSize: 18,

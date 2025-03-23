@@ -1,5 +1,4 @@
-import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_contact_email/layout/mobile.dart';
-import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_contact_phone/layout/mobile.dart';
+import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_contact/layout/mobile.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_inquiry_form/layout/mobile.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_join_socialmedia/layout/mobile.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_office_location/layout/mobile.dart';
@@ -21,8 +20,7 @@ class TouchTodayScetionMobile extends StatelessWidget {
       child: Column(
         children: [
           CardTitleContactMobile(),
-          CardContactEmailMobile(),
-          CardContactPhoneMobile(),
+          CardContactMobile(),
           CardOfficeLocationMobile(),
           CardInquiryFormMobile(),
           CardOurResponseMobile(),
