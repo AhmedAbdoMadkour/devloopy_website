@@ -1,7 +1,5 @@
-import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_contact_email/layout/tablet.dart';
-import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_contact_phone/layout/tablet.dart';
+import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_contact/layout/tablet.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_inquiry_form/layout/tablet.dart';
-
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_join_socialmedia/layout/tablet.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_office_location/layout/tablet.dart';
 import 'package:devloopy_website/pages/contact_us_page/sections/touch_today_scetion/widgets/card_our_response/layout/tablet.dart';
@@ -22,8 +20,7 @@ class TouchTodayScetionTablet extends StatelessWidget {
       child: const Column(
         children: [
           CardTitleContactTablet(),
-          CardContactEmailTablet(),
-          CardContactPhoneTablet(),
+          CardContactTablet(),
           CardOfficeLocationTablet(),
           CardInquiryFormTablet(),
           CardOurResponseTablet(),

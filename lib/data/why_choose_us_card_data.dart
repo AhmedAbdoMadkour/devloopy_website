@@ -1,32 +1,32 @@
-import 'package:devloopy_website/models/domain_models/why_choose_us_domain_model.dart';
+import 'package:devloopy_website/models/domain_models/general_card_model.dart';
 import 'package:flutter/material.dart';
 
-List<WhyChooseUsDomainModel> whyChooseUsCardData = [
-  WhyChooseUsDomainModel(
+List<GeneralCardModel> whyChooseUsCardData = [
+  GeneralCardModel(
     icon: Icons.lightbulb_outline,
     title: "Innovative Solutions",
     description:
         "We deliver cutting-edge digital solutions tailored to your business needs, staying ahead of the curve with the latest technologies.",
   ),
-  WhyChooseUsDomainModel(
+  GeneralCardModel(
     icon: Icons.security,
     title: "Top-notch Security",
     description:
         "Your data's safety is our top priority. We ensure robust security measures in every solution we deliver.",
   ),
-  WhyChooseUsDomainModel(
+  GeneralCardModel(
     icon: Icons.people,
     title: "Customer-Centric Approach",
     description:
         "We focus on understanding your goals and delivering solutions that create real value for your business.",
   ),
-  WhyChooseUsDomainModel(
+  GeneralCardModel(
     icon: Icons.speed,
     title: "Fast and Reliable Delivery",
     description:
         "Our agile processes and expert team ensure timely delivery of high-quality projects, every time.",
   ),
-  WhyChooseUsDomainModel(
+  GeneralCardModel(
     icon: Icons.support_agent,
     title: "24/7 Support",
     description:
