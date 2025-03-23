@@ -1,4 +1,8 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/data/domain_data/contact_domain_model.dart';
+import 'package:devloopy_website/data/ui_data/contact_ui_data.dart';
+import 'package:devloopy_website/widgets/custom_description_section/layout/tablet.dart';
+import 'package:devloopy_website/widgets/custom_title_section/layout/tablet.dart';
 import 'package:flutter/material.dart';
 
 class CardOfficeLocationTablet extends StatelessWidget {
@@ -12,28 +16,11 @@ class CardOfficeLocationTablet extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text(
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            "Office Locations",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.onSurface,
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          Text(
-            textAlign: TextAlign.center,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            "Visit our offices to have a face-to-face discussion with our team. We have locations in",
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.onSurface,
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
+          CustomTitelSectionTablet(
+              title: cardLocationUiData.title,
+              subTitle: cardLocationUiData.subTitle),
+          CustomDescriptionSectionTablet(
+              descriptionSection: cardLocationUiData.description),
           const SizedBox(height: 50),
           Container(
             padding: const EdgeInsets.all(24),
@@ -53,7 +40,7 @@ class CardOfficeLocationTablet extends StatelessWidget {
                 crossAxisSpacing: 30,
                 mainAxisSpacing: 30,
               ),
-              itemCount: 2,
+              itemCount: contactData.cardLocation.length,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   padding: const EdgeInsets.symmetric(
@@ -93,7 +80,7 @@ class CardOfficeLocationTablet extends StatelessWidget {
                                   .primaryContainer,
                             ),
                             child: Icon(
-                              Icons.home_work_sharp,
+                              contactData.cardLocation[index].icon,
                               color: Theme.of(context)
                                   .colorScheme
                                   .onPrimaryContainer,
@@ -109,7 +96,7 @@ class CardOfficeLocationTablet extends StatelessWidget {
                               textAlign: TextAlign.center,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
-                              "New York City",
+                              contactData.cardLocation[index].title,
                               style: TextStyle(
                                 height: 2,
                                 color: Theme.of(context).colorScheme.onSurface,
@@ -119,7 +106,7 @@ class CardOfficeLocationTablet extends StatelessWidget {
                             ),
                             Text(
                               textAlign: TextAlign.center,
-                              "123 Main Street, Suite 456, New York, NY 10001",
+                              contactData.cardLocation[index].description,
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(

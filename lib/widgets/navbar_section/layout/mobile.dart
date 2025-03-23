@@ -30,12 +30,17 @@ class NavbarMobile extends StatelessWidget {
             height: 40,
             "assets/images/Logo_mobile.png",
           ),
-          GestureDetector(
-            onTap: () {},
-            child: Image.asset(
-              width: 52,
-              height: 52,
-              "assets/icons/icon_list_mobile.png",
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: Image.asset(
+                width: 52,
+                height: 52,
+                "assets/icons/icon_list_mobile.png",
+              ),
             ),
           ),
         ],

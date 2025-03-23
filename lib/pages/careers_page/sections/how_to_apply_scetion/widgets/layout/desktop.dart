@@ -46,7 +46,7 @@ class CardStepsApplyDeskTop extends StatelessWidget {
                         child: Text(
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          "Step 01",
+                          "Step 0${1 + index}",
                           style: TextStyle(
                             color: Theme.of(context).colorScheme.onPrimary,
                             fontSize: 24,

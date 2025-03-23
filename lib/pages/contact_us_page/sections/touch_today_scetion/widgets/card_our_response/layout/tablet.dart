@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/response_privacy_ui_data.dart';
 import 'package:flutter/material.dart';
 
 class CardOurResponseTablet extends StatelessWidget {
@@ -16,7 +17,7 @@ class CardOurResponseTablet extends StatelessWidget {
           mainAxisSpacing: 20,
           crossAxisSpacing: 20,
         ),
-        itemCount: 2,
+        itemCount: responsePrivacyData.length,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             padding: const EdgeInsets.all(24),
@@ -51,7 +52,7 @@ class CardOurResponseTablet extends StatelessWidget {
                         color: Theme.of(context).colorScheme.primaryContainer,
                       ),
                       child: Icon(
-                        Icons.access_time_filled,
+                        responsePrivacyData[index].icon,
                         color: Theme.of(context).colorScheme.onPrimaryContainer,
                       ),
                     ),
@@ -59,7 +60,7 @@ class CardOurResponseTablet extends StatelessWidget {
                     Text(
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      "Our Response",
+                      responsePrivacyData[index].title,
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 18,
@@ -72,7 +73,7 @@ class CardOurResponseTablet extends StatelessWidget {
                 Text(
                   maxLines: 7,
                   overflow: TextOverflow.ellipsis,
-                  "We understand the importance of timely responses, and our team is committed to addressing your inquiries promptly. Whether you have a specific project in mind, need advice on digital strategies, or want to explore partnership opportunities, we are here to assist you at every step.",
+                  responsePrivacyData[index].description,
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 14,
