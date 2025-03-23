@@ -1,3 +1,4 @@
+import 'package:devloopy_website/data/ui_data/careers_ui_data/section_details/howtoapply_ui_data.dart';
 import 'package:devloopy_website/pages/careers_page/sections/how_to_apply_scetion/widgets/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
@@ -10,16 +11,16 @@ class HowToApplySectionMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 50),
-      child: const Column(
+      child: Column(
         children: [
           CustomTitelSectionMobile(
-            title: "How ",
-            subTitle: "to Apply",
+            title: howToApplyUiData.title,
+            subTitle: howToApplyUiData.subTitle,
           ),
           CustomDescriptionSectionMobile(
-              descriptionSection:
-                  "We are excited that you are interested in joining our team at DevLoopy! To apply for any of our job listings, please follow the simple steps below"),
-          CardStepsApplyMobile(),
+            descriptionSection: howToApplyUiData.description,
+          ),
+          const CardStepsApplyMobile(),
         ],
       ),
     );
