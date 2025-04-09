@@ -1,3 +1,5 @@
+import 'package:devloopy_website/models/domain_models/blogs/blogs_model.dart';
+
 abstract class BlogStates {}
 
 class BlogInitialState extends BlogStates {}
@@ -5,7 +7,7 @@ class BlogInitialState extends BlogStates {}
 class BlogLoadingState extends BlogStates {}
 
 class BlogSuccessState extends BlogStates {
-  final List<String> blogs;
+  final List<BlogsModel> blogs;
 
   BlogSuccessState({required this.blogs});
 }
