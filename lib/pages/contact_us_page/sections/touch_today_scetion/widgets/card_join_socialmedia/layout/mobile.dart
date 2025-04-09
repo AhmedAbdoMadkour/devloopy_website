@@ -1,5 +1,4 @@
 import 'package:devloopy_website/data/domain_data/contact_domain_model.dart';
-import 'package:devloopy_website/data/ui_data/contact_ui_data.dart';
 import 'package:devloopy_website/widgets/custom_description_section/layout/mobile.dart';
 import 'package:devloopy_website/widgets/custom_title_section/layout/mobile.dart';
 import 'package:flutter/material.dart';

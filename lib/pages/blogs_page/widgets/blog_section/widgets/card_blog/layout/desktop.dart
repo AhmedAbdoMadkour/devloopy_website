@@ -1,96 +1,70 @@
 import 'package:devloopy_website/constants/style_constants.dart';
+import 'package:devloopy_website/cubit/blog_cubit/blog_cubit.dart';
+import 'package:devloopy_website/cubit/blog_cubit/blog_states.dart';
+import 'package:devloopy_website/data/domain_data/blogs_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CardBlogDeskTop extends StatelessWidget {
   const CardBlogDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 1430,
-      child: GridView.builder(
-        physics: const NeverScrollableScrollPhysics(),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisExtent: 665,
-          crossAxisSpacing: 50,
-          mainAxisSpacing: 50,
-        ),
-        itemCount: 4,
-        itemBuilder: (BuildContext context, int index) {
-          return Column(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: const LinearGradient(
-                    begin: Alignment.topRight,
-                    colors: [
-                      Color.fromARGB(172, 11, 66, 219),
-                      Color(0xffffffff),
-                    ],
-                  ),
-                  border: Border.all(
-                    color: Theme.of(context).colorScheme.outline,
-                    width: 1,
-                    style: BorderStyle.solid,
-                  ),
-                ),
-                child: Image.asset(
-                  width: (double.infinity - 20),
-                  "assets/images/Image_blog_one.png",
-                ),
+    context.read<BlogCubit>().displayAllBlogs();
+    return BlocBuilder<BlogCubit, BlogStates>(
+      builder: (context, state) {
+        if (state is BlogSuccessState) {
+          return SizedBox(
+            height: 1430,
+            child: GridView.builder(
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisExtent: 665,
+                crossAxisSpacing: 50,
+                mainAxisSpacing: 50,
               ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      Image.asset(
-                        width: 60,
-                        height: 60,
-                        "assets/images/Image_person_blog.png",
+              itemCount: blogsData.last.items.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Column(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        gradient: const LinearGradient(
+                          begin: Alignment.topRight,
+                          colors: [
+                            Color.fromARGB(172, 11, 66, 219),
+                            Color(0xffffffff),
+                          ],
+                        ),
+                        border: Border.all(
+                          color: Theme.of(context).colorScheme.outline,
+                          width: 1,
+                          style: BorderStyle.solid,
+                        ),
                       ),
-                      const SizedBox(width: 10),
-                      Text(
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        "Daniel Lee",
-                        style: TextStyle(
-                          color: Theme.of(context).colorScheme.onSurface,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      )
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 18,
-                          vertical: 14,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          border: Border.all(
-                            color: Theme.of(context).colorScheme.outline,
-                            width: 1,
-                            style: BorderStyle.solid,
-                          ),
-                        ),
-                        child: Row(
+                      child: Image.asset(
+                        width: (double.infinity - 20),
+                        blogsData.last.items[index].image,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
                           children: [
-                            Icon(
-                              Icons.access_time_outlined,
-                              color: Theme.of(context).colorScheme.onSurface,
+                            Image.asset(
+                              width: 60,
+                              height: 60,
+                              blogsData.last.items[index].imageAuther,
                             ),
+                            const SizedBox(width: 10),
                             Text(
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
-                              "6 min read",
+                              blogsData.last.items[index].nameAuther,
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18,
@@ -99,98 +73,149 @@ class CardBlogDeskTop extends StatelessWidget {
                             )
                           ],
                         ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        Row(
+                          children: [
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 18,
+                                vertical: 14,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                border: Border.all(
+                                  color: Theme.of(context).colorScheme.outline,
+                                  width: 1,
+                                  style: BorderStyle.solid,
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.access_time_outlined,
+                                    color:
+                                        Theme.of(context).colorScheme.onSurface,
+                                  ),
+                                  Text(
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    "${blogsData.last.items[index].readTime.minute} read",
+                                    style: TextStyle(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 18, vertical: 14),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                border: Border.all(
+                                  color: Theme.of(context).colorScheme.outline,
+                                  width: 1,
+                                  style: BorderStyle.solid,
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.calendar_month_outlined,
+                                    color:
+                                        Theme.of(context).colorScheme.onSurface,
+                                  ),
+                                  Text(
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    "${blogsData.last.items[index].publishDate.day} / ${blogsData.last.items[index].publishDate.month}/${blogsData.last.items[index].publishDate.year}",
+                                    style: TextStyle(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onSurface,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          blogsData.last.items[index].title,
+                          style: TextStyle(
+                            height: 3,
+                            color: Theme.of(context).colorScheme.onSurface,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        Text(
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          blogsData.last.items[index].description,
+                          style: TextStyle(
+                              color: Theme.of(context).colorScheme.onSurface,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    Center(
+                      child: Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 18, vertical: 14),
+                          horizontal: 34,
+                          vertical: 18,
+                        ),
                         decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(
-                            color: Theme.of(context).colorScheme.outline,
+                            color: ColorsApp.greyShadesColor_12,
                             width: 1,
                             style: BorderStyle.solid,
                           ),
                         ),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.calendar_month_outlined,
-                              color: Theme.of(context).colorScheme.onSurface,
-                            ),
-                            Text(
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              "March 2019",
-                              style: TextStyle(
-                                color: Theme.of(context).colorScheme.onSurface,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            )
-                          ],
+                        child: Text(
+                          "Read More",
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.onPrimary,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
-                    ],
-                  )
-                ],
-              ),
-              const SizedBox(height: 20),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    "The Psychology of Visual Design in Branding",
-                    style: TextStyle(
-                      height: 3,
-                      color: Theme.of(context).colorScheme.onSurface,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  Text(
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions",
-                    style: TextStyle(
-                        color: Theme.of(context).colorScheme.onSurface,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              Center(
-                child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 34,
-                    vertical: 18,
-                  ),
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary,
-                    borderRadius: BorderRadius.circular(100),
-                    border: Border.all(
-                      color: ColorsApp.greyShadesColor_12,
-                      width: 1,
-                      style: BorderStyle.solid,
-                    ),
-                  ),
-                  child: Text(
-                    "Read More",
-                    style: TextStyle(
-                      color: Theme.of(context).colorScheme.onPrimary,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ),
-              )
-            ],
+                    )
+                  ],
+                );
+              },
+            ),
           );
-        },
-      ),
+        } else {
+          return const Center(
+            child: Text(
+              "No Data",
+            ),
+          );
+        }
+      },
     );
   }
 }
