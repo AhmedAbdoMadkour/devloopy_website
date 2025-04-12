@@ -1,46 +1,63 @@
+import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
+import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_states.dart';
+import 'package:devloopy_website/data/domain_data/partners_domain_date.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CardOurPartnersSectionMobile extends StatelessWidget {
   const CardOurPartnersSectionMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 2300.0,
-      child: GridView.builder(
-        itemCount: 6,
-        physics: const NeverScrollableScrollPhysics(),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 1,
-          mainAxisSpacing: 24.0,
-          mainAxisExtent: 358.0,
-          crossAxisSpacing: 24.0,
-        ),
-        itemBuilder: (context, index) {
-          return Container(
-            padding: const EdgeInsets.all(10.0),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topCenter,
-                colors: [
-                  Color(0xffFFFFFF),
-                  Color(0xffEEEBE5),
-                ],
+    context.read<PartnersClientCubit>().displayAllPartnersClient();
+    return BlocBuilder<PartnersClientCubit, PartnersClientStates>(
+      builder: (context, state) {
+        if (state is PartnersClientSuccessState) {
+          int rowCount = (partnersDomaindata.length / 1).ceil();
+          double calculateHeight = rowCount * 358.0 + (rowCount - 1) * 24;
+          return SizedBox(
+            height: calculateHeight,
+            child: GridView.builder(
+              itemCount: partnersDomaindata.length,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 1,
+                mainAxisSpacing: 24.0,
+                mainAxisExtent: 358.0,
+                crossAxisSpacing: 24.0,
               ),
-              borderRadius: BorderRadius.circular(20),
-              border: bordercardsevicesection(context),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                iconCardChooseSection(context),
-                titleCardChooseSection(context),
-              ],
+              itemBuilder: (context, index) {
+                return Container(
+                  padding: const EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topCenter,
+                      colors: [
+                        Color(0xffFFFFFF),
+                        Color(0xffEEEBE5),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: bordercardsevicesection(context),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      iconCardChooseSection(context),
+                      titleCardChooseSection(context),
+                    ],
+                  ),
+                );
+              },
             ),
           );
-        },
-      ),
+        } else {
+          return const Center(
+            child: Text("No Data"),
+          );
+        }
+      },
     );
   }
 

@@ -14,8 +14,12 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
     return BlocBuilder<PartnersClientCubit, PartnersClientStates>(
       builder: (context, state) {
         if (state is PartnersClientSuccessState) {
+          int rowCount = (partnersDomaindata.length / 3).ceil();
+          double calculatedHeight =
+              rowCount * 542.0 + (rowCount - 1) * 50.0; // Item height + spacing
+
           return SizedBox(
-            height: 1200.0,
+            height: calculatedHeight, // Dynamically adjust height
             child: GridView.builder(
               itemCount: partnersDomaindata.length,
               physics: const NeverScrollableScrollPhysics(),
