@@ -15,5 +15,5 @@ List<PartnersDomainModel> partnersDomaindata = [
     titleCardPartners: 'XYZ - Technology Partner',
     descriptionCardPartners:
         'Innovative solutions for modern businesses, specializing in AI and cloud computing.',
-  )
+  ),
 ];
