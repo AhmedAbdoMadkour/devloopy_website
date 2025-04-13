@@ -1,5 +1,4 @@
 import 'package:devloopy_website/models/domain_models/contact/contact_model.dart';
-import 'package:devloopy_website/models/domain_models/general_card_model.dart';
 import 'package:devloopy_website/models/ui_models/section_detail.dart';
 import 'package:flutter/material.dart';
 
@@ -48,12 +47,12 @@ ContactModel contactData = ContactModel(
     ),
   ],
   cardLocation: [
-    GeneralCardModel(
+    CardLocation(
       icon: Icons.home,
       title: "New York City",
       description: "123 Main Street, Suite 456, New York, NY 10001",
     ),
-    GeneralCardModel(
+    CardLocation(
       icon: Icons.home_outlined,
       title: "San Francisco",
       description: "789 Tech Avenue, 10th Floor, San Francisco, CA 94105",
