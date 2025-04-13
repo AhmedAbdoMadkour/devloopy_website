@@ -1,11 +1,11 @@
-import 'package:devloopy_website/models/domain_models/general_card_model.dart';
 import 'package:devloopy_website/models/ui_models/section_detail.dart';
+import 'package:flutter/material.dart';
 
 class ContactModel {
   final SectionDetail cardWelcomeMessage;
   final String message;
   final List<ContactType> contactType;
-  final List<GeneralCardModel> cardLocation;
+  final List<CardLocation> cardLocation;
   final SocialMedia socialMedia;
   ContactModel(
       {required this.cardWelcomeMessage,
@@ -19,6 +19,15 @@ class ContactType {
   final String typeContact;
   final List<ContactItem> contactItem;
   ContactType({required this.typeContact, required this.contactItem});
+}
+
+class CardLocation {
+  CardLocation(
+      {required this.icon, required this.title, required this.description});
+
+  IconData icon;
+  String title;
+  String description;
 }
 
 class ContactItem {

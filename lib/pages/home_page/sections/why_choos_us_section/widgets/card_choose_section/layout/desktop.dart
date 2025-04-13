@@ -1,7 +1,10 @@
 import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
-import 'package:devloopy_website/data/why_choose_us_card_data.dart';
+import 'package:devloopy_website/cubit/choose_us_cubit/choose_us_cubit.dart';
+import 'package:devloopy_website/cubit/choose_us_cubit/choose_us_states.dart';
+import 'package:devloopy_website/data/domain_data/why_choose_us_card_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CardChooseSectionDeskTop extends StatelessWidget {
   const CardChooseSectionDeskTop({super.key});
@@ -10,46 +13,59 @@ class CardChooseSectionDeskTop extends StatelessWidget {
   Widget build(BuildContext context) {
     double calculatedHeight =
         Helper.calculatedHeight(whyChooseUsCardData.length, 3, 480, 0);
-    return SizedBox(
-      height: calculatedHeight, // Set a fixed height to avoid overflow
-      child: GridView.builder(
-        itemCount: whyChooseUsCardData.length,
-        physics:
-            const NeverScrollableScrollPhysics(), // Disable gridview scrolling
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-          mainAxisExtent: 480,
-        ),
-        itemBuilder: (context, index) {
-          return Container(
-            decoration: decorationCardChooseSection(index, context),
-            child: Container(
-              margin: const EdgeInsets.symmetric(vertical: 50.0),
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              decoration: BoxDecoration(
-                border: Border(
-                    right:
-                        (index == 0 || index == 1 || index == 3 || index == 4)
-                            ? BorderSide(
-                                style: BorderStyle.solid,
-                                width: 1.0,
-                                color: Theme.of(context).colorScheme.outline,
-                              )
-                            : BorderSide.none),
+    context.read<ChooseUsCubit>().displayAllChooseUs();
+    return BlocBuilder<ChooseUsCubit, ChooseUsStates>(
+      builder: (context, state) {
+        if (state is ChooseUsSuccessState) {
+          return SizedBox(
+            height: calculatedHeight, // Set a fixed height to avoid overflow
+            child: GridView.builder(
+              itemCount: whyChooseUsCardData.length,
+              physics:
+                  const NeverScrollableScrollPhysics(), // Disable gridview scrolling
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                mainAxisExtent: 480,
               ),
-              child: Column(
-                children: [
-                  iconCardChooseSection(context, index),
-                  const SizedBox(height: 30.0),
-                  titleCardChooseSection(context, index),
-                  const SizedBox(height: 30.0),
-                  bottonCardChooseSection(context),
-                ],
-              ),
+              itemBuilder: (context, index) {
+                return Container(
+                  decoration: decorationCardChooseSection(index, context),
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(vertical: 50.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                    decoration: BoxDecoration(
+                      border: Border(
+                          right: (index == 0 ||
+                                  index == 1 ||
+                                  index == 3 ||
+                                  index == 4)
+                              ? BorderSide(
+                                  style: BorderStyle.solid,
+                                  width: 1.0,
+                                  color: Theme.of(context).colorScheme.outline,
+                                )
+                              : BorderSide.none),
+                    ),
+                    child: Column(
+                      children: [
+                        iconCardChooseSection(context, index),
+                        const SizedBox(height: 30.0),
+                        titleCardChooseSection(context, index),
+                        const SizedBox(height: 30.0),
+                        bottonCardChooseSection(context),
+                      ],
+                    ),
+                  ),
+                );
+              },
             ),
           );
-        },
-      ),
+        } else {
+          return const Center(
+            child: Text("No Data"),
+          );
+        }
+      },
     );
   }
 

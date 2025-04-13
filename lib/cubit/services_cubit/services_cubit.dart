@@ -9,7 +9,7 @@ class ServicesCubit extends Cubit<ServicesStates> {
     ServicesRepo servicesRepo = ServicesRepo();
     GenericResponse respons = await servicesRepo.getAllServices();
     if (respons.status == Status.success) {
-      return emit(ServicesSuccessStates(srvices: respons.object));
+      return emit(ServicesSuccessStates(services: respons.object));
     } else {
       return emit(
         ServicesNoDataStates(),
