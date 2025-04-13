@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_cubit.dart';
 import 'package:devloopy_website/cubit/partners_client_cubit/partners_client_states.dart';
@@ -10,16 +11,14 @@ class CarddOurPartnersSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(partnersDomaindata.length, 3, 542.0, 50);
     context.read<PartnersClientCubit>().displayAllPartnersClient();
     return BlocBuilder<PartnersClientCubit, PartnersClientStates>(
       builder: (context, state) {
         if (state is PartnersClientSuccessState) {
-          int rowCount = (partnersDomaindata.length / 3).ceil();
-          double calculatedHeight =
-              rowCount * 542.0 + (rowCount - 1) * 50.0; // Item height + spacing
-
           return SizedBox(
-            height: calculatedHeight, // Dynamically adjust height
+            height: calculatedHeight,
             child: GridView.builder(
               itemCount: partnersDomaindata.length,
               physics: const NeverScrollableScrollPhysics(),

@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/data/why_choose_us_card_data.dart';
 import 'package:flutter/material.dart';
@@ -7,8 +8,11 @@ class CardChooseSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(whyChooseUsCardData.length, 2, 430, 0);
+
     return SizedBox(
-      height: 1300, // Set a fixed height to avoid overflow
+      height: calculatedHeight, // Set a fixed height to avoid overflow
       child: GridView.builder(
         itemCount: whyChooseUsCardData.length,
         physics:
@@ -19,7 +23,7 @@ class CardChooseSectionTablet extends StatelessWidget {
         ),
         itemBuilder: (context, index) {
           return Container(
-            decoration: decorationCardChooseSection(index),
+            decoration: decorationCardChooseSection(context, index),
             child: Container(
               margin: const EdgeInsets.symmetric(vertical: 40.0),
               padding: const EdgeInsets.all(20.0),
@@ -49,14 +53,14 @@ class CardChooseSectionTablet extends StatelessWidget {
     );
   }
 
-  BoxDecoration decorationCardChooseSection(int index) {
+  BoxDecoration decorationCardChooseSection(context, int index) {
     return BoxDecoration(
       border: Border(
           bottom: (index == 0 || index == 1 || index == 2 || index == 3)
-              ? const BorderSide(
+              ? BorderSide(
                   style: BorderStyle.solid,
                   width: 1.0,
-                  color: ColorsApp.greyShadesColor_12,
+                  color: Theme.of(context).colorScheme.outline,
                 )
               : BorderSide.none),
       image: const DecorationImage(

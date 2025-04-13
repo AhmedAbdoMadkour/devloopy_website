@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/work_cubit/work_cubit.dart';
 import 'package:devloopy_website/cubit/work_cubit/work_statuse.dart';
@@ -10,12 +11,14 @@ class CardOurWorksSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(workDomainData.length, 2, 806, 50);
     context.read<WorkCubit>().disPlayAllWork();
     return BlocBuilder<WorkCubit, WorkStatuse>(
       builder: (context, state) {
         if (state is WorkSuccessStatus) {
           return SizedBox(
-            height: 1665,
+            height: calculatedHeight,
             child: GridView.builder(
               itemCount: workDomainData.length,
               physics: const NeverScrollableScrollPhysics(),
