@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/cubit/faqs_cubit/faqs_cubit.dart';
 import 'package:devloopy_website/cubit/faqs_cubit/faqs_states.dart';
 import 'package:devloopy_website/data/domain_data/faqs_domain_data.dart';
@@ -9,12 +10,14 @@ class CardFaqsSectionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(faqsDomainData.length, 1, 131, 0);
     context.read<FaqsCubit>().displayAllFaqs();
     return BlocBuilder<FaqsCubit, FAQStates>(
       builder: (context, state) {
         if (state is FAQSSuccesStates) {
           return SizedBox(
-            height: 1050,
+            height: calculatedHeight,
             child: ListView.builder(
               physics: const NeverScrollableScrollPhysics(),
               itemCount: faqsDomainData.length,

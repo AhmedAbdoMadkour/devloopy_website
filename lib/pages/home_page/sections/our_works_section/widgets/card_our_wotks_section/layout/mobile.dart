@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/work_cubit/work_cubit.dart';
 import 'package:devloopy_website/cubit/work_cubit/work_statuse.dart';
@@ -10,12 +11,14 @@ class CardOurWorksSectionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(workDomainData.length, 1, 500, 20);
     context.read<WorkCubit>().disPlayAllWork();
     return BlocBuilder<WorkCubit, WorkStatuse>(
       builder: (context, state) {
         if (state is WorkSuccessStatus) {
           return SizedBox(
-            height: 2070,
+            height: calculatedHeight,
             child: GridView.builder(
               itemCount: workDomainData.length,
               physics: const NeverScrollableScrollPhysics(),
@@ -49,9 +52,10 @@ class CardOurWorksSectionMobile extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
                           border: Border.all(
-                              style: BorderStyle.solid,
-                              color: ColorsApp.greyShadesColor_12,
-                              width: 1),
+                            style: BorderStyle.solid,
+                            color: Theme.of(context).colorScheme.outline,
+                            width: 1,
+                          ),
                           image: backgroundOurWorksImage(index),
                         ),
                         child: buttonCradOurWorks(context),

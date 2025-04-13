@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_states.dart';
@@ -10,12 +11,14 @@ class CardServicesSectionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(servicesData.length, 2, 394, 24);
     context.read<ServicesCubit>().displayAllServices();
     return BlocBuilder<ServicesCubit, ServicesStates>(
       builder: (context, state) {
         if (state is ServicesSuccessStates) {
           return SizedBox(
-            height: 820.0,
+            height: calculatedHeight,
             child: GridView.builder(
               itemCount: servicesData.length,
               physics: const NeverScrollableScrollPhysics(),

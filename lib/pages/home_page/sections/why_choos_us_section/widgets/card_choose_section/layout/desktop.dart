@@ -1,3 +1,4 @@
+import 'package:devloopy_website/constants/helper.dart';
 import 'package:devloopy_website/constants/style_constants.dart';
 import 'package:devloopy_website/data/why_choose_us_card_data.dart';
 import 'package:flutter/material.dart';
@@ -7,8 +8,10 @@ class CardChooseSectionDeskTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double calculatedHeight =
+        Helper.calculatedHeight(whyChooseUsCardData.length, 3, 480, 0);
     return SizedBox(
-      height: 910, // Set a fixed height to avoid overflow
+      height: calculatedHeight, // Set a fixed height to avoid overflow
       child: GridView.builder(
         itemCount: whyChooseUsCardData.length,
         physics:

@@ -10,7 +10,7 @@ class OurPartnersSectionTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.only(
-        top: 60.0,
+        top: 50.0,
         left: 24.0,
         right: 24.0,
       ),
