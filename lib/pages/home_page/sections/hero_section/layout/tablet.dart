@@ -28,7 +28,7 @@ class HerosectionTabLet extends StatelessWidget {
                   CustomTitleTablet(
                     nameTitle: heroSectionData.title_1,
                     spanTitle: heroSectionData.title_2,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                   const SizedBox(height: 10),
                   CustomSecondDescriptionTablet(
