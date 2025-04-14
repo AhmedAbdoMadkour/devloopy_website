@@ -33,43 +33,72 @@ class CardFaqsSectionMobile extends StatelessWidget {
     );
   }
 
-  Container getquestionssection(context, index) {
+  Container getquestionssection(BuildContext context, int index) {
+    final faq = faqsDomainData[index]; // Get the FAQ model
+    bool isVisible = context.read<FaqsCubit>().openIndex ==
+        index; // Check if the current index is open
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(vertical: 34),
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(
-              color: Theme.of(context).colorScheme.outline,
-              width: 1,
-              style: BorderStyle.solid),
+            color: Theme.of(context).colorScheme.outline,
+            width: 1,
+            style: BorderStyle.solid,
+          ),
         ),
       ),
-      child: ListTile(
-        title: Text(
-          maxLines: 4,
-          overflow: TextOverflow.ellipsis,
-          faqsDomainData[index].question,
-          style: TextStyle(
-            color: Theme.of(context).colorScheme.onSurface,
-          ),
-        ),
-        trailing: Container(
-          decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary,
-              borderRadius: BorderRadius.circular(100),
-              border: Border.all(
-                color: Theme.of(context).colorScheme.outline,
-                width: 1,
-                style: BorderStyle.solid,
-              )),
-          child: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.add,
-              color: Theme.of(context).colorScheme.onPrimary,
+      child: Row(
+        children: [
+          Expanded(
+            flex: 4,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 4,
+                  faq.question,
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+                ),
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 300),
+                  height:
+                      isVisible ? 51 : 0, // Change height based on visibility
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: isVisible
+                      ? Text(
+                          faq.answer,
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.onSurface,
+                          ),
+                        )
+                      : null, // No child when not visible
+                ),
+              ],
             ),
           ),
-        ),
+          Expanded(
+            flex: 1,
+            child: Column(
+              children: [
+                IconButton(
+                  color: Theme.of(context).colorScheme.primary,
+                  onPressed: () {
+                    context.read<FaqsCubit>().toggleFaq(
+                        index); // Toggle visibility // Emit state with updated FAQs
+                  },
+                  icon: Icon(
+                    isVisible ? Icons.remove : Icons.add,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
