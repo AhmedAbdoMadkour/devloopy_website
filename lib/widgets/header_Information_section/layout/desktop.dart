@@ -59,7 +59,8 @@ class HeaderInformationSectionDeskTop extends StatelessWidget {
             padding: const EdgeInsets.all(100),
             margin: const EdgeInsets.only(right: 405, left: 100),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomTitleDeskTop(
                   nameTitle: title,
