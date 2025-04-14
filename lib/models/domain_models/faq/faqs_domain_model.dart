@@ -1,5 +1,10 @@
 class FaqsDomainModel {
   final String question;
   final String answer;
-  FaqsDomainModel({required this.question, required this.answer});
+  bool isVisible;
+  FaqsDomainModel({
+    required this.question,
+    required this.answer,
+    this.isVisible = false,
+  });
 }
