@@ -13,6 +13,7 @@ class CardFaqsSectionDeskTop extends StatelessWidget {
     double calculatedHeight =
         Helper.calculatedHeight(faqsDomainData.length, 2, 150, 50);
     context.read<FaqsCubit>().displayAllFaqs();
+
     return BlocBuilder<FaqsCubit, FAQStates>(
       builder: (context, state) {
         if (state is FAQSSuccesStates) {
@@ -42,6 +43,7 @@ class CardFaqsSectionDeskTop extends StatelessWidget {
     final faq = faqsDomainData[index]; // Get the FAQ model
     bool isVisible = context.read<FaqsCubit>().openIndex ==
         index; // Check if the current index is open
+
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 34),
       decoration: BoxDecoration(
@@ -77,7 +79,8 @@ class CardFaqsSectionDeskTop extends StatelessWidget {
                       ? Text(
                           faq.answer,
                           style: TextStyle(
-                            color: Theme.of(context).colorScheme.onSurface,
+                            color: Theme.of(context).colorScheme.primary,
+                            fontWeight: FontWeight.bold,
                           ),
                         )
                       : null, // No child when not visible

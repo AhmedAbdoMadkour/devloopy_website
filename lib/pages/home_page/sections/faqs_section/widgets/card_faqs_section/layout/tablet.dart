@@ -77,7 +77,8 @@ class CardFaqsSectionTablet extends StatelessWidget {
                       ? Text(
                           faq.answer,
                           style: TextStyle(
-                            color: Theme.of(context).colorScheme.onSurface,
+                            color: Theme.of(context).colorScheme.primary,
+                            fontWeight: FontWeight.bold,
                           ),
                         )
                       : null, // No child when not visible
