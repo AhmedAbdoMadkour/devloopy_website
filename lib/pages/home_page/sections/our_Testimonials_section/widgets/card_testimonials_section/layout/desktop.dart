@@ -17,7 +17,7 @@ class _CardTestimonialsSectionDeskTopState
   final ScrollController _scrollController = ScrollController();
   void _scrollLeft() {
     _scrollController.animateTo(
-      _scrollController.offset + 300,
+      _scrollController.offset - 300,
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -25,7 +25,7 @@ class _CardTestimonialsSectionDeskTopState
 
   void _scrollRight() {
     _scrollController.animateTo(
-      _scrollController.offset - 300,
+      _scrollController.offset + 300,
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );

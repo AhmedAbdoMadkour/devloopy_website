@@ -6,7 +6,7 @@ import 'package:devloopy_website/repository/faqs_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FaqsCubit extends Cubit<FAQStates> {
-  int? openIndex; // Track the currently open index
+  int? openIndex = -1; // Track the currently open index
   List<FaqsDomainModel> allFaqs = []; // Store all FAQs
   FaqsCubit() : super(FAQSInitialStates());
 
