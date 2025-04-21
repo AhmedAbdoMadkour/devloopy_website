@@ -1,12 +1,13 @@
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 
 class CardWebDesignPortfolioMobile extends StatelessWidget {
-  const CardWebDesignPortfolioMobile({super.key});
-
+  const CardWebDesignPortfolioMobile({super.key, required this.service});
+  final ServicesModel service;
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 310,
+      height: 350,
       padding: const EdgeInsets.all(24),
       width: double.infinity,
       decoration: BoxDecoration(
@@ -27,7 +28,7 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Web Design Portfolio",
+            service.viewProjects.title,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600,
@@ -38,7 +39,7 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
           Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            "Check out some of our most recent Web Design projects in the table below",
+            service.viewProjects.description,
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurface,
               fontWeight: FontWeight.w400,
@@ -46,25 +47,24 @@ class CardWebDesignPortfolioMobile extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Image.asset(
-                  width: 125,
-                  height: 87,
-                  "assets/images/image_ecommerce_website_examples.png",
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Image.asset(
-                  width: 125,
-                  height: 87,
-                  "assets/images/image_ecommerce_revolution.png",
-                ),
-              ),
-            ],
+          SizedBox(
+            height: 110,
+            width: double.infinity,
+            child: ListView.builder(
+              itemCount: 2,
+              physics: const NeverScrollableScrollPhysics(),
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Image.asset(
+                    service.viewProjects.images[index],
+                    width: 125,
+                    height: 87,
+                  ),
+                );
+              },
+            ),
           ),
           const SizedBox(height: 10),
           Center(

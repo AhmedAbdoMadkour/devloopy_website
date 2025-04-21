@@ -1,7 +1,9 @@
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 
 class CardWebDesignPortfolioTablet extends StatelessWidget {
-  const CardWebDesignPortfolioTablet({super.key});
+  const CardWebDesignPortfolioTablet({super.key, required this.service});
+  final ServicesModel service;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
         children: [
           Text(
             textAlign: TextAlign.start,
-            "Web Design Portfolio",
+            service.viewProjects.title,
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.w600,
@@ -38,7 +40,7 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
           Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            "Check out some of our most recent Web Design projects in the table below",
+            service.viewProjects.description,
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurface,
               fontWeight: FontWeight.w400,
@@ -46,20 +48,23 @@ class CardWebDesignPortfolioTablet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-          Row(
-            children: [
-              Expanded(
-                child: Image.asset(
-                  "assets/images/image_ecommerce_website_examples.png",
-                ),
-              ),
-              const SizedBox(width: 20),
-              Expanded(
-                child: Image.asset(
-                  "assets/images/image_ecommerce_revolution.png",
-                ),
-              ),
-            ],
+          SizedBox(
+            height: 300,
+            width: double.infinity,
+            child: ListView.builder(
+              itemCount: 2,
+              physics: const NeverScrollableScrollPhysics(),
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Image.asset(
+                    service.viewProjects.images[index],
+                    width: 220,
+                  ),
+                );
+              },
+            ),
           ),
           const SizedBox(height: 20),
           GestureDetector(
