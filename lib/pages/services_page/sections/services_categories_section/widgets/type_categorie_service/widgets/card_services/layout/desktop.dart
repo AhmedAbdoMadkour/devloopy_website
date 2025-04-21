@@ -1,16 +1,16 @@
-import 'package:devloopy_website/data/domain_data/services_data.dart';
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 
 class CardServicesDeskTop extends StatelessWidget {
-  const CardServicesDeskTop({
-    super.key,
-  });
+  const CardServicesDeskTop({super.key, required this.service});
+  final ServicesModel service;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 1300,
       child: ListView.builder(
-        itemCount: servicesData.last.section.length,
+        itemCount: service.section.length,
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
           return Container(
@@ -36,7 +36,7 @@ class CardServicesDeskTop extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
                   child: Text(
-                    servicesData.last.section[index].title,
+                    service.section[index].title,
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w600,
@@ -47,7 +47,7 @@ class CardServicesDeskTop extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
                   child: Text(
-                    servicesData.last.section[index].description,
+                    service.section[index].description,
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
@@ -65,7 +65,7 @@ class CardServicesDeskTop extends StatelessWidget {
                       crossAxisCount: 2,
                       mainAxisExtent: 215.0,
                     ),
-                    itemCount: servicesData.last.section.last.items.length,
+                    itemCount: service.section[index].items.length,
                     itemBuilder: (BuildContext context, int indexItem) {
                       return Container(
                         height: 200,
@@ -93,8 +93,8 @@ class CardServicesDeskTop extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              servicesData
-                                  .last.section[index].items[indexItem].title,
+                              //  servicesData
+                              service.section[index].items[indexItem].title,
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 20.0,
@@ -103,8 +103,8 @@ class CardServicesDeskTop extends StatelessWidget {
                             ),
                             const SizedBox(height: 14),
                             Text(
-                              servicesData.last.section[index].items[indexItem]
-                                  .dsecription,
+                              service
+                                  .section[index].items[indexItem].dsecription,
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18.0,

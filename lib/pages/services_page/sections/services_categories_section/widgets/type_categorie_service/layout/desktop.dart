@@ -18,6 +18,11 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
     return BlocBuilder<ServicesCubit, ServicesStates>(
       builder: (context, state) {
         if (state is ServicesSuccessStates) {
+          // Get the currently selected index
+          int selectedIndex = context.read<ServicesCubit>().selectedIndex;
+
+          // Get the selected service
+          var selectedService = state.services[selectedIndex];
           return Container(
             padding: const EdgeInsets.only(top: 60.0),
             child: Row(
@@ -34,30 +39,46 @@ class TypeCategorieServiceDeskTop extends StatelessWidget {
                         return Container(
                           margin: const EdgeInsets.symmetric(
                               horizontal: 40, vertical: 10),
-                          child: ButtonTypeServices(
-                            iconTypeService: Icon(
-                              servicesData[index].icon,
-                              color: Theme.of(context).colorScheme.onSurface,
+                          child: GestureDetector(
+                            onTap: () {
+                              context.read<ServicesCubit>().changeServiceIndex(
+                                  index); // Change the selected index
+                            },
+                            child: ButtonTypeServices(
+                              iconTypeService: Icon(
+                                servicesData[index].icon,
+                                color: Theme.of(context).colorScheme.onSurface,
+                              ),
+                              nameTypeService: servicesData[index].title,
+                              sizeFont: 14,
+                              isSelected: selectedIndex ==
+                                  index, // Highlight selected button
                             ),
-                            nameTypeService: servicesData[index].title,
-                            sizeFont: 14,
                           ),
                         );
                       },
                     ),
                   ),
                 ),
-                const Expanded(
+                Expanded(
                   flex: 4,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      DescriptionTypeServiceDeskTop(),
-                      CardServicesDeskTop(),
-                      SizedBox(height: 50),
-                      CardWebDesignPortfolioDeskTop(),
-                      SizedBox(height: 50),
-                      CardWebDesignComptedDeskTop()
+                      DescriptionTypeServiceDeskTop(
+                        service: selectedService,
+                      ),
+                      CardServicesDeskTop(
+                          service:
+                              selectedService), // Pass the selected service
+                      const SizedBox(height: 50),
+                      CardWebDesignPortfolioDeskTop(
+                          service:
+                              selectedService), // Pass the selected service
+                      const SizedBox(height: 50),
+                      CardWebDesignComptedDeskTop(
+                          service:
+                              selectedService), // Pass the selected service
                     ],
                   ),
                 )

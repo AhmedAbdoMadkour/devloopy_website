@@ -1,17 +1,16 @@
 import 'package:devloopy_website/data/domain_data/services_data.dart';
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 
 class CardServicesTablet extends StatelessWidget {
-  const CardServicesTablet({
-    super.key,
-  });
-
+  const CardServicesTablet({super.key, required this.service});
+  final ServicesModel service;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 1500,
       child: ListView.builder(
-        itemCount: servicesData.last.section.length,
+        itemCount: service.section.length,
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
           return Container(
@@ -36,7 +35,7 @@ class CardServicesTablet extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
                   child: Text(
-                    servicesData[index].section[index].title,
+                    service.section[index].title,
                     style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.w600,
@@ -47,7 +46,7 @@ class CardServicesTablet extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
                   child: Text(
-                    servicesData[index].section[index].description,
+                    service.section[index].description,
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
@@ -65,7 +64,7 @@ class CardServicesTablet extends StatelessWidget {
                       crossAxisCount: 2,
                       mainAxisExtent: 230.0,
                     ),
-                    itemCount: 4,
+                    itemCount: service.section[index].items.length,
                     itemBuilder: (BuildContext context, int indexItem) {
                       return Container(
                         padding: const EdgeInsets.all(15.0),
@@ -92,10 +91,7 @@ class CardServicesTablet extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              servicesData[index]
-                                  .section[index]
-                                  .items[indexItem]
-                                  .title,
+                              service.section[index].items[indexItem].title,
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 18.0,
@@ -104,10 +100,8 @@ class CardServicesTablet extends StatelessWidget {
                             ),
                             const SizedBox(height: 14),
                             Text(
-                              servicesData[index]
-                                  .section[index]
-                                  .items[indexItem]
-                                  .dsecription,
+                              service
+                                  .section[index].items[indexItem].dsecription,
                               maxLines: 5,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(

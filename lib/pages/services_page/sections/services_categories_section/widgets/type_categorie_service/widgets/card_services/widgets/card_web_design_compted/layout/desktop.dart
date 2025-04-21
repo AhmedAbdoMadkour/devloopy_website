@@ -1,7 +1,9 @@
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 
 class CardWebDesignComptedDeskTop extends StatelessWidget {
-  const CardWebDesignComptedDeskTop({super.key});
+  const CardWebDesignComptedDeskTop({super.key, required this.service});
+  final ServicesModel service;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Our Web Design Competed Projects",
+            service.competedPeojectsDetails.title,
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.w600,
@@ -36,7 +38,9 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
           ),
           const SizedBox(height: 15),
           Text(
-            "At DevLoopy, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+            //  "At DevLoopy, we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+            service.competedPeojectsDetails
+                .description, // Use the service description
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w400,
@@ -75,7 +79,8 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
                           ),
                         ),
                         child: Text(
-                          "Project Name",
+                          service.competedPeojectsDetails.projectsData
+                              .titleProjectsDetails.projectName,
                           style: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                             fontSize: 20,
@@ -100,7 +105,8 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
                           ),
                         ),
                         child: Text(
-                          "Industry",
+                          service.competedPeojectsDetails.projectsData
+                              .titleProjectsDetails.industry,
                           style: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                             fontSize: 20,
@@ -116,7 +122,8 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
                           horizontal: 30,
                         ),
                         child: Text(
-                          "Website URL",
+                          service.competedPeojectsDetails.projectsData
+                              .titleProjectsDetails.websiteUrlName,
                           style: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                             fontSize: 20,
@@ -129,175 +136,98 @@ class CardWebDesignComptedDeskTop extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              Table(
-                border: TableBorder.all(
-                  borderRadius: BorderRadius.circular(10),
-                  width: 1,
-                  style: BorderStyle.solid,
-                  color: Theme.of(context).colorScheme.outline,
+              SizedBox(
+                height: 400,
+                child: ListView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: service.competedPeojectsDetails.projectsData
+                      .projectDetails.length,
+                  itemBuilder: (context, index) {
+                    return Table(
+                      border: TableBorder.all(
+                        borderRadius: BorderRadius.circular(10),
+                        width: 1,
+                        style: BorderStyle.solid,
+                        color: Theme.of(context).colorScheme.outline,
+                      ),
+                      children: [
+                        TableRow(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              width: 1,
+                              style: BorderStyle.solid,
+                              color: Theme.of(context).colorScheme.outline,
+                            ),
+                          ),
+                          children: [
+                            TableCell(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 24,
+                                  horizontal: 30,
+                                ),
+                                child: Text(
+                                  service.competedPeojectsDetails.projectsData
+                                      .projectDetails[index].projectNameItems,
+                                  style: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.onSurface,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            TableCell(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 24,
+                                  horizontal: 30,
+                                ),
+                                child: Text(
+                                  service.competedPeojectsDetails.projectsData
+                                      .projectDetails[index].industryItems,
+                                  style: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.onSurface,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            TableCell(
+                              child: MouseRegion(
+                                cursor: SystemMouseCursors.click,
+                                child: GestureDetector(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 24,
+                                      horizontal: 30,
+                                    ),
+                                    child: Text(
+                                      "${service.competedPeojectsDetails.projectsData.projectDetails[index].websiteUrlItems}",
+                                      style: TextStyle(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSurface,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w400,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    );
+                  },
                 ),
-                children: [
-                  TableRow(
-                    children: [
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "TechGuru Inc.",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "Technology",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "www.techguruinc.com",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  TableRow(
-                    children: [
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "GreenEarth Eco Store",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "Design Agency",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "www.greenearthecostore.com",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  TableRow(
-                    children: [
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "GlobalTech Solutions",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "E-commerce",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 24,
-                            horizontal: 30,
-                          ),
-                          child: Text(
-                            "www.globaltechsolutions.com",
-                            style: TextStyle(
-                              color: Theme.of(context).colorScheme.onSurface,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+              )
             ],
           )
         ],

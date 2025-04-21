@@ -1,7 +1,9 @@
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 
 class CardWebDesignPortfolioDeskTop extends StatelessWidget {
-  const CardWebDesignPortfolioDeskTop({super.key});
+  const CardWebDesignPortfolioDeskTop({super.key, required this.service});
+  final ServicesModel service;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class CardWebDesignPortfolioDeskTop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "Web Design Portfolio",
+            service.viewProjects.title,
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.w600,
@@ -37,7 +39,8 @@ class CardWebDesignPortfolioDeskTop extends StatelessWidget {
           Text(
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            "Check out some of our most recent Web Design projects in the table below",
+            //  "Check out some of our most recent Web Design projects in the table below",
+            service.viewProjects.description,
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurface,
               fontWeight: FontWeight.w400,
@@ -45,20 +48,23 @@ class CardWebDesignPortfolioDeskTop extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Image.asset(
-                  "assets/images/image_ecommerce_website_examples.png",
-                ),
-              ),
-              const SizedBox(width: 15),
-              Expanded(
-                child:
-                    Image.asset("assets/images/image_ecommerce_revolution.png"),
-              ),
-            ],
+          SizedBox(
+            height: 300,
+            width: double.infinity,
+            child: ListView.builder(
+              itemCount: 2,
+              physics: const NeverScrollableScrollPhysics(),
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Image.asset(
+                    service.viewProjects.images[index],
+                    width: 340,
+                  ),
+                );
+              },
+            ),
           ),
           const SizedBox(height: 15),
           MouseRegion(

@@ -1,12 +1,13 @@
 import 'package:devloopy_website/cubit/services_cubit/services_cubit.dart';
 import 'package:devloopy_website/cubit/services_cubit/services_states.dart';
 import 'package:devloopy_website/data/domain_data/services_data.dart';
+import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DescriptionTypeServiceTablet extends StatelessWidget {
-  const DescriptionTypeServiceTablet({super.key});
-
+  const DescriptionTypeServiceTablet({super.key, required this.service});
+  final ServicesModel service;
   @override
   Widget build(BuildContext context) {
     context.read<ServicesCubit>().displayAllServices();
@@ -17,7 +18,7 @@ class DescriptionTypeServiceTablet extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                servicesData.last.title,
+                service.title,
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.w600,
@@ -28,7 +29,7 @@ class DescriptionTypeServiceTablet extends StatelessWidget {
               Text(
                 maxLines: 8,
                 overflow: TextOverflow.ellipsis,
-                servicesData.last.description,
+                service.description,
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w400,

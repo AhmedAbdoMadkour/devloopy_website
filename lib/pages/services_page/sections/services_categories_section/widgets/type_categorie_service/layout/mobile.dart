@@ -18,6 +18,11 @@ class TypeCategorieServiceMobile extends StatelessWidget {
     return BlocBuilder<ServicesCubit, ServicesStates>(
       builder: (context, state) {
         if (state is ServicesSuccessStates) {
+          // Get the currently selected index
+          int selectedIndex = context.read<ServicesCubit>().selectedIndex;
+
+          // Get the selected service
+          var selectedService = state.services[selectedIndex];
           return Container(
             margin: const EdgeInsets.only(top: 40.0),
             child: Column(
@@ -32,25 +37,35 @@ class TypeCategorieServiceMobile extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return Container(
                         margin: const EdgeInsets.only(right: 10),
-                        child: ButtonTypeServices(
-                          iconTypeService: Icon(
-                            servicesData[index].icon,
-                            color: Theme.of(context).colorScheme.onSurface,
+                        child: GestureDetector(
+                          onTap: () {
+                            context.read<ServicesCubit>().changeServiceIndex(
+                                index); // Change the selected index
+                          },
+                          child: ButtonTypeServices(
+                            iconTypeService: Icon(
+                              servicesData[index].icon,
+                              color: Theme.of(context).colorScheme.onSurface,
+                            ),
+                            nameTypeService: servicesData[index].title,
+                            sizeFont: 14,
+                            isSelected: selectedIndex ==
+                                index, // Highlight selected button
                           ),
-                          nameTypeService: servicesData[index].title,
-                          sizeFont: 14,
                         ),
                       );
                     },
                   ),
                 ),
-                const SizedBox(height: 30),
-                const DescriptionTypeServiceMobile(),
-                const CardServicesMobile(),
-                const SizedBox(height: 30),
-                const CardWebDesignPortfolioMobile(),
-                const SizedBox(height: 30),
-                const CardWebDesignComptedMobile()
+                const SizedBox(height: 10),
+                DescriptionTypeServiceMobile(
+                  service: selectedService,
+                ),
+                CardServicesMobile(service: selectedService),
+                const SizedBox(height: 10),
+                CardWebDesignPortfolioMobile(service: selectedService),
+                const SizedBox(height: 10),
+                CardWebDesignComptedMobile(service: selectedService)
               ],
             ),
           );

@@ -1,49 +1,48 @@
 import 'package:flutter/material.dart';
 
 class ButtonTypeServices extends StatelessWidget {
+  final Icon iconTypeService;
+  final String nameTypeService;
+  final double sizeFont;
+  final bool isSelected; // New parameter to indicate selection
+
   const ButtonTypeServices({
     super.key,
     required this.iconTypeService,
     required this.nameTypeService,
     required this.sizeFont,
+    this.isSelected = false, // Default to false
   });
-  final Icon iconTypeService;
-  final String nameTypeService;
-  final double sizeFont;
+
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: () {},
-        child: Container(
-          width: 340,
-          height: 60,
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Theme.of(context).colorScheme.onSurface,
-              width: 1,
-              style: BorderStyle.solid,
-            ),
-            borderRadius: BorderRadius.circular(10),
+    return Container(
+      decoration: BoxDecoration(
+        color: isSelected
+            ? Theme.of(context).colorScheme.primary
+            : Colors.transparent, // Change color if selected
+        borderRadius: BorderRadius.circular(10),
+      ),
+      padding: const EdgeInsets.all(10),
+      child: Row(
+        children: [
+          Icon(
+            iconTypeService.icon,
+            color: isSelected
+                ? Theme.of(context).colorScheme.onPrimary
+                : Theme.of(context).colorScheme.onSurface,
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              iconTypeService,
-              Text(
-                nameTypeService,
-                style: TextStyle(
-                  fontSize: sizeFont,
-                  fontWeight: FontWeight.w400,
-                  color: Theme.of(context).colorScheme.onSurface,
-                ),
-              )
-            ],
+          const SizedBox(width: 8),
+          Text(
+            nameTypeService,
+            style: TextStyle(
+              fontSize: sizeFont,
+              color: isSelected
+                  ? Theme.of(context).colorScheme.onPrimary
+                  : Theme.of(context).colorScheme.onSurface,
+            ), // Change text color if selected
           ),
-        ),
+        ],
       ),
     );
   }

@@ -9,245 +9,404 @@ List<ServicesModel> servicesData = [
         'Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
     section: [
       ServicesSectionModel(
-        title: "Key Features",
+        title: "Key Features 1",
         description:
-            "design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
+            "1 design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
         items: [
           ServicesItemsModel(
-            title: "Customized Design",
+            title: "Customized Design 1",
             dsecription:
-                "We craft bespoke designs tailored to match your brand personality and industry.",
+                "1 We craft bespoke designs tailored to match your brand personality and industry.",
           ),
           ServicesItemsModel(
-            title: "Responsive Design",
+            title: "Responsive Design 1",
             dsecription:
-                "Ensuring your website adapts seamlessly to different devices and screen sizes.",
+                "1 Ensuring your website adapts seamlessly to different devices and screen sizes.",
           ),
           ServicesItemsModel(
-            title: "User-Centric Approach",
+            title: "User-Centric Approach 1",
             dsecription:
-                "Prioritizing ease of navigation and intuitive user experience.",
+                "1 Prioritizing ease of navigation and intuitive user experience.",
           ),
           ServicesItemsModel(
-            title: "Visual Elements",
+            title: "Visual Elements 1",
             dsecription:
-                "Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
+                "1 Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
           ),
         ],
       ),
       ServicesSectionModel(
-        title: "Design Process",
+        title: "Design Process 1",
         description:
-            "Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
+            "1 Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
         items: [
           ServicesItemsModel(
-            title: "Discovery & Planning",
+            title: "Discovery & Planning 1",
             dsecription:
-                "We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
+                "1 We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
           ),
           ServicesItemsModel(
-            title: "Wireframing & Prototyping",
+            title: "Wireframing & Prototyping 1",
             dsecription:
-                "Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
+                "1 Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
           ),
           ServicesItemsModel(
-            title: "Design & Development",
+            title: "Design & Development 1",
             dsecription:
-                "Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
+                "1 Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
           ),
           ServicesItemsModel(
-            title: "Testing & Review",
+            title: "Testing & Review 1",
             dsecription:
-                "We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
+                "1 We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
           ),
         ],
       ),
     ],
+    viewProjects: ViewProjects(
+      title: "Web Design Portfolio",
+      description:
+          "Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
+      images: [
+        "assets/images/image_ecommerce_website_examples.png",
+        "assets/images/image_ecommerce_revolution.png",
+      ],
+    ),
+    competedPeojectsDetails: CompetedPeojectsDetails(
+      title: "Our Web Design Competed Projects",
+      description:
+          "At DevLoopy,Web Design we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+      projectsData: ProjectsData(
+        titleProjectsDetails: TitleProjectsDetails(
+            projectName: "Projects Name",
+            industry: "industry",
+            websiteUrlName: "website Url"),
+        projectDetails: [
+          ProjectDetails(
+              projectNameItems: "DevLoopy",
+              industryItems: "Technology",
+              websiteUrlString: "https://www.devloopy.com/"),
+          ProjectDetails(
+            projectNameItems: "GlobalTech Solutions",
+            industryItems: "E-commerce",
+            websiteUrlString: "https://www.google.co.uk/",
+          ),
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+        ],
+      ),
+    ),
   ),
   ServicesModel(
     icon: Icons.terminal, // Web Development icon
     title: 'Web Development',
     description:
-        'Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
+        'Web Development is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
     section: [
       ServicesSectionModel(
-        title: "Key Features",
+        title: "Key Features 2",
         description:
-            "design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
+            "2 design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
         items: [
           ServicesItemsModel(
-            title: "Customized Design",
+            title: "Customized Design 2",
             dsecription:
-                "We craft bespoke designs tailored to match your brand personality and industry.",
+                "2 We craft bespoke designs tailored to match your brand personality and industry.",
           ),
           ServicesItemsModel(
-            title: "Responsive Design",
+            title: "Responsive Design 2",
             dsecription:
-                "Ensuring your website adapts seamlessly to different devices and screen sizes.",
+                "2 Ensuring your website adapts seamlessly to different devices and screen sizes.",
           ),
           ServicesItemsModel(
-            title: "User-Centric Approach",
+            title: "User-Centric Approach 2",
             dsecription:
-                "Prioritizing ease of navigation and intuitive user experience.",
+                "2 Prioritizing ease of navigation and intuitive user experience.",
           ),
           ServicesItemsModel(
-            title: "Visual Elements",
+            title: "Visual Elements 2",
             dsecription:
-                "Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
+                "2 Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
           ),
         ],
       ),
       ServicesSectionModel(
-        title: "Design Process",
+        title: "Design Process2",
         description:
-            "Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
+            "2 Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
         items: [
           ServicesItemsModel(
-            title: "Discovery & Planning",
+            title: "Discovery & Planning 2",
             dsecription:
-                "We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
+                "2 We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
           ),
           ServicesItemsModel(
-            title: "Wireframing & Prototyping",
+            title: "Wireframing & Prototyping 2",
             dsecription:
-                "Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
+                "2 Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
           ),
           ServicesItemsModel(
-            title: "Design & Development",
+            title: "Design & Development 2",
             dsecription:
-                "Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
+                "2 Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
           ),
           ServicesItemsModel(
-            title: "Testing & Review",
+            title: "Testing & Review 2",
             dsecription:
-                "We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
+                "2 We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
           ),
         ],
       ),
     ],
+    viewProjects: ViewProjects(
+      title: "Web Development Portfolio",
+      description:
+          "Web Development Portfolio is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
+      images: [
+        "assets/images/Image_web_design_portfolio_red.png",
+        "assets/images/Image_web_design_portfolio_green.png",
+      ],
+    ),
+    competedPeojectsDetails: CompetedPeojectsDetails(
+      title: "Our Web Development Competed Projects",
+      description:
+          "At DevLoopy,Web Development we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+      projectsData: ProjectsData(
+        titleProjectsDetails: TitleProjectsDetails(
+            projectName: "Projects Name",
+            industry: "industry",
+            websiteUrlName: "website Url"),
+        projectDetails: [
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+          ProjectDetails(
+              projectNameItems: "DevLoopy",
+              industryItems: "Technology",
+              websiteUrlString: "https://www.devloopy.com/"),
+          ProjectDetails(
+            projectNameItems: "GlobalTech Solutions",
+            industryItems: "E-commerce",
+            websiteUrlString: "https://www.google.co.uk/",
+          ),
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+        ],
+      ),
+    ),
   ),
   ServicesModel(
     icon: Icons.mobile_friendly, // Web Development icon
     title: 'Mobile App Development',
     description:
-        'Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
+        'Mobile App Development is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
     section: [
       ServicesSectionModel(
-        title: "Key Features",
+        title: "Key Features 3",
         description:
-            "design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
+            "3 design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
         items: [
           ServicesItemsModel(
-            title: "Customized Design",
+            title: "Customized Design 3",
             dsecription:
-                "We craft bespoke designs tailored to match your brand personality and industry.",
+                "3 We craft bespoke designs tailored to match your brand personality and industry.",
           ),
           ServicesItemsModel(
-            title: "Responsive Design",
+            title: "Responsive Design 3",
             dsecription:
-                "Ensuring your website adapts seamlessly to different devices and screen sizes.",
+                "3 Ensuring your website adapts seamlessly to different devices and screen sizes.",
           ),
           ServicesItemsModel(
-            title: "User-Centric Approach",
+            title: "User-Centric Approach 3",
             dsecription:
-                "Prioritizing ease of navigation and intuitive user experience.",
+                "3 Prioritizing ease of navigation and intuitive user experience.",
           ),
           ServicesItemsModel(
-            title: "Visual Elements",
+            title: "Visual Elements 3",
             dsecription:
-                "Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
+                "3 Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
           ),
         ],
       ),
       ServicesSectionModel(
-        title: "Design Process",
+        title: "Design Process 3",
         description:
-            "Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
+            "3 Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
         items: [
           ServicesItemsModel(
-            title: "Discovery & Planning",
+            title: "Discovery & Planning 3",
             dsecription:
-                "We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
+                "3 We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
           ),
           ServicesItemsModel(
-            title: "Wireframing & Prototyping",
+            title: "Wireframing & Prototyping 3",
             dsecription:
-                "Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
+                "3 Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
           ),
           ServicesItemsModel(
-            title: "Design & Development",
+            title: "Design & Development 3",
             dsecription:
-                "Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
+                "3 Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
           ),
           ServicesItemsModel(
-            title: "Testing & Review",
+            title: "Testing & Review 3",
             dsecription:
-                "We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
+                "3 We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
           ),
         ],
       ),
     ],
+    viewProjects: ViewProjects(
+      title: "Mobile App Development Portfolio",
+      description:
+          "Mobile App Development is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
+      images: [
+        "assets/images/image_fram_ourwork_three.png",
+        "assets/images/image_fram_ourwork_one.png",
+      ],
+    ),
+    competedPeojectsDetails: CompetedPeojectsDetails(
+      title: "Our Mobile App Development Competed Projects",
+      description:
+          "At DevLoopy,Mobile App we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+      projectsData: ProjectsData(
+        titleProjectsDetails: TitleProjectsDetails(
+            projectName: "Projects Name",
+            industry: "industry",
+            websiteUrlName: "website Url"),
+        projectDetails: [
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+          ProjectDetails(
+              projectNameItems: "DevLoopy",
+              industryItems: "Technology",
+              websiteUrlString: "https://www.devloopy.com/"),
+          ProjectDetails(
+            projectNameItems: "GlobalTech Solutions",
+            industryItems: "E-commerce",
+            websiteUrlString: "https://www.google.co.uk/",
+          ),
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+        ],
+      ),
+    ),
   ),
   ServicesModel(
     icon: Icons.wb_cloudy, // Web Development icon
     title: 'Digital Markiting',
     description:
-        'Web Design is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
+        'Digital Markiting is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.',
     section: [
       ServicesSectionModel(
-        title: "Key Features",
+        title: "Key Features 4",
         description:
-            "design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
+            "4 design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling",
         items: [
           ServicesItemsModel(
-            title: "Customized Design",
+            title: "Customized Design 4",
             dsecription:
-                "We craft bespoke designs tailored to match your brand personality and industry.",
+                "4 We craft bespoke designs tailored to match your brand personality and industry.",
           ),
           ServicesItemsModel(
-            title: "Responsive Design",
+            title: "Responsive Design 4",
             dsecription:
-                "Ensuring your website adapts seamlessly to different devices and screen sizes.",
+                "4 Ensuring your website adapts seamlessly to different devices and screen sizes.",
           ),
           ServicesItemsModel(
-            title: "User-Centric Approach",
+            title: "User-Centric Approach 4",
             dsecription:
-                "Prioritizing ease of navigation and intuitive user experience.",
+                "4 Prioritizing ease of navigation and intuitive user experience.",
           ),
           ServicesItemsModel(
-            title: "Visual Elements",
+            title: "Visual Elements 4",
             dsecription:
-                "Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
+                "4 Incorporating engaging visuals, graphics, and animations to enhance the overall appeal.",
           ),
         ],
       ),
       ServicesSectionModel(
-        title: "Design Process",
+        title: "Design Process 4",
         description:
-            "Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
+            "4 Our Web Design process follows a systematic approach to deliver a website that aligns perfectly with your business needs and branding. Here's an overview of our design process",
         items: [
           ServicesItemsModel(
-            title: "Discovery & Planning",
+            title: "Discovery & Planning 4",
             dsecription:
-                "We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
+                "4 We start by understanding your business, target audience, and project goals. This stage involves gathering requirements and planning the design strategy.",
           ),
           ServicesItemsModel(
-            title: "Wireframing & Prototyping",
+            title: "Wireframing & Prototyping 4",
             dsecription:
-                "Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
+                "4 Creating wireframes and interactive prototypes to visualize the website's layout and user flow.",
           ),
           ServicesItemsModel(
-            title: "Design & Development",
+            title: "Design & Development 4",
             dsecription:
-                "Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
+                "4 Once the wireframes are approved, our designers start working on the visual elements while our developers bring the design to life.",
           ),
           ServicesItemsModel(
-            title: "Testing & Review",
+            title: "Testing & Review 4",
             dsecription:
-                "We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
+                "4 We conduct thorough testing to ensure the website functions flawlessly across different browsers and devices. Client feedback is also incorporated at this stage.",
           ),
         ],
       ),
     ],
+    viewProjects: ViewProjects(
+      title: "Digital Markiting Portfolio",
+      description:
+          "Digital Markiting Portfolio is the art and science of creating visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience. At DigitX, our web design process involves a careful blend of creativity, user experience (UX) design, and cutting-edge technologies. We take the time to understand your business goals, target market, and unique selling points to create a website that not only looks great but also drives results.",
+      images: [
+        "assets/images/image_fram_ourwork_four.png",
+        "assets/images/Image_blog_three.png",
+      ],
+    ),
+    competedPeojectsDetails: CompetedPeojectsDetails(
+      title: "Our Digital Marketing Competed Projects",
+      description:
+          "At DevLoopy,Digital Marketing we are dedicated to creating transformative mobile apps that empower your business and enrich your users' experiences.",
+      projectsData: ProjectsData(
+        titleProjectsDetails: TitleProjectsDetails(
+            projectName: "Projects Name",
+            industry: "industry",
+            websiteUrlName: "website Url"),
+        projectDetails: [
+          ProjectDetails(
+              projectNameItems: "DevLoopy",
+              industryItems: "Technology",
+              websiteUrlString: "https://www.devloopy.com/"),
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+          ProjectDetails(
+            projectNameItems: "GreenEarth Eco Store",
+            industryItems: "Design Agency",
+            websiteUrlString: "www.greenearthecostore.com",
+          ),
+          ProjectDetails(
+            projectNameItems: "GlobalTech Solutions",
+            industryItems: "E-commerce",
+            websiteUrlString: "https://www.google.co.uk/",
+          ),
+        ],
+      ),
+    ),
   ),
 ];

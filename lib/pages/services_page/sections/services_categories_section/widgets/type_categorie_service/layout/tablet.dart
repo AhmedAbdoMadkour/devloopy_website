@@ -18,6 +18,11 @@ class TypeCategorieServiceTablet extends StatelessWidget {
     return BlocBuilder<ServicesCubit, ServicesStates>(
       builder: (context, state) {
         if (state is ServicesSuccessStates) {
+          // Get the currently selected index
+          int selectedIndex = context.read<ServicesCubit>().selectedIndex;
+
+          // Get the selected service
+          var selectedService = state.services[selectedIndex];
           return Container(
             padding: const EdgeInsets.only(top: 30.0),
             child: Row(
@@ -33,14 +38,22 @@ class TypeCategorieServiceTablet extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return Container(
                           margin: const EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 10),
-                          child: ButtonTypeServices(
-                            iconTypeService: Icon(
-                              servicesData[index].icon,
-                              color: Theme.of(context).colorScheme.onSurface,
+                              horizontal: 20, vertical: 10),
+                          child: GestureDetector(
+                            onTap: () {
+                              context.read<ServicesCubit>().changeServiceIndex(
+                                  index); // Change the selected index
+                            },
+                            child: ButtonTypeServices(
+                              iconTypeService: Icon(
+                                servicesData[index].icon,
+                                color: Theme.of(context).colorScheme.onSurface,
+                              ),
+                              nameTypeService: servicesData[index].title,
+                              sizeFont: 12,
+                              isSelected: selectedIndex ==
+                                  index, // Highlight selected button
                             ),
-                            nameTypeService: servicesData[index].title,
-                            sizeFont: 14,
                           ),
                         );
                       },
@@ -48,17 +61,19 @@ class TypeCategorieServiceTablet extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 20),
-                const Expanded(
+                Expanded(
                   flex: 4,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      DescriptionTypeServiceTablet(),
-                      CardServicesTablet(),
-                      SizedBox(height: 30),
-                      CardWebDesignPortfolioTablet(),
-                      SizedBox(height: 30),
-                      CardWebDesignComptedTablet()
+                      DescriptionTypeServiceTablet(
+                        service: selectedService,
+                      ),
+                      CardServicesTablet(service: selectedService),
+                      const SizedBox(height: 30),
+                      CardWebDesignPortfolioTablet(service: selectedService),
+                      const SizedBox(height: 30),
+                      CardWebDesignComptedTablet(service: selectedService)
                     ],
                   ),
                 )
