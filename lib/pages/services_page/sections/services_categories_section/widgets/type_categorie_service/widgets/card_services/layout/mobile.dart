@@ -1,4 +1,3 @@
-import 'package:devloopy_website/data/domain_data/services_data.dart';
 import 'package:devloopy_website/models/domain_models/services/services_model.dart';
 import 'package:flutter/material.dart';
 

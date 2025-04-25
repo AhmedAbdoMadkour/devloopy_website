@@ -11,7 +11,7 @@ class LightTheme {
         primaryContainer: Color(0xff0B43DB),
         secondary: Color(0xffffffff),
         onSecondary: Color(0xff1a1a1a),
-        error: Color(0x000000ff),
+        error: Color(0x00E5002E),
         onError: Color(0x000000ff),
         surface: Color(0xffEEEBE5),
         onSurface: Color(0xff333333),
