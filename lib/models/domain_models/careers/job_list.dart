@@ -1,14 +1,15 @@
 import 'package:flutter/widgets.dart';
 
-class Careers {
+class CareersModel {
   final List<JobsList> jobList;
-
   final List<GuidelineSection> howToApply;
+  final GuidelineSection quote;
   final List<Benefits> benefits;
   final RferralProgramDetails programDetails;
-  Careers({
+  CareersModel({
     required this.jobList,
     required this.howToApply,
+    required this.quote,
     required this.benefits,
     required this.programDetails,
   });
