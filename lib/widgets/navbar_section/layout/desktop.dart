@@ -1,11 +1,14 @@
+import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/widgets/custom_button_link_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NavbarDeskTop extends StatelessWidget {
   const NavbarDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
+    int index = 0;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 24),
       color: Theme.of(context).colorScheme.surface,
@@ -26,10 +29,18 @@ class NavbarDeskTop extends StatelessWidget {
                   const SizedBox(
                     width: 85,
                   ),
-                  Image.asset(
-                    width: 222,
-                    height: 50,
-                    "assets/images/logo_desktop.png",
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      onTap: () {
+                        context.read<NavigationCubit>().selectPage(index);
+                      },
+                      child: Image.asset(
+                        width: 222,
+                        height: 50,
+                        "assets/images/logo_desktop.png",
+                      ),
+                    ),
                   ),
                 ],
               ),

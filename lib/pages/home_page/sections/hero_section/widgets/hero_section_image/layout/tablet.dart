@@ -8,7 +8,7 @@ class HeroSectionImageTablet extends StatelessWidget {
     return Image.asset(
       width: 820,
       height: 650,
-      "assets/images/under_construction_pana.png",
+      "assets/images/image_hero_section.png",
     );
   }
 }

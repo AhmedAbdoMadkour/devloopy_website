@@ -1,11 +1,14 @@
+import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/widgets/custom_button_link_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FooterSectionDeskTop extends StatelessWidget {
   const FooterSectionDeskTop({super.key});
 
   @override
   Widget build(BuildContext context) {
+    int index = 0;
     return Padding(
       padding: const EdgeInsets.only(top: 80.0, right: 150.0, left: 150.0),
       child: Column(
@@ -13,10 +16,18 @@ class FooterSectionDeskTop extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                width: 241,
-                height: 54,
-                "assets/images/logo_desktop.png",
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    context.read<NavigationCubit>().selectPage(index);
+                  },
+                  child: Image.asset(
+                    width: 241,
+                    height: 54,
+                    "assets/images/logo_desktop.png",
+                  ),
+                ),
               ),
               Row(
                 children: [
@@ -128,7 +139,7 @@ class FooterSectionDeskTop extends StatelessWidget {
                   CustomButtonLinkPage(
                     index: 1,
                     namePageLink: "Website Development",
-                   // colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    // colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),
@@ -168,7 +179,7 @@ class FooterSectionDeskTop extends StatelessWidget {
                   CustomButtonLinkPage(
                     index: 2,
                     namePageLink: "GreenEarth Eco Store",
-                   // colornamePageLink: Theme.of(context).colorScheme.onSurface,
+                    // colornamePageLink: Theme.of(context).colorScheme.onSurface,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
                   ),

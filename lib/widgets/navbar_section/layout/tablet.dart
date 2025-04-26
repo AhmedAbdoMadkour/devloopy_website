@@ -1,11 +1,14 @@
+import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/widgets/custom_button_link_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NavbarTablet extends StatelessWidget {
   const NavbarTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
+    int index = 0;
     return Container(
       color: Theme.of(context).colorScheme.surface,
       padding: const EdgeInsets.symmetric(
@@ -26,10 +29,15 @@ class NavbarTablet extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Image.asset(
-                    width: 140,
-                    height: 50,
-                    "assets/images/Logo_desk_top.png",
+                  GestureDetector(
+                    onTap: () {
+                      context.read<NavigationCubit>().selectPage(index);
+                    },
+                    child: Image.asset(
+                      width: 140,
+                      height: 50,
+                      "assets/images/Logo_desk_top.png",
+                    ),
                   ),
                 ],
               ),

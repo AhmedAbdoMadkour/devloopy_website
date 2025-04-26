@@ -1,11 +1,14 @@
+import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:devloopy_website/widgets/custom_button_link_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FooterSectionMobile extends StatelessWidget {
   const FooterSectionMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
+    int index = 0;
     return Container(
       margin: const EdgeInsets.only(
         top: 16,
@@ -19,10 +22,15 @@ class FooterSectionMobile extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                width: 61,
-                height: 44,
-                "assets/images/Logo_mobile.png",
+              GestureDetector(
+                onTap: () {
+                  context.read<NavigationCubit>().selectPage(index);
+                },
+                child: Image.asset(
+                  width: 61,
+                  height: 44,
+                  "assets/images/Logo_mobile.png",
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
