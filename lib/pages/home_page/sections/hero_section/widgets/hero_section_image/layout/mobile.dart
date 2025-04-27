@@ -8,7 +8,7 @@ class HeroSectionImageMobile extends StatelessWidget {
     return Image.asset(
       width: 350,
       height: 252,
-      "assets/images/under_construction_pana.png",
+      "assets/images/image_hero_section.png",
     );
   }
 }

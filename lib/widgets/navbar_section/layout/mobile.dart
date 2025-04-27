@@ -1,10 +1,13 @@
+import 'package:devloopy_website/cubit/navigation_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NavbarMobile extends StatelessWidget {
   const NavbarMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
+    int index = 0;
     return Container(
       padding: const EdgeInsets.only(
         top: 40,
@@ -25,10 +28,15 @@ class NavbarMobile extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(
-            width: 120,
-            height: 40,
-            "assets/images/Logo_mobile.png",
+          GestureDetector(
+            onTap: () {
+              context.read<NavigationCubit>().selectPage(index);
+            },
+            child: Image.asset(
+              width: 120,
+              height: 40,
+              "assets/images/Logo_mobile.png",
+            ),
           ),
           MouseRegion(
             cursor: SystemMouseCursors.click,
