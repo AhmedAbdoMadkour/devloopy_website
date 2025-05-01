@@ -1,5 +1,5 @@
 class UnderConstructionData {
-  DateTime targetDate = DateTime(2025, 5, 1, 12, 30, 30);
+  DateTime targetDate = DateTime(2025, 6, 1, 12, 30, 30);
 
   // Getter for today's date to ensure it's always up to date
   DateTime get today => DateTime.now();
