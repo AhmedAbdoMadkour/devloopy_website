@@ -6,8 +6,8 @@ class HeroSectionImageDeskTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      width: 800,
-      height: 700,
+      width: 600,
+      height: 500,
       "assets/images/image_hero_section.png",
     );
   }
